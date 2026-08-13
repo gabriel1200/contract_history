@@ -39,6 +39,8 @@ than silently trusting either figure.
 
 from __future__ import annotations
 
+import hashlib
+import re
 import sys
 import pandas as pd
 
@@ -54,9 +56,47 @@ def derive_start_season(date_str: str) -> int:
     return d.year + 1 if d.month >= 7 else d.year
 
 
+def make_contract_id(date: str, team: str, player: str, raw_notes: str) -> str:
+    """Stable across re-scrapes, unlike a row index: same signing event
+    (same date/team/player/notes text) always hashes to the same id, so
+    contract_id can be used to diff or incrementally merge across runs.
+
+    date/team/player alone are NOT sufficient -- confirmed against real
+    data that a handful of players have two genuinely different signings
+    on the same date with the same team (e.g. re-signed twice same day
+    with different terms, or a two-way + a separate Exhibit 10 signing
+    same day). raw_notes is required to tell these apart.
+
+    Notes text is normalized (lowercased, whitespace-collapsed) before
+    hashing so a trivial formatting change doesn't churn the id for what
+    is otherwise the same real-world event, while still preserving full
+    disambiguating power for genuinely different notes text.
+
+    Uses hashlib rather than Python's built-in hash() since the latter is
+    randomized per-process (PYTHONHASHSEED) for strings and would NOT be
+    stable even within a single script's re-run, let alone across runs.
+    Truncated to 12 hex chars -- negligible collision risk at this scale
+    (thousands of rows, not billions) while staying short enough to be
+    usable as a human-scannable key."""
+    normalized_notes = re.sub(r"\s+", " ", raw_notes.strip().lower())
+    key = f"{date}|{team}|{player}|{normalized_notes}"
+    return hashlib.sha256(key.encode("utf-8")).hexdigest()[:12]
+
+
 def build_resolved_contracts(contracts_path: str, crosswalk_path: str) -> pd.DataFrame:
     contracts = pd.read_csv(contracts_path)
     crosswalk = pd.read_csv(crosswalk_path)
+
+    # Confirmed via real data: a handful of rows are exact duplicates
+    # (same date/team/player/notes) -- likely pagination overlap during
+    # scraping (a row landing on two consecutive page fetches if the
+    # site's data shifted mid-scrape). Invisible under the old row-index
+    # contract_id scheme; visible now that contract_id is a content hash.
+    before = len(contracts)
+    contracts = contracts.drop_duplicates(subset=["date", "team", "player", "raw_notes"])
+    if before != len(contracts):
+        print(f"NOTE: dropped {before - len(contracts)} duplicate contract "
+              f"rows (identical date/team/player/notes).", file=sys.stderr)
 
     # Re-parse raw_notes with the CURRENT parse_notes -- the source CSV may
     # have been generated with an earlier version of the regex (e.g.
@@ -67,7 +107,9 @@ def build_resolved_contracts(contracts_path: str, crosswalk_path: str) -> pd.Dat
     base = contracts[["date", "team", "player", "raw_notes"]].copy()
     resolved = pd.concat([base, reparsed], axis=1)
 
-    resolved["contract_id"] = resolved.index  # stable within this build; not durable across re-scrapes yet
+    resolved["contract_id"] = resolved.apply(
+        lambda r: make_contract_id(r["date"], r["team"], r["player"], r["raw_notes"]), axis=1
+    )
 
     xwalk = crosswalk[["player_string", "player_id", "matched_name", "method"]].rename(
         columns={"method": "crosswalk_method"}
