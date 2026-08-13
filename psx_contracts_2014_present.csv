@@ -1,0 +1,505 @@
+date,team,player,raw_notes,is_extension,is_resigning,is_qualifying_offer,is_non_guaranteed,is_exhibit10,is_two_way,years,years_alt,total_value_musd,aav_musd,option_type,option_year,parse_warnings
+2014-01-11,Hawks,James Nunnally,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-01-22,Hawks,James Nunnally,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2014-02-01,Hawks,Cartier Martin,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-02-11,Hawks,Cartier Martin,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2014-02-21,Hawks,Cartier Martin,signed free agent for the remainder of the season,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-02-22,Hawks,Dexter Pittman,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-02-27,Hawks,Mike Muscala,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-03-13,Hawks,Mike Muscala,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2014-07-23,Hawks,Adreian Payne,signed first round pick to a 2-year $3.8M contract with two 1-year team options for $5.1M,False,False,False,False,False,False,2,,3.8,1.9,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2014-07-25,Hawks,Shelvin Mack,re-signed restricted free agent to a 3-year contract / 2-year contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2014-08-05,Hawks,,signed with Tofas Bursa (Turkey),False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-08-25,Hawks,(James) Mike Scott,re-signed restricted free agent to a 3-year $10M contract,False,True,False,False,False,False,3,,10.0,3.333,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2014-09-23,Hawks,Elton Brand,re-signed unrestricted free agent to a 1-year $4M contract,False,True,False,False,False,False,1,,4.0,4.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2014-09-23,Hawks,Kent Bazemore,"signed unrestricted free agent to a 2-year, $4M contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-09-29,Hawks,Dexter Pittman,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-09-29,Hawks,Jarell Eddie,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-03-04,Hawks,Jarell Eddie,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-03-15,Hawks,Austin Daye,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-03-25,Hawks,Austin Daye,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2015-04-04,Hawks,Austin Daye,re-signed to a multi-year contract / for the remainder of the season (P),False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2015-06-22,Hawks,,resigned as general manager,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2015-06-30,Hawks,,signed a 2-year contract with Fenerbahce (Euroleague-Turkey),False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-07-09,Hawks,Justin Holiday,signed unrestricted free agent to a 2-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-07-09,Hawks,Paul Millsap,"signed unrestricted free agent to a 3-year, $58.9M contract (third year is player option)",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-07-09,Hawks,Walter Tavares / Edy Tavares,signed second round pick to a multi-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-07-22,Hawks,Lamar Patterson,signed 2014 second round pick,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-07-23,Hawks,Lamar Patterson,signed 2014 second round pick to a 1-year minimum contract (P),False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-07-23,Hawks,Terran Petteway,signed free agent to a 1-year minimum contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-07-24,Hawks,Lamar Patterson,signed 2014 second round pick (E NBA),False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-08-18,Hawks,Jason Richardson,"signed unrestricted free agent to a summer contract / 1-year, non-guaranteed, minimum contract (P)",False,False,False,True,False,False,,,,,,,years/value pattern not matched
+2015-09-24,Hawks,DeQuan Jones,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-09-24,Hawks,Edgar Sosa,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-09-25,Hawks,Earl Barron,signed unrestricted free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-09-29,Hawks,Arsalan Kazemi,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-03-01,Hawks,Kris Humphries,signed free agent for the remainder of the season,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-07-07,Hawks,Kent Bazemore,re-signed unrestricted free agent to a 4-year $70M contract (fourth year is player option),False,True,False,False,False,False,4,,70.0,17.5,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2016-07-12,Hawks,Dwight Howard,signed unrestricted free agent to a 3-year $70.5M contract,False,False,False,False,False,False,3,,70.5,23.5,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2016-07-12,Hawks,Kris Humphries,re-signed unrestricted free agent to a 1-year $4M contract,False,True,False,False,False,False,1,,4.0,4.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2016-07-14,Hawks,DeAndre' Bembry,signed first round pick to a 2-year $3M contract with a 2-year $4.3M team option,False,False,False,False,False,False,2,,3.0,1.5,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2016-07-14,Hawks,Jarrett Jack,signed free agent to a 1-year minimum contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-07-14,Hawks,Malcolm Delaney,signed free agent to a multi-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-07-14,Hawks,Taurean Prince,signed first round pick to a 2-year $4.7M contract with a 2-year $6M team option,False,False,False,False,False,False,2,,4.7,2.35,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2016-07-15,Hawks,Matt Costello,signed free agent to a 2-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-09-20,Hawks,Richard Solomon,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-09-20,Hawks,Ryan Kelly,signed unrestricted free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-09-20,Hawks,Will Bynum,signed unrestricted free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-10-02,Hawks,Josh Magette,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-10-04,Hawks,Josh Magette,signed free agent (P),False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-10-26,Hawks,Dennis Schröder,"re-signed to a 4-year, $70M contract extension",True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2016-10-31,Hawks,Ryan Kelly,signed free agent for the remainder of the season,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-01-18,Hawks,Gary Neal,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-01-29,Hawks,Lamar Patterson,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-02-08,Hawks,Lamar Patterson,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2017-02-24,Hawks,Lamar Patterson,re-signed for the remainder of the season with a 1-year team option for 2017-18,False,True,False,False,False,False,,,,,team,2017-18,years/value pattern not matched
+2017-02-24,Hawks,Ryan Kelly,signed free agent for the remainder of the season with a 1-year team option for 2017-18,False,False,False,False,False,False,,,,,team,2017-18,years/value pattern not matched
+2017-05-05,Hawks,Mike Budenholzer,fired/resigned as president of basketball operations (remained as head coach),False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2017-06-29,Hawks,Josh Magette,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-01,Hawks,John Collins (Martin),"signed first round pick to a 2-year, $4.2M contract with a 2-year, $6.8M team opion",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-14,Hawks,Tyler Dorsey,"signed second round pick to a 2-year, $2.2M contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-21,Hawks,Dewayne Dedmon,"signed unrestricted free agent to a 2-year, $14M contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-21,Hawks,Ersan Ilyasova,"re-signed unrestricted free agent to a 1-year, $6M contract",False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-25,Hawks,Mike Muscala,re-signed unrestricted free agent to a 2-year $10M contract,False,True,False,False,False,False,2,,10.0,5.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2017-07-28,Hawks,Tyler Cavanaugh,signed to a partially guaranteed contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-08-09,Hawks,Luke Babbitt,signed unrestricted free agent to a 1-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-09-05,Hawks,Quinn Cook,signed free agent to a 2-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-09-05,Hawks,Tyler Cavanaugh,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-09-06,Hawks,Josh Magette,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-09-20,Hawks,Jeremy Evans,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-09-20,Hawks,Jordan Mathews,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-09-24,Hawks,John Jenkins,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-10-17,Hawks,Isaiah Taylor,"signed free agent for the remainder of the season / 2-year, $2.95M contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-11-05,Hawks,Tyler Cavanaugh,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-12-18,Hawks,Tyler Cavanaugh,"signed to a 2-year contract / 1-year, $529K contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-01-15,Hawks,Andrew White III,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-02-22,Hawks,Antonius Cleveland,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-02-28,Hawks,Jaylen Morris,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-03-04,Hawks,Antonius Cleveland,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2018-03-11,Hawks,Jaylen Morris,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2018-03-13,Hawks,Damion Lee,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-03-14,Hawks,Antonius Cleveland,re-signed for the remainder of the season / multi-year contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2018-03-21,Hawks,Jaylen Morris,re-signed for the remainder of the season / 2-year contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2018-03-23,Hawks,Damion Lee,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2018-03-31,Hawks,Jeremy Evans,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-04-02,Hawks,Damion Lee,re-signed for the remainder of the season,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2018-05-11,Hawks,Lloyd Pierce,"hired as head coach, signed to a 3-year contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-07-01,Hawks,Jaylen Adams,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-07-01,Hawks,Kevin Huerter,"signed first round pick to a 2-year, $4.9M contract with a 2-year team option",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-07-01,Hawks,Omari Spellman,"signed first round pick to a 2-year, $3.5M contract with a 2-year team option",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-07-01,Hawks,Trae Young,"signed first round pick to a 2-year, $11.6M contract with a 2-year team option",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-08-03,Hawks,Alex Len,"signed unrestricted free agent to a 2-year, $8.5M contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-08-08,Hawks,,signed with Gran Canaria (Spain),False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-08-20,Hawks,Alex Poythress,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-08-20,Hawks,Daniel Hamilton,"signed unrestricted free agent to a 1-year, $1.35M contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-08-24,Hawks,Vince Carter,"signed unrestricted free agent to a 1-year, $2.4M contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-08-30,Hawks,Thomas Robinson,"signed unrestricted free agent to a 1-year, $1.9M contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-09-07,Hawks,R.J. Hunter,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-09-18,Hawks,Cole Aldrich,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-10-08,Hawks,Isaac Humphries,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-10-09,Hawks,C.J. Anderson,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-02-20,Hawks,Jaylen Adams,re-signed to a multi-year contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2019-02-20,Hawks,Jordan Sibert,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-03-01,Hawks,B.J. Johnson,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-03-08,Hawks,Tyler Zeller,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-03-12,Hawks,B.J. Johnson,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2019-03-19,Hawks,Deyonta Davis,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-03-29,Hawks,Deyonta Davis,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2019-04-01,Hawks,Isaac Humphries,signed free agent for the remainder of the season,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-04-08,Hawks,Deyonta Davis,re-signed to a multi-year contract / contract for the remainder of the season,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2019-07-01,Hawks,Cam Reddish,"signed first round pick to a 2-year, $8.7M contract through 2020-21 with 1-year team options for 2021-22, 2022-23",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-07-01,Hawks,Charles Brown Jr. / Charlie Brown Jr.,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-07-07,Hawks,Bruno Fernando,signed second round pick to a 3-year $4.7M contract,False,False,False,False,False,False,3,,4.7,1.567,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2019-07-07,Hawks,De'Andre Hunter,"signed first round pick to a 2-year $14.5M contract through 2020-21 with 1-year team options for 2021-22, 2022-23",False,False,False,False,False,False,2,,14.5,7.25,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2019-07-11,Hawks,Jabari Parker,"signed unrestricted free agent to a 2-year, $13M contract (2020 is player option)",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-07-31,Hawks,Raymond Spalding / Ray Spalding,signed unrestricted free agent to a 1-year Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2019-08-06,Hawks,Brandon Goodwin,signed unrestricted free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-08-23,Hawks,Marcus Derrickson,signed unrestricted free agent to a 1-year Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2019-08-27,Hawks,Armoni Brooks,signed free agent to a 1-year Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2019-09-20,Hawks,Tahjere McCall,signed free agent to a 1-year Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2019-09-20,Hawks,Vince Carter,"re-signed unrestricted free agent to a 1-year, $2.6M contract",False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2019-10-08,Hawks,Jordan Sibert,signed free agent to a 1-year Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2019-10-18,Hawks,Kenny Gabriel,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2019-10-19,Hawks,Mark Ogden Jr.,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2019-10-21,Hawks,Charles Brown Jr. / Charlie Brown Jr.,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2020-01-06,Hawks,Paul Watson,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2020-02-11,Hawks,Brandon Goodwin,signed to a 2-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2020-11-23,Hawks,Rajon Rondo,signed unrestricted free agent to a 2-year $15M contract,False,False,False,False,False,False,2,,15.0,7.5,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2020-11-24,Hawks,Nathan Knight,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2020-11-24,Hawks,Onyeka Okongwu,"signed first round pick to a 2-year $11.9M contract through 2021-22 with 1-year team options for 2022-23, 2023-24",False,False,False,False,False,False,2,,11.9,5.95,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2020-11-24,Hawks,Skylar Mays,signed second round pick to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2020-11-24,Hawks,Bogdan Bogdanovic,signed restricted free agent to a 4-year $72M contract (Kings declined to match Hawks offer sheet),False,False,False,False,False,False,4,,72.0,18.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2020-11-25,Hawks,Solomon Hill,signed unrestricted free agent to a 1-year $2.2M contract,False,False,False,False,False,False,1,,2.2,2.2,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2020-11-28,Hawks,Kris Dunn,signed unrestricted free agent to a 2-year $10M contract (player option for 2021-22),False,False,False,False,False,False,2,,10.0,5.0,player,2021-22,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2021-07-05,Hawks,Nate McMillan,promoted to head coach; signed to a multi-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-08-04,Hawks,Jalen Johnson,signed first round pick to a 4-year $12.9M contract,False,False,False,False,False,False,4,,12.9,3.225,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2021-08-04,Hawks,Sharife Cooper,signed second round pick to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-08-05,Hawks,Solomon Hill,re-signed unrestricted free agent to a 1-year $2.4M contract,False,True,False,False,False,False,1,,2.4,2.4,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2021-08-06,Hawks,John Collins (Martin),re-signed restricted free agent to a 5-year $125M contract,False,True,False,False,False,False,5,,125.0,25.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2021-08-06,Hawks,Louis Williams / Lou Williams,re-signed unrestricted free agent to a 1-year $5M contract,False,True,False,False,False,False,1,,5.0,5.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2021-08-06,Hawks,Trae Young,re-signed to a 5-year $172.6M / $207M contract extension (includes early termination option for 2025),True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2021-08-09,Hawks,Gorgui Dieng,signed unrestricted free agent to a 1-year $4M contract,False,False,False,False,False,False,1,,4.0,4.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2021-08-10,Hawks,Johnny Hamilton,signed free agent to a 1-year Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2021-08-18,Hawks,A.J. Lawson,signed free agent to a 1-year Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2021-08-26,Hawks,Skylar Mays,re-signed restricted free agent to a two way contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2021-09-01,Hawks,Clint Capela,re-signed to a 2-year $45.4M contract extension,True,True,False,False,False,False,2,,45.4,22.7,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2021-09-09,Hawks,Timothe Luwawu-Cabarrot,signed unrestricted free agent to a 1-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-09-21,Hawks,Jahlil Okafor,signed free agent to an Exhibit 9 contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-10-07,Hawks,DaQuan Jeffries,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2021-10-12,Hawks,Ibi Watson,signed free agent to a 1-year Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2021-10-18,Hawks,Kevin Huerter,re-signed to a 4-year $65M contract extension,True,True,False,False,False,False,4,,65.0,16.25,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2021-12-22,Hawks,Lance Stephenson,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-12-22,Hawks,Malcolm Hill,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-12-23,Hawks,Wesley Iwundu / Wes Iwundu,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-12-25,Hawks,Anthony Barber / Cat Barber,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-12-25,Hawks,Malik Ellison,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-12-27,Hawks,Chaundee Brown Jr.,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-12-28,Hawks,Justin Tillman,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-12-29,Hawks,Cameron Oliver,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-12-29,Hawks,Chris Clemons,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-04-07,Hawks,Skylar Mays,re-signed for the remainder of the season,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2022-04-09,Hawks,Chaundee Brown Jr.,re-signed free agent to a two way contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2022-07-03,Hawks,A.J. Griffin,signed first round pick to a 4-year $17.1M contract through 2025-26,False,False,False,False,False,False,4,,17.1,4.275,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2022-07-06,Hawks,Aaron Holiday,signed unrestricted free agent to a 1-year $2M contract,False,False,False,False,False,False,1,,2.0,2.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2022-07-11,Hawks,Frank Kaminsky,signed free agent to a 1-year $2.5M contract,False,False,False,False,False,False,1,,2.5,2.5,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2022-07-16,Hawks,Tyrese Martin,re-signed to a 2-year $2.7M contract,False,True,False,False,False,False,2,,2.7,1.35,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2022-07-21,Hawks,Sharife Cooper,re-signed restricted free agent to a two way contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2022-08-08,Hawks,Trent Forrest,signed unrestricted free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-08-22,Hawks,Tyson Etienne,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2022-08-25,Hawks,Chris Silva,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2022-09-12,Hawks,Jarrett Culver,signed unrestricted free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-09-16,Hawks,Malik Ellison,re-signed free agent to an Exhibit 10 contract,False,True,False,False,True,False,,,,,,,years/value pattern not matched
+2022-09-22,Hawks,Armoni Brooks,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-10-17,Hawks,De'Andre Hunter,re-signed to a 4-year $90M-$95M contract extension,True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2023-01-11,Hawks,Derrick Favors,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-01-17,Hawks,Donovan Williams,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-02-26,Hawks,Quin Snyder,hired as head coach; signed to a 5-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-03-16,Hawks,Bogdan Bogdanovic,re-signed to a 4-year $68M contract extension,True,True,False,False,False,False,4,,68.0,17.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2023-06-24,Hawks,Jarkel Joiner,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-06-25,Hawks,David Singleton,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-07-03,Hawks,Kobe Bufkin,signed first round pick to a 4-year $19.8M contract,False,False,False,False,False,False,4,,19.8,4.95,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2023-07-03,Hawks,Mouhamed Gueye (a),signed second round pick to a 4-year $7.6M contract (2025-26 is non-guaranteed; 2026-27 is team option),False,False,False,True,False,False,4,,7.6,1.9,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2023-07-06,Hawks,Miles Norris,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-07-06,Hawks,Seth Lundy,signed second round pick to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-07-09,Hawks,Dejounte Murray,re-signed to a 4-year $114.1M contract extension plus $6M in incentives (2027-28 is player option),True,True,False,False,False,False,4,,114.1,28.525,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2023-07-21,Hawks,Wesley Matthews / Wes Matthews Jr.,signed unrestricted free agent to a 1-year $3.2M contract,False,False,False,False,False,False,1,,3.2,3.2,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2023-09-12,Hawks,Trent Forrest,re-signed restricted free agent to a two way contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2023-09-26,Hawks,Chris Silva,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2023-09-29,Hawks,Jarkel Joiner,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2023-09-29,Hawks,Keaton Wallace,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2023-10-10,Hawks,Brandon Randolph,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2023-10-13,Hawks,David Singleton,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2023-10-23,Hawks,Onyeka Okongwu,re-signed to a 4-year $62M contract extension,True,True,False,False,False,False,4,,62.0,15.5,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2023-12-22,Hawks,Vit Krejci,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2024-02-29,Hawks,Trent Forrest,re-signed to a 1-year rest-of-season contract (converted from two way contract),False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2024-03-04,Hawks,Dylan Windler,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2024-07-06,Hawks,Zaccharie Risacher,signed first round pick to a 4-year $57M contract,False,False,False,False,False,False,4,,57.0,14.25,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2024-07-09,Hawks,Seth Lundy,re-signed restricted free agent to a two way contract extension,True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2024-07-12,Hawks,Vit Krejci,re-signed restricted free agent to a 4-year $10M contract extension,True,True,False,False,False,False,4,,10.0,2.5,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2024-07-15,Hawks,Keaton Wallace,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2024-07-29,Hawks,David Roddy,re-signed,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2024-07-30,Hawks,Dominick Barlow,signed unrestricted free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2024-08-21,Hawks,Joey Hauser,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2024-09-18,Hawks,Kevon Harris,signed unrestricted free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2024-09-25,Hawks,Jordan Bowden,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2024-09-26,Hawks,Daeqwon Plowden,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2024-09-26,Hawks,Joirdon Nicholas,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2024-10-08,Hawks,Tony Bradley,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2024-10-15,Hawks,Jarkel Joiner,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2024-10-21,Hawks,Jalen Johnson,re-signed to a 5-year $150M contract extension,True,True,False,False,False,False,5,,150.0,30.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2024-12-27,Hawks,Daeqwon Plowden,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2025-03-01,Hawks,Kevon Harris,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2025-03-04,Hawks,Dominick Barlow,re-signed to a 2-year $2.8M rest-of-season contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2025-03-04,Hawks,Jacob Toppin,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2025-07-03,Hawks,Asa Newell,signed first round pick to a 4-year $16.2M contract,False,False,False,False,False,False,4,,16.2,4.05,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2025-07-03,Hawks,Eli John Ndiaye / Eli Ndiaye / Eli N'Diaye,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2025-07-06,Hawks,Clint Capela,re-signed unrestricted free agent to a 3-year $21.1M contract,False,True,False,False,False,False,3,,21.1,7.033,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2025-07-08,Hawks,Luke Kennard,signed unrestricted free agent to a 1-year $11M contract,False,False,False,False,False,False,1,,11.0,11.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2025-07-10,Hawks,Jacob Toppin,re-signed restricted free agent to a two way contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2025-07-11,Hawks,Nikola Djurisic,signed 2024 second round pick to a 3-year $6M contract; 2027-28 is team option,False,False,False,False,False,False,3,,6.0,2.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2025-07-17,Hawks,Caleb Houstan,signed unrestricted free agent to a 1-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2025-07-18,Hawks,Keaton Wallace,re-signed restricted free agent to a two way contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2025-08-18,Hawks,N'Faly Dante,signed restricted free agent to a 2-year $4.5M contract,False,False,False,False,False,False,2,,4.5,2.25,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2025-08-19,Hawks,Caleb Houstan,signed unrestricted free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-09-03,Hawks,Dwight Murray Jr.,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-09-03,Hawks,Javan Johnson,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-09-10,Hawks,Charles Bassey,signed unrestricted free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-09-11,Hawks,Kobe Johnson,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-09-24,Hawks,Lamont Butler,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-09-24,Hawks,Malik Williams,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-10-13,Hawks,Lamont Butler,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-10-14,Hawks,M.J. Walker,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-10-15,Hawks,Deivon Smith,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-10-18,Hawks,Caleb Houstan,re-signed to a two way contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2025-10-18,Hawks,Keaton Wallace,re-signed to a 1-year $2.3M contract,False,True,False,False,False,False,1,,2.3,2.3,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2025-10-20,Hawks,Dyson Daniels,re-signed to a 4-year $100M contract extension,True,True,False,False,False,False,4,,100.0,25.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2025-12-23,Hawks,Malik Williams,signed free agent to a 2-year two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2025-12-31,Hawks,RayJ Dennis,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-01-16,Hawks,Christian Koloko,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-02-19,Hawks,Caleb Houstan,re-signed for the remainder of the season,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2026-04-06,Hawks,Tony Bradley,signed free agent for the remainder of the season,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-06-08,Hawks,Quin Snyder,re-signed as head coach to a multi-year contract extension,True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2026-06-22,Hawks,C.J. McCollum,re-signed to a 1-year $21M contract extension,True,True,False,False,False,False,1,,21.0,21.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2026-07-01,Hawks,Henri Veesaar,signed second round pick to a 4-year $9.3M contract; includes team option for 2029-30,False,False,False,False,False,False,4,,9.3,2.325,team,2029-30,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2026-07-01,Hawks,Zuby Ejiofor,signed first round pick to a 4-year $17.3M contract,False,False,False,False,False,False,4,,17.3,4.325,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2026-07-02,Hawks,Kingston Flemings,signed first round pick to a 4-year $33.4M contract,False,False,False,False,False,False,4,,33.4,8.35,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2026-07-10,Hawks,Jock Landale,re-signed unrestricted free agent to a 1-year $14M contract,False,True,False,False,False,False,1,,14.0,14.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2026-07-22,Hawks,Jalen Wilson,signed unrestricted free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-01-16,Celtics,Chris Johnson (b. 1990-04-29),signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-01-22,Celtics,Vander Blue,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-01-28,Celtics,Chris Johnson (b. 1990-04-29),re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2014-02-06,Celtics,Chris Johnson (b. 1990-04-29),re-signed for the remainder of the season,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2014-02-28,Celtics,Chris Babb,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-03-10,Celtics,Chris Babb,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2014-03-20,Celtics,Chris Babb,re-signed for the remainder of the season / to a multi-year contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2014-07-08,Celtics,Marcus Smart,signed first round pick to a 2-year $7.6M contract with two 1-year team options for $8.1M,False,False,False,False,False,False,2,,7.6,3.8,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2014-07-10,Celtics,James Young,signed first round pick to a 2-year $3.4M contract with two 1-year team options for $4.6M,False,False,False,False,False,False,2,,3.4,1.7,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2014-07-15,Celtics,Avery Bradley,re-signed restricted free agent on a 4-year $32M contract,False,True,False,False,False,False,4,,32.0,8.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2014-07-17,Celtics,Walter McCarty,re-signed as assistant coach to a 3-year contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2014-07-19,Celtics,Kris Humphries,"re-signed unrestricted free agent to a 3-year, $13M contract",False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2014-08-20,Celtics,Christian Watford,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-09-29,Celtics,Christian Watford,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-09-29,Celtics,Evan Turner,signed unrestricted free agent to a multi-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-09-29,Celtics,Rodney McGruder,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2014-09-29,Celtics,Tim Frazier,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-01-23,Celtics,Andre Dawkins,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-02-02,Celtics,Andre Dawkins,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2015-04-06,Celtics,Chris Babb,signed free agent to a multi-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-07-09,Celtics,Amir Johnson,signed unrestricted free agent to a 2-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-07-09,Celtics,Jonas Jerebko,re-signed unrestricted free agent to a 2-year contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2015-07-19,Celtics,Jordan Mickey,signed second round pick to a 4-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-07-22,Celtics,,signed with Sydney Kings (Australia),False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-07-27,Celtics,Jae Crowder,"re-signed restricted free agent to a 5-year, $35M contract",False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2015-07-27,Celtics,R.J. Hunter,"signed first round pick to a 2-year, $2.3M contract with a 2-year, $3.5M team option",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-07-27,Celtics,Terry Rozier,"signed first round pick to a 2-year, $3.7M contract with a 2-year, $5M team option",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-08-03,Celtics,Corey Walden,signed,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-08-06,Celtics,Malcolm Miller,signed,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-08-12,Celtics,Levi Randolph,signed,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-08-20,Celtics,Coty Clarke,signed to a summer contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-09-25,Celtics,Corey Walden,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-09-25,Celtics,Coty Clarke,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-09-25,Celtics,Levi Randolph,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2015-09-25,Celtics,Malcolm Miller,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-03-07,Celtics,Coty Clarke,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-03-17,Celtics,Coty Clarke,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2016-04-11,Celtics,John Holland,signed free agent for the remainder of the season / multi-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-06-01,Celtics,Brad Stevens,re-signed as head coach to a contract extension,True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2016-06-01,Celtics,Danny Ainge,re-signed as general manager to a contract extension,True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2016-07-08,Celtics,Al Horford,signed unrestricted free agent to a 4-year $113M contract (fourth year is player option),False,False,False,False,False,False,4,,113.0,28.25,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2016-07-26,Celtics,Ben Bentil,signed second round pick,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-07-26,Celtics,Demetrius Jackson,signed second round pick to a 4-year $5.5M contract (fourth year is team option),False,False,False,False,False,False,4,,5.5,1.375,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2016-07-27,Celtics,Gerald Green (b. 1986-01-26),signed unrestricted free agent to a 1-year minimum contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-07-27,Celtics,Jaylen Brown,signed first round pick to a 2-year $9.7M contract with a 2-year $11.7M team option,False,False,False,False,False,False,2,,9.7,4.85,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2016-07-27,Celtics,Tyler Zeller,re-signed restricted free agent to a 2-year $16M contract (second year is team option),False,True,False,False,False,False,2,,16.0,8.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2016-08-17,Celtics,Marcus Georges-Hunt,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-08-19,Celtics,Marcus Georges-Hunt,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-09-12,Celtics,Jalen Jones,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-09-14,Celtics,Damion Lee,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-09-26,Celtics,Marcus Georges-Hunt,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2016-10-21,Celtics,Ryan Kelly,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-01,Celtics,Ante Zizic,"signed 2016 first round pick to a 2-year, $2.1M contract with a 2-year, $6.2M team option",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-01,Celtics,Jayson Tatum,"signed first round pick to a 2-year, $12.3M contract with a 2-year, $17.7M team option",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-14,Celtics,Abdel Nader,"signed free agent to a 3-year, $4.2M contract / 4-year, $6M contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-14,Celtics,Gordon Hayward,"signed unrestricted free agent to a 4-year, $128M contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-17,Celtics,Paul Pierce,signed free agent to a 1-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-18,Celtics,Semi Ojeleye,signed second round pick to a 4-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-19,Celtics,Aron Baynes,"signed unrestricted free agent to a 1-year, $4.3M two way contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-19,Celtics,Daniel Theis,"signed free agent to a 2-year, $2.2M contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-19,Celtics,Kadeem Allen,signed second round pick to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-20,Celtics,Guerschon Yabusele,"signed 2016 first round pick to a 2-year, $4.9M contract / 4-year contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-07-31,Celtics,Shane Larkin,signed free agent to a 1-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-08-11,Celtics,Jabari Bird,signed second round pick to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-08-19,Celtics,Daniel Dixon,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-08-28,Celtics,Andrew White III,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-08-28,Celtics,L.J. Peak,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-08-31,Celtics,Jabari Bird,signed second round pick to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-09-05,Celtics,Jabari Bird,signed second round pick to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-09-24,Celtics,Jonathan Holmes,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-09-26,Celtics,Devin Williams,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-10-07,Celtics,Daniel Dixon,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-10-09,Celtics,Daniel Dixon,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2017-10-13,Celtics,Daniel Ochefu,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-01-20,Celtics,Jarell Eddie,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-02-08,Celtics,Greg Monroe,signed free agent to a 1-year $5M contract,False,False,False,False,False,False,1,,5.0,5.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2018-03-28,Celtics,Xavier Silas,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-04-06,Celtics,Jonathan Gibson,signed free agent for the remainder of the season,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-07-02,Celtics,Brad Wanamaker,signed free agent to a 1-year $838K contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-07-05,Celtics,Robert Williams III,signed first round pick to a 2-year $3.6M contract with a 2-year team option,False,False,False,False,False,False,2,,3.6,1.8,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2018-07-06,Celtics,Aron Baynes,"re-signed unrestricted free agent to a 2-year, $10.6M contract",False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2018-07-16,Celtics,Walter Lemon Jr. / Walt Lemon Jr.,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-07-19,Celtics,Marcus Smart,"re-signed restricted free agent to a 4-year, $52M contract",False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2018-07-26,Celtics,Jabari Bird,re-signed restricted free agent to a 2-year contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2018-08-21,Celtics,P.J. Dozier,signed unrestricted free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-09-04,Celtics,Jeff Roberson,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-09-04,Celtics,Justin Bibbs,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-09-04,Celtics,Nicholas King / Nick King,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2018-10-01,Celtics,Marcus Georges-Hunt,signed unrestricted free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-01-10,Celtics,R.J. Hunter,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-03-24,Celtics,Greg Monroe,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-04-09,Celtics,Jonathan Gibson,signed free agent for the remainder of the season,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-07-06,Celtics,Terry Rozier,re-signed unrestricted free agent to a 3-year $56.7M contract,False,True,False,False,False,False,3,,56.7,18.9,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2019-07-11,Celtics,Grant Williams,"signed first round pick to a 2-year, $4.9M contract through 2020-21 with 1-year team options for 2021-22, 2022-23",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-07-11,Celtics,Romeo Langford,"signed first round pick to a 2-year, $7.1M contract through 2020-21 with 1-year team options for 2021-22, 2022-23",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-07-12,Celtics,Carsen Edwards,"signed second round pick to a 3-year, $4.5M contract with a 1-year team option for 2022",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-07-15,Celtics,Vincent Poirier,"signed free agent to a 2-year, $5.13M contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-07-17,Celtics,Brad Wanamaker,re-signed unrestricted free agent to a 1-year contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2019-07-17,Celtics,Daniel Theis,"re-signed unrestricted free agent to a 2-year, $10M contract",False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2019-07-17,Celtics,Enes Kanter / Enes Freedom,"signed unrestricted free agent to a 2-year, $9.8M contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-07-18,Celtics,Max Strus,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-07-25,Celtics,Javonte Green,"signed free agent to a 2-year, $2.4M contract",False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-07-25,Celtics,Tacko Fall,signed free agent to a 1-year Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2019-07-25,Celtics,Tremont Waters,signed second round pick to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-09-05,Celtics,Kaiser Gates,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-09-25,Celtics,Bryce Brown,signed free agent to a 1-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-09-27,Celtics,John Bohannon,signed free agent to a 1-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-09-30,Celtics,Yante Maten,signed free agent to a 1-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2019-10-19,Celtics,Dorian Pickens,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2019-10-19,Celtics,Justin Bibbs,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2019-10-21,Celtics,Jaylen Brown,re-signed to a 4-year $107M contract extension,True,True,False,False,False,False,4,,107.0,26.75,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2020-08-12,Celtics,Brad Stevens,re-signed as head coach to a contract extension,True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2020-11-23,Celtics,Tacko Fall,re-signed restricted free agent to a two way contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2020-11-23,Celtics,Tremont Waters,re-signed restricted free agent to a two way contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2020-11-24,Celtics,Aaron Nesmith,"signed first round pick to a 2-year $7M contract through 2021-22 with 1-year team options for 2022-23, 2023-24",False,False,False,False,False,False,2,,7.0,3.5,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2020-11-24,Celtics,Payton Pritchard,"signed first round pick to a 2-year $4.2M contract through 2021-22 with 1-year team options for 2022-23, 2023-24",False,False,False,False,False,False,2,,4.2,2.1,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2020-11-25,Celtics,Jayson Tatum,re-signed to a 5-year $163M / $195M contract extension (includes player option for 2025),True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2020-11-29,Celtics,Gordon Hayward,re-signed unrestricted free agent to a 4-year $120M contract,False,True,False,False,False,False,4,,120.0,30.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2020-11-30,Celtics,Jeff Teague,signed unrestricted free agent to a 1-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2020-11-30,Celtics,Tristan Thompson,signed unrestricted free agent to a 2-year $19M contract,False,False,False,False,False,False,2,,19.0,9.5,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2020-12-04,Celtics,Amile Jefferson,signed free agent to a 1-year Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2021-04-16,Celtics,Jabari Parker,signed free agent to a 2-year $2.7M contract,False,False,False,False,False,False,2,,2.7,1.35,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2021-07-12,Celtics,,signed with Real Madrid (Spain),False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-08-13,Celtics,Dennis Schröder,signed unrestricted free agent to a 1-year $5.9M contract,False,False,False,False,False,False,1,,5.9,5.9,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2021-08-13,Celtics,Enes Kanter / Enes Freedom,signed unrestricted free agent to a 1-year $2.6M contract,False,False,False,False,False,False,1,,2.6,2.6,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2021-08-13,Celtics,Sam Hauser,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-08-17,Celtics,Evan Fournier,re-signed unrestricted free agent to a 4-year $73M / $78M contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2021-08-21,Celtics,Marcus Smart,re-signed to a 4-year $76.5M / $77M / $77.1M contract extension,True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2021-08-23,Celtics,Josh Richardson,re-signed to a 1-year $12.2M / $24M contract extension,True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2021-08-24,Celtics,Robert Williams III,re-signed to a 4-year $48M / $54M contract extension,True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2021-09-08,Celtics,Juwan Morgan,signed unrestricted free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2021-09-08,Celtics,Luke Kornet,re-signed unrestricted free agent to a 1-year contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2021-09-22,Celtics,Theo Pinson,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2021-09-27,Celtics,Garrison Mathews,signed unrestricted free agent to a 1-year Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2021-09-27,Celtics,Ryan Arcidiacono,signed unrestricted free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2021-10-15,Celtics,Chris Clemons,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2021-10-15,Celtics,Luke Kornet,re-signed free agent to an Exhibit 10 contract,False,True,False,False,True,False,,,,,,,years/value pattern not matched
+2021-10-18,Celtics,Brodric Thomas,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-10-19,Celtics,Jabari Parker,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-12-18,Celtics,Justin Jackson (Aaron),signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-12-20,Celtics,C.J. Miles,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-12-22,Celtics,Joe Johnson,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-12-25,Celtics,Al-Farouq Aminu,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2021-12-25,Celtics,Norvel Pelle,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-02-11,Celtics,Luke Kornet,signed free agent for the remainder of the season,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-02-11,Celtics,Sam Hauser,re-signed to a 2-year $1.9M rest-of-season contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2022-02-23,Celtics,Kelan Martin,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-02-23,Celtics,Malik Fitts,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-02-28,Celtics,Matt Ryan,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-03-04,Celtics,Nik Stauskas,signed free agent to a 2-year rest-of-season contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-03-05,Celtics,Kelan Martin,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2022-03-05,Celtics,Malik Fitts,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2022-03-15,Celtics,Malik Fitts,re-signed to a 2-year rest-of-season contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2022-03-28,Celtics,Juwan Morgan,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-04-09,Celtics,Juwan Morgan,re-signed free agent to a multi-year rest-of-season contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2022-07-09,Celtics,J.D. Davison,signed second round pick to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-07-09,Celtics,Luke Kornet,re-signed unrestricted free agent to a 2-year $4.6M contract,False,True,False,False,False,False,2,,4.6,2.3,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2022-07-09,Celtics,Sam Hauser,re-signed restricted free agent to a 3-year $5.6M / $5.7M / $6M contract through 2024-25 (third year is team option),False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2022-07-12,Celtics,Danilo Gallinari,signed free agent to a 2-year $13.3M contract,False,False,False,False,False,False,2,,13.3,6.65,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2022-07-16,Celtics,Mfiondu Kabengele,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-08-01,Celtics,Bruno Caboclo,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-08-01,Celtics,Noah Vonleh,signed free agent to a 1-year Exhibit 9 contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-09-13,Celtics,Justin Jackson (Aaron),signed free agent to a 1-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2022-09-14,Celtics,Denzel Valentine,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2022-09-14,Celtics,Jake Layman,signed unrestricted free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2022-09-22,Celtics,Luka Samanic,signed free agent to a 1-year non-guaranteed contract,False,False,False,True,False,False,,,,,,,years/value pattern not matched
+2022-10-03,Celtics,Blake Griffin,signed unrestricted free agent to a 1-year $2.9M contract,False,False,False,False,False,False,1,,2.9,2.9,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2022-10-10,Celtics,A.J. Reeves,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2022-10-12,Celtics,Reginald Kissoonlal,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2022-10-13,Celtics,Eric Demers,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2022-10-15,Celtics,Marial Shayok,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2022-11-01,Celtics,,resigned as head coach (date approximate),False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2022-12-01,Celtics,Al Horford,re-signed to a 2-year $20M contract extension,True,True,False,False,False,False,2,,20.0,10.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2023-02-16,Celtics,Joe Mazzulla,promoted to head coach; re-signed to a contract extension,True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2023-04-07,Celtics,Justin Champagnie,signed free agent for the remainder of the season,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-06-25,Celtics,Vincent Valerio-Bodon,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-07-06,Celtics,Grant Williams,re-signed restricted free agent to a 4-year $53.3M contract,False,True,False,False,False,False,4,,53.3,13.325,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2023-07-06,Celtics,Jordan Walsh,signed second round pick to a 4-year $7.6M contract (2026-27 is team option),False,False,False,False,False,False,4,,7.6,1.9,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2023-07-06,Celtics,Oshae Brissett,signed unrestricted free agent to a 2-year $4.6M contract (2024-25 is player option),False,False,False,False,False,False,2,,4.6,2.3,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2023-07-09,Celtics,J.D. Davison,re-signed restricted free agent to a two way contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2023-07-12,Celtics,Kristaps Porzingis,re-signed to a 2-year $60M contract extension,True,True,False,False,False,False,2,,60.0,30.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2023-07-15,Celtics,Jay Scrubb,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-07-17,Celtics,Dalano Banton,signed unrestricted free agent to a 2-year $4.2M contract,False,False,False,False,False,False,2,,4.2,2.1,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2023-07-26,Celtics,Jaylen Brown,re-signed to a 5-year $288.3M contract extension,True,True,False,False,False,False,5,,288.3,57.66,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2023-08-12,Celtics,D.J. Steward,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-08-31,Celtics,Sviatoslav Mykhailiuk / Svi Mykhailiuk,signed unrestricted free agent to a 1-year $2.4M contract,False,False,False,False,False,False,1,,2.4,2.4,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2023-09-09,Celtics,Taylor Funk,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2023-09-19,Celtics,Neemias Queta,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-09-22,Celtics,Lamar Stevens,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-09-27,Celtics,Jordan Schakel,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2023-09-28,Celtics,Brandon Slater,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2023-09-29,Celtics,D.J. Steward,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2023-10-01,Celtics,Wenyen Gabriel,signed unrestricted free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-10-03,Celtics,Kylor Kelley,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2023-10-08,Celtics,Wenyen Gabriel,signed free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-10-10,Celtics,Payton Pritchard,re-signed to a 4-year $30M contract extension,True,True,False,False,False,False,4,,30.0,7.5,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2023-10-20,Celtics,James Banks III,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2023-10-20,Celtics,Reginald Kissoonlal,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2023-10-22,Celtics,Nathan Knight,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2023-12-14,Celtics,Drew Peterson,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2024-04-08,Celtics,Neemias Queta,re-signed for the remainder of the season with a 1-year team option for 2024-25,False,True,False,False,False,False,,,,,team,2024-25,years/value pattern not matched
+2024-04-11,Celtics,Jrue Holiday,re-signed to a 4-year $135M contract extension; includes player option for 2027,True,True,False,False,False,False,4,,135.0,33.75,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2024-07-03,Celtics,Drew Peterson,re-signed restricted free agent to a two way contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2024-07-06,Celtics,Baylor Scheierman,signed first round pick to a 4-year $12.8M contract,False,False,False,False,False,False,4,,12.8,3.2,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2024-07-06,Celtics,Derrick White,re-signed to a 4-year $118M / $125.9M contract extension (includes player option for 2028-29),True,True,False,False,False,False,,,,,player,2028-29,years/value pattern not matched
+2024-07-06,Celtics,Jayson Tatum,re-signed to a 5-year $314M contract extension (includes player option for 2029-30),True,True,False,False,False,False,5,,314.0,62.8,player,2029-30,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2024-07-06,Celtics,Luke Kornet,re-signed unrestricted free agent to a 1-year contract extension,True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2024-07-06,Celtics,Neemias Queta,re-signed restricted free agent to a 3-year $7.2M contract extension,True,True,False,False,False,False,3,,7.2,2.4,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2024-07-06,Celtics,Xavier Tillman,re-signed unrestricted free agent to a 2-year $4.8M contract,False,True,False,False,False,False,2,,4.8,2.4,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2024-07-08,Celtics,J.D. Davison,re-signed unrestricted free agent to a two way contract extension,True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2024-07-12,Celtics,Tristan Enaruna,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2024-07-14,Celtics,Ron Harper Jr.,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2024-07-23,Celtics,Sam Hauser,re-signed to a 4-year $45M contract extension,True,True,False,False,False,False,4,,45.0,11.25,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2024-08-02,Celtics,Anton Watson,signed second round pick to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2024-08-28,Celtics,Lonnie Walker IV,signed unrestricted free agent to a 1-year contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2024-09-11,Celtics,Jordan Schakel,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2024-09-17,Celtics,Dmytro Skapintsev,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2024-10-08,Celtics,Jay Scrubb,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2024-10-17,Celtics,Hason Ward,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2024-10-18,Celtics,Jordan Schakel,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-02-08,Celtics,Torrey Craig,signed free agent for the remainder of the season,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2025-03-04,Celtics,Miles Norris,signed free agent to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2025-04-13,Celtics,J.D. Davison,re-signed to a 2-year rest-of-season contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2025-07-01,Celtics,Hugo González,signed first round pick to a 4-year $14.3M contract,False,False,False,False,False,False,4,,14.3,3.575,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2025-07-07,Celtics,Luka Garza,signed unrestricted free agent to a 2-year $5.3M / $5.5M contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2025-07-07,Celtics,Josh Minott,signed unrestricted free agent to a 2-year $5M contract; 2026-27 is team option,False,False,False,False,False,False,2,,5.0,2.5,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2025-07-20,Celtics,Hayden Gray,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-07-30,Celtics,Max Shulga,signed second round pick to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2025-08-08,Celtics,Joe Mazzulla,re-signed as head coach to a multi-year contract extension,True,True,False,False,False,False,,,,,,,years/value pattern not matched
+2025-08-10,Celtics,Chris Boucher,signed unrestricted free agent to a 1-year $3.3M contract,False,False,False,False,False,False,1,,3.3,3.3,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2025-08-15,Celtics,Amari Williams,signed second round pick to a two way contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2025-08-16,Celtics,Ron Harper Jr.,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-09-19,Celtics,Jalen Bridges,signed unrestricted free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-09-19,Celtics,Kendall Brown,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-09-26,Celtics,Wendell Moore Jr.,signed unrestricted free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-10-01,Celtics,Jalen Bridges,signed unrestricted free agent,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2025-10-16,Celtics,Hason Ward,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-10-16,Celtics,Ron Harper Jr.,re-signed free agent to a two way contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2025-10-17,Celtics,Aaron Scott,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2025-10-17,Celtics,Reggie Luis Jr. / R.J. Luis,re-signed to an Exhibit 10 contract,False,True,False,False,True,False,,,,,,,years/value pattern not matched
+2026-02-05,Celtics,Amari Williams,re-signed to a 2-year $2.7M rest-of-season contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2026-02-19,Celtics,Dalano Banton,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-02-19,Celtics,John Tonje,signed free agent to a 10-day contract (convertred two way contract),False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-03-01,Celtics,John Tonje,re-signed to a two way contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2026-03-15,Celtics,Charles Bassey,signed free agent to a 10-day contract,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-03-15,Celtics,Max Shulga,re-signed to a 2-year $2.4M rest-of-season contract; includes team option for 2026-27,False,True,False,False,False,False,,,,,team,2026-27,years/value pattern not matched
+2026-03-25,Celtics,Charles Bassey,re-signed to a second 10-day contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2026-04-04,Celtics,Ron Harper Jr.,re-signed to a 2-year rest-of-season contract; includes 1-year team option for 2026-27,False,True,False,False,False,False,,,,,team,2026-27,years/value pattern not matched
+2026-04-11,Celtics,Dalano Banton,re-signed unrestricted free agent to a 2-year $2.8M rest-of-season contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2026-07-01,Celtics,Amari Williams,re-signed unrestricted free agent to a two way contract,False,True,False,False,False,False,,,,,,,years/value pattern not matched
+2026-07-05,Celtics,Chris Cenac Jr.,signed first round pick to a 4-year $15.3M contract,False,False,False,False,False,False,4,,15.3,3.825,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2026-07-06,Celtics,Mike Conley Jr.,signed unrestricted free agent to a 1-year $3.9M contract,False,False,False,False,False,False,1,,3.9,3.9,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2026-07-06,Celtics,Mitchell Robinson,signed unrestricted free agent to a 3-year $47.4M contract; includes player option for 2028-29,False,False,False,False,False,False,3,,47.4,15.8,player,2028-29,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2026-07-06,Celtics,Neemias Queta,re-signed to a 4-year $56M contract extension,True,True,False,False,False,False,4,,56.0,14.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2026-07-06,Celtics,Ron Harper Jr.,re-signed unrestricted free agent to a 3-year / 4-year $13.7M contract; includes team option for 2029-30,False,True,False,False,False,False,3,4,13.7,3.425,team,2029-30,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2026-07-15,Celtics,Milos Uzan,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2026-07-15,Celtics,Tucker DeVries,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,,,,,,,years/value pattern not matched
+2026-07-23,Celtics,Jordan Walsh,re-signed to a 3-year $15M contract extension,True,True,False,False,False,False,3,,15.0,5.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
