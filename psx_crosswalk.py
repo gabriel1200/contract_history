@@ -37,8 +37,23 @@ from typing import Optional
 
 import pandas as pd
 
-SUFFIX_RE = re.compile(r"\s+(Jr\.?|Sr\.?|II|III|IV|V)$", re.IGNORECASE)
+# Hand-confirmed via the fuzzy-matching audit (2026-08) -- NOT
+# auto-generated. Each of these was manually verified as the same real
+# person, not just a high string-similarity score (most high-similarity
+# candidates turned out to be different real players with similar names,
+# e.g. "Jaylen Johnson" vs "Jalen Johnson" -- see conversation history).
+# Add to this list only after manual confirmation, never from an
+# automated fuzzy-match pass.
+MANUAL_ALIASES: dict[str, str] = {
+    "D.J. Augustine": "D.J. Augustin",
+    "Jazian Gorman": "Jazian Gortman",
+    "Charles Cook": "Charles Cooke",
+    "Devin Canady": "Devin Cannady",
+    "Justyn Hamilton": "Justin Hamilton",
+    "Ron Holland II": "Ronald Holland II",
+}
 PAREN_RE = re.compile(r"\s*\([^)]*\)\s*")
+SUFFIX_RE = re.compile(r"\s+(Jr\.?|Sr\.?|II|III|IV|V)$", re.IGNORECASE)
 
 
 def normalize_name(name: str) -> str:
@@ -87,6 +102,18 @@ def build_crosswalk(player_strings: list[str], modern_df: pd.DataFrame) -> tuple
         if not isinstance(raw, str) or not raw.strip():
             continue
         res = CrosswalkResult(player_string=raw)
+
+        # tier 0: manual, hand-confirmed aliases (see MANUAL_ALIASES above)
+        alias_target = MANUAL_ALIASES.get(raw.strip())
+        if alias_target:
+            hit = resolve_exact(alias_target)
+            if hit:
+                res.matched_name, res.player_id, res.method = hit[0], hit[1], "manual_alias"
+                results.append(res)
+                continue
+            # alias target not found in modern.csv this run (e.g. name
+            # changed upstream) -- fall through to automated tiers rather
+            # than silently failing
 
         # tier 1: exact
         hit = resolve_exact(raw.strip())
