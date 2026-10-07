@@ -58,6 +58,7 @@ Alexis Ajinca / Alex Ajinca,Alexis Ajinca,201582.0,slash_variant,0
 Alfonzo McKinnie,Alfonzo McKinnie,1628035.0,exact,0
 Alijah Martin,Alijah Martin,1642918.0,exact,0
 Alize Johnson,Alize Johnson,1628993.0,exact,0
+Allen Crabbe,Allen Crabbe,203459.0,exact,0
 Allonzo Trier,Allonzo Trier,1629019.0,exact,0
 Alondes Williams,Alondes Williams,1631214.0,exact,0
 Alonzo Gee,Alonzo Gee,202087.0,exact,0
@@ -128,6 +129,7 @@ B.J. Johnson,BJ Johnson,1629168.0,normalized,0
 Baylor Scheierman,Baylor Scheierman,1631248.0,exact,0
 Ben Bentil,Ben Bentil,1627791.0,exact,0
 Ben Gordon,Ben Gordon,2732.0,exact,0
+Ben Hansbrough,Ben Hansbrough,203162.0,index_master,0
 Ben McLemore,Ben McLemore,203463.0,exact,0
 Ben Moore,Ben Moore,1628500.0,exact,0
 Ben Saraf,Ben Saraf,1642879.0,exact,0
@@ -145,7 +147,7 @@ Blake Hinson,Blake Hinson,1642396.0,exact,0
 Blake Wesley,Blake Wesley,1631104.0,exact,0
 Boban Marjanovic,Boban Marjanovic,1626246.0,exact,0
 Bobby Brown,Bobby Brown,201628.0,exact,0
-Bobby Portis,Bobby Portis,1626171.0,exact,0
+Bobby Portis,Bobby Portis Jr.,1626171.0,normalized,0
 Bobi Klintman,Bobi Klintman,1641752.0,exact,0
 Bogdan Bogdanovic,Bogdan Bogdanović,203992.0,normalized,0
 Bojan Bogdanovic,Bojan Bogdanovic,202711.0,exact,0
@@ -159,6 +161,7 @@ Branden Carlson,Branden Carlson,1642382.0,exact,0
 Branden Dawson,Branden Dawson,1626183.0,exact,0
 Brandin Podziemski,Brandin Podziemski,1641764.0,exact,0
 Brandon Bass,Brandon Bass,101138.0,exact,0
+Brandon Boston Jr. / B.J. Boston Jr.,Brandon Boston Jr.,1630527.0,slash_variant,0
 Brandon Clarke,Brandon Clarke,1629634.0,exact,0
 Brandon Goodwin,Brandon Goodwin,1629164.0,exact,0
 Brandon Ingram,Brandon Ingram,1627742.0,exact,0
@@ -199,6 +202,7 @@ Cade Cunningham,Cade Cunningham,1630595.0,exact,0
 Caleb Houstan,Caleb Houstan,1631216.0,exact,0
 Caleb Love,Caleb Love,1631126.0,exact,0
 Caleb Martin,Caleb Martin,1628997.0,exact,0
+Caleb Swanigan,Caleb Swanigan,1628403.0,exact,0
 Cam Reddish,Cam Reddish,1629629.0,exact,0
 Cam Spencer,Cam Spencer,1642285.0,exact,0
 Cam Whitmore,Cam Whitmore,1641715.0,exact,0
@@ -237,6 +241,7 @@ Charles Cooke,Charles Cooke,1628429.0,exact,0
 Charlie Villanueva,Charlie Villanueva,101111.0,exact,0
 Chase Budinger,Chase Budinger,201978.0,exact,0
 Chasson Randle,Chasson Randle,1626184.0,exact,0
+Chauncey Billups,Chauncey Billups,1497.0,exact,0
 Chaundee Brown Jr.,Chaundee Brown Jr.,1630602.0,exact,0
 Chaz Lanier,Chaz Lanier,1642404.0,exact,0
 Cheick Diallo,Cheick Diallo,1627767.0,exact,0
@@ -255,6 +260,7 @@ Chris Douglas-Roberts,Chris Douglas-Roberts,201604.0,exact,0
 Chris Duarte,Chris Duarte,1630537.0,exact,0
 Chris Johnson (b. 1985-07-15),Chris Johnson,203187.0,paren_stripped,0
 Chris Johnson (b. 1990-04-29),Chris Johnson,203187.0,paren_stripped,0
+Chris Kaman,Chris Kaman,2549.0,exact,0
 Chris Livingston,Chris Livingston,1641753.0,exact,0
 Chris Manon,Chris Mañon,1643024.0,normalized,0
 Chris McCullough,Chris McCullough,1626191.0,exact,0
@@ -295,14 +301,15 @@ Courtney Lee,Courtney Lee,201584.0,exact,0
 Craig Porter Jr.,Craig Porter Jr.,1641854.0,exact,0
 Craig Sword,Craig Sword,1628591.0,exact,0
 Cristiano Felicio,Cristiano Felicio,1626245.0,exact,0
-Cui Yongxi,Cui Yongxi,1642385.0,exact,0
+Cui Yongxi,Cui Yongxi,1642385.0,index_master,0
 Curtis Jones,Curtis Jones,1642938.0,exact,0
 D'Angelo Russell,D'Angelo Russell,1626156.0,exact,0
 D'Moi Hodge,D'Moi Hodge,1641793.0,exact,0
 D.J. Augustine,D.J. Augustin,201571.0,manual_alias,0
-D.J. Carton,DJ Carton,1630618.0,normalized,0
+D.J. Carton,D.J. Carton,1630618.0,exact,0
 D.J. Stephens,DJ Stephens,203474.0,normalized,0
 D.J. Wilson,D.J. Wilson,1628391.0,exact,0
+DaJuan Summers,DaJuan Summers,201969.0,index_master,0
 DaQuan Jeffries,DaQuan Jeffries,1629610.0,exact,0
 DaRon Holmes II,DaRon Holmes II,1641747.0,exact,0
 Daeqwon Plowden,Daeqwon Plowden,1631342.0,exact,0
@@ -315,6 +322,7 @@ Dalano Banton,Dalano Banton,1630625.0,exact,0
 Dalen Terry,Dalen Terry,1631207.0,exact,0
 Dalton Knecht,Dalton Knecht,1642261.0,exact,0
 Damian Jones,Damian Jones,1627745.0,exact,0
+Damian Lillard,Damian Lillard,203081.0,exact,0
 Damien Inglis,Damien Inglis,203996.0,exact,0
 Damien Wilkins,Damien Wilkins,2863.0,exact,0
 Damion Baugh,Damion Baugh,1641878.0,exact,0
@@ -334,12 +342,12 @@ Danny Granger,Danny Granger,101122.0,exact,0
 Danny Green,Danny Green,201980.0,exact,0
 Danny Wolf,Danny Wolf,1642874.0,exact,0
 Dante Cunningham,Dante Cunningham,201967.0,exact,0
-Dante Exum,Danté Exum,203957.0,normalized,0
+Dante Exum,Dante Exum,203957.0,exact,0
 Danuel House Jr.,Danuel House Jr.,1627863.0,exact,0
 Dario Saric,Dario Saric,203967.0,exact,0
 Dariq Whitehead,Dariq Whitehead,1641727.0,exact,0
 Darius Bazley,Darius Bazley,1629647.0,exact,0
-Darius Brown,Darius Brown,1642468.0,exact,0
+Darius Brown,Darius Brown II,1642468.0,normalized,0
 Darius Days,Darius Days,1630620.0,exact,0
 Darius Garland,Darius Garland,1629636.0,exact,0
 Darius Johnson-Odom,Darius Johnson-Odom,203130.0,exact,0
@@ -359,7 +367,7 @@ David Stockton,David Stockton,204065.0,exact,0
 David Wear,David Wear,204033.0,exact,0
 David West,David West,2561.0,exact,0
 Davion Mitchell,Davion Mitchell,1630558.0,exact,0
-Davis Bertans,Dāvis Bertāns,202722.0,normalized,0
+Davis Bertans,Davis Bertans,202722.0,exact,0
 Davon Reed,Davon Reed,1628432.0,exact,0
 Day'Ron Sharpe,Day'Ron Sharpe,1630549.0,exact,0
 De'Aaron Fox,De'Aaron Fox,1628368.0,exact,0
@@ -373,6 +381,7 @@ DeJuan Blair,DeJuan Blair,201971.0,exact,0
 DeMar DeRozan,DeMar DeRozan,201942.0,exact,0
 DeMarcus Cousins,DeMarcus Cousins,202326.0,exact,0
 DeMarre Carroll,DeMarre Carroll,201960.0,exact,0
+DeQuan Jones,DeQuan Jones,203199.0,index_master,0
 DeVaughn Akoon-Purcell,DeVaughn Akoon-Purcell,1629152.0,exact,0
 Dean Wade,Dean Wade,1629731.0,exact,0
 Deandre Ayton,Deandre Ayton,1629028.0,exact,0
@@ -415,6 +424,7 @@ Dexter Dennis,Dexter Dennis,1641926.0,exact,0
 Dexter Pittman,Dexter Pittman,202354.0,exact,0
 Deyonta Davis,Deyonta Davis,1627738.0,exact,0
 Diamond Stone,Diamond Stone,1627754.0,exact,0
+Diante Garrett,Diante Garrett,203197.0,exact,0
 Dillon Brooks,Dillon Brooks,1628415.0,exact,0
 Dillon Jones,Dillon Jones,1641794.0,exact,0
 Dion Waiters,Dion Waiters,203079.0,exact,0
@@ -425,6 +435,7 @@ Domantas Sabonis,Domantas Sabonis,1627734.0,exact,0
 Dominick Barlow,Dominick Barlow,1631230.0,exact,0
 Donald Sloan,Donald Sloan,202388.0,exact,0
 Donatas Motiejunas,Donatas Motiejunas,202700.0,exact,0
+Donovan Clingan,Donovan Clingan,1642270.0,exact,0
 Donovan Mitchell,Donovan Mitchell,1628378.0,exact,0
 Donovan Williams,Donovan Williams,1631495.0,exact,0
 Donta Hall,Donta Hall,1629743.0,exact,0
@@ -446,6 +457,7 @@ Dru Smith,Dru Smith,1630696.0,exact,0
 Duane Washington Jr.,Duane Washington Jr.,1630613.0,exact,0
 Duje Dukan,Duje Dukan,1626251.0,exact,0
 Duncan Robinson,Duncan Robinson,1629130.0,exact,0
+Duop Reath,Duop Reath,1641871.0,exact,0
 Dusty Hannahs,Dusty Hannahs,1628605.0,exact,0
 Dwayne Bacon,Dwayne Bacon,1628407.0,exact,0
 Dwight Buycks,Dwight Buycks,202779.0,exact,0
@@ -498,6 +510,7 @@ Evan Mobley,Evan Mobley,1630596.0,exact,0
 Evan Turner,Evan Turner,202323.0,exact,0
 Facundo Campazzo,Facundo Campazzo,1630267.0,exact,0
 Feron Hunt,Feron Hunt,1630624.0,exact,0
+Festus Ezeli,Festus Ezeli,203105.0,exact,0
 Filip Petrusev,Filip Petrusev,1630196.0,exact,0
 Francisco Garcia,Francisco Garcia,101128.0,exact,0
 Frank Jackson,Frank Jackson,1628402.0,exact,0
@@ -547,6 +560,7 @@ Greg Monroe,Greg Monroe,202328.0,exact,0
 Greg Smith (b. 1991-01-08),Greg Smith,202962.0,paren_stripped,0
 Greg Stiemsma,Greg Stiemsma,201880.0,exact,0
 Greg Whittington,Greg Whittington,204222.0,exact,0
+Gregory Jackson II / G.G. Jackson,GG Jackson,1641713.0,normalized_variant,0
 Greivis Vasquez,Greivis Vasquez,202349.0,exact,0
 Guerschon Yabusele,Guerschon Yabusele,1627824.0,exact,0
 Gui Santos,Gui Santos,1630611.0,exact,0
@@ -604,6 +618,7 @@ Isaiah Whitehead,Isaiah Whitehead,1627785.0,exact,0
 Isaiah Wong,Isaiah Wong,1631209.0,exact,0
 Ishmael Smith / Ish Smith,Ish Smith,202397.0,slash_variant,0
 Ishmail Wainright / Ish Wainright,Ish Wainright,1630688.0,slash_variant,0
+Ivan Johnson,Ivan Johnson,201274.0,index_master,0
 Ivan Rabb,Ivan Rabb,1628397.0,exact,0
 Ivica Zubac,Ivica Zubac,1627826.0,exact,0
 Izaiah Brockington,Izaiah Brockington,1631167.0,exact,0
@@ -718,6 +733,7 @@ Jarron Cumberland,Jarron Cumberland,1629600.0,exact,0
 Jarvis Varnado,Jarvis Varnado,202363.0,exact,0
 Jase Richardson,Jase Richardson,1642859.0,exact,0
 Jason Collins,Jason Collins,2215.0,exact,0
+Jason Kidd,Jason Kidd,467.0,index_master,0
 Jason Maxiell,Jason Maxiell,101131.0,exact,0
 Jason Preston,Jason Preston,1630554.0,exact,0
 Jason Richardson,Jason Richardson,2202.0,exact,0
@@ -747,6 +763,7 @@ Jaylin Williams (Michael),Jaylin Williams,1631119.0,paren_stripped,0
 Jaylin Williams (b. 2000-07-26),Jaylin Williams,1631119.0,paren_stripped,0
 Jaylon Tyson,Jaylon Tyson,1642281.0,exact,0
 Jaysean Paige,Jaysean Paige,1629873.0,exact,0
+Jayson Kent,Jayson Kent,1643257.0,exact,0
 Jayson Tatum,Jayson Tatum,1628369.0,exact,0
 Jazian Gorman,Jazian Gortman,1641789.0,manual_alias,0
 Jazian Gortman,Jazian Gortman,1641789.0,exact,0
@@ -819,7 +836,7 @@ Jon Leuer,Jon Leuer,202720.0,exact,0
 Jon Teske,Jon Teske,1630257.0,exact,0
 Jonah Bolden,Jonah Bolden,1628413.0,exact,0
 Jonas Jerebko,Jonas Jerebko,201973.0,exact,0
-Jonas Valanciunas,Jonas Valančiūnas,202685.0,normalized,0
+Jonas Valanciunas,Jonas Valanciunas,202685.0,exact,0
 Jonathan Gibson,Jonathan Gibson,1626780.0,exact,0
 Jonathan Isaac,Jonathan Isaac,1628371.0,exact,0
 Jonathan Kuminga,Jonathan Kuminga,1630228.0,exact,0
@@ -923,6 +940,7 @@ Keith Appling,Keith Appling,203951.0,exact,0
 Kel'el Ware,Kel'el Ware,1642276.0,exact,0
 Kelan Martin,Kelan Martin,1629103.0,exact,0
 Keldon Johnson,Keldon Johnson,1629640.0,exact,0
+Keljin Blevins,Keljin Blevins,1629833.0,exact,0
 Kelly Olynyk,Kelly Olynyk,203482.0,exact,0
 Kelly Oubre Jr.,Kelly Oubre Jr.,1626162.0,exact,0
 Kemba Walker,Kemba Walker,202689.0,exact,0
@@ -946,10 +964,12 @@ Kevin Durant,Kevin Durant,201142.0,exact,0
 Kevin Garnett,Kevin Garnett,708.0,exact,0
 Kevin Hervey,Kevin Hervey,1628987.0,exact,0
 Kevin Huerter,Kevin Huerter,1628989.0,exact,0
+Kevin Jones,Kevin Jones,203158.0,index_master,0
 Kevin Knox II,Kevin Knox II,1628995.0,exact,0
 Kevin Love,Kevin Love,201567.0,exact,0
 Kevin Martin,Kevin Martin,2755.0,exact,0
 Kevin McCullar Jr.,Kevin McCullar Jr.,1641755.0,exact,0
+Kevin Murphy,Kevin Murphy,203122.0,index_master,0
 Kevin Pangos,Kevin Pangos,1630698.0,exact,0
 Kevin Porter Jr.,Kevin Porter Jr.,1629645.0,exact,0
 Kevin Seraphin,Kevin Seraphin,202338.0,exact,0
@@ -963,6 +983,7 @@ Khris Middleton,Khris Middleton,203114.0,exact,0
 Khyri Thomas,Khyri Thomas,1629017.0,exact,0
 Killian Hayes,Killian Hayes,1630165.0,exact,0
 Killian Tillie,Killian Tillie,1629681.0,exact,0
+Kim English,Kim English,203119.0,index_master,0
 Kira Lewis Jr.,Kira Lewis Jr.,1630184.0,exact,0
 Kirk Hinrich,Kirk Hinrich,2550.0,exact,0
 Klay Thompson,Klay Thompson,202691.0,exact,0
@@ -977,6 +998,7 @@ Kostas Antetokounmpo,Kostas Antetokounmpo,1628961.0,exact,0
 Kostas Papanikolaou,Kostas Papanikolaou,203123.0,exact,0
 Kris Dunn,Kris Dunn,1627739.0,exact,0
 Kris Humphries,Kris Humphries,2743.0,exact,0
+Kris Murray,Kris Murray,1631200.0,exact,0
 Kristaps Porzingis,Kristaps Porziņģis,204001.0,normalized,0
 Ky Bowman,Ky Bowman,1629065.0,exact,0
 Kyle Alexander,Kyle Alexander,1629734.0,exact,0
@@ -997,6 +1019,7 @@ L.J. Cryer,LJ Cryer,1643018.0,normalized,0
 LaMarcus Aldridge,LaMarcus Aldridge,200746.0,exact,0
 LaMelo Ball,LaMelo Ball,1630163.0,exact,0
 Lachlan Olbrich,Lachlan Olbrich,1642950.0,exact,0
+Lamar Odom,Lamar Odom,1885.0,index_master,0
 Lamar Patterson,Lamar Patterson,203934.0,exact,0
 Lamar Stevens,Lamar Stevens,1630205.0,exact,0
 Lance Stephenson,Lance Stephenson,202362.0,exact,0
@@ -1014,7 +1037,7 @@ Leandro Barbosa,Leandro Barbosa,2571.0,exact,0
 Leandro Bolmaro,Leandro Bolmaro,1630195.0,exact,0
 Leonard Miller,Leonard Miller,1631159.0,exact,0
 Lester Hudson,Lester Hudson,201991.0,exact,0
-Lester Quinones,Lester Quinones,1631311.0,exact,0
+Lester Quinones,Lester Quiñones,1631311.0,normalized,0
 Liam McNeeley,Liam McNeeley,1642862.0,exact,0
 Liam Robbins,Liam Robbins,1641857.0,exact,0
 Lindell Wigginton,Lindell Wigginton,1629623.0,exact,0
@@ -1040,8 +1063,9 @@ Luke Kennard,Luke Kennard,1628379.0,exact,0
 Luke Kornet,Luke Kornet,1628436.0,exact,0
 Luke Ridnour,Luke Ridnour,2557.0,exact,0
 Luke Travers,Luke Travers,1631247.0,exact,0
+Luke Walton,Luke Walton,2575.0,index_master,0
 Luol Deng,Luol Deng,2736.0,exact,0
-M.J. Walker,M.J. Walker Jr.,1630640.0,normalized,0
+M.J. Walker,MJ Walker,1630640.0,normalized,0
 Maalik Wayns,Maalik Wayns,203146.0,exact,0
 Mac McClung,Mac McClung,1630644.0,exact,0
 Malachi Flynn,Malachi Flynn,1630201.0,exact,0
@@ -1189,7 +1213,7 @@ Nate Hinton,Nate Hinton,1630207.0,exact,0
 Nate Robinson,Nate Robinson,101126.0,exact,0
 Nate Wolters,Nate Wolters,203489.0,exact,0
 Nathan Knight,Nathan Knight,1630233.0,exact,0
-Nathan Mensah,Nathan Mensah,1641877.0,exact,0
+Nathan Mensah,Nathan Mensah,1641877.0,index_master,0
 Naz Reid,Naz Reid,1629675.0,exact,0
 Nazareth Mitrou-Long / Naz Mitrou-Long / Naz Long,Naz Mitrou-Long,1628513.0,slash_variant,0
 Nazr Mohammed,Nazr Mohammed,1737.0,exact,0
@@ -1229,6 +1253,7 @@ Norris Cole (Gene),Norris Cole,202708.0,paren_stripped,0
 Norvel Pelle,Norvel Pelle,203658.0,exact,0
 Obi Toppin,Obi Toppin,1630167.0,exact,0
 Ochai Agbaji,Ochai Agbaji,1630534.0,exact,0
+Ogugua Anunoby / O.G. Anunoby,OG Anunoby,1628384.0,normalized_variant,0
 Okaro White,Okaro White,1627855.0,exact,0
 Olivier Sarr,Olivier Sarr,1630846.0,exact,0
 Olivier-Maxence Prosper,Olivier-Maxence Prosper,1641765.0,exact,0
@@ -1355,6 +1380,7 @@ Roy Hibbert,Roy Hibbert,201579.0,exact,0
 Royal Ivey,Royal Ivey,2767.0,exact,0
 Royce O'Neale,Royce O'Neale,1626220.0,exact,0
 Royce White,Royce White,203091.0,exact,0
+Ruben Nembhard / R.J. Nembhard Jr.,RJ Nembhard Jr.,1630612.0,normalized_variant,0
 Rudy Gay,Rudy Gay,200752.0,exact,0
 Rudy Gobert,Rudy Gobert,203497.0,exact,0
 Rui Hachimura,Rui Hachimura,1629060.0,exact,0
@@ -1398,6 +1424,7 @@ Seth Curry,Seth Curry,203552.0,exact,0
 Seth Lundy,Seth Lundy,1641754.0,exact,0
 Shabazz Muhammad,Shabazz Muhammad,203498.0,exact,0
 Shabazz Napier,Shabazz Napier,203894.0,exact,0
+Shaedon Sharpe,Shaedon Sharpe,1631101.0,exact,0
 Shai Gilgeous-Alexander,Shai Gilgeous-Alexander,1628983.0,exact,0
 Shake Milton,Shake Milton,1629003.0,exact,0
 Shamorie Ponds,Shamorie Ponds,1629044.0,exact,0
@@ -1435,6 +1462,8 @@ Stephen Curry,Stephen Curry,201939.0,exact,0
 Stephen Zimmerman Jr.,Stephen Zimmerman,1627757.0,normalized,0
 Stephon Castle,Stephon Castle,1642264.0,exact,0
 Sterling Brown,Sterling Brown,1628425.0,exact,0
+Sterling Henderson / Scoot Henderson,Scoot Henderson,1630703.0,slash_variant,0
+Steve Blake,Steve Blake,2581.0,exact,0
 Steve Nash,Steve Nash,959.0,exact,0
 Steve Novak,Steve Novak,200779.0,exact,0
 Steven Adams,Steven Adams,203500.0,exact,0
@@ -1564,6 +1593,7 @@ Udoka Azubuike,Udoka Azubuike,1628962.0,exact,0
 Udonis Haslem,Udonis Haslem,2617.0,exact,0
 Ulrich Chomche,Ulrich Chomche,1642279.0,exact,0
 Usman Garuba,Usman Garuba,1630586.0,exact,0
+Valdez Edgecombe / V.J. Edgecombe,VJ Edgecombe,1642845.0,normalized_variant,0
 Vander Blue,Vander Blue,203505.0,exact,0
 Vasilije Micic / Vasa Micic,Vasilije Micic,203995.0,slash_variant,0
 Vernon Carey Jr.,Vernon Carey Jr.,1630176.0,exact,0
@@ -1577,7 +1607,7 @@ Vincent Hunter / Vince Hunter,Vincent Hunter,1626205.0,slash_variant,0
 Vincent Poirier,Vincent Poirier,1629738.0,exact,0
 Vit Krejci,Vít Krejčí,1630249.0,normalized,0
 Vladislav Goldin,Vladislav Goldin,1642884.0,exact,0
-Vlatko Cancar,Vlatko Čančar,1628427.0,normalized,0
+Vlatko Cancar,Vlatko Cancar,1628427.0,exact,0
 Wade Baldwin IV,Wade Baldwin IV,1627735.0,exact,0
 Walker Kessler,Walker Kessler,1631117.0,exact,0
 Walter Clayton Jr.,Walter Clayton Jr.,1642383.0,exact,0
@@ -1609,6 +1639,7 @@ Xavier Rathan-Mayes,Xavier Rathan-Mayes,1628504.0,exact,0
 Xavier Silas,Xavier Silas,202918.0,exact,0
 Xavier Sneed,Xavier Sneed,1630270.0,exact,0
 Xavier Tillman,Xavier Tillman,1630214.0,exact,0
+Yang Hansen / Hansen Yang,Yang Hansen,1642905.0,slash_variant,0
 Yanic Konan Niederhauser,Yanic Konan Niederhäuser,1642949.0,normalized,0
 Yante Maten,Yante Maten,1628999.0,exact,0
 Yogi Ferrell,Yogi Ferrell,1627812.0,exact,0

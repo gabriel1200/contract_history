@@ -211,7 +211,6 @@ date,team,counterparty,acquired_assets,relinquished_assets,num_acquired,num_reli
 2015-06-25,Hornets,Nets,"2018 second round pick (less favorable of Cavaliers, Nets) (#55-Arnoldas Kulboka); 2019 second round pick (#46-Talen Horton-Tucker); cash considerations",rights to Juan Pablo Vaulet,3,1,trade with Nets
 2016-02-16,Hornets,"Grizzlies, Heat",Courtney Lee; cash,Brian Roberts; P.J. Hairston; 2018 second round pick (#41-Jarred Vanderbilt); 2019 second round pick (#46-Talen Horton-Tucker),2,4,"3-team trade with Grizzlies, Heat"
 2016-07-07,Hornets,Kings,Marco Belinelli,rights to Malachi Richardson,1,1,trade with Kings
-2016-07-12,Hornets,Grizzlies,cash; traded player exception,Troy Daniels,2,1,trade with Grizzlies
 2017-02-02,Hornets,Bucks,Miles Plumlee; cash considerations,Roy Hibbert; Spencer Hawes,2,2,trade with Bucks
 2017-02-13,Hornets,Cavaliers,Chris Andersen; cash,2017 second round pick (protected top 55) (not exercised),2,1,trade with Cavaliers
 2017-06-20,Hornets,Hawks,Dwight Howard; 2017 second round pick (#31-Frank Jackson),Marco Belinelli; Miles Plumlee; 2017 second round pick (#41-Tyler Dorsey),2,3,trade with Hawks
@@ -566,7 +565,6 @@ date,team,counterparty,acquired_assets,relinquished_assets,num_acquired,num_reli
 2016-02-22,Rockets,Pistons voided by NBA,Donatas Motiejunas; Marcus Thornton (Terrell),"Joel Anthony; 2016 first round pick (protected top 8 in 2016, top 10 in 2017) (voided)",2,2,earlier trade with Pistons voided by NBA
 2016-02-22,Rockets,76ers rescinded,Joel Anthony; 2017 second round pick (not exercised),rights to Chukwudiebere Maduabum / Chu Chu Maduabum,2,1,earlier trade with 76ers rescinded
 2016-09-22,Rockets,Bucks,Tyler Ennis,Michael Beasley,1,1,trade with Bucks
-2017-02-23,Rockets,Lakers,Marcelinho Huertas / Marcelo Huertas,Tyler Ennis; rights to Brad Newley,1,2,trade with Lakers
 2017-02-23,Rockets,Nets,cash considerations,K.J. McDaniels,1,1,trade with Nets
 2017-02-23,Rockets,Lakers,Louis Williams / Lou Williams,Corey Brewer; 2017 first round pick (#28-Tony Bradley),1,2,trade with Lakers
 2017-06-22,Rockets,Grizzlies,"2018 second round pick (least favorable of Grizzlies, Heat, Hornets picks) (#46-De'Anthony Melton)",rights to Dillon Brooks,1,1,trade with Grizzlies
@@ -727,7 +725,6 @@ date,team,counterparty,acquired_assets,relinquished_assets,num_acquired,num_reli
 2014-07-13,Lakers,Rockets,"Jeremy Lin; first round pick (protected top 14 in 2015, top 10 in 2016-17, top 5 in 2018-19, top 3 in 2020, unprotected in 2021) (2015 #27-Larry Nance Jr.); 2015 second round pick (protected top 50 and 56-60, else extinguished) (not exercised)",rights to Sergei Lishouk / Sergei Lishchuk,3,1,trade with Rockets
 2015-07-09,Lakers,Pacers,Roy Hibbert,2019 second round pick (#41-Eric Paschall),1,1,trade with Pacers
 2016-07-07,Lakers,Bulls,Jose Calderon; 2018 second round pick (#47-Sviatoslav Mykhailiuk / Svi Mykhailiuk); 2019 second round pick (#34-Bruno Fernando),rights to Ater Majok,3,1,trade with Bulls
-2017-02-23,Lakers,Rockets,Tyler Ennis; rights to Brad Newley,Marcelinho Huertas / Marcelo Huertas,2,1,trade with Rockets
 2017-02-23,Lakers,Rockets,Corey Brewer; 2017 first round pick (#28-Tony Bradley),Louis Williams / Lou Williams,2,1,trade with Rockets
 2017-06-22,Lakers,Jazz,rights to Josh Hart; rights to Thomas Bryant,rights to Tony Bradley,2,1,trade with Jazz
 2017-06-22,Lakers,Nets,Brook Lopez; rights to Kyle Kuzma,D'Angelo Russell; Timofey Mozgov,2,2,trade with Nets
@@ -1480,7 +1477,6 @@ date,team,counterparty,acquired_assets,relinquished_assets,num_acquired,num_reli
 2018-12-17,Wizards,Suns,Trevor Ariza,Kelly Oubre Jr.; Austin Rivers,1,2,trade with Suns
 2019-02-06,Wizards,Pelicans,Wesley Johnson,Markieff Morris; 2023 second round pick (#37-Hunter Tyson),1,2,trade with Pelicans
 2019-02-06,Wizards,Bulls,"Jabari Parker; Bobby Portis; 2023 second round pick (originally protected top 36, protection removed as part of subsequent trade) (#42-Tristan Vukcevic)",Otto Porter Jr.,3,1,trade with Bulls
-2019-02-07,Wizards,"Bucks, Cavaliers",Sam Dekker,Jason Smith; 2022 second round pick (?-?); cash considerations,1,3,"3-team trade with Bucks, Cavaliers"
 2019-02-07,Wizards,"Bucks, Cavaliers",Sam Dekker,Jason Smith; modification of protection on 2020 second round pick previously traded to Bucks (pick now unprotected); 2022 second round pick (?-?); cash,1,4,"3-team trade with Bucks, Cavaliers"
 2019-06-21,Wizards,76ers,Jonathon Simmons; rights to Admiral Schofield,$2M cash,2,1,trade with 76ers
 2019-07-06,Wizards,"Nets, Spurs",Davis Bertans,rights to Aaron White,1,1,"3-team trade with Nets, Spurs"
@@ -1522,3 +1518,50 @@ date,team,counterparty,acquired_assets,relinquished_assets,num_acquired,num_reli
 2026-06-24,Wizards,"Bucks, Magic",rights to Felix Okpara,rights to Izaiyah Nelson,1,1,"3-team trade with Bucks, Magic"
 2026-07-07,Wizards,Lakers,DeAndre Ayton,Jaden Hardy; 2031 second round pick (?-?); 2032 second round pick (?-?),1,3,trade with Lakers
 2026-07-08,Wizards,"Bucks, Clippers, Grizzlies, Mavericks, Pistons",Khris Middleton; Grizzlies option to swap 2032 second round picks with Wizards) (from Wizards) (?-?)**; 2033 second round pick (from Mavericks) (?-?)**,D'Angelo Russell; 2029 second round pick (?-?)**; Grizzlies option to swap 2032 second round picks with Wizards) (?-?)**; 2033 second round pick (?-?)**,3,4,"6-team trade with Bucks, Clippers, Grizzlies, Mavericks, Pistons"
+2015-02-19,Blazers,Nuggets,Arron Afflalo; Alonzo Gee,"Will Barton; Victor Claver; Thomas Robinson; 2016 first round pick (protected top 14 in 2016-17, else 2018 second round pick (less favorable of Blazers, Kings picks), 2019 second round pick) (2016 #19-Malik Beasley)",2,4,trade with Nuggets
+2015-06-24,Blazers,Hornets,Gerald Henderson Jr.; Noah Vonleh,Nicolas Batum,2,1,trade with Hornets
+2015-06-25,Blazers,Nets,Mason Plumlee; rights to Pat Connaughton,Steve Blake; rights to Rondae Hollis-Jefferson,2,2,trade with Nets
+2015-06-25,Blazers,Jazz,rights to Daniel Diez / Dani Diez,cash considerations,1,1,trade with Jazz
+2015-07-13,Blazers,Magic,Maurice Harkless / Moe Harkless,2020 second round pick (protected top 55) (not exercised),1,1,trade with Magic
+2015-07-27,Blazers,Cavaliers,"Brendan Haywood; Mike Miller; 2019 second round pick (more favorable of Lakers, Timberwolves picks) (#40-Justin James); 2020 second round pick (#32-Vernon Carey Jr.)",2 trade exceptions / cash considerations,4,1,trade with Cavaliers
+2016-02-18,Blazers,"Cavaliers, Magic",Anderson Varejao; first round pick (from Cavaliers) (at least 2 years after Cavaliers have conveyed first round pick to Celtics) (protected top 10 in 2018-19) (2018 #25-Moritz Wagner / Moe Wagner),2020 second round pick (#32-Vernon Carey Jr.),2,1,"3-team trade with Cavaliers, Magic"
+2016-02-18,Blazers,Heat,Brian Roberts; 2021 second round pick (#48-Sharife Cooper),cash considerations,2,1,trade with Heat
+2016-06-23,Blazers,Magic,rights to Jake Layman,2019 second round pick (#56-Jaylen Hands); $1.2M cash,1,2,trade with Magic
+2016-07-07,Blazers,Magic,Shabazz Napier,cash considerations,1,1,trade with Magic
+2017-01-06,Blazers,Cavaliers,2017 first round pick (#26-Caleb Swanigan),2018 first round pick (#25-Moritz Wagner / Moe Wagner),1,1,trade with Cavaliers
+2017-02-12,Blazers,Nuggets,"Jusuf Nurkic; first round pick (protected top 5 in 2017-18, unprotected in 2019) (2017 #20-Harry Giles III)","Mason Plumlee; 2018 second round pick (less favorable of Blazers, Kings picks) (#54-Shake Milton); cash",2,3,trade with Nuggets
+2017-06-22,Blazers,Kings,rights to Zach Collins,rights to Justin Jackson (Aaron); rights to Harry Giles III,1,2,trade with Kings
+2017-06-28,Blazers,Rockets,cash considerations,Tim Quarterman,1,1,trade with Rockets
+2017-07-25,Blazers,Nets,Andrew Nicholson,Allen Crabbe,1,1,trade with Nets
+2018-02-08,Blazers,Bulls,rights to Milovan Rakovic,Noah Vonleh; cash,1,2,trade with Bulls
+2018-06-21,Blazers,Kings,rights to Gary Trent Jr.,"2019 second round pick (more favorable of Lakers, Timberwolves picks) (#40-Justin James); 2021 second round pick (#48-Sharife Cooper); cash",1,3,trade with Kings
+2019-02-04,Blazers,Cavaliers,Rodney Hood,Nik Stauskas; Wade Baldwin IV; 2021 second round pick (#51-Brandon Boston Jr. / B.J. Boston Jr.); 2023 second round pick (#35-Julian Phillips),1,4,trade with Cavaliers
+2019-02-07,Blazers,Blazers,Skal Labissiere,Caleb Swanigan,1,1,trade with Blazers
+2019-06-24,Blazers,Hawks,Kent Bazemore,Evan Turner,1,1,trade with Hawks
+2019-07-06,Blazers,"76ers, Clippers, Heat",Hassan Whiteside,Maurice Harkless / Moe Harkless; Meyers Leonard,1,2,"4-team trade with 76ers, Clippers, Heat"
+2019-07-08,Blazers,Timberwolves,rights to Bojan Dubljevic; traded player exception,Jake Layman,2,1,trade with Timberwolves
+2020-01-21,Blazers,Kings,Trevor Ariza; Wenyen Gabriel; Caleb Swanigan,Kent Bazemore; Anthony Tolliver; 2024 second round pick (#33-Tyler Smith); 2025 second round pick (#39-Alijah Martin),3,4,trade with Kings
+2020-02-06,Blazers,Hawks,2024 second round pick (protected top 55) (not exercised),Skal Labissiere; cash considerations,1,2,trade with Hawks
+2020-11-20,Blazers,"Celtics, Grizzlies",Enes Kanter / Enes Freedom,Mario Hezonja,1,1,"3-team trade with Celtics, Grizzlies"
+2020-11-22,Blazers,Rockets,Robert Covington,"Trevor Ariza; rights to Isaiah Stewart; draft pick (first round pick protected top 14 in 2021-27, else 2027 second round pick) (2021 #23-Usman Garuba)",1,3,trade with Rockets
+2021-03-25,Blazers,Raptors,Norman Powell,Gary Trent Jr.; Rodney Hood,1,2,trade with Raptors
+2021-07-30,Blazers,Pelicans,rights to Greg Brown III,2026 second round pick (#42-Ja'Kobi Gillespie); cash,1,2,trade with Pelicans
+2021-08-28,Blazers,"Bulls, Cavaliers",Larry Nance Jr.,"Derrick Jones Jr.; draft pick (first round pick protected top 14 in 2022-28, else 2028 second round pick) (2026 #15-Dailyn Swain)",1,2,"3-team trade with Bulls, Cavaliers"
+2022-02-04,Blazers,Clippers,Eric Bledsoe; Justise Winslow; Keon Johnson; 2025 second round pick (Pistons pick) (#47-Bogoljub Markovic),Norman Powell; Robert Covington,4,2,trade with Clippers
+2022-02-08,Blazers,Pelicans,"Josh Hart; Nickeil Alexander-Walker; Tomas Satoransky; Marcos Louzada Silva / Didi Louzada Silva / Didi Louzada; first round pick (protected top 4 and #15-30 in 2022, else 2025 first round pick protected top 4) (2025 #19-Nolan Traoré); 2026 second round pick (more favorable of Blazers, Pelicans picks) (#38-Braden Smith); 2027 second round pick (?-?)",C.J. McCollum; Larry Nance Jr.; Tony Snell,7,3,trade with Pelicans
+2022-02-09,Blazers,"Jazz, Spurs",Joe Ingles; Elijah Hughes; 2022 second round pick (from Jazz) (#57-Jabari Walker),Nickeil Alexander-Walker; Tomas Satoransky,3,2,"3-team trade with Jazz, Spurs"
+2022-07-06,Blazers,Pistons,Jerami Grant; rights to Ismael Kamagate,"rights to Gabriele Procida; 2025 first round pick (Bucks pick, protected top 4) (#19-Nolan Traoré); 2025 second round pick (Pistons pick) (#47-Bogoljub Markovic); 2026 second round pick (more favorable of Blazers, Pelicans picks) (#38-Braden Smith)",2,4,trade with Pistons
+2022-07-06,Blazers,Nuggets,"2024 second round pick (more favorable of Hornets, Timberwolves picks) (#34-Tyler Kolek)",rights to Ismael Kamagate,1,1,trade with Nuggets
+2023-02-09,Blazers,"Hawks, Pistons, Warriors","Kevin Knox II; 2023 second round pick (from Hawks) (second most favorable of Hawks, Hornets, Nets picks) (#43-Rayan Rupert); 2024 second round pick (from Hawks) (#40-Osasere Ighodaro / Oso Ighodaro); 2025 second round pick (from Hawks) (protected #41-59) (not exercised); 2026 second round pick (from Warriors) (Grizzlies pick protected top 42) (?-?); 2028 second round pick (from Warriors) (?-?)",Gary Payton II; 2026 second round pick (Grizzlies pick protected top 42) (?-?); 2028 second round pick (?-?),6,3,"4-team trade with Hawks, Pistons, Warriors"
+2023-02-09,Blazers,"76ers, Hornets, Knicks","Matisse Thybulle; Cam Reddish; Ryan Arcidiacono; rights to Ante Tomic; draft pick(s) (from Knicks; 2023 first round pick protected top 14, else second round pick, second round pick, second round pick, second round pick) (2023 #23-Kris Murray)","Josh Hart; rights to Bojan Dubljevic; rights to Daniel Diez / Dani Diez; 2027 second round pick (more favorable of Blazers, Pelicans picks) (?-?); 2029 second round pick (?-?)",5,5,"4-team trade with 76ers, Hornets, Knicks"
+2023-09-27,Blazers,"Bucks, Suns",Jrue Holiday; DeAndre Ayton; Toumani Camara; Blazers option to swap 2028 first round picks with Bucks (from Bucks) (?-?); 2029 first round pick (from Bucks) (?-?); Blazers option to swap 2030 first round picks with Bucks (from Bucks) (?-?),Damian Lillard; Jusuf Nurkic; Nassir Little; Keon Johnson; Blazers option to swap 2028 first round picks with Bucks (?-?); Blazers option to swap 2030 first round picks with Bucks (?-?),6,6,"3-team trade with Bucks, Suns"
+2023-10-01,Blazers,Celtics,"Robert Williams III; Malcolm Brogdon; 2024 first round pick (Warriors pick protected top 4 in 2024, top 1 in 2025, unrotected in 2026) (2024 #14-Carlton Carrington / Bub Carrington); 2029 first round pick (?-?)",Jrue Holiday,4,1,trade with Celtics
+2024-02-08,Blazers,Celtics,Dalano Banton; cash considerations,"2027 second round pick (less favorable of Blazers protected top 55, Pelicans protected top 55) (?-?)",2,1,trade with Celtics
+2024-06-27,Blazers,Knicks,"rights to Daniel Diez / Dani Diez; 2027 second round pick (Timberwolves pick) (?-?); 2029 second round pick (less favorable of Pacers, Wizards picks) (?-?); 2030 second round pick (?-?)",rights to Tyler Kolek,4,1,trade with Knicks
+2024-06-27,Blazers,Thunder,rights to Quinten Post; cash,rights to Osasere Ighodaro / Oso Ighodaro,2,1,trade with Thunder
+2024-07-06,Blazers,Wizards,Deni Avdija,"Malcolm Brogdon; rights to Carlton Carrington / Bub Carrington; 2028 second round pick (?-?); 2029 first round pick (second most favorable of Blazers, Bucks, Celtics picks) (?-?); 2030 second round pick (?-?)",1,5,trade with Wizards
+2024-07-06,Blazers,Warriors,cash,rights to Quinten Post,1,1,trade with Warriors
+2025-06-25,Blazers,Grizzlies,rights to Yang Hansen / Hansen Yang; 2027 second round pick (Hawks pick) (?-?); 2028 first round pick (Magic pick) (?-?); 2028 second round pick (Kings pick) (?-?),rights to Cedric Coward,4,1,trade with Grizzlies
+2025-07-07,Blazers,Celtics,Jrue Holiday,Anfernee Simons,1,1,trade with Celtics
+2026-02-01,Blazers,Hawks,Vit Krejci,Duop Reath; 2027 second round pick (Hawks pick) (?-?); 2030 second round pick (Knicks pick) (?-?),1,3,trade with Hawks
+2026-06-29,Blazers,Grizzlies,Ja Morant,Jerami Grant; Kris Murray,1,2,trade with Grizzlies
