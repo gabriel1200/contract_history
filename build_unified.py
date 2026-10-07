@@ -19,6 +19,7 @@ import os
 import re
 import sys
 from typing import Any, Dict, Optional, Tuple
+import numpy as np
 import pandas as pd
 
 MODERN_CSV_URL = (
@@ -50,7 +51,7 @@ NBA_TEAMS = {
     "Magic": {"abbr": "ORL", "team_id": 1610612753, "name": "Orlando Magic"},
     "76ers": {"abbr": "PHI", "team_id": 1610612755, "name": "Philadelphia 76ers"},
     "Suns": {"abbr": "PHX", "team_id": 1610612756, "name": "Phoenix Suns"},
-    "Trail Blazers": {"abbr": "POR", "team_id": 1610612757, "name": "Portland Trail Blazers"},
+    "Blazers": {"abbr": "POR", "team_id": 1610612757, "name": "Portland Trail Blazers"},
     "Kings": {"abbr": "SAC", "team_id": 1610612758, "name": "Sacramento Kings"},
     "Spurs": {"abbr": "SAS", "team_id": 1610612759, "name": "San Antonio Spurs"},
     "Raptors": {"abbr": "TOR", "team_id": 1610612761, "name": "Toronto Raptors"},
@@ -86,6 +87,15 @@ def parse_option_clause(text_lower: str) -> Tuple[Optional[str], Optional[str]]:
     )
     if m3:
         opt_type = "team" if m3.group(1) == "club" else m3.group(1)
+        # "through 2020-21 with 1-year team options for 2021-22, 2022-23": "through" marks the last
+        # GUARANTEED season, so the option seasons are the years listed after the option phrase and
+        # the final one is the last season of the term.
+        after_option = text_lower[m3.end():]
+        # Only first-round picks: their modeled term (years_alt) already includes the option seasons.
+        listed = (re.findall(r"20\d{2}-\d{2,4}", after_option)
+                  if "first round pick" in text_lower and re.match(r"\s*(?:for|,|;|\()", after_option) else [])
+        if listed:
+            return opt_type, listed[-1]
         m_yr = re.search(r"(?:for|through)\s+(20\d{2}(?:-\d{2,4})?)", text_lower)
         return opt_type, (m_yr.group(1) if m_yr else None)
 
@@ -142,13 +152,20 @@ def parse_notes_advanced(raw_note: str) -> Dict[str, Any]:
             elif re.search(r"remainder of (?:the )?season|rest of (?:the )?season|rest-of-season", cleaned_nl):
                 years = 1.0
 
+    # "through YYYY-YY" names the last GUARANTEED season (it anchors `years`, not the option-inclusive
+    # `years_alt`); an option year anchors the end of the whole term.
+    calendar_end_basis: Optional[str] = None
     m_through = re.search(r"through\s+(20\d{2}(?:-\d{2,4})?)", nl)
     if m_through:
         yr_str = m_through.group(1)
         calendar_end_year = int(yr_str.split("-")[0]) + 1 if "-" in yr_str else int(yr_str)
+        # With options in the same note, "through" ends the guaranteed years (the options follow);
+        # with none, it ends the whole term.
+        calendar_end_basis = "guaranteed_years" if "option" in nl else "full_term"
     elif option_year and re.match(r"^20\d{2}", option_year):
         opt_str = option_year
         calendar_end_year = int(opt_str.split("-")[0]) + 1 if "-" in opt_str else int(opt_str) + 1
+        calendar_end_basis = "full_term"
 
     def to_m(val: str, unit: Optional[str]) -> float:
         v = float(val)
@@ -189,6 +206,7 @@ def parse_notes_advanced(raw_note: str) -> Dict[str, Any]:
         "option_type": option_type,
         "option_year": option_year,
         "calendar_end_year": calendar_end_year,
+        "calendar_end_basis": calendar_end_basis,
         "parse_warnings": "; ".join(warnings),
     }
 
@@ -202,10 +220,41 @@ def make_contract_id(date: str, team: str, player: str, raw_notes: str) -> str:
 def derive_start_season(row: pd.Series) -> int:
     total = row.get("total_seasons")
     cal_end = row.get("calendar_end_year")
+    if row.get("calendar_end_basis") == "guaranteed_years" and pd.notna(row.get("years")) and pd.notna(cal_end) and float(row["years"]) > 0:
+        return int(cal_end - float(row["years"]) + 1)
     if pd.notna(total) and pd.notna(cal_end) and float(total) > 0:
         return int(cal_end - float(total) + 1)
     d = pd.Timestamp(row["date"])
     return d.year + 1 if d.month >= 7 else d.year
+
+
+DUPLICATE_REPORT_WINDOW_DAYS = 60
+
+
+def flag_superseded_reports(resolved: pd.DataFrame) -> pd.DataFrame:
+    """Mark earlier copies of the same signing reported more than once.
+
+    PST often logs an agreement and then the formal signing (or a later re-report), each
+    with identical terms. When the same player (ID, else name), team, stated total value
+    and term recur within DUPLICATE_REPORT_WINDOW_DAYS, every report except the latest is
+    flagged ``is_superseded`` and points at the kept report via ``superseded_by``. Nothing
+    is dropped here; consumers decide. Only priced, termed player deals are considered, so
+    10-day and bare camp signings (no value) are never merged.
+    """
+    flag = lambda column: resolved[column].fillna(False).astype(bool)
+    eligible = resolved.total_value_musd.notna() & resolved.total_seasons.notna() & flag("has_contract_word") & ~flag("is_coach_or_exec")
+    who = resolved.player_id.astype("string").where(resolved.player_id.notna(), "name:" + resolved.player.astype(str))
+    frame = pd.DataFrame({
+        "who": who, "team": resolved.team, "value": resolved.total_value_musd, "years": resolved.total_seasons,
+        "date": pd.to_datetime(resolved.date), "contract_id": resolved.contract_id,
+    })[eligible].sort_values("date", kind="stable")
+    grouped = frame.groupby(["who", "team", "value", "years"], sort=False)
+    superseded = (grouped.date.shift(-1) - frame.date).dt.days.le(DUPLICATE_REPORT_WINDOW_DAYS)
+    resolved["is_superseded"] = False
+    resolved.loc[superseded[superseded].index, "is_superseded"] = True
+    resolved["superseded_by"] = None
+    resolved.loc[superseded[superseded].index, "superseded_by"] = grouped.contract_id.shift(-1)[superseded]
+    return resolved
 
 
 def build_resolved_contracts(contracts_path: str, crosswalk_path: str) -> pd.DataFrame:
@@ -234,6 +283,7 @@ def build_resolved_contracts(contracts_path: str, crosswalk_path: str) -> pd.Dat
 
     resolved["total_seasons"] = resolved["years_alt"].fillna(resolved["years"])
     resolved["start_season"] = resolved.apply(derive_start_season, axis=1)
+    resolved = flag_superseded_reports(resolved)
 
     # Attach standardized team identity
     resolved["team_abbr"] = resolved["team"].map(lambda t: NBA_TEAMS.get(t, {}).get("abbr"))
@@ -244,7 +294,13 @@ def build_resolved_contracts(contracts_path: str, crosswalk_path: str) -> pd.Dat
 
 def expand_seasons(resolved: pd.DataFrame) -> pd.DataFrame:
     rows = []
-    expandable = resolved[resolved.player_id.notna() & resolved.total_seasons.notna()]
+    # A schedule needs a term and a price, not a player ID: the ID is only used later to join
+    # realized salary. Events whose crosswalk failed (new rookies, slash-style names) but that
+    # state a value still get their reported-term fan-out at the flat estimate
+    # (aav_source = "estimated_flat"). Coach/executive deals and unpriced no-ID events stay out.
+    is_staff = resolved["is_coach_or_exec"].fillna(False).astype(bool)
+    priced_without_id = resolved.player_id.isna() & resolved.aav_musd.notna() & ~is_staff
+    expandable = resolved[resolved.total_seasons.notna() & (resolved.player_id.notna() | priced_without_id)]
 
     for _, r in expandable.iterrows():
         n = int(r.total_seasons)
@@ -258,6 +314,10 @@ def expand_seasons(resolved: pd.DataFrame) -> pd.DataFrame:
                 "team": r.team,
                 "team_abbr": r.get("team_abbr"),
                 "team_id": r.get("team_id"),
+                "prior_team_seasons": r.get("prior_team_seasons"),
+                "current_team_stint_seasons": r.get("current_team_stint_seasons"),
+                "prior_team_tenure_band": r.get("prior_team_tenure_band"),
+                "current_team_stint_band": r.get("current_team_stint_band"),
                 "season_index": i,
                 "season_end_year": season_end_year,
                 "is_option_season": bool(is_final and pd.notna(r.option_type)),
@@ -282,19 +342,266 @@ def expand_seasons(resolved: pd.DataFrame) -> pd.DataFrame:
 
 
 def attach_modern_salary(seasons: pd.DataFrame, modern: pd.DataFrame) -> pd.DataFrame:
-    modern_slim = modern[["PLAYER_ID", "year", "salary"]].rename(
-        columns={"PLAYER_ID": "player_id", "year": "season_end_year", "salary": "aav_realized_musd"}
+    modern_slim = modern[["PLAYER_ID", "year", "salary", "AGE", "Pos", "DRAFT_YEAR"]].rename(
+        columns={
+            "PLAYER_ID": "player_id", "year": "season_end_year", "salary": "aav_realized_musd",
+            "AGE": "age", "Pos": "position", "DRAFT_YEAR": "draft_class",
+        }
     )
     modern_slim = modern_slim.drop_duplicates(subset=["player_id", "season_end_year"])
     modern_slim["aav_realized_musd"] = modern_slim["aav_realized_musd"] / 1_000_000.0
 
     merged = seasons.merge(modern_slim, on=["player_id", "season_end_year"], how="left")
+    # Never let an unmatched (NaN) player_id pick up another row's salary or metadata.
+    merged.loc[merged["player_id"].isna(), ["aav_realized_musd", "age", "position", "draft_class"]] = None
     merged["aav_final_musd"] = merged["aav_realized_musd"].combine_first(merged["aav_naive_musd"])
     merged["aav_source"] = "unknown"
     merged.loc[merged["aav_realized_musd"].notna(), "aav_source"] = "realized"
     merged.loc[merged["aav_realized_musd"].isna() & merged["aav_naive_musd"].notna(), "aav_source"] = "estimated_flat"
 
     return merged
+
+
+SPOTRAC_YEAR_COLUMN = re.compile(r"^\d{4}-\d{2}$")
+SPOTRAC_NAME_VALUE_TOLERANCE = 0.35  # a name-only match on another team must price within 35% of our own estimate
+
+
+def load_spotrac_schedule(salaries_path: str, options_path: str, min_rows_per_season: int = 50) -> pd.DataFrame:
+    """Long-format Spotrac forward schedule: one row per player-team-season with a salary.
+
+    The two exports are NOT row-aligned, so options are joined on player+team. Zero salaries
+    and dead money (option code ``D``: waived or stretched players) are dropped because they
+    cannot price a new signing. ``spot_uid`` identifies a Spotrac player-team row.
+    """
+    from psx_crosswalk import normalize_name
+
+    sal = pd.read_csv(salaries_path, low_memory=False)
+    opt = pd.read_csv(options_path, low_memory=False)
+    sal["spot_uid"] = sal.Player.astype(str) + "|" + sal.Team.astype(str)
+    opt["spot_uid"] = opt.Player.astype(str) + "|" + opt.Team.astype(str)
+    salary_cols = [c for c in sal.columns if SPOTRAC_YEAR_COLUMN.match(str(c))]
+    option_cols = [c for c in opt.columns if SPOTRAC_YEAR_COLUMN.match(str(c))]
+    long = sal.melt(id_vars=["spot_uid", "Player", "spotrac_id", "nba_id", "Team"], value_vars=salary_cols, var_name="label", value_name="salary")
+    codes = opt.melt(id_vars=["spot_uid"], value_vars=option_cols, var_name="label", value_name="code").drop_duplicates(["spot_uid", "label"])
+    long = long.merge(codes, on=["spot_uid", "label"], how="left")
+    long["code"] = long.code.astype("string").where(~long.code.astype("string").isin(["0", "<NA>"]))
+    long["season_end_year"] = long.label.str[:4].astype(int) + 1
+    # The exporter gives every WAIVED row placeholder spotrac_id 0, which its crosswalk maps to one
+    # real player's nba_id. An id shared by several differently named rows (or on a WAIVED row)
+    # is untrustworthy, so match those rows by name only.
+    clean = long.Player.str.replace(r"\s+WAIVED$", "", regex=True)
+    shared = long.assign(clean=clean).groupby("nba_id").clean.transform("nunique").gt(1)
+    long.loc[shared | long.Player.str.contains(r"\bWAIVED$", regex=True), "nba_id"] = np.nan
+    long = long[long.salary.gt(0) & ~long.code.eq("D").fillna(False).astype(bool)].copy()
+    # the export carries a stray historical column; the real forward schedule starts where the data is dense
+    density = long.groupby("season_end_year").size()
+    long = long[long.season_end_year >= density[density >= min_rows_per_season].index.min()]
+    long["spot_salary_musd"] = long.salary / 1_000_000.0
+    long["name_key"] = long.Player.str.replace(r"\s+WAIVED$", "", regex=True).map(normalize_name)
+    return long[["spot_uid", "Player", "nba_id", "Team", "season_end_year", "spot_salary_musd", "code", "name_key"]].rename(columns={"code": "spot_option"})
+
+
+def attach_spotrac_schedule(final: pd.DataFrame, resolved: pd.DataFrame, spotrac: Optional[pd.DataFrame]) -> pd.DataFrame:
+    """Price future contract-seasons from Spotrac's schedule instead of the flat estimate.
+
+    Only seasons with no realized salary and inside Spotrac's horizon are eligible. Matching is
+    by NBA ID, else by normalized name; a name-only match must be the same team or price within
+    SPOTRAC_NAME_VALUE_TOLERANCE of our own estimate. Spotrac describes only a player's CURRENT
+    contract, so when several events cover the same player-season the latest unsuperseded event
+    claims it; older ones keep their as-signed estimate and are marked
+    ``season_claimed_by_later_deal``. Adds ``spotrac_option`` (T/P/NG/UFA/RFA at that season).
+    """
+    from psx_crosswalk import name_variants, normalize_name
+
+    final = final.copy()
+    final["spotrac_option"] = None
+    final["season_claimed_by_later_deal"] = False
+    if spotrac is None or spotrac.empty:
+        return final
+
+    meta = resolved.drop_duplicates("contract_id").set_index("contract_id")
+    rows = final[final.season_end_year.ge(spotrac.season_end_year.min()) & final.aav_source.ne("realized")].copy()
+    rows["row_id"] = rows.index
+    rows["event_date"] = pd.to_datetime(rows.contract_id.map(meta["date"]))
+    rows["event_superseded"] = rows.contract_id.map(meta["is_superseded"]).fillna(False).astype(bool) if "is_superseded" in meta else False
+
+    spot_cols = ["spot_uid", "nba_id", "Team", "season_end_year", "spot_salary_musd", "spot_option", "name_key"]
+    by_id = rows[rows.player_id.notna()].merge(
+        spotrac[spotrac.nba_id.notna()][spot_cols].rename(columns={"nba_id": "spot_nba_id", "Team": "spot_team", "name_key": "spot_name"}),
+        left_on=["player_id", "season_end_year"], right_on=["spot_nba_id", "season_end_year"], how="inner")
+    by_id["via"] = "id"
+
+    unmatched = rows[~rows.row_id.isin(by_id.row_id)]
+    keys = pd.DataFrame({"player": unmatched.player.dropna().unique()})
+    keys["name_key"] = keys.player.map(lambda p: sorted({normalize_name(v) for v in name_variants(str(p))}))
+    keys = keys.explode("name_key")
+    by_name = unmatched.merge(keys, on="player", how="inner").merge(
+        spotrac[spot_cols].rename(columns={"nba_id": "spot_nba_id", "Team": "spot_team", "name_key": "spot_name"}),
+        left_on=["name_key", "season_end_year"], right_on=["spot_name", "season_end_year"], how="inner")
+    by_name["via"] = "name"
+
+    cand = pd.concat([by_id, by_name], ignore_index=True)
+    if cand.empty:
+        return final
+    cand["team_match"] = cand.team_abbr.eq(cand.spot_team)
+    near = ((cand.spot_salary_musd - cand.aav_final_musd).abs() / cand.spot_salary_musd).le(SPOTRAC_NAME_VALUE_TOLERANCE)
+    cand = cand[cand.via.eq("id") | cand.team_match | near].copy()
+    # one Spotrac row per contract-season: prefer a unique candidate, else the unique same-team one
+    size = cand.groupby("row_id").row_id.transform("size")
+    cand = cand[size.eq(1) | cand.team_match]
+    cand = cand[cand.groupby("row_id").row_id.transform("size").eq(1)]
+
+    cand = cand.sort_values(["event_date", "contract_id"], kind="stable")
+    eligible = cand[~cand.event_superseded]
+    winners = eligible.drop_duplicates(["spot_uid", "season_end_year"], keep="last")
+    losers = cand[~cand.row_id.isin(winners.row_id)]
+    final.loc[winners.row_id, "aav_final_musd"] = winners.spot_salary_musd.values
+    final.loc[winners.row_id, "aav_source"] = "spotrac_schedule"
+    final.loc[winners.row_id, "spotrac_option"] = winners.spot_option.values
+    final.loc[losers.row_id, "season_claimed_by_later_deal"] = True
+    return final
+
+
+def price_extensions_from_terms(final: pd.DataFrame, resolved: pd.DataFrame) -> pd.DataFrame:
+    """Price extension seasons from the contract's own terms, not from realized salary.
+
+    The model keeps an extension's structural schedule as signed (the pipeline deliberately does
+    not link it to the end of the player's prior deal), so its early seasons often coincide with
+    the OLD contract's seasons and a realized join would attach that other contract's pay to the
+    extension (year 1 averaged 68% of the extension's own AAV). Extensions with a stated value are
+    therefore priced at stated total / term (``aav_source = "contract_terms"``: a deliberate
+    contract-first price, distinct from the ``estimated_flat`` fallback used when no realized
+    salary exists); the realized figure stays in
+    ``aav_realized_musd`` and ``realized_overridden_by_terms`` marks the rows. Spotrac can still
+    price future seasons afterwards.
+    """
+    final = final.copy()
+    extension_ids = resolved.loc[resolved.is_extension.fillna(False).astype(bool) & resolved.aav_musd.notna(), "contract_id"]
+    mask = final.contract_id.isin(extension_ids) & final.aav_source.eq("realized") & final.aav_naive_musd.notna()
+    final["realized_overridden_by_terms"] = mask
+    final.loc[mask, "aav_final_musd"] = final.loc[mask, "aav_naive_musd"]
+    final.loc[mask, "aav_source"] = "contract_terms"
+    return final
+
+
+def attach_modern_event_metadata(resolved: pd.DataFrame, modern: pd.DataFrame) -> pd.DataFrame:
+    """Attach identity/context fields from the player's actual start season.
+
+    Age is deliberately season-specific rather than a latest-career value;
+    position and draft class are carried from the same modern.csv row.
+    """
+    metadata = modern[["PLAYER_ID", "year", "AGE", "Pos", "DRAFT_YEAR"]].rename(
+        columns={
+            "PLAYER_ID": "player_id", "year": "start_season", "AGE": "age",
+            "Pos": "position", "DRAFT_YEAR": "draft_class",
+        }
+    )
+    metadata = metadata.drop_duplicates(subset=["player_id", "start_season"])
+    resolved = resolved.merge(metadata, on=["player_id", "start_season"], how="left")
+
+    # Context only: what the player was actually paid in the signing cohort's season. It is
+    # NOT the price of this event (the event may be one of several, or a different contract),
+    # but it sizes events whose notes carry no dollars, e.g. a bare "re-signed".
+    signed = pd.to_datetime(resolved.date)
+    resolved["signing_cohort_end_year"] = np.where(signed.dt.month.ge(7), signed.dt.year + 1, signed.dt.year)
+    paid = modern[["PLAYER_ID", "year", "salary"]].rename(columns={"PLAYER_ID": "player_id", "year": "signing_cohort_end_year", "salary": "signing_season_salary_musd"})
+    paid = paid.drop_duplicates(subset=["player_id", "signing_cohort_end_year"])
+    paid["signing_season_salary_musd"] = (paid.signing_season_salary_musd / 1_000_000.0).where(paid.signing_season_salary_musd.gt(0))
+    resolved = resolved.merge(paid, on=["player_id", "signing_cohort_end_year"], how="left")
+    resolved.loc[resolved.player_id.isna(), "signing_season_salary_musd"] = np.nan
+    return resolved.drop(columns=["signing_cohort_end_year"])
+
+
+def attach_nba_appearance(resolved: pd.DataFrame, index_master: pd.DataFrame) -> pd.DataFrame:
+    """Record whether the signed player appeared in any NBA game that season.
+
+    ``index_master.csv`` has one row per player-team-season with a game appearance, so it is
+    evidence of use: a signing whose player never took the floor is a camp or non-guaranteed
+    deal in practice. Values: ``appeared``; ``no_game_that_season`` (matched player, no row in
+    the signing cohort's season); ``never_appeared`` (unmatched name that appears nowhere in
+    index_master since 2013); ``unknown`` (unmatched name that does appear, or a cohort whose
+    season index_master has not reached yet, where absence proves nothing).
+    """
+    from psx_crosswalk import INDEX_MASTER_MIN_YEAR, name_variants, normalize_name
+
+    seasons = pd.to_numeric(index_master.year, errors="coerce")
+    ids = pd.to_numeric(index_master.nba_id, errors="coerce")
+    played = set(zip(ids[ids.notna() & seasons.notna()].astype("int64"), seasons[ids.notna() & seasons.notna()].astype("int64")))
+    recent_names = {normalize_name(str(name)) for name in index_master.loc[seasons >= INDEX_MASTER_MIN_YEAR, "player"].dropna().unique()}
+    latest_season = int(seasons.max())
+
+    signed = pd.to_datetime(resolved.date)
+    cohort = np.where(signed.dt.month.ge(7), signed.dt.year + 1, signed.dt.year)
+
+    def status(player: Any, player_id: Any, cohort_year: int) -> str:
+        if cohort_year > latest_season:
+            return "unknown"
+        if pd.notna(player_id):
+            return "appeared" if (int(player_id), int(cohort_year)) in played else "no_game_that_season"
+        known = any(normalize_name(variant) in recent_names for variant in name_variants(str(player)))
+        return "unknown" if known else "never_appeared"
+
+    resolved["nba_appearance"] = [status(p, i, int(c)) for p, i, c in zip(resolved.player, resolved.player_id, cohort)]
+    return resolved
+
+
+def attach_team_tenure(resolved: pd.DataFrame, index_master: pd.DataFrame) -> pd.DataFrame:
+    """Attach prior and continuous franchise service as of each signing cohort.
+
+    A player-season is credited to every team represented that season, which
+    deliberately counts both teams when the player was traded midseason.
+    """
+    history = index_master[["nba_id", "year", "team_id"]].rename(
+        columns={"nba_id": "player_id", "year": "history_season_end_year"}
+    ).copy()
+    history["player_id"] = pd.to_numeric(history.player_id, errors="coerce")
+    history["team_id"] = pd.to_numeric(history.team_id, errors="coerce")
+    history["history_season_end_year"] = pd.to_numeric(history.history_season_end_year, errors="coerce")
+    if "GP" in index_master:
+        games = pd.to_numeric(index_master.GP, errors="coerce")
+        history = history.loc[games.gt(0)]
+    history = history.dropna(subset=["player_id", "team_id", "history_season_end_year"])
+    history[["player_id", "team_id", "history_season_end_year"]] = history[["player_id", "team_id", "history_season_end_year"]].astype("int64")
+    history = history.drop_duplicates(["player_id", "team_id", "history_season_end_year"])
+
+    events = resolved[["contract_id", "player_id", "team_id", "date"]].copy()
+    events["player_id"] = pd.to_numeric(events.player_id, errors="coerce")
+    events["team_id"] = pd.to_numeric(events.team_id, errors="coerce")
+    dates = pd.to_datetime(events.date, errors="coerce")
+    events["signing_cohort_end_year"] = dates.dt.year + dates.dt.month.ge(7).astype("float64")
+    valid_events = events.dropna(subset=["player_id", "team_id", "signing_cohort_end_year"])
+    matches = valid_events.merge(history, on=["player_id", "team_id"], how="inner", validate="many_to_many")
+    prior = matches.loc[matches.history_season_end_year.lt(matches.signing_cohort_end_year)].copy()
+    if prior.empty:
+        tenure = pd.DataFrame(columns=["contract_id", "prior_team_seasons", "current_team_stint_seasons"])
+    else:
+        prior = prior.sort_values(["contract_id", "history_season_end_year"], ascending=[True, False])
+        prior["next_prior_season"] = prior.groupby("contract_id", sort=False).history_season_end_year.shift(-1)
+        prior["starts_stint"] = prior.next_prior_season.isna() | prior.history_season_end_year.sub(prior.next_prior_season).ne(1)
+        prior["stint_segment"] = prior.groupby("contract_id", sort=False).starts_stint.cumsum()
+        prior["stint_segment_seasons"] = prior.groupby(["contract_id", "stint_segment"]).history_season_end_year.transform("size")
+        totals = prior.groupby("contract_id", sort=False).history_season_end_year.nunique().rename("prior_team_seasons")
+        latest = prior.drop_duplicates("contract_id").set_index("contract_id")
+        current = latest.stint_segment_seasons.where(
+            latest.history_season_end_year.eq(latest.signing_cohort_end_year - 1), 0
+        ).rename("current_team_stint_seasons")
+        tenure = pd.concat([totals, current], axis=1).reset_index()
+
+    output = resolved.merge(tenure, on="contract_id", how="left", validate="one_to_one")
+    history_ids = set(history.player_id.unique())
+    known_history = output.player_id.isin(history_ids) & pd.to_numeric(output.team_id, errors="coerce").notna()
+    output.loc[known_history, "prior_team_seasons"] = output.loc[known_history, "prior_team_seasons"].fillna(0)
+    output.loc[known_history, "current_team_stint_seasons"] = output.loc[known_history, "current_team_stint_seasons"].fillna(0)
+    bins = [-1, 0, 1, 3, 6, float("inf")]
+    output["prior_team_tenure_band"] = pd.cut(
+        pd.to_numeric(output.prior_team_seasons, errors="coerce"), bins,
+        labels=["First season", "1 prior season", "2–3 prior seasons", "4–6 prior seasons", "7+ prior seasons"], include_lowest=True,
+    ).astype("object").fillna("Unknown tenure")
+    output["current_team_stint_band"] = pd.cut(
+        pd.to_numeric(output.current_team_stint_seasons, errors="coerce"), bins,
+        labels=["No immediately prior season", "1-season run", "2–3-season run", "4–6-season run", "7+ season run"], include_lowest=True,
+    ).astype("object").fillna("Unknown tenure")
+    return output
 
 
 def main():
@@ -306,23 +613,41 @@ def main():
     crosswalk_file = "crosswalk_matched.csv"
 
     print(f"Loading raw inputs from {contracts_file}...")
-    resolved = build_resolved_contracts(contracts_file, crosswalk_file)
-    resolved.to_csv("contracts_resolved.csv", index=False)
-    print(f"Saved contracts_resolved.csv: {len(resolved)} rows")
-
-    seasons = expand_seasons(resolved)
-    print(f"Expanded to {len(seasons)} contract-seasons")
-
-    print(f"Fetching modern per-season salaries from {MODERN_CSV_URL}...")
+    print("Loading player-team season history from index_master.csv...")
+    index_master = pd.read_csv("index_master.csv", low_memory=False)
+    resolved = attach_team_tenure(build_resolved_contracts(contracts_file, crosswalk_file), index_master)
+    resolved = attach_nba_appearance(resolved, index_master)
+    modern_source = os.environ.get("MODERN_CSV_PATH", MODERN_CSV_URL)
+    print(f"Fetching modern per-season salaries from {modern_source}...")
     try:
-        modern = pd.read_csv(MODERN_CSV_URL, low_memory=False)
-        final = attach_modern_salary(seasons, modern)
+        modern = pd.read_csv(modern_source, low_memory=False)
+        resolved = attach_modern_event_metadata(resolved, modern)
+        resolved.to_csv("contracts_resolved.csv", index=False)
+        print(f"Saved contracts_resolved.csv: {len(resolved)} rows")
+        seasons = expand_seasons(resolved)
+        print(f"Expanded to {len(seasons)} contract-seasons")
+        final = price_extensions_from_terms(attach_modern_salary(seasons, modern), resolved)
     except Exception as e:
         print("Could not fetch remote modern.csv, falling back to local naive values:", e)
+        resolved.to_csv("contracts_resolved.csv", index=False)
+        print(f"Saved contracts_resolved.csv: {len(resolved)} rows")
+        seasons = expand_seasons(resolved)
+        print(f"Expanded to {len(seasons)} contract-seasons")
         final = seasons
         final["aav_realized_musd"] = None
         final["aav_final_musd"] = final["aav_naive_musd"]
         final["aav_source"] = "estimated_flat"
+
+    spotrac = None
+    salaries_path = os.environ.get("SPOTRAC_SALARIES_PATH", "../web_app/data/nba_salaries.csv")
+    options_path = os.environ.get("SPOTRAC_OPTIONS_PATH", "../web_app/data/nba_options.csv")
+    if os.path.exists(salaries_path) and os.path.exists(options_path):
+        spotrac = load_spotrac_schedule(salaries_path, options_path)
+        print(f"Loaded Spotrac forward schedule: {len(spotrac)} player-seasons from {salaries_path}")
+    else:
+        print("Spotrac forward schedule not found; future seasons keep the flat estimate.")
+    final = attach_spotrac_schedule(final, resolved, spotrac)
+    print(f"Spotrac-priced seasons: {int(final.aav_source.eq('spotrac_schedule').sum())}")
 
     final.to_csv("contract_seasons.csv", index=False)
     print(f"Saved contract_seasons.csv: {len(final)} rows")

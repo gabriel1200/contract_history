@@ -171,11 +171,11 @@ TEAM_NICKNAMES = [
     "Hawks", "Celtics", "Nets", "Hornets", "Bulls", "Cavaliers", "Mavericks",
     "Nuggets", "Pistons", "Warriors", "Rockets", "Pacers", "Clippers",
     "Lakers", "Grizzlies", "Heat", "Bucks", "Timberwolves", "Pelicans",
-    "Knicks", "Thunder", "Magic", "76ers", "Suns", "Trail Blazers", "Kings",
+    "Knicks", "Thunder", "Magic", "76ers", "Suns", "Blazers", "Kings",
     "Spurs", "Raptors", "Jazz", "Wizards",
 ]
 TEAM_NICKNAMES = [
-    "Hawks", "Celtics"]
+    "Blazers"]
 CONTRACT_KEYWORDS = re.compile(
     r"\b(signed|re-signed|resigned|extension|extended)\b", re.IGNORECASE
 )

@@ -18,7 +18,15 @@ guessed at, they fall through to unmatched output for manual review):
      string) is most likely, so ambiguous normalized matches are
      deliberately NOT resolved -- they go to unmatched.
 
-Anything left after all four tiers is written to a separate "unmatched"
+  5. normalized-variant match -- the same normalization applied to each
+     slash variant and parenthetical-stripped form separately, so
+     "Ogugua Anunoby / O.G. Anunoby" finds modern's "OG Anunoby".
+  6. index_master fallback -- a unique normalized-name match in
+     index_master.csv (players with a game appearance since 2013), for
+     players modern.csv does not carry. These get an ID (so franchise
+     tenure joins) but no modern.csv salary/age/position.
+
+Anything left after all tiers is written to a separate "unmatched"
 CSV rather than silently dropped or guessed at. In practice, based on a
 manual look at real unmatched names, a large fraction of these are
 players/coaches who are legitimately absent from modern.csv (no on-court
@@ -30,6 +38,7 @@ split, not an assumption baked into this script.
 
 from __future__ import annotations
 
+import os
 import re
 import unicodedata
 from dataclasses import dataclass
@@ -53,6 +62,7 @@ MANUAL_ALIASES: dict[str, str] = {
     "Ron Holland II": "Ronald Holland II",
 }
 PAREN_RE = re.compile(r"\s*\([^)]*\)\s*")
+GENERATION_MARKER_RE = re.compile(r"\((?:I{1,3}|IV|V|Jr\.?|Sr\.?)\)", re.IGNORECASE)
 SUFFIX_RE = re.compile(r"\s+(Jr\.?|Sr\.?|II|III|IV|V)$", re.IGNORECASE)
 
 
@@ -76,8 +86,25 @@ class CrosswalkResult:
     candidates_considered: int = 0  # for ambiguous cases, how many candidates existed
 
 
-def build_crosswalk(player_strings: list[str], modern_df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Returns (matched_df, unmatched_df)."""
+INDEX_MASTER_MIN_YEAR = 2013  # PST signings start in 2014; older namesakes would be false matches
+
+
+def name_variants(raw: str) -> list[str]:
+    """The raw string plus each slash part, with and without parentheticals."""
+    parts = [raw] + [v.strip() for v in raw.split("/") if v.strip()]
+    out = []
+    for part in parts:
+        out.append(part)
+        # "(I)", "(II)", "(Jr.)" tell two relatives apart; stripping it would merge them
+        # (e.g. "Larry Drew (I)" is not Larry Drew II), so only strip other parentheticals.
+        if not GENERATION_MARKER_RE.search(part):
+            out.append(re.sub(r"\s+", " ", PAREN_RE.sub(" ", part)).strip())
+    return list(dict.fromkeys(v for v in out if v))
+
+
+def build_crosswalk(player_strings: list[str], modern_df: pd.DataFrame,
+                    index_df: Optional[pd.DataFrame] = None) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Returns (matched_df, unmatched_df). ``index_df`` (index_master.csv) enables tier 6."""
 
     # name -> id, but keep track of names that map to MULTIPLE distinct
     # ids in modern.csv (can happen with true name collisions between two
@@ -89,6 +116,12 @@ def build_crosswalk(player_strings: list[str], modern_df: pd.DataFrame) -> tuple
     normalized_to_names: dict[str, set[str]] = {}
     for name in name_to_ids:
         normalized_to_names.setdefault(normalize_name(name), set()).add(name)
+
+    index_norm_to_ids: dict[str, dict[int, str]] = {}
+    if index_df is not None:
+        recent = index_df[pd.to_numeric(index_df.year, errors="coerce") >= INDEX_MASTER_MIN_YEAR]
+        for _, r in recent[["player", "nba_id"]].dropna().drop_duplicates().iterrows():
+            index_norm_to_ids.setdefault(normalize_name(str(r["player"])), {})[int(r["nba_id"])] = str(r["player"])
 
     def resolve_exact(name: str) -> Optional[tuple[str, int]]:
         ids = name_to_ids.get(name)
@@ -161,6 +194,32 @@ def build_crosswalk(player_strings: list[str], modern_df: pd.DataFrame) -> tuple
         elif len(candidate_ids) > 1:
             res.candidates_considered = len(candidate_ids)
 
+        # tier 5: normalized match on each slash / parenthetical variant
+        variant_ids: dict[int, str] = {}
+        for variant in name_variants(raw.strip()):
+            for cname in normalized_to_names.get(normalize_name(variant), set()):
+                for pid in name_to_ids[cname]:
+                    variant_ids[pid] = cname
+        if len(variant_ids) == 1:
+            (pid, cname), = variant_ids.items()
+            res.matched_name, res.player_id, res.method = cname, pid, "normalized_variant"
+            results.append(res)
+            continue
+        if len(variant_ids) > 1:
+            res.candidates_considered = max(res.candidates_considered, len(variant_ids))
+
+        # tier 6: index_master fallback (unique id only; ambiguity is never guessed)
+        index_ids: dict[int, str] = {}
+        for variant in name_variants(raw.strip()):
+            index_ids.update(index_norm_to_ids.get(normalize_name(variant), {}))
+        if not variant_ids and len(index_ids) == 1:
+            (pid, iname), = index_ids.items()
+            res.matched_name, res.player_id, res.method = iname, pid, "index_master"
+            results.append(res)
+            continue
+        if not variant_ids and len(index_ids) > 1:
+            res.candidates_considered = max(res.candidates_considered, len(index_ids))
+
         results.append(res)  # unresolved
 
     all_df = pd.DataFrame([r.__dict__ for r in results])
@@ -185,9 +244,10 @@ def main():
     # not something hosted elsewhere. Put it in the same directory you
     # run this script from, or edit the path below.
     contracts = pd.read_csv("psx_contracts_v2_2014_present.csv")
+    index_master = pd.read_csv("index_master.csv", low_memory=False) if os.path.exists("index_master.csv") else None
 
     player_strings = sorted(contracts.player.dropna().unique())
-    matched, unmatched = build_crosswalk(player_strings, modern)
+    matched, unmatched = build_crosswalk(player_strings, modern, index_master)
 
     matched.to_csv("crosswalk_matched.csv", index=False)
     unmatched.to_csv("crosswalk_unmatched.csv", index=False)

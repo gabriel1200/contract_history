@@ -28,6 +28,8 @@ psx_contracts.py, since it's already validated against real site output.
 from __future__ import annotations
 
 import asyncio
+import argparse
+import os
 import re
 import sys
 import time
@@ -48,7 +50,7 @@ TEAM_NICKNAMES = [
     "Hawks", "Celtics", "Nets", "Hornets", "Bulls", "Cavaliers", "Mavericks",
     "Nuggets", "Pistons", "Warriors", "Rockets", "Pacers", "Clippers",
     "Lakers", "Grizzlies", "Heat", "Bucks", "Timberwolves", "Pelicans",
-    "Knicks", "Thunder", "Magic", "76ers", "Suns", "Trail Blazers", "Kings",
+    "Knicks", "Thunder", "Magic", "76ers", "Suns", "Blazers", "Kings",
     "Spurs", "Raptors", "Jazz", "Wizards",
 ]
 
@@ -299,13 +301,13 @@ async def scrape_team(
     return all_contract_rows, all_trade_rows
 
 
-async def main():
+async def main(teams: list[str]):
     config = UnflareConfig(url=UNFLARE_URL, timeout=60000)
     handler = UnflareRequestHandler(config)
 
     all_contract_rows: list[ContractRow] = []
     all_trade_rows: list[TradeRow] = []
-    for team in TEAM_NICKNAMES:
+    for team in teams:
         print(f"Scraping {team}...", file=sys.stderr)
         try:
             contract_rows, trade_rows = await scrape_team(team, handler)
@@ -320,6 +322,16 @@ async def main():
         out_df["parse_warnings"] = out_df["parse_warnings"].apply(
             lambda ws: "; ".join(ws)
         )
+        # A targeted refresh must preserve every other team's previously
+        # scraped transactions. Replace only the requested team slice, then
+        # retain the same natural-key deduplication used downstream.
+        if set(teams) != set(TEAM_NICKNAMES) and os.path.exists(contracts_path):
+            existing = pd.read_csv(contracts_path)
+            existing = existing.loc[~existing["team"].isin(teams)]
+            out_df = pd.concat([existing, out_df], ignore_index=True)
+            out_df = out_df.drop_duplicates(
+                subset=["date", "team", "player", "raw_notes"], keep="last"
+            )
         out_df.to_csv(contracts_path, index=False)
     print(f"Wrote {len(all_contract_rows)} rows to {contracts_path}", file=sys.stderr)
 
@@ -340,9 +352,22 @@ async def main():
         trade_df["relinquished_assets"] = trade_df["relinquished_assets"].apply(
             lambda a: "; ".join(a)
         )
+        if set(teams) != set(TEAM_NICKNAMES) and os.path.exists(trades_path):
+            existing_trades = pd.read_csv(trades_path)
+            existing_trades = existing_trades.loc[~existing_trades["team"].isin(teams)]
+            trade_df = pd.concat([existing_trades, trade_df], ignore_index=True)
+            trade_df = trade_df.drop_duplicates(
+                subset=["date", "team", "raw_notes"], keep="last"
+            )
         trade_df.to_csv(trades_path, index=False)
     print(f"Wrote {len(all_trade_rows)} rows to {trades_path}", file=sys.stderr)
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    parser = argparse.ArgumentParser(description="Scrape NBA transaction history.")
+    parser.add_argument(
+        "--team", choices=TEAM_NICKNAMES, action="append",
+        help="Refresh one team while preserving all other teams' existing rows. Repeatable.",
+    )
+    args = parser.parse_args()
+    asyncio.run(main(args.team or TEAM_NICKNAMES))
