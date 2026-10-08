@@ -1,7 +1,7 @@
 # NBA Contract History Pipeline -- Data Dictionary
 
 Last updated against pipeline fingerprint: **7,843 contracts / 8,522 season
-rows (4,075 contracts) / 4,634 realized AAV / 954 Spotrac-priced future seasons / 25
+rows (4,075 contracts) / 4,634 realized AAV / 351 payroll-history-priced past seasons / 954 Spotrac-priced future seasons / 25
 option_year_mismatch flags / 9 superseded reports.** If a fresh
 run doesn't match these numbers, something upstream changed (a script
 edit, a `modern.csv` update, or a new scrape) -- worth diffing rather
@@ -58,6 +58,15 @@ salaries and dead-money rows (`D`) are dropped. Seasons from the first dense Spo
 else name (a name-only match must be the same team or within 35% of our own estimate). Only
 the latest unsuperseded event per player-season claims a price. If the files are missing the
 build keeps the flat estimates. Refresh the export before each build; it is a dated snapshot.
+
+**Spotrac payroll history (optional input, added 2026-10-08):** `build_unified.py` reads
+`PAYROLL_HISTORY_PATH` / `PAYROLL_PAGES_PATH` (default `../web_app/data/nba_payroll_history.csv` and
+`nba_payroll_pages.csv`, written by `site_data/payroll_history_scrape.py`). The history has one row per player per
+section per team-season (2013-14 to 2025-26): `active` = real pay, `exempt` = exempt-list players, still paid,
+`dead_money` = obligations to released players, `cap_hold` = placeholders (never used). Player names resolve to NBA ids
+through `index_master.csv` (ambiguous names are narrowed by season, never guessed). Only seasons priced `unknown` or
+`estimated_flat` are changed; realized, contract-terms and Spotrac-schedule seasons never are. The manifest lists
+which of the 30 team pages of each season loaded; `payroll_absent` is only set for seasons where all 30 did.
 
 Run order: `psx_contracts_v2.py` (needs Unflare running locally on
 `localhost:5002`) -> `psx_crosswalk.py` -> `build_unified.py`. The last
@@ -226,9 +235,12 @@ no-ID events are still absent (they remain in `contracts_resolved.csv`).
 | `option_year_mismatch` | **self-check column.** True when the option season's computed `season_end_year` doesn't match the independently-parsed `option_year` text. Currently 29 rows flagged: 24 are the accepted extension-timing limitation (see below), 5 are rare/ambiguous phrasings not worth chasing for single-digit row counts. Treat new mismatches appearing after a re-run as worth investigating. |
 | `aav_realized_musd` | real per-season salary from `modern.csv`, when available (deduplicated first -- see below) |
 | `aav_final_musd` | `aav_realized_musd` if present; else, for seasons the Spotrac forward schedule covers, that schedule's salary (see `spotrac_schedule`); else `aav_naive_musd` |
-| `aav_source` | `"realized"` (modern.csv salary actually paid), `"spotrac_schedule"` (future season priced from Spotrac's contract schedule), `"contract_terms"` (extension season priced from the contract's own stated total / term on purpose, even though a realized figure exists), `"estimated_flat"` (stated total / years, used only as a fallback when nothing better exists) or `"unknown"` -- **always check this before trusting `aav_final_musd`**; reliability differs a lot. `spotrac_schedule` is a contractual schedule, not salary already paid, and it reflects the snapshot date of the Spotrac export. |
+| `aav_source` | `"realized"` (modern.csv salary actually paid), `"spotrac_payroll"` (a past season with no realized pay, priced from Spotrac's historical team payrolls: the same cap-hit quantity as `modern.csv`, found for players `modern.csv` leaves blank, mostly traded and brief-stay players), `"spotrac_schedule"` (future season priced from Spotrac's contract schedule), `"contract_terms"` (extension season priced from the contract's own stated total / term on purpose, even though a realized figure exists), `"estimated_flat"` (stated total / years, used only as a fallback when nothing better exists) or `"unknown"` -- **always check this before trusting `aav_final_musd`**; reliability differs a lot. `spotrac_schedule` is a contractual schedule, not salary already paid, and it reflects the snapshot date of the Spotrac export. |
 | `spotrac_option` | Spotrac's option code for that season on `spotrac_schedule` rows: `T` team option, `P` player option, `NG` non-guaranteed, `UFA`/`RFA` the free-agency marker; empty otherwise. A listed option is still unexercised as of the snapshot. |
 | `realized_overridden_by_terms` | True on extension seasons whose `aav_final_musd` was set from the contract's stated total / term although a realized salary existed (819 rows, 309 extensions as of 2026-10-07). The realized value stays in `aav_realized_musd` for reference. See "Extension timing" under Known limitations. |
+| `payroll_match` / `payroll_team` | On `spotrac_payroll` rows: `same_team` when the payroll lists the player on the contract's own team, `other_team` when he was traded (Spotrac lists a traded player once, on his final team, at the full-season cap hit), and the team that carries the cap hit. |
+| `payroll_dead_money_musd` | What the contract's own team still owed the player as dead money that season (released players), from the payroll history. **Kept apart from price**: it is an obligation, never used as salary. |
+| `payroll_absent` | True on a season still priced `unknown` or `estimated_flat` where all 30 team pages of that season loaded and the player is on none of them (no active, exempt or dead-money line anywhere). It changes no price; whether absence means "unpaid" is a judgment (for later seasons of a waived deal the stated contract still counts as what was offered). |
 | `season_claimed_by_later_deal` | True when Spotrac prices this player-season but a later unsuperseded contract event claimed it (Spotrac lists only the current deal), so this older event keeps its as-signed estimate. Informational; nothing is removed. |
 
 **modern.csv duplicate-row fix applied:** `modern.csv` itself (as

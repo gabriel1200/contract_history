@@ -362,6 +362,92 @@ def attach_modern_salary(seasons: pd.DataFrame, modern: pd.DataFrame) -> pd.Data
     return merged
 
 
+PAYROLL_SOURCE = "spotrac_payroll"
+LEAGUE_TEAMS = 30
+
+
+def load_payroll_history(history_path: str, pages_path: Optional[str], index_master: pd.DataFrame) -> Dict[str, Any]:
+    """Spotrac historical payrolls keyed by NBA id.
+
+    Returns ``active`` (real pay: one row per player-season, the team that carries it), ``dead`` (what a team
+    still owes a released player, kept apart from salary) and ``complete_seasons`` (seasons whose 30 team pages
+    all loaded, the only seasons where a player's absence from the league means anything). Cap holds are
+    placeholders, not pay, and are dropped; the exempt list counts as pay. Names are resolved to ids through ``index_master``; a name that is
+    ambiguous after narrowing to the season stays unmatched rather than guessed.
+    """
+    from psx_crosswalk import normalize_name
+
+    history = pd.read_csv(history_path, dtype={"spotrac_id": str}, low_memory=False)
+    history = history[history.section.isin(["active", "exempt", "dead_money"]) & history.cap_hit.notna()].copy()
+    seasons_by_name: Dict[str, Dict[int, set]] = {}
+    for name, nba_id, year in zip(index_master.player, pd.to_numeric(index_master.nba_id, errors="coerce"), pd.to_numeric(index_master.year, errors="coerce")):
+        if pd.notna(nba_id) and pd.notna(year):
+            seasons_by_name.setdefault(normalize_name(str(name)), {}).setdefault(int(nba_id), set()).add(int(year))
+
+    def resolve(name: str, season_end: int) -> Optional[int]:
+        ids = seasons_by_name.get(normalize_name(str(name)), {})
+        if len(ids) == 1:
+            return next(iter(ids))
+        in_season = [i for i, years in ids.items() if season_end in years]
+        return in_season[0] if len(in_season) == 1 else None
+
+    pairs = history[["player", "season_end"]].drop_duplicates()
+    lookup = {(n, int(y)): resolve(n, int(y)) for n, y in zip(pairs.player, pairs.season_end)}
+    history["nba_id"] = [lookup[(n, int(y))] for n, y in zip(history.player, history.season_end)]
+    history = history.dropna(subset=["nba_id"]).astype({"nba_id": "int64"})
+    # "exempt" (players exempt from the cap count, e.g. a long suspension) are still paid their real salary
+    active = (history[history.section.isin(["active", "exempt"])].sort_values("cap_hit", ascending=False)
+              .drop_duplicates(["nba_id", "season_end"])[["nba_id", "season_end", "team", "cap_hit"]])
+    dead = (history[history.section == "dead_money"].groupby(["nba_id", "season_end", "team"], as_index=False).cap_hit.max())
+    complete: set = set()
+    if pages_path and os.path.exists(pages_path):
+        pages = pd.read_csv(pages_path)
+        ok = pages[pages.status == "ok"].groupby("season_end").team.nunique()
+        complete = {int(season) for season, teams in ok.items() if teams >= LEAGUE_TEAMS}
+    return {"active": active, "dead": dead, "complete_seasons": complete, "seasons": set(history.season_end.astype(int))}
+
+
+def attach_payroll_history(final: pd.DataFrame, payroll: Optional[Dict[str, Any]]) -> pd.DataFrame:
+    """Price past seasons that have no real price yet from Spotrac's historical payrolls.
+
+    Only seasons priced ``unknown`` or ``estimated_flat`` change; realized, contract-terms and Spotrac-schedule
+    seasons are never touched. A traded player appears once, on his final team, at the full-season cap hit, so
+    the match is by player and season across all teams (``payroll_match`` says whether it was the contract's own
+    team). Dead money is recorded in ``payroll_dead_money_musd`` and never becomes the price. ``payroll_absent``
+    marks a still-unpriced season where every team page of that season loaded and the player is on none of them;
+    it changes no price (whether absence means unpaid is left as a judgment call).
+    """
+    final = final.copy()
+    final["payroll_match"] = None
+    final["payroll_team"] = None
+    final["payroll_dead_money_musd"] = np.nan
+    final["payroll_absent"] = False
+    if payroll is None or payroll["active"].empty:
+        return final
+    keyed = final.assign(_i=np.arange(len(final)), _id=pd.to_numeric(final.player_id, errors="coerce"))
+    known = keyed._id.notna() & keyed.season_end_year.isin(payroll["seasons"])
+    base = keyed[known].astype({"_id": "int64"})
+
+    active = base.merge(payroll["active"].rename(columns={"team": "_team", "cap_hit": "_cap"}),
+                        left_on=["_id", "season_end_year"], right_on=["nba_id", "season_end"], how="left")
+    fill = active[active.aav_source.isin(["unknown", "estimated_flat"]) & active._cap.gt(0)]
+    rows = fill._i.to_numpy()
+    final.iloc[rows, final.columns.get_loc("aav_final_musd")] = fill._cap.to_numpy() / 1_000_000.0
+    final.iloc[rows, final.columns.get_loc("aav_source")] = PAYROLL_SOURCE
+    final.iloc[rows, final.columns.get_loc("payroll_team")] = fill._team.to_numpy()
+    final.iloc[rows, final.columns.get_loc("payroll_match")] = np.where(fill._team.to_numpy() == fill.team_abbr.to_numpy(), "same_team", "other_team")
+
+    dead = base.merge(payroll["dead"].rename(columns={"team": "_team", "cap_hit": "_dead"}),
+                      left_on=["_id", "season_end_year", "team_abbr"], right_on=["nba_id", "season_end", "_team"], how="inner")
+    final.iloc[dead._i.to_numpy(), final.columns.get_loc("payroll_dead_money_musd")] = dead._dead.to_numpy() / 1_000_000.0
+
+    on_payroll = set(zip(payroll["active"].nba_id, payroll["active"].season_end)) | set(zip(payroll["dead"].nba_id, payroll["dead"].season_end))
+    still = base[base.aav_source.isin(["unknown", "estimated_flat"]) & base.season_end_year.isin(payroll["complete_seasons"]) & ~base._i.isin(rows)]
+    absent = [i for i, pid, season in zip(still._i, still._id, still.season_end_year) if (int(pid), int(season)) not in on_payroll]
+    final.iloc[absent, final.columns.get_loc("payroll_absent")] = True
+    return final
+
+
 SPOTRAC_YEAR_COLUMN = re.compile(r"^\d{4}-\d{2}$")
 SPOTRAC_NAME_VALUE_TOLERANCE = 0.35  # a name-only match on another team must price within 35% of our own estimate
 
@@ -648,6 +734,19 @@ def main():
         print("Spotrac forward schedule not found; future seasons keep the flat estimate.")
     final = attach_spotrac_schedule(final, resolved, spotrac)
     print(f"Spotrac-priced seasons: {int(final.aav_source.eq('spotrac_schedule').sum())}")
+
+    payroll = None
+    history_path = os.environ.get("PAYROLL_HISTORY_PATH", "../web_app/data/nba_payroll_history.csv")
+    pages_path = os.environ.get("PAYROLL_PAGES_PATH", "../web_app/data/nba_payroll_pages.csv")
+    if os.path.exists(history_path):
+        payroll = load_payroll_history(history_path, pages_path, index_master)
+        print(f"Loaded Spotrac payroll history: {len(payroll['active'])} player-seasons of pay, "
+              f"{len(payroll['complete_seasons'])} fully loaded seasons")
+    else:
+        print("Spotrac payroll history not found; past seasons keep their realized/flat prices.")
+    final = attach_payroll_history(final, payroll)
+    print(f"Payroll-history-priced seasons: {int(final.aav_source.eq(PAYROLL_SOURCE).sum())} "
+          f"| absent from every payroll: {int(final.payroll_absent.sum())}")
 
     final.to_csv("contract_seasons.csv", index=False)
     print(f"Saved contract_seasons.csv: {len(final)} rows")

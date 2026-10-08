@@ -231,3 +231,77 @@ def test_extension_seasons_are_priced_from_their_own_terms_not_the_old_contracts
     assert out.aav_source.tolist() == ["contract_terms", "contract_terms", "realized", "realized"]   # by design, not a fallback
     assert out.aav_realized_musd.tolist() == [13.5, 34.0, 9.0, 5.5]              # realized stays for reference
     assert out.realized_overridden_by_terms.tolist() == [True, True, False, False]
+
+
+# ---- Spotrac historical payroll ---------------------------------------------------------------------
+
+def _payroll(active=(), dead=(), complete=(), seasons=(2019, 2020)):
+    return {
+        "active": pd.DataFrame(list(active), columns=["nba_id", "season_end", "team", "cap_hit"]),
+        "dead": pd.DataFrame(list(dead), columns=["nba_id", "season_end", "team", "cap_hit"]),
+        "complete_seasons": set(complete), "seasons": set(seasons),
+    }
+
+
+def _season_row(contract_id, player_id, source, final, team="BOS", season=2019):
+    return {"contract_id": contract_id, "player_id": player_id, "team_abbr": team, "season_end_year": season,
+            "aav_source": source, "aav_final_musd": final, "aav_realized_musd": np.nan}
+
+
+def test_payroll_history_prices_only_seasons_without_a_real_price():
+    final = pd.DataFrame([
+        _season_row("unknown_same", 1.0, "unknown", np.nan),
+        _season_row("flat_traded", 2.0, "estimated_flat", 3.0),
+        _season_row("realized", 3.0, "realized", 9.0),
+        _season_row("terms", 4.0, "contract_terms", 8.0),
+        _season_row("schedule", 5.0, "spotrac_schedule", 7.0),
+        _season_row("no_id", np.nan, "unknown", np.nan),
+    ])
+    payroll = _payroll(active=[(1, 2019, "BOS", 5_000_000), (2, 2019, "LAL", 4_000_000), (3, 2019, "BOS", 1_000_000),
+                               (4, 2019, "BOS", 1_000_000), (5, 2019, "BOS", 1_000_000)])
+    out = B.attach_payroll_history(final, payroll).set_index("contract_id")
+    assert out.loc["unknown_same", ["aav_source", "aav_final_musd", "payroll_match"]].tolist() == ["spotrac_payroll", 5.0, "same_team"]
+    assert out.loc["flat_traded", ["aav_source", "aav_final_musd", "payroll_match", "payroll_team"]].tolist() == ["spotrac_payroll", 4.0, "other_team", "LAL"]
+    for untouched, value, source in (("realized", 9.0, "realized"), ("terms", 8.0, "contract_terms"), ("schedule", 7.0, "spotrac_schedule")):
+        assert out.loc[untouched, "aav_final_musd"] == value and out.loc[untouched, "aav_source"] == source
+    assert out.loc["no_id", "aav_source"] == "unknown"
+
+
+def test_dead_money_is_recorded_but_never_becomes_the_price_and_absence_changes_no_price():
+    final = pd.DataFrame([
+        _season_row("released", 1.0, "unknown", np.nan),                      # dead money only
+        _season_row("gone", 2.0, "unknown", np.nan),                          # on no payroll, season fully loaded
+        _season_row("gone_partial_season", 2.0, "unknown", np.nan, season=2020),  # same player, season not fully loaded
+    ])
+    payroll = _payroll(active=[(9, 2019, "BOS", 1_000_000)], dead=[(1, 2019, "BOS", 500_000)], complete=[2019])
+    out = B.attach_payroll_history(final, payroll).set_index("contract_id")
+    assert out.loc["released", "aav_source"] == "unknown" and pd.isna(out.loc["released", "aav_final_musd"])
+    assert out.loc["released", "payroll_dead_money_musd"] == 0.5 and not out.loc["released", "payroll_absent"]
+    assert out.loc["gone", "payroll_absent"] and out.loc["gone", "aav_source"] == "unknown"
+    assert not out.loc["gone_partial_season", "payroll_absent"]               # absence proves nothing unless all 30 pages loaded
+
+
+def test_missing_payroll_history_adds_empty_columns_and_changes_nothing():
+    final = pd.DataFrame([_season_row("a", 1.0, "estimated_flat", 3.0)])
+    out = B.attach_payroll_history(final, None)
+    assert out.aav_source.tolist() == ["estimated_flat"] and out.payroll_match.isna().all() and not out.payroll_absent.any()
+
+
+def test_load_payroll_history_resolves_names_drops_cap_holds_and_finds_complete_seasons(tmp_path):
+    index = pd.DataFrame({"player": ["Jeff Teague", "Chris Johnson", "Chris Johnson"], "nba_id": [10, 20, 21], "year": [2020, 2020, 2021]})
+    history = pd.DataFrame({
+        "season_end": [2020] * 6, "team": ["ATL", "ATL", "ATL", "ATL", "ATL", "ATL"],
+        "section": ["active", "active", "exempt", "dead_money", "cap_hold", "active"],
+        "player": ["Jeff Teague", "Chris Johnson", "Nobody Known", "Jeff Teague", "Jeff Teague", "Jeff Teague"],
+        "cap_hit": [19e6, 1e6, 2e6, 3e5, 7e6, 18e6], "spotrac_id": ["1", "2", "3", "1", "1", "1"],
+    })
+    pages = pd.DataFrame({"season_end": [2020] * 30 + [2021] * 29, "team": [f"T{i}" for i in range(30)] + [f"T{i}" for i in range(29)], "status": ["ok"] * 59})
+    history.to_csv(tmp_path / "h.csv", index=False)
+    pages.to_csv(tmp_path / "p.csv", index=False)
+    loaded = B.load_payroll_history(str(tmp_path / "h.csv"), str(tmp_path / "p.csv"), index)
+    active = loaded["active"].set_index("nba_id")
+    assert active.loc[10, "cap_hit"] == 19e6                      # duplicate active rows keep the larger one
+    assert active.loc[20, "cap_hit"] == 1e6                       # two Chris Johnsons: narrowed by season, only one played in 2020
+    assert 21 not in active.index and len(active) == 2           # unknown names are never guessed ("Nobody Known" is on the exempt list)
+    assert loaded["dead"].cap_hit.tolist() == [3e5]               # cap holds (7e6) never count as pay or dead money
+    assert loaded["complete_seasons"] == {2020}                   # 2021 had 29 of 30 pages
