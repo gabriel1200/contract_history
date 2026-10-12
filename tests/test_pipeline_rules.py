@@ -62,6 +62,14 @@ def test_unmatched_player_id_never_borrows_another_players_salary():
     assert out.aav_source.iloc[0] == "estimated_flat" and out.aav_final_musd.iloc[0] == 5.0
 
 
+def test_zero_realized_salary_is_a_join_gap_not_a_price():
+    seasons = pd.DataFrame({"contract_id": ["a", "b"], "player_id": [1, 2], "season_end_year": [2026, 2026], "aav_naive_musd": [5.0, np.nan]})
+    modern = pd.DataFrame({"PLAYER_ID": [1, 2], "year": [2026, 2026], "salary": [0.0, 0.0], "AGE": [25, 26], "Pos": ["PG", "C"], "DRAFT_YEAR": [2020, 2021]})
+    out = B.attach_modern_salary(seasons, modern).set_index("contract_id")
+    assert out.loc["a", "aav_source"] == "estimated_flat" and out.loc["a", "aav_final_musd"] == 5.0
+    assert out.loc["b", "aav_source"] == "unknown" and pd.isna(out.loc["b", "aav_final_musd"])
+
+
 MODERN = pd.DataFrame({"PLAYER_NAME": ["OG Anunoby", "Larry Drew II", "Jalen Johnson"], "PLAYER_ID": [1628384, 203580, 1630552]})
 INDEX = pd.DataFrame({
     "player": ["Nathan Mensah", "Phil Jackson", "Phil Jackson", "Kevin Jones", "Kevin Jones"],
@@ -305,3 +313,56 @@ def test_load_payroll_history_resolves_names_drops_cap_holds_and_finds_complete_
     assert 21 not in active.index and len(active) == 2           # unknown names are never guessed ("Nobody Known" is on the exempt list)
     assert loaded["dead"].cap_hit.tolist() == [3e5]               # cap holds (7e6) never count as pay or dead money
     assert loaded["complete_seasons"] == {2020}                   # 2021 had 29 of 30 pages
+
+
+def test_transaction_scrape_keeps_waivers_and_releases_in_a_third_bucket():
+    import psx_contracts_v2 as P
+    page = pd.DataFrame([
+        {"Date": "2023-12-02", "Team": "Hawks", "Acquired": "", "Relinquished": "• Pat Smith", "Notes": "waived"},
+        {"Date": "2023-10-20", "Team": "Hawks", "Acquired": "• Lee Jones", "Relinquished": "", "Notes": "signed free agent to a 2-year $4M contract"},
+        {"Date": "2023-11-01", "Team": "Hawks", "Acquired": "• Al Roe", "Relinquished": "• Bo Poe", "Notes": "trade with Bulls"},
+        {"Date": "2023-11-09", "Team": "Hawks", "Acquired": "• Cy Doe", "Relinquished": "", "Notes": "activated from injured list"},
+    ])
+    contracts, trades, moves = P.rows_from_dataframe(page)
+    assert [c.player for c in contracts] == ["Lee Jones"] and len(trades) == 1
+    assert [(m["date"], m["relinquished"], m["acquired"], m["notes"]) for m in moves] == [("2023-12-02", "Pat Smith", "", "waived"), ("2023-11-09", "", "Cy Doe", "activated from injured list")]
+
+
+def _override_frame():
+    return pd.DataFrame({
+        "date": ["2014-09-29", "2016-07-06", "2016-07-06"], "team": ["Celtics", "Timberwolves", "Timberwolves"], "player": ["Evan Turner", "Karl-Anthony Towns", "Someone Else"],
+        "years": [np.nan, np.nan, np.nan], "years_alt": [np.nan, np.nan, np.nan], "total_seasons": [np.nan, np.nan, np.nan], "total_value_musd": [np.nan, np.nan, np.nan],
+        "aav_musd": [np.nan, np.nan, np.nan], "is_superseded": [False, False, False], "superseded_by": [None, None, None],
+    })
+
+
+def test_overrides_exclude_a_non_contract_and_fill_terms_only_where_the_log_has_none(tmp_path):
+    path = tmp_path / "o.csv"
+    path.write_text("date,team,player,action,years,total_value_musd,reason,source_url\n"
+                    '2014-09-29,Celtics,Evan Turner,set_terms,2,6.7,"two years",http://x\n'
+                    '2016-07-06,Timberwolves,Karl-Anthony Towns,exclude,,,"not a new contract",\n'
+                    "2020-01-01,Nobody,Ghost Player,exclude,,,stale,\n")
+    out = B.apply_term_overrides(_override_frame(), path).set_index("player")
+    turner = out.loc["Evan Turner"]
+    assert (turner.years, turner.total_seasons, turner.total_value_musd, turner.aav_musd) == (2.0, 2.0, 6.7, 3.35) and turner.terms_override == "two years" and not turner.is_superseded
+    towns = out.loc["Karl-Anthony Towns"]
+    assert towns.is_superseded and towns.superseded_by == "override: not a new contract" and pd.isna(towns.total_value_musd)
+    assert not out.loc["Someone Else"].is_superseded                      # same date and team but a different player is untouched
+
+
+def test_set_terms_never_overwrites_terms_the_log_already_states(tmp_path):
+    frame = _override_frame()
+    frame.loc[0, ["years", "total_seasons", "total_value_musd", "aav_musd"]] = [4.0, 4.0, 24.0, 6.0]
+    path = tmp_path / "o.csv"
+    path.write_text("date,team,player,action,years,total_value_musd,reason,source_url\n2014-09-29,Celtics,Evan Turner,set_terms,2,6.7,x,\n")
+    out = B.apply_term_overrides(frame, path).set_index("player").loc["Evan Turner"]
+    assert (out.years, out.total_value_musd) == (4.0, 24.0) and out.terms_override is None
+
+
+def test_every_shipped_override_matches_an_event_in_the_current_log_and_has_a_reason():
+    overrides = pd.read_csv(B.OVERRIDES_PATH).fillna("")
+    raw = pd.read_csv(Path(__file__).resolve().parents[1] / "psx_contracts_v2_2014_present.csv")
+    assert overrides.action.isin(["exclude", "set_terms"]).all() and overrides.reason.str.len().gt(20).all()
+    keys = set(zip(raw.date, raw.team, raw.player))
+    assert [(r.date, r.team, r.player) for r in overrides.itertuples() if (r.date, r.team, r.player) not in keys] == []
+    assert overrides.loc[overrides.action == "set_terms", ["years", "total_value_musd"]].ne("").all().all()

@@ -286,3 +286,11 @@ than silently re-inflating row counts.
   Filter downstream if you want a pure NBA-player-contract view.
 - **Trades file is per-team-side**, not deduped to one row per trade
   event (see trades section above).
+
+
+## term_overrides.csv (hand-checked corrections)
+
+One row per correction: `date, team, player` (the raw log fields the contract id is built from), `action`, `years`, `total_value_musd`, `reason`, `source_url`.
+`exclude` marks a log line that is not a new contract (`is_superseded = True`, `superseded_by = "override: <reason>"`); `set_terms` fills a missing length/value
+from a cited source (only where the log has none) and records the reason in `terms_override`. Applied by `apply_term_overrides` in `build_unified.py`. Every
+override must have a reason and must match an event in `psx_contracts_v2_2014_present.csv` (tested).

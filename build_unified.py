@@ -15,6 +15,7 @@ Output:
 from __future__ import annotations
 
 import hashlib
+from pathlib import Path
 import os
 import re
 import sys
@@ -257,6 +258,45 @@ def flag_superseded_reports(resolved: pd.DataFrame) -> pd.DataFrame:
     return resolved
 
 
+OVERRIDES_PATH = Path(__file__).resolve().parent / "term_overrides.csv"
+
+
+def apply_term_overrides(resolved: pd.DataFrame, overrides_path=OVERRIDES_PATH) -> pd.DataFrame:
+    """Apply hand-checked corrections to logged events (term_overrides.csv: one row per correction, each with a reason and source).
+
+    Matched on (date, team, player), the same fields the contract id is built from. Two actions:
+      exclude    the line is not a new contract (a second log of a deal already counted, or no signing happened).
+                 It is flagged is_superseded with superseded_by "override: <reason>", so every consumer that already hides
+                 duplicate reports hides it too. Nothing is deleted.
+      set_terms  the log states no length or value but a reliable source does. Fills years, total value and the
+                 derived total_seasons / aav, only where the log has none; the reason is kept in terms_override.
+    An override that matches no event is reported and skipped (the raw log may have been corrected upstream); the
+    tests require every override to match the current data.
+    """
+    resolved["terms_override"] = None
+    if not Path(overrides_path).exists():
+        return resolved
+    overrides = pd.read_csv(overrides_path).fillna("")
+    for row in overrides.itertuples():
+        hit = (resolved.date == row.date) & (resolved.team == row.team) & (resolved.player == row.player)
+        if not hit.any():
+            print(f"NOTE: override for {row.player} {row.date} ({row.team}) matches no event; skipped.", file=sys.stderr)
+            continue
+        if row.action == "exclude":
+            resolved.loc[hit, "is_superseded"] = True
+            resolved.loc[hit, "superseded_by"] = f"override: {row.reason}"
+        elif row.action == "set_terms":
+            years, total = float(row.years), float(row.total_value_musd)
+            missing = hit & resolved.total_value_musd.isna() & resolved.years.isna() & resolved.years_alt.isna()
+            resolved.loc[missing, ["years", "total_seasons"]] = years
+            resolved.loc[missing, "total_value_musd"] = total
+            resolved.loc[missing, "aav_musd"] = round(total / years, 3)
+            resolved.loc[missing, "terms_override"] = row.reason
+        else:
+            raise ValueError(f"unknown override action {row.action!r} for {row.player} {row.date}")
+    return resolved
+
+
 def build_resolved_contracts(contracts_path: str, crosswalk_path: str) -> pd.DataFrame:
     contracts = pd.read_csv(contracts_path)
     crosswalk = pd.read_csv(crosswalk_path)
@@ -284,6 +324,7 @@ def build_resolved_contracts(contracts_path: str, crosswalk_path: str) -> pd.Dat
     resolved["total_seasons"] = resolved["years_alt"].fillna(resolved["years"])
     resolved["start_season"] = resolved.apply(derive_start_season, axis=1)
     resolved = flag_superseded_reports(resolved)
+    resolved = apply_term_overrides(resolved)
 
     # Attach standardized team identity
     resolved["team_abbr"] = resolved["team"].map(lambda t: NBA_TEAMS.get(t, {}).get("abbr"))
@@ -350,6 +391,10 @@ def attach_modern_salary(seasons: pd.DataFrame, modern: pd.DataFrame) -> pd.Data
     )
     modern_slim = modern_slim.drop_duplicates(subset=["player_id", "season_end_year"])
     modern_slim["aav_realized_musd"] = modern_slim["aav_realized_musd"] / 1_000_000.0
+    # A salary of exactly 0 is a join gap (rest-of-season and two-way conversions), not a price. Leaving
+    # it as 0 would tag the season "realized" at $0 and keep it out of the flat-estimate, Spotrac and
+    # payroll-history pricing steps, which only touch unknown/estimated_flat seasons.
+    modern_slim.loc[modern_slim["aav_realized_musd"] <= 0, "aav_realized_musd"] = np.nan
 
     merged = seasons.merge(modern_slim, on=["player_id", "season_end_year"], how="left")
     # Never let an unmatched (NaN) player_id pick up another row's salary or metadata.

@@ -1,0 +1,5 @@
+date,team,player,action,years,total_value_musd,reason,source_url
+2014-09-29,Celtics,Evan Turner,set_terms,2,6.70351,"Log says only ""multi-year contract"". Spotrac: 2 years, $6,703,510, fully guaranteed; announced 2014-09-29.",https://spotrac.com/nba/player/_/id/6883
+2016-07-06,Timberwolves,Karl-Anthony Towns,exclude,,,"Not a new contract: the 2015-07-07 first-round signing (4-year rookie scale deal with team options) already covers these seasons.",https://hoopsrumors.com/2015/07/timberwolves-sign-karl-anthony-towns.html
+2016-07-06,76ers,Jahlil Okafor,exclude,,,"Not a new contract: the 2015-07-07 first-round signing (2 years plus a 2-year team option) already covers these seasons.",
+2024-10-02,Knicks,Karl-Anthony Towns,exclude,,,"Not a new contract: Towns joined the Knicks by trade still on his 2022 Minnesota extension (4 years, 2027-28 player option); no re-signing has happened.",https://www.spotrac.com/nba/player/earnings/_/id/17829/karl-anthony-towns

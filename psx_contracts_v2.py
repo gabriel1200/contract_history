@@ -235,9 +235,12 @@ def parse_notes(notes: str) -> dict:
     return out
 
 
-def rows_from_dataframe(df: pd.DataFrame) -> tuple[list[ContractRow], list[TradeRow]]:
+def rows_from_dataframe(df: pd.DataFrame) -> tuple[list[ContractRow], list[TradeRow], list[dict]]:
+    """Split one page of movement rows into contracts, trades and everything else (waivers, releases, activations,
+    assignments). The third list keeps the raw columns so a player's departure date is not lost."""
     contract_rows: list[ContractRow] = []
     trade_rows: list[TradeRow] = []
+    movement_rows: list[dict] = []
 
     for _, r in df.iterrows():
         notes = str(r["Notes"])
@@ -254,19 +257,23 @@ def rows_from_dataframe(df: pd.DataFrame) -> tuple[list[ContractRow], list[Trade
             trade_rows.append(
                 parse_trade_row(date_, team, acquired_raw, relinquished_raw, notes)
             )
-        # else: waivers, IL activations, G-league assignments, etc. --
-        # not captured in either output for now (cheap to add a third
-        # "other movement" bucket later if it turns out to matter; we're
-        # already fetching these rows regardless of what we keep).
+        else:
+            # Waivers, releases, IL activations, G-league assignments, etc. They are what tells us who left a roster
+            # and when, so the opening-night roster can be rebuilt (psx_movements_v2_2014_present.csv).
+            movement_rows.append({
+                "date": date_, "team": team, "acquired": acquired_raw.lstrip("\u2022").strip(),
+                "relinquished": relinquished_raw.lstrip("\u2022").strip(), "notes": notes,
+            })
 
-    return contract_rows, trade_rows
+    return contract_rows, trade_rows, movement_rows
 
 
 async def scrape_team(
     team: str, handler: UnflareRequestHandler, max_pages: int = 300
-) -> tuple[list[ContractRow], list[TradeRow]]:
+) -> tuple[list[ContractRow], list[TradeRow], list[dict]]:
     all_contract_rows: list[ContractRow] = []
     all_trade_rows: list[TradeRow] = []
+    all_movement_rows: list[dict] = []
     starting_row = 0
     for page_num in range(max_pages):
         search = pst.Search(
@@ -285,20 +292,21 @@ async def scrape_team(
                   file=sys.stderr)
             break
 
-        contract_rows, trade_rows = rows_from_dataframe(df)
+        contract_rows, trade_rows, movement_rows = rows_from_dataframe(df)
         all_contract_rows.extend(contract_rows)
         all_trade_rows.extend(trade_rows)
+        all_movement_rows.extend(movement_rows)
 
         total_pages = df.attrs.get("pages", 0)
         print(f"  {team}: row {starting_row} -> {len(contract_rows)} contract, "
-              f"{len(trade_rows)} trade rows (page {page_num + 1} of {total_pages})",
+              f"{len(trade_rows)} trade rows, {len(movement_rows)} other movements (page {page_num + 1} of {total_pages})",
               file=sys.stderr)
 
         if len(df) == 0 or (page_num + 1) >= total_pages:
             break
         starting_row += 25
 
-    return all_contract_rows, all_trade_rows
+    return all_contract_rows, all_trade_rows, all_movement_rows
 
 
 async def main(teams: list[str]):
@@ -307,12 +315,14 @@ async def main(teams: list[str]):
 
     all_contract_rows: list[ContractRow] = []
     all_trade_rows: list[TradeRow] = []
+    all_movement_rows: list[dict] = []
     for team in teams:
         print(f"Scraping {team}...", file=sys.stderr)
         try:
-            contract_rows, trade_rows = await scrape_team(team, handler)
+            contract_rows, trade_rows, movement_rows = await scrape_team(team, handler)
             all_contract_rows.extend(contract_rows)
             all_trade_rows.extend(trade_rows)
+            all_movement_rows.extend(movement_rows)
         except Exception as e:
             print(f"  ERROR on {team}: {e!r}", file=sys.stderr)
 
@@ -361,6 +371,19 @@ async def main(teams: list[str]):
             )
         trade_df.to_csv(trades_path, index=False)
     print(f"Wrote {len(all_trade_rows)} rows to {trades_path}", file=sys.stderr)
+
+    # Everything that is neither a contract nor a trade: waivers, releases, activations, assignments. Same
+    # per-team replacement rule as the other two files, so a one-team refresh keeps the rest.
+    movements_path = "psx_movements_v2_2014_present.csv"
+    if all_movement_rows:
+        movement_df = pd.DataFrame(all_movement_rows)
+        if set(teams) != set(TEAM_NICKNAMES) and os.path.exists(movements_path):
+            existing_moves = pd.read_csv(movements_path)
+            existing_moves = existing_moves.loc[~existing_moves["team"].isin(teams)]
+            movement_df = pd.concat([existing_moves, movement_df], ignore_index=True)
+        movement_df = movement_df.drop_duplicates(subset=["date", "team", "acquired", "relinquished", "notes"], keep="last")
+        movement_df.to_csv(movements_path, index=False)
+    print(f"Wrote {len(all_movement_rows)} rows to {movements_path}", file=sys.stderr)
 
 
 if __name__ == "__main__":
