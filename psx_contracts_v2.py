@@ -309,9 +309,76 @@ async def scrape_team(
     return all_contract_rows, all_trade_rows, all_movement_rows
 
 
-async def main(teams: list[str]):
-    config = UnflareConfig(url=UNFLARE_URL, timeout=60000)
-    handler = UnflareRequestHandler(config)
+class BrowserHandler:
+    """Fetch pages through a visible installed Chrome (Playwright). Unflare's headless browser is currently
+    rejected by Cloudflare; a real Chrome with a persistent profile passes. Same interface as pst handlers."""
+
+    def __init__(self, page, delay: float = 1.0):
+        self.page, self.delay = page, delay
+
+    async def get(self, url: str, headers: dict) -> Optional[str]:
+        await asyncio.sleep(self.delay)
+        await self.page.goto(url, wait_until="domcontentloaded")
+        for i in range(150):  # up to 5 minutes, so a challenge can be solved by hand
+            html = await self.page.content()
+            if "Notes" in html and "Relinquished" in html:
+                return html
+            if i == 0:
+                print("  waiting for the results page (solve the Cloudflare challenge if shown)...", file=sys.stderr)
+            await asyncio.sleep(2)
+        raise TimeoutError(f"results table never appeared for {url}")
+
+
+async def main(teams: list[str], browser: bool = False, delay: float = 1.0):
+    if browser:
+        from playwright.async_api import async_playwright
+        async with async_playwright() as p:
+            ctx = await p.chromium.launch_persistent_context(
+                os.path.join(os.path.dirname(os.path.abspath(__file__)), "chrome_profile"),
+                channel="chrome", headless=False, no_viewport=True,
+                args=["--disable-blink-features=AutomationControlled"],
+                ignore_default_args=["--enable-automation"],
+            )
+            page = ctx.pages[0] if ctx.pages else await ctx.new_page()
+            try:
+                await _run(teams, BrowserHandler(page, delay))
+            finally:
+                await ctx.close()
+    else:
+        config = UnflareConfig(url=UNFLARE_URL, timeout=60000)
+        await _run(teams, UnflareRequestHandler(config))
+
+
+# Waiver-related labels for the movements file (first match wins). Validated on real notes: "waived",
+# "claimed off waivers (from X)", "waived (agreed on contract buyout)". "released"/"voided" never appeared in a
+# Hawks + Lakers sample but are kept as harmless catch-alls. Everything else (free agency, draft, options, staff
+# moves) stays blank.
+MOVE_TYPES = [
+    ("claimed", r"\bclaim"),
+    ("buyout", r"\bbuy-?out\b|\bbought out\b"),
+    ("waived", r"\bwaiv"),
+    ("released", r"\breleas"),
+    ("contract_voided", r"\bvoid|\bterminat"),
+]
+
+
+def add_move_labels(df: pd.DataFrame) -> pd.DataFrame:
+    """Add move_type (waiver-related label, blank otherwise) and direction (which side the player is on)."""
+    df = df.drop(columns=[c for c in ("move_type", "direction") if c in df.columns])
+    notes = df["notes"].astype(str)
+    move_type = pd.Series("", index=df.index)
+    for name, rx in reversed(MOVE_TYPES):  # reversed so the earliest pattern wins
+        move_type = move_type.mask(notes.str.contains(rx, case=False, regex=True), name)
+    acq = df["acquired"].fillna("").astype(str).str.strip()
+    rel = df["relinquished"].fillna("").astype(str).str.strip()
+    df["move_type"] = move_type
+    df["direction"] = ""
+    df.loc[(move_type != "") & (acq != "") & (rel == ""), "direction"] = "acquired"
+    df.loc[(move_type != "") & (rel != ""), "direction"] = "relinquished"
+    return df
+
+
+async def _run(teams: list[str], handler):
 
     all_contract_rows: list[ContractRow] = []
     all_trade_rows: list[TradeRow] = []
@@ -382,6 +449,7 @@ async def main(teams: list[str]):
             existing_moves = existing_moves.loc[~existing_moves["team"].isin(teams)]
             movement_df = pd.concat([existing_moves, movement_df], ignore_index=True)
         movement_df = movement_df.drop_duplicates(subset=["date", "team", "acquired", "relinquished", "notes"], keep="last")
+        movement_df = add_move_labels(movement_df)
         movement_df.to_csv(movements_path, index=False)
     print(f"Wrote {len(all_movement_rows)} rows to {movements_path}", file=sys.stderr)
 
@@ -392,5 +460,8 @@ if __name__ == "__main__":
         "--team", choices=TEAM_NICKNAMES, action="append",
         help="Refresh one team while preserving all other teams' existing rows. Repeatable.",
     )
+    parser.add_argument("--browser", action="store_true",
+                        help="Fetch through a visible installed Chrome (Playwright) instead of Unflare.")
+    parser.add_argument("--delay", type=float, default=1.0, help="Seconds to pause before each page (browser mode).")
     args = parser.parse_args()
-    asyncio.run(main(args.team or TEAM_NICKNAMES))
+    asyncio.run(main(args.team or TEAM_NICKNAMES, browser=args.browser, delay=args.delay))
