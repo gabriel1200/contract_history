@@ -61,6 +61,9 @@ MANUAL_ALIASES: dict[str, str] = {
     "Justyn Hamilton": "Justin Hamilton",
     "Ron Holland II": "Ronald Holland II",
 }
+NBA_API_MIN_ID = 200000
+NBA_API_MIN_TO_YEAR = 2012  # start year of the last season played; PST begins Jan 2014, so a 2012-13 player can still be waived then
+API_DISAMBIGUATOR_RE = re.compile(r"\((?:b\.?|b\.? [^)]*|[A-Z][a-z]+|I{1,3}|IV|V)\)")
 PAREN_RE = re.compile(r"\s*\([^)]*\)\s*")
 GENERATION_MARKER_RE = re.compile(r"\((?:I{1,3}|IV|V|Jr\.?|Sr\.?)\)", re.IGNORECASE)
 SUFFIX_RE = re.compile(r"\s+(Jr\.?|Sr\.?|II|III|IV|V)$", re.IGNORECASE)
@@ -103,8 +106,10 @@ def name_variants(raw: str) -> list[str]:
 
 
 def build_crosswalk(player_strings: list[str], modern_df: pd.DataFrame,
-                    index_df: Optional[pd.DataFrame] = None) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Returns (matched_df, unmatched_df). ``index_df`` (index_master.csv) enables tier 6."""
+                    index_df: Optional[pd.DataFrame] = None,
+                    nba_api_df: Optional[pd.DataFrame] = None) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Returns (matched_df, unmatched_df). ``index_df`` (index_master.csv) enables tier 6; ``nba_api_df``
+    (nba_api_players.csv: id, full_name, is_active) enables tier 7."""
 
     # name -> id, but keep track of names that map to MULTIPLE distinct
     # ids in modern.csv (can happen with true name collisions between two
@@ -122,6 +127,16 @@ def build_crosswalk(player_strings: list[str], modern_df: pd.DataFrame,
         recent = index_df[pd.to_numeric(index_df.year, errors="coerce") >= INDEX_MASTER_MIN_YEAR]
         for _, r in recent[["player", "nba_id"]].dropna().drop_duplicates().iterrows():
             index_norm_to_ids.setdefault(normalize_name(str(r["player"])), {})[int(r["nba_id"])] = str(r["player"])
+
+    api_norm_to_ids: dict[str, dict[int, str]] = {}
+    if nba_api_df is not None:
+        # Only recent careers: a name that last played before the PST window (2014+) is a namesake, a coach or an
+        # executive. Rows from the live endpoint carry career years; rows only the bundled list had do not, so those
+        # fall back to "active, or an id of 200000+" (ids under that are 1940s-2000s careers).
+        years = pd.to_numeric(nba_api_df["to_year"], errors="coerce") if "to_year" in nba_api_df else pd.Series(float("nan"), index=nba_api_df.index)
+        recent = years.ge(NBA_API_MIN_TO_YEAR) | (years.isna() & (nba_api_df["is_active"].astype(bool) | (nba_api_df["id"] >= NBA_API_MIN_ID)))
+        for _, r in nba_api_df.loc[recent, ["id", "full_name"]].dropna().drop_duplicates().iterrows():
+            api_norm_to_ids.setdefault(normalize_name(str(r["full_name"])), {})[int(r["id"])] = str(r["full_name"])
 
     def resolve_exact(name: str) -> Optional[tuple[str, int]]:
         ids = name_to_ids.get(name)
@@ -220,6 +235,24 @@ def build_crosswalk(player_strings: list[str], modern_df: pd.DataFrame,
         if not variant_ids and len(index_ids) > 1:
             res.candidates_considered = max(res.candidates_considered, len(index_ids))
 
+        # tier 7: nba_api all-time player list snapshot. It has no career years, so a namesake from an earlier
+        # era could match a PST name; that is why it is the last tier and its rows are labelled nba_api_static.
+        if not variant_ids and not index_ids:
+            api_ids: dict[int, str] = {}
+            for variant in name_variants(raw.strip()):
+                # a suffix ("Jr.") or a "(b. 1991-01-22)" / "(Aaron)" tag means PST is separating namesakes or father
+                # and son; normalisation would erase exactly that, so such strings are left for a human
+                if SUFFIX_RE.search(variant) or API_DISAMBIGUATOR_RE.search(raw):
+                    continue
+                api_ids.update(api_norm_to_ids.get(normalize_name(variant), {}))
+            if len(api_ids) == 1:
+                (pid, aname), = api_ids.items()
+                res.matched_name, res.player_id, res.method = aname, pid, "nba_api_static"
+                results.append(res)
+                continue
+            if len(api_ids) > 1:
+                res.candidates_considered = max(res.candidates_considered, len(api_ids))
+
         results.append(res)  # unresolved
 
     all_df = pd.DataFrame([r.__dict__ for r in results])
@@ -229,6 +262,41 @@ def build_crosswalk(player_strings: list[str], modern_df: pd.DataFrame,
 
 
 MODERN_CSV_URL = "https://raw.githubusercontent.com/gabriel1200/player_sheets/refs/heads/master/year_totals/modern.csv"
+
+
+MOVEMENTS_CSV = "psx_movements_v2_2014_present.csv"
+MOVEMENTS_RESOLVED_CSV = "movements_resolved.csv"
+# Notes that are about staff, ownership or an organisation rather than a player. Their names are not looked up.
+NON_PLAYER_NOTES_RE = re.compile(
+    r"\b(?:hired|fired|promoted|demoted|resigned as|named|interim|ownership|coach|general manager|president|trainer|"
+    r"director|executive|scout|assistant|coordinator|owner)\b", re.IGNORECASE)
+
+
+def _movement_player_column(movements: pd.DataFrame) -> pd.Series:
+    """The single player named on a movement row (acquired side if present, else relinquished); '' for staff rows."""
+    acq = movements["acquired"].fillna("").astype(str).str.strip()
+    rel = movements["relinquished"].fillna("").astype(str).str.strip()
+    name = acq.where(acq != "", rel)
+    staff = movements["notes"].fillna("").astype(str).str.contains(NON_PLAYER_NOTES_RE)
+    labeled = movements.get("move_type", pd.Series("", index=movements.index)).fillna("").astype(str) != ""
+    return name.mask(staff & ~labeled, "")
+
+
+def movement_player_strings(movements: pd.DataFrame) -> list[str]:
+    col = _movement_player_column(movements)
+    return sorted(col[col != ""].unique())
+
+
+def resolve_movements(movements: pd.DataFrame, matched: pd.DataFrame) -> pd.DataFrame:
+    """movements + player_string / player_id / matched_name / match_method (blank when unresolved)."""
+    out = movements.copy()
+    out["player_string"] = _movement_player_column(movements)
+    lookup = matched.drop_duplicates("player_string").set_index("player_string")
+    out["player_id"] = out["player_string"].map(lookup["player_id"])
+    out["matched_name"] = out["player_string"].map(lookup["matched_name"])
+    out["match_method"] = out["player_string"].map(lookup["method"])
+    out["player_id"] = pd.to_numeric(out["player_id"], errors="coerce").astype("Int64")
+    return out
 
 
 def main():
@@ -246,12 +314,22 @@ def main():
     contracts = pd.read_csv("psx_contracts_v2_2014_present.csv")
     index_master = pd.read_csv("index_master.csv", low_memory=False) if os.path.exists("index_master.csv") else None
 
-    player_strings = sorted(contracts.player.dropna().unique())
-    matched, unmatched = build_crosswalk(player_strings, modern, index_master)
+    movements = pd.read_csv(MOVEMENTS_CSV, keep_default_na=False) if os.path.exists(MOVEMENTS_CSV) else None
+    movement_names = movement_player_strings(movements) if movements is not None else []
+    player_strings = sorted(set(contracts.player.dropna().unique()) | set(movement_names))
+    nba_api_df = pd.read_csv("nba_api_players.csv") if os.path.exists("nba_api_players.csv") else None
+    matched, unmatched = build_crosswalk(player_strings, modern, index_master, nba_api_df)
 
     matched.to_csv("crosswalk_matched.csv", index=False)
     unmatched.to_csv("crosswalk_unmatched.csv", index=False)
 
+    if movements is not None:
+        resolved = resolve_movements(movements, matched)
+        resolved.to_csv(MOVEMENTS_RESOLVED_CSV, index=False)
+        is_player = resolved.player_string != ""
+        print(f"Wrote {MOVEMENTS_RESOLVED_CSV}: {len(resolved)} rows, {int(is_player.sum())} with a player name, "
+              f"{int((resolved.player_id.notna()).sum())} resolved to a player_id "
+              f"({resolved[resolved.move_type != ''].player_id.notna().mean():.1%} of waiver-type rows)")
     print(f"Total unique player strings: {len(player_strings)}")
     print(f"Matched: {len(matched)} ({len(matched) / len(player_strings):.1%})")
     print(f"Unmatched: {len(unmatched)} ({len(unmatched) / len(player_strings):.1%})")

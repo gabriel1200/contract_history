@@ -2,13 +2,16 @@ player_string,matched_name,player_id,method,candidates_considered
 (James) Mike Scott,Mike Scott,203118.0,paren_stripped,0
 (Sean) Chris Smith,Chris Smith,203147.0,paren_stripped,0
 (William) Tony Parker,Tony Parker,2225.0,paren_stripped,0
+A.J. Dybantsa,AJ Dybantsa,1643407.0,nba_api_static,0
 A.J. Green,AJ Green,1631260.0,normalized,0
 A.J. Griffin,AJ Griffin,1631100.0,normalized,0
 A.J. Hammons,AJ Hammons,1627773.0,normalized,0
 A.J. Johnson,AJ Johnson,1642358.0,normalized,0
 A.J. Lawson,A.J. Lawson,1630639.0,exact,0
 A.J. Price,AJ Price,201985.0,normalized,0
+A.K. Okereke,AK Okereke,1643758.0,nba_api_static,0
 Aaron Brooks,Aaron Brooks,201166.0,exact,0
+Aaron Estrada,Aaron Estrada,1642401.0,nba_api_static,0
 Aaron Gordon,Aaron Gordon,203932.0,exact,0
 Aaron Gray,Aaron Gray,201189.0,exact,0
 Aaron Harrison,Aaron Harrison,1626151.0,exact,0
@@ -22,15 +25,18 @@ Adam Flagler,Adam Flagler,1641745.0,exact,0
 Adam Mokoka,Adam Mokoka,1629690.0,exact,0
 Adama Bal,Adama Bal,1642380.0,exact,0
 Adama Sanogo,Adama Sanogo,1641766.0,exact,0
+Aday Mara,Aday Mara,1643530.0,nba_api_static,0
 Ade Murkey,Ade Murkey,1630278.0,exact,0
 Adem Bona,Adem Bona,1641737.0,exact,0
 Admiral Schofield,Admiral Schofield,1629678.0,exact,0
+Adonis Arms,Adonis Arms,1631317.0,nba_api_static,0
 Adonis Thomas,Adonis Thomas,203519.0,exact,0
 Adou Thiero,Adou Thiero,1642876.0,exact,0
 Adreian Payne,Adreian Payne,203940.0,exact,0
 Ahmad Caver,Ahmad Caver,1629958.0,exact,0
 Airious Bailey / Ace Bailey,Ace Bailey,1642846.0,slash_variant,0
 Ajay Mitchell,Ajay Mitchell,1642349.0,exact,0
+Al Harrington,Al Harrington,1733.0,exact,0
 Al Horford,Al Horford,201143.0,exact,0
 Al Jefferson,Al Jefferson,2744.0,exact,0
 Al-Farouq Aminu,Al-Farouq Aminu,202329.0,exact,0
@@ -47,6 +53,7 @@ Alex Antetokounmpo,Alex Antetokounmpo,1630828.0,exact,0
 Alex Caruso,Alex Caruso,1627936.0,exact,0
 Alex Ducas,Alex Ducas,1642505.0,exact,0
 Alex Fudge,Alex Fudge,1641788.0,exact,0
+Alex Karaban,Alex Karaban,1642284.0,nba_api_static,0
 Alex Kirk,Alex Kirk,203945.0,exact,0
 Alex Len,Alex Len,203458.0,exact,0
 Alex Morales,Alex Morales,1631457.0,exact,0
@@ -54,15 +61,19 @@ Alex Poythress,Alex Poythress,1627816.0,exact,0
 Alex Reese,Alex Reese,1642024.0,exact,0
 Alex Sarr,Alex Sarr,1642259.0,exact,0
 Alex Stepheson,Alex Stepheson,1627293.0,exact,0
+Alex Toohey,Alex Toohey,1642893.0,nba_api_static,0
+Alexey Shved,Alexey Shved,203144.0,exact,0
 Alexis Ajinca / Alex Ajinca,Alexis Ajinca,201582.0,slash_variant,0
 Alfonzo McKinnie,Alfonzo McKinnie,1628035.0,exact,0
 Alijah Martin,Alijah Martin,1642918.0,exact,0
 Alize Johnson,Alize Johnson,1628993.0,exact,0
 Allen Crabbe,Allen Crabbe,203459.0,exact,0
+Allen Graves,Allen Graves,1643512.0,nba_api_static,0
 Allonzo Trier,Allonzo Trier,1629019.0,exact,0
 Alondes Williams,Alondes Williams,1631214.0,exact,0
 Alonzo Gee,Alonzo Gee,202087.0,exact,0
 Alperen Sengun,Alperen Sengun,1630578.0,exact,0
+Alpha Diallo,Alpha Diallo,1643813.0,nba_api_static,0
 Amare Stoudemire / Amar'e Stoudemire,Amar'e Stoudemire,2405.0,slash_variant,0
 Amari Bailey,Amari Bailey,1641735.0,exact,0
 Amari Williams,Amari Williams,1642873.0,exact,0
@@ -73,6 +84,7 @@ Amir Coffey,Amir Coffey,1629599.0,exact,0
 Amir Johnson,Amir Johnson,101161.0,exact,0
 Anderson Varejao,Anderson Varejao,2760.0,exact,0
 Andersson Garcia,Andersson Garcia,1643158.0,exact,0
+Andray Blatche,Andray Blatche,101154.0,exact,0
 Andre Dawkins,Andre Dawkins,203958.0,exact,0
 Andre Drummond,Andre Drummond,203083.0,exact,0
 Andre Iguodala,Andre Iguodala,2738.0,exact,0
@@ -81,6 +93,7 @@ Andre Jackson Jr.,Andre Jackson Jr.,1641748.0,exact,0
 Andre Miller,Andre Miller,1889.0,exact,0
 Andre Roberson,Andre Roberson,203460.0,exact,0
 Andrea Bargnani,Andrea Bargnani,200745.0,exact,0
+Andrei Kirilenko,Andrei Kirilenko,1905.0,exact,0
 Andrew Bogut,Andrew Bogut,101106.0,exact,0
 Andrew Bynum,Andrew Bynum,101115.0,exact,0
 Andrew Funk,Andrew Funk,1641847.0,exact,0
@@ -90,8 +103,10 @@ Andrew Nembhard,Andrew Nembhard,1629614.0,exact,0
 Andrew Nicholson,Andrew Nicholson,203094.0,exact,0
 Andrew White III,Andrew White III,1628510.0,exact,0
 Andrew Wiggins,Andrew Wiggins,203952.0,exact,0
+Andris Biedrins,Andris Biedrins,2740.0,exact,0
 Anfernee Simons,Anfernee Simons,1629014.0,exact,0
 Angel Delgado,Angel Delgado,1629116.0,exact,0
+Antawn Jamison,Antawn Jamison,1712.0,exact,0
 Ante Zizic,Ante Zizic,1627790.0,exact,0
 Anthony Barber / Cat Barber,Cat Barber,1627760.0,slash_variant,0
 Anthony Bennett,Anthony Bennett,203461.0,exact,0
@@ -102,6 +117,7 @@ Anthony Edwards,Anthony Edwards,1630162.0,exact,0
 Anthony Gill,Anthony Gill,1630264.0,exact,0
 Anthony Lamb,Anthony Lamb,1630237.0,exact,0
 Anthony Morrow,Anthony Morrow,201627.0,exact,0
+Anthony Randolph,Anthony Randolph,201576.0,exact,0
 Anthony Tolliver,Anthony Tolliver,201229.0,exact,0
 Anton Watson,Anton Watson,1641817.0,exact,0
 Antonio Blakeney,Antonio Blakeney,1628469.0,exact,0
@@ -111,11 +127,14 @@ Anzejs Pasecniks,Anžejs Pasečņiks,1628394.0,normalized,0
 Archie Goodwin,Archie Goodwin,203462.0,exact,0
 Ariel Hukporti,Ariel Hukporti,1630574.0,exact,0
 Arinze Onuaku,Arinze Onuaku,202620.0,exact,0
+Armando Bacot,Armando Bacot,1630654.0,nba_api_static,0
 Armel Traore,Armel Traore,1642422.0,exact,0
 Armoni Brooks,Armoni Brooks,1629717.0,exact,0
+Arnett Moultrie,Arnett Moultrie,203102.0,exact,0
 Arnoldas Kulboka,Arnoldas Kulboka,1629083.0,exact,0
 Aron Baynes,Aron Baynes,203382.0,exact,0
 Arron Afflalo,Arron Afflalo,201167.0,exact,0
+Arthur Kaluma,Arthur Kaluma,1641751.0,nba_api_static,0
 Asa Newell,Asa Newell,1642854.0,exact,0
 Ashton Hagans,Ashton Hagans,1630204.0,exact,0
 Ausar Thompson,Ausar Thompson,1641709.0,exact,0
@@ -126,6 +145,7 @@ Avery Bradley,Avery Bradley,202340.0,exact,0
 Axel Toupane,Axel Toupane,1626253.0,exact,0
 Ayo Dosunmu,Ayo Dosunmu,1630245.0,exact,0
 B.J. Johnson,BJ Johnson,1629168.0,normalized,0
+Baba Miller,Baba Miller,1642394.0,nba_api_static,0
 Baylor Scheierman,Baylor Scheierman,1631248.0,exact,0
 Ben Bentil,Ben Bentil,1627791.0,exact,0
 Ben Gordon,Ben Gordon,2732.0,exact,0
@@ -136,6 +156,7 @@ Ben Saraf,Ben Saraf,1642879.0,exact,0
 Ben Sheppard,Ben Sheppard,1641767.0,exact,0
 Ben Simmons,Ben Simmons,1627732.0,exact,0
 Bennedict Mathurin,Bennedict Mathurin,1631097.0,exact,0
+Bennett Stirtz,Bennett Stirtz,1642892.0,nba_api_static,0
 Beno Udrih,Beno Udrih,2757.0,exact,0
 Bernard James,Bernard James,203108.0,exact,0
 Bez Mbeng,Bez Mbeng,1643016.0,exact,0
@@ -150,11 +171,13 @@ Bobby Brown,Bobby Brown,201628.0,exact,0
 Bobby Portis,Bobby Portis Jr.,1626171.0,normalized,0
 Bobi Klintman,Bobi Klintman,1641752.0,exact,0
 Bogdan Bogdanovic,Bogdan Bogdanović,203992.0,normalized,0
+Bogoljub Markovic,Bogoljub Marković,1642881.0,nba_api_static,0
 Bojan Bogdanovic,Bojan Bogdanovic,202711.0,exact,0
 Bol Bol,Bol Bol,1629626.0,exact,0
 Bonzie Colson,Bonzie Colson,1629045.0,exact,0
 Boris Diaw,Boris Diaw,2564.0,exact,0
 Brad Wanamaker,Brad Wanamaker,202954.0,exact,0
+Braden Smith,Braden Smith,1643552.0,nba_api_static,0
 Bradley Beal,Bradley Beal,203078.0,exact,0
 Brandan Wright,Brandan Wright,201148.0,exact,0
 Branden Carlson,Branden Carlson,1642382.0,exact,0
@@ -163,6 +186,7 @@ Brandin Podziemski,Brandin Podziemski,1641764.0,exact,0
 Brandon Bass,Brandon Bass,101138.0,exact,0
 Brandon Boston Jr. / B.J. Boston Jr.,Brandon Boston Jr.,1630527.0,slash_variant,0
 Brandon Clarke,Brandon Clarke,1629634.0,exact,0
+Brandon Davies,Brandon Davies,203561.0,exact,0
 Brandon Goodwin,Brandon Goodwin,1629164.0,exact,0
 Brandon Ingram,Brandon Ingram,1627742.0,exact,0
 Brandon Jennings,Brandon Jennings,201943.0,exact,0
@@ -173,24 +197,30 @@ Brandon Rush,Brandon Rush,201575.0,exact,0
 Brandon Sampson,Brandon Sampson,1629102.0,exact,0
 Brandon Williams (b. 1975-02-27),Brandon Williams,1630314.0,paren_stripped,0
 Braxton Key,Braxton Key,1630296.0,exact,0
+Brayden Burries,Brayden Burries,1643415.0,nba_api_static,0
+Brendan Haywood,Brendan Haywood,2217.0,exact,0
 Brian Bowen II,Brian Bowen II,1628968.0,exact,0
 Brian Roberts,Brian Roberts,203148.0,exact,0
 Briante Weber,Briante Weber,1627362.0,exact,0
 Brice Johnson,Brice Johnson,1627744.0,exact,0
 Brice Sensabaugh,Brice Sensabaugh,1641729.0,exact,0
+Brice Williams,Brice Williams,1642924.0,nba_api_static,0
 Brodric Thomas,Brodric Thomas,1630271.0,exact,0
 Bronny James,Bronny James,1642355.0,exact,0
 Brook Lopez,Brook Lopez,201572.0,exact,0
 Brooks Barnhizer,Brooks Barnhizer,1642964.0,exact,0
 Bruce Brown,Bruce Brown,1628971.0,exact,0
+Bruce Thornton,Bruce Thornton,1643570.0,nba_api_static,0
 Bruno Caboclo,Bruno Caboclo,203998.0,exact,0
 Bruno Fernando,Bruno Fernando,1628981.0,exact,0
 Bryce Cotton,Bryce Cotton,203955.0,exact,0
 Bryce Dejean-Jones,Bryce Dejean-Jones,1626214.0,exact,0
+Bryce Hopkins,Bryce Hopkins,1643624.0,nba_api_static,0
 Bryce McGowens,Bryce McGowens,1631121.0,exact,0
 Bryn Forbes,Bryn Forbes,1627854.0,exact,0
 Buddy Boeheim,Buddy Boeheim,1631205.0,exact,0
 Buddy Hield,Buddy Hield,1627741.0,exact,0
+Byron Mullens / B.J. Mullens,Byron Mullens,201957.0,slash_variant,0
 C.J. Elleby,CJ Elleby,1629604.0,normalized,0
 C.J. Huntley,CJ Huntley,1643047.0,normalized,0
 C.J. McCollum,CJ McCollum,203468.0,normalized,0
@@ -199,14 +229,19 @@ C.J. Watson,C.J. Watson,201228.0,exact,0
 C.J. Wilcox,C.J. Wilcox,203912.0,exact,0
 C.J. Williams,C.J. Williams,203710.0,exact,0
 Cade Cunningham,Cade Cunningham,1630595.0,exact,0
+Caleb Daniels,Caleb Daniels,1641915.0,nba_api_static,0
+Caleb Homesley,Caleb Homesley,1630258.0,nba_api_static,0
 Caleb Houstan,Caleb Houstan,1631216.0,exact,0
 Caleb Love,Caleb Love,1631126.0,exact,0
 Caleb Martin,Caleb Martin,1628997.0,exact,0
 Caleb Swanigan,Caleb Swanigan,1628403.0,exact,0
+Caleb Wilson,Caleb Wilson,1643410.0,nba_api_static,0
 Cam Reddish,Cam Reddish,1629629.0,exact,0
 Cam Spencer,Cam Spencer,1642285.0,exact,0
 Cam Whitmore,Cam Whitmore,1641715.0,exact,0
 Cameron Bairstow,Cameron Bairstow,203946.0,exact,0
+Cameron Boozer,Cameron Boozer,1643409.0,nba_api_static,0
+Cameron Carr,Cameron Carr,1643418.0,nba_api_static,0
 Cameron Christie / Cam Christie,Cam Christie,1642353.0,slash_variant,0
 Cameron Johnson,Cameron Johnson,1629661.0,exact,0
 Cameron McGriff,Cameron McGriff,1630787.0,exact,0
@@ -215,12 +250,16 @@ Cameron Payne,Cameron Payne,1626166.0,exact,0
 Cameron Reynolds / Cam Reynolds,Cam Reynolds,1629244.0,slash_variant,0
 Cameron Thomas / Cam Thomas,Cam Thomas,1630560.0,slash_variant,0
 Caris LeVert,Caris LeVert,1627747.0,exact,0
+Carl Landry,Carl Landry,201171.0,exact,0
 Carlik Jones,Carlik Jones,1630637.0,exact,0
+Carlos Boozer,Carlos Boozer,2430.0,exact,0
+Carlos Delfino,Carlos Delfino,2568.0,index_master,0
 Carlton Carrington / Bub Carrington,Bub Carrington,1642267.0,slash_variant,0
 Carmelo Anthony,Carmelo Anthony,2546.0,exact,0
 Caron Butler,Caron Butler,2406.0,exact,0
 Carrick Felix,Carrick Felix,203467.0,exact,0
 Carsen Edwards,Carsen Edwards,1629035.0,exact,0
+Carson Cooper,Carson Cooper,1643721.0,nba_api_static,0
 Carter Bryant,Carter Bryant,1642868.0,exact,0
 Cartier Martin,Cartier Martin,201858.0,exact,0
 Cason Wallace,Cason Wallace,1641717.0,exact,0
@@ -235,6 +274,7 @@ Chandler Parsons,Chandler Parsons,202718.0,exact,0
 Chaney Johnson,Chaney Johnson,1643052.0,exact,0
 Channing Frye,Channing Frye,101112.0,exact,0
 Charles Bassey,Charles Bassey,1629646.0,exact,0
+Charles Bediako,Charles Bediako,1641777.0,nba_api_static,0
 Charles Brown Jr. / Charlie Brown Jr.,Charlie Brown Jr.,1629718.0,slash_variant,0
 Charles Cook,Charles Cooke,1628429.0,manual_alias,0
 Charles Cooke,Charles Cooke,1628429.0,exact,0
@@ -267,8 +307,10 @@ Chris McCullough,Chris McCullough,1626191.0,exact,0
 Chris Paul,Chris Paul,101108.0,exact,0
 Chris Silva,Chris Silva,1629735.0,exact,0
 Chris Singleton,Chris Singleton,202698.0,exact,0
+Chris Wilcox,Chris Wilcox,2404.0,index_master,0
 Chris Wright (b. 1988-09-30),Chris Wright,202874.0,paren_stripped,0
 Chris Youngblood,Chris Youngblood,1642959.0,exact,0
+Christian Anderson,Christian Anderson,1643515.0,nba_api_static,0
 Christian Braun,Christian Braun,1631128.0,exact,0
 Christian Koloko,Christian Koloko,1631132.0,exact,0
 Christian Wood,Christian Wood,1626174.0,exact,0
@@ -286,6 +328,7 @@ Colby Jones,Colby Jones,1641732.0,exact,0
 Cole Aldrich,Cole Aldrich,202332.0,exact,0
 Cole Anthony,Cole Anthony,1630175.0,exact,0
 Cole Swider,Cole Swider,1631306.0,exact,0
+Coleman Hawkins,Coleman Hawkins,1641746.0,nba_api_static,0
 Colin Castleton,Colin Castleton,1630658.0,exact,0
 Collin Gillespie,Collin Gillespie,1631221.0,exact,0
 Collin Murray-Boyles,Collin Murray-Boyles,1642867.0,exact,0
@@ -308,12 +351,15 @@ D'Moi Hodge,D'Moi Hodge,1641793.0,exact,0
 D.J. Augustine,D.J. Augustin,201571.0,manual_alias,0
 D.J. Carton,D.J. Carton,1630618.0,exact,0
 D.J. Stephens,DJ Stephens,203474.0,normalized,0
+D.J. Steward,DJ Steward,1630569.0,nba_api_static,0
+D.J. White,DJ White,201591.0,normalized,0
 D.J. Wilson,D.J. Wilson,1628391.0,exact,0
 DaJuan Summers,DaJuan Summers,201969.0,index_master,0
 DaQuan Jeffries,DaQuan Jeffries,1629610.0,exact,0
 DaRon Holmes II,DaRon Holmes II,1641747.0,exact,0
 Daeqwon Plowden,Daeqwon Plowden,1631342.0,exact,0
 Dahntay Jones,Dahntay Jones,2563.0,exact,0
+Dailyn Swain,Dailyn Swain,1643517.0,nba_api_static,0
 Dairis Bertans,Dairis Bertans,1629541.0,exact,0
 Daishen Nix,Daishen Nix,1630227.0,exact,0
 Dakari Johnson,Dakari Johnson,1626177.0,exact,0
@@ -330,6 +376,7 @@ Damion James,Damion James,202345.0,exact,0
 Damion Lee,Damion Lee,1627814.0,exact,0
 Damjan Rudez,Damjan Rudez,204014.0,exact,0
 Damyean Dotson,Damyean Dotson,1628422.0,exact,0
+Dane Goodwin,Dane Goodwin,1641863.0,nba_api_static,0
 Daniel Gafford,Daniel Gafford,1629655.0,exact,0
 Daniel Hamilton,Daniel Hamilton,1627772.0,exact,0
 Daniel Ochefu,Daniel Ochefu,1627849.0,exact,0
@@ -356,6 +403,7 @@ Darius Morris,Darius Morris,202721.0,exact,0
 Darrell Arthur,Darrell Arthur,201589.0,exact,0
 Darren Collison,Darren Collison,201954.0,exact,0
 Darrun Hilliard,Darrun Hilliard,1626199.0,exact,0
+Darryn Peterson,Darryn Peterson,1643408.0,nba_api_static,0
 Daryl Macon,Daryl Macon,1629133.0,exact,0
 David Duke Jr.,David Duke Jr.,1630561.0,exact,0
 David Johnson (Ricardo),David Johnson,1630525.0,paren_stripped,0
@@ -427,6 +475,7 @@ Diamond Stone,Diamond Stone,1627754.0,exact,0
 Diante Garrett,Diante Garrett,203197.0,exact,0
 Dillon Brooks,Dillon Brooks,1628415.0,exact,0
 Dillon Jones,Dillon Jones,1641794.0,exact,0
+Dillon Mitchell,Dillon Mitchell,1641759.0,nba_api_static,0
 Dion Waiters,Dion Waiters,203079.0,exact,0
 Dionte Christmas,Dionte Christmas,202091.0,exact,0
 Dirk Nowitzki,Dirk Nowitzki,1717.0,exact,0
@@ -456,6 +505,7 @@ Drew Timme,Drew Timme,1631166.0,exact,0
 Dru Smith,Dru Smith,1630696.0,exact,0
 Duane Washington Jr.,Duane Washington Jr.,1630613.0,exact,0
 Duje Dukan,Duje Dukan,1626251.0,exact,0
+Duke Miles,Duke Miles,1643575.0,nba_api_static,0
 Duncan Robinson,Duncan Robinson,1629130.0,exact,0
 Duop Reath,Duop Reath,1641871.0,exact,0
 Dusty Hannahs,Dusty Hannahs,1628605.0,exact,0
@@ -474,6 +524,7 @@ E.J. Liddell,E.J. Liddell,1630604.0,exact,0
 Earl Barron,Earl Barron,2853.0,exact,0
 Earl Clark,Earl Clark,201947.0,exact,0
 Earl Watson,Earl Watson,2248.0,exact,0
+Ebuka Okorie,Ebuka Okorie,1643536.0,nba_api_static,0
 Ed Davis (Adam),Ed Davis,202334.0,paren_stripped,0
 Edmond Sumner,Edmond Sumner,1628410.0,exact,0
 Edrice Adebayo / Bam Adebayo,Bam Adebayo,1628389.0,slash_variant,0
@@ -489,19 +540,24 @@ Elliot Williams,Elliot Williams,202343.0,exact,0
 Elton Brand,Elton Brand,1882.0,exact,0
 Emanuel Ginobili / Manu Ginobili,Manu Ginobili,1938.0,slash_variant,0
 Emanuel Miller,Emanuel Miller,1641801.0,exact,0
+Emanuel Sharp,Emanuel Sharp,1643567.0,nba_api_static,0
 Emanuel Terry,Emanuel Terry,1629150.0,exact,0
 Emeka Okafor,Emeka Okafor,2731.0,exact,0
 Emmanuel Mudiay,Emmanuel Mudiay,1626144.0,exact,0
 Emoni Bates,Emoni Bates,1641734.0,exact,0
+Enes Freedom / Enes Kanter,Enes Freedom,202683.0,slash_variant,0
 Enes Kanter / Enes Freedom,Enes Freedom,202683.0,slash_variant,0
 Enrique Freeman,Enrique Freeman,1642402.0,exact,0
 Eric Bledsoe,Eric Bledsoe,202339.0,exact,0
 Eric Gordon,Eric Gordon,201569.0,exact,0
+Eric Maynor,Eric Maynor,201953.0,exact,0
 Eric Mika,Eric Mika,1628450.0,exact,0
 Eric Moreland,Eric Moreland,203961.0,exact,0
 Eric Paschall,Eric Paschall,1629672.0,exact,0
 Erick Green,Erick Green,203475.0,exact,0
 Erik McCree,Erik McCree,1628571.0,exact,0
+Erik Murphy,Erik Murphy,203513.0,exact,0
+Erik Stevenson,Erik Stevenson,1641907.0,nba_api_static,0
 Ersan Ilyasova,Ersan Ilyasova,101141.0,exact,0
 Ethan Thompson,Ethan Thompson,1630679.0,exact,0
 Eugene Omoruyi,Eugene Omoruyi,1630647.0,exact,0
@@ -509,6 +565,7 @@ Evan Fournier,Evan Fournier,203095.0,exact,0
 Evan Mobley,Evan Mobley,1630596.0,exact,0
 Evan Turner,Evan Turner,202323.0,exact,0
 Facundo Campazzo,Facundo Campazzo,1630267.0,exact,0
+Felix Okpara,Felix Okpara,1643590.0,nba_api_static,0
 Feron Hunt,Feron Hunt,1630624.0,exact,0
 Festus Ezeli,Festus Ezeli,203105.0,exact,0
 Filip Petrusev,Filip Petrusev,1630196.0,exact,0
@@ -522,6 +579,8 @@ Fred VanVleet,Fred VanVleet,1627832.0,exact,0
 Freddie Gillespie,Freddie Gillespie,1630273.0,exact,0
 Furkan Aldemir,Furkan Aldemir,203128.0,exact,0
 Furkan Korkmaz,Furkan Korkmaz,1627788.0,exact,0
+Gabe Madsen,Gabe Madsen,1643019.0,nba_api_static,0
+Gabe McGlothan,Gabe McGlothan,1642440.0,nba_api_static,0
 Gabe Vincent,Gabe Vincent,1629216.0,exact,0
 Gabe York,Gabe York,1628221.0,exact,0
 Gabriel Deck,Gabriel Deck,1630466.0,exact,0
@@ -541,15 +600,18 @@ Georgios Kalaitzakis,Georgios Kalaitzakis,1630686.0,exact,0
 Georgios Papagiannis / Giorgios Papagiannis / George Papagiannis,Georgios Papagiannis,1627834.0,slash_variant,0
 Gerald Green (b. 1986-01-26),Gerald Green,101123.0,paren_stripped,0
 Gerald Henderson Jr.,Gerald Henderson,201945.0,normalized,0
+Gerald Wallace,Gerald Wallace,2222.0,exact,0
 Gian Clavell,Gian Clavell,1628492.0,exact,0
 Giannis Antetokounmpo,Giannis Antetokounmpo,203507.0,exact,0
 Glen Davis,Glen Davis,201175.0,exact,0
+Glen Rice Jr.,Glen Rice,203318.0,normalized,0
 Glenn Robinson III,Glenn Robinson III,203922.0,exact,0
 Goga Bitadze,Goga Bitadze,1629048.0,exact,0
 Goran Dragic,Goran Dragic,201609.0,exact,0
 Gordon Hayward,Gordon Hayward,202330.0,exact,0
 Gorgui Dieng,Gorgui Dieng,203476.0,exact,0
 Gradey Dick,Gradey Dick,1641711.0,exact,0
+Graham Ike,Graham Ike,1643633.0,nba_api_static,0
 Grant Jerrett,Grant Jerrett,203511.0,exact,0
 Grant Nelson,Grant Nelson,1641761.0,exact,0
 Grant Riller,Grant Riller,1630203.0,exact,0
@@ -557,6 +619,7 @@ Grant Williams,Grant Williams,1629684.0,exact,0
 Grayson Allen,Grayson Allen,1628960.0,exact,0
 Greg Brown III,Greg Brown III,1630535.0,exact,0
 Greg Monroe,Greg Monroe,202328.0,exact,0
+Greg Oden,Greg Oden,201141.0,exact,0
 Greg Smith (b. 1991-01-08),Greg Smith,202962.0,paren_stripped,0
 Greg Stiemsma,Greg Stiemsma,201880.0,exact,0
 Greg Whittington,Greg Whittington,204222.0,exact,0
@@ -565,8 +628,10 @@ Greivis Vasquez,Greivis Vasquez,202349.0,exact,0
 Guerschon Yabusele,Guerschon Yabusele,1627824.0,exact,0
 Gui Santos,Gui Santos,1630611.0,exact,0
 Guillermo Hernangomez / Willy Hernangomez,Willy Hernangomez,1626195.0,slash_variant,0
+Gustavo Ayon,Gustavo Ayon,202970.0,exact,0
 Hamady Ndiaye / Hamady N'Diaye,Hamady Ndiaye,202380.0,slash_variant,0
 Hamidou Diallo,Hamidou Diallo,1628977.0,exact,0
+Hannes Steinbach,Hannes Steinbach,1643419.0,nba_api_static,0
 Harrison Barnes,Harrison Barnes,203084.0,exact,0
 Harrison Ingram,Harrison Ingram,1631127.0,exact,0
 Harry Giles III,Harry Giles III,1628385.0,exact,0
@@ -576,6 +641,7 @@ Hassani Gravett,Hassani Gravett,1629755.0,exact,0
 Hayden Gray,Hayden Gray,1643060.0,exact,0
 Haywood Highsmith,Haywood Highsmith,1629312.0,exact,0
 Henri Drell,Henri Drell,1630929.0,exact,0
+Henri Veesaar,Henri Veesaar,1643539.0,nba_api_static,0
 Henry Ellenson,Henry Ellenson,1627740.0,exact,0
 Henry Sims,Henry Sims,203156.0,exact,0
 Henry Walker / Bill Walker,Henry Walker,201611.0,slash_variant,0
@@ -602,6 +668,7 @@ Isaiah Briscoe,Isaiah Briscoe,1628515.0,exact,0
 Isaiah Canaan,Isaiah Canaan,203477.0,exact,0
 Isaiah Collier,Isaiah Collier,1642268.0,exact,0
 Isaiah Crawford,Isaiah Crawford,1642384.0,exact,0
+Isaiah Evans,Isaiah Evans,1642912.0,nba_api_static,0
 Isaiah Hartenstein,Isaiah Hartenstein,1628392.0,exact,0
 Isaiah Hicks,Isaiah Hicks,1628439.0,exact,0
 Isaiah Jackson,Isaiah Jackson,1630543.0,exact,0
@@ -622,6 +689,7 @@ Ivan Johnson,Ivan Johnson,201274.0,index_master,0
 Ivan Rabb,Ivan Rabb,1628397.0,exact,0
 Ivica Zubac,Ivica Zubac,1627826.0,exact,0
 Izaiah Brockington,Izaiah Brockington,1631167.0,exact,0
+Izaiyah Nelson,Izaiyah Nelson,1643593.0,nba_api_static,0
 J.D. Davison,JD Davison,1631120.0,normalized,0
 J.J. Hickson,JJ Hickson,201581.0,normalized,0
 J.J. O'Brien,JJ O'Brien,1626266.0,normalized,0
@@ -631,6 +699,7 @@ J.R. Smith,JR Smith,2747.0,normalized,0
 J.T. Thor,JT Thor,1630550.0,normalized,0
 Ja Morant,Ja Morant,1629630.0,exact,0
 Ja'Kobe Walter,Ja'Kobe Walter,1642266.0,exact,0
+Ja'Kobi Gillespie,Ja'Kobi Gillespie,1643551.0,nba_api_static,0
 JaKarr Sampson,JaKarr Sampson,203960.0,exact,0
 JaMychal Green,JaMychal Green,203210.0,exact,0
 JaQuori McLaughlin,JaQuori McLaughlin,1630605.0,exact,0
@@ -649,6 +718,8 @@ Jacob Gilyard,Jacob Gilyard,1631367.0,exact,0
 Jacob Pullen,Jacob Pullen,1626643.0,exact,0
 Jacob Toppin,Jacob Toppin,1631210.0,exact,0
 Jacob Wiley / Jake Wiley,Jacob Wiley,1628451.0,slash_variant,0
+Jaden Akins,Jaden Akins,1643022.0,nba_api_static,0
+Jaden Bradley,Jaden Bradley,1643558.0,nba_api_static,0
 Jaden Hardy,Jaden Hardy,1630702.0,exact,0
 Jaden Ivey,Jaden Ivey,1631093.0,exact,0
 Jaden McDaniels,Jaden McDaniels,1630183.0,exact,0
@@ -664,6 +735,7 @@ Jaime Echenique,Jaime Echenique,1630693.0,exact,0
 Jaime Jaquez Jr.,Jaime Jaquez Jr.,1631170.0,exact,0
 Jake LaRavia,Jake LaRavia,1631222.0,exact,0
 Jake Layman,Jake Layman,1627774.0,exact,0
+Jake Stephens,Jake Stephens,1641868.0,nba_api_static,0
 Jakob Poeltl,Jakob Poeltl,1627751.0,exact,0
 Jalen Bridges,Jalen Bridges,1641779.0,exact,0
 Jalen Brunson,Jalen Brunson,1628973.0,exact,0
@@ -682,16 +754,19 @@ Jalen Smith,Jalen Smith,1630188.0,exact,0
 Jalen Suggs,Jalen Suggs,1630591.0,exact,0
 Jalen Williams,Jalen Williams,1631114.0,exact,0
 Jalen Wilson,Jalen Wilson,1630592.0,exact,0
+Jalon Moore,Jalon Moore,1642922.0,nba_api_static,0
 Jamaal Franklin,Jamaal Franklin,203479.0,exact,0
 Jamal Cain,Jamal Cain,1631288.0,exact,0
 Jamal Crawford,Jamal Crawford,2037.0,exact,0
 Jamal Murray,Jamal Murray,1627750.0,exact,0
 Jamal Shead,Jamal Shead,1642347.0,exact,0
 Jamaree Bouyea,Jamaree Bouyea,1631123.0,exact,0
+Jamarion Sharp,Jamarion Sharp,1642481.0,nba_api_static,0
 Jameel Warney,Jameel Warney,1627866.0,exact,0
 Jameer Nelson (Sr.),Jameer Nelson,2749.0,paren_stripped,0
 Jameer Nelson Jr.,Jameer Nelson,2749.0,normalized,0
 Jamel Artis,Jamel Artis,1628503.0,exact,0
+James Akinjo,James Akinjo,1631231.0,nba_api_static,0
 James Anderson,James Anderson,202341.0,exact,0
 James Bouknight,James Bouknight,1630547.0,exact,0
 James Ennis III,James Ennis III,203516.0,exact,0
@@ -708,6 +783,7 @@ Jamil Wilson,Jamil Wilson,203966.0,exact,0
 Jamir Watkins,Jamir Watkins,1642364.0,exact,0
 Jamison Battle,Jamison Battle,1642419.0,exact,0
 Jamorko Pickett,Jamorko Pickett,1630691.0,exact,0
+Jan Vesely,Jan Vesely,202686.0,exact,0
 Jannero Pargo,Jannero Pargo,2457.0,exact,0
 Jarace Walker,Jarace Walker,1641716.0,exact,0
 Jared Butler,Jared Butler,1630215.0,exact,0
@@ -721,6 +797,7 @@ Jared Terrell,Jared Terrell,1629123.0,exact,0
 Jarell Eddie,Jarell Eddie,204067.0,exact,0
 Jarell Martin,Jarell Martin,1626185.0,exact,0
 Jaren Jackson Jr.,Jaren Jackson Jr.,1628991.0,exact,0
+Jarkel Joiner,Jarkel Joiner,1641935.0,nba_api_static,0
 Jarnell Stokes,Jarnell Stokes,203950.0,exact,0
 Jaron Blossomgame,Jaron Blossomgame,1628417.0,exact,0
 Jarred Vanderbilt,Jarred Vanderbilt,1629020.0,exact,0
@@ -740,6 +817,7 @@ Jason Richardson,Jason Richardson,2202.0,exact,0
 Jason Smith,Jason Smith,201160.0,exact,0
 Jason Terry,Jason Terry,1891.0,exact,0
 Jason Thompson,Jason Thompson,201574.0,exact,0
+Javante McCoy,Javante McCoy,1631322.0,nba_api_static,0
 Javin DeLaurier,Javin DeLaurier,1629602.0,exact,0
 Javon Freeman-Liberty,Javon Freeman-Liberty,1631241.0,exact,0
 Javon Small,Javon Small,1642914.0,exact,0
@@ -748,8 +826,11 @@ Javonte Green,Javonte Green,1629750.0,exact,0
 Javonte Smart,Javonte Smart,1630606.0,exact,0
 Jawun Evans,Jawun Evans,1628393.0,exact,0
 Jaxson Hayes,Jaxson Hayes,1629637.0,exact,0
+Jaxson Robinson,Jaxson Robinson,1642283.0,nba_api_static,0
+Jaxson Robinson / Jax Robinson,Jaxson Robinson,1642283.0,nba_api_static,0
 Jay Huff,Jay Huff,1630643.0,exact,0
 Jay Scrubb,Jay Scrubb,1630206.0,exact,0
+Jayden Quaintance,Jayden Quaintance,1643519.0,nba_api_static,0
 Jaylen Adams,Jaylen Adams,1629121.0,exact,0
 Jaylen Brown,Jaylen Brown,1627759.0,exact,0
 Jaylen Clark,Jaylen Clark,1641740.0,exact,0
@@ -759,6 +840,8 @@ Jaylen Morris,Jaylen Morris,1628537.0,exact,0
 Jaylen Nowell,Jaylen Nowell,1629669.0,exact,0
 Jaylen Sims,Jaylen Sims,1631301.0,exact,0
 Jaylen Wells,Jaylen Wells,1642377.0,exact,0
+Jaylin Galloway,Jaylin Galloway,1641945.0,nba_api_static,0
+Jaylin Sellers,Jaylin Sellers,1643637.0,nba_api_static,0
 Jaylin Williams (Michael),Jaylin Williams,1631119.0,paren_stripped,0
 Jaylin Williams (b. 2000-07-26),Jaylin Williams,1631119.0,paren_stripped,0
 Jaylon Tyson,Jaylon Tyson,1642281.0,exact,0
@@ -774,6 +857,8 @@ Jeff Dowtin Jr.,Jeff Dowtin Jr.,1630288.0,exact,0
 Jeff Green,Jeff Green,201145.0,exact,0
 Jeff Teague,Jeff Teague,201952.0,exact,0
 Jeff Withey,Jeff Withey,203481.0,exact,0
+Jeffery Taylor (CBS R) / Jeff Taylor (b) (CBC NBA P S),Jeffery Taylor,203106.0,normalized_variant,0
+Jeffery Taylor / Jeff Taylor (b),Jeffery Taylor,203106.0,slash_variant,0
 Jemerrio Jones,Jemerrio Jones,1629203.0,exact,0
 Jerami Grant,Jerami Grant,203924.0,exact,0
 Jerel McNeal,Jerel McNeal,202077.0,exact,0
@@ -788,6 +873,7 @@ Jeremy Sochan,Jeremy Sochan,1631110.0,exact,0
 Jeremy Tyler,Jeremy Tyler,202719.0,exact,0
 Jerian Grant,Jerian Grant,1626170.0,exact,0
 Jericho Sims,Jericho Sims,1630579.0,exact,0
+Jermaine O'Neal,Jermaine O'Neal,979.0,exact,0
 Jermaine Samuels Jr.,Jermaine Samuels Jr.,1631257.0,exact,0
 Jerome Jordan,Jerome Jordan,202366.0,exact,0
 Jerome Robinson,Jerome Robinson,1629010.0,exact,0
@@ -812,6 +898,7 @@ Joel Anthony,Joel Anthony,201202.0,exact,0
 Joel Ayayi,Joel Ayayi,1630555.0,exact,0
 Joel Bolomboy,Joel Bolomboy,1627762.0,exact,0
 Joel Embiid,Joel Embiid,203954.0,exact,0
+Joel Freeland,Joel Freeland,200777.0,exact,0
 Joey Dorsey,Joey Dorsey,201595.0,exact,0
 Joffrey Lauvergne,Joffrey Lauvergne,203530.0,exact,0
 John Butler Jr.,John Butler Jr.,1631219.0,exact,0
@@ -824,6 +911,7 @@ John Lucas III,John Lucas III,101249.0,exact,0
 John Poulakidas,John Poulakidas,1642967.0,exact,0
 John Salmons,John Salmons,2422.0,exact,0
 John Tonje,John Tonje,1642910.0,exact,0
+John Ukomadu,John Ukomadu,1642578.0,nba_api_static,0
 John Wall (Hildred),John Wall,202322.0,paren_stripped,0
 Johnathan Motley,Johnathan Motley,1628405.0,exact,0
 Johnathan Williams,Johnathan Williams,1629140.0,exact,0
@@ -832,9 +920,11 @@ Johnny Davis (Christian),Johnny Davis,1631098.0,paren_stripped,0
 Johnny Furphy,Johnny Furphy,1642277.0,exact,0
 Johnny Juzang,Johnny Juzang,1630548.0,exact,0
 Johnny O'Bryant III,Johnny O'Bryant III,203948.0,exact,0
+Jon Elmore,Jon Elmore,1631399.0,nba_api_static,0
 Jon Leuer,Jon Leuer,202720.0,exact,0
 Jon Teske,Jon Teske,1630257.0,exact,0
 Jonah Bolden,Jonah Bolden,1628413.0,exact,0
+Jonas Aidoo,Jonas Aidoo,1643265.0,nba_api_static,0
 Jonas Jerebko,Jonas Jerebko,201973.0,exact,0
 Jonas Valanciunas,Jonas Valanciunas,202685.0,exact,0
 Jonathan Gibson,Jonathan Gibson,1626780.0,exact,0
@@ -864,6 +954,7 @@ Jordan Nwora,Jordan Nwora,1629670.0,exact,0
 Jordan Poole,Jordan Poole,1629673.0,exact,0
 Jordan Schakel,Jordan Schakel,1630648.0,exact,0
 Jordan Sibert,Jordan Sibert,1626296.0,exact,0
+Jordan Tucker,Jordan Tucker,1630733.0,nba_api_static,0
 Jordan Walsh,Jordan Walsh,1641775.0,exact,0
 Jorge Gutierrez,Jorge Gutierrez,203268.0,exact,0
 Jose Alvarado,Jose Alvarado,1630631.0,exact,0
@@ -871,6 +962,7 @@ Jose Calderon,Jose Calderon,101181.0,exact,0
 Jose Juan Barea / Jose Barea / J.J. Barea,J.J. Barea,200826.0,slash_variant,0
 Josh Childress,Josh Childress,2735.0,exact,0
 Josh Christopher,Josh Christopher,1630528.0,exact,0
+Josh Dix,Josh Dix,1643717.0,nba_api_static,0
 Josh Giddey,Josh Giddey,1630581.0,exact,0
 Josh Green,Josh Green,1630182.0,exact,0
 Josh Hall,Josh Hall,1630221.0,exact,0
@@ -888,10 +980,12 @@ Josh Reaves,Josh Reaves,1629729.0,exact,0
 Josh Richardson,Josh Richardson,1626196.0,exact,0
 Josh Smith,Josh Smith,2746.0,exact,0
 Joshia Gray / Josh Gray,Josh Gray,1627982.0,slash_variant,0
+Joshua Jefferson,Joshua Jefferson,1643538.0,nba_api_static,0
 Joshua Primo,Joshua Primo,1630563.0,exact,0
 Jrue Holiday,Jrue Holiday,201950.0,exact,0
 Juan Toscano-Anderson,Juan Toscano-Anderson,1629308.0,exact,0
 Juancho Hernangomez / Juan Hernangomez,Juancho Hernangomez,1627823.0,slash_variant,0
+Judah Mintz,Judah Mintz,1641758.0,nba_api_static,0
 Jules Bernard,Jules Bernard,1631262.0,exact,0
 Julian Champagnie,Julian Champagnie,1630577.0,exact,0
 Julian Phillips,Julian Phillips,1641763.0,exact,0
@@ -907,7 +1001,9 @@ Justin Hamilton (Anthony),Justin Hamilton,203120.0,paren_stripped,0
 Justin Harper,Justin Harper,202712.0,exact,0
 Justin Holiday,Justin Holiday,203200.0,exact,0
 Justin Jackson (Aaron),Justin Jackson,1628382.0,paren_stripped,0
+Justin Jackson (Nicholas),Justin Jackson,1628382.0,paren_stripped,0
 Justin James,Justin James,1629713.0,exact,0
+Justin Lewis,Justin Lewis,1631171.0,nba_api_static,0
 Justin Minaya,Justin Minaya,1631303.0,exact,0
 Justin Patton,Justin Patton,1628383.0,exact,0
 Justin Robinson,Justin Robinson,1629620.0,exact,0
@@ -926,17 +1022,20 @@ Kai Jones,Kai Jones,1630539.0,exact,0
 Kaiser Gates,Kaiser Gates,1629232.0,exact,0
 Kalin Lucas,Kalin Lucas,203564.0,exact,0
 Kam Jones,Kam Jones,1642880.0,exact,0
+Karim Lopez,Karim Lopez,1643510.0,nba_api_static,0
 Karim Mane,Karim Mane,1630211.0,exact,0
 Karl-Anthony Towns,Karl-Anthony Towns,1626157.0,exact,0
 Karlo Matkovic,Karlo Matković,1631255.0,normalized,0
 Kasparas Jakucionis,Kasparas Jakučionis,1642857.0,normalized,0
 Kawhi Leonard,Kawhi Leonard,202695.0,exact,0
+Keaton Wagler,Keaton Wagler,1643413.0,nba_api_static,0
 Keaton Wallace,Keaton Wallace,1630811.0,exact,0
 Keegan Murray,Keegan Murray,1631099.0,exact,0
 Keifer Sykes,Keifer Sykes,1626208.0,exact,0
 Keion Brooks Jr.,Keion Brooks Jr.,1631232.0,exact,0
 Keita Bates-Diop,Keita Bates-Diop,1628966.0,exact,0
 Keith Appling,Keith Appling,203951.0,exact,0
+Keith Bogans,Keith Bogans,2586.0,exact,0
 Kel'el Ware,Kel'el Ware,1642276.0,exact,0
 Kelan Martin,Kelan Martin,1629103.0,exact,0
 Keldon Johnson,Keldon Johnson,1629640.0,exact,0
@@ -951,6 +1050,7 @@ Kendrick Perkins,Kendrick Perkins,2570.0,exact,0
 Kennedy Chandler,Kennedy Chandler,1631113.0,exact,0
 Kenneth Faried,Kenneth Faried,202702.0,exact,0
 Kenneth Lofton Jr.,Kenneth Lofton Jr.,1631254.0,exact,0
+Kenny Wooten,Kenny Wooten,1629624.0,nba_api_static,0
 Kenrich Williams,Kenrich Williams,1629026.0,exact,0
 Kent Bazemore,Kent Bazemore,203145.0,exact,0
 Kentavious Caldwell-Pope,Kentavious Caldwell-Pope,203484.0,exact,0
@@ -977,6 +1077,7 @@ Kevon Harris,Kevon Harris,1630284.0,exact,0
 Kevon Looney,Kevon Looney,1626172.0,exact,0
 Keyontae Johnson,Keyontae Johnson,1641749.0,exact,0
 Keyonte George,Keyonte George,1641718.0,exact,0
+Khalifa Diop,Khalifa Diop,1631215.0,nba_api_static,0
 Khaman Maluach,Khaman Maluach,1642863.0,exact,0
 Khem Birch,Khem Birch,203920.0,exact,0
 Khris Middleton,Khris Middleton,203114.0,exact,0
@@ -984,11 +1085,15 @@ Khyri Thomas,Khyri Thomas,1629017.0,exact,0
 Killian Hayes,Killian Hayes,1630165.0,exact,0
 Killian Tillie,Killian Tillie,1629681.0,exact,0
 Kim English,Kim English,203119.0,index_master,0
+Kingston Flemings,Kingston Flemings,1643412.0,nba_api_static,0
 Kira Lewis Jr.,Kira Lewis Jr.,1630184.0,exact,0
 Kirk Hinrich,Kirk Hinrich,2550.0,exact,0
 Klay Thompson,Klay Thompson,202691.0,exact,0
+Koa Peat,Koa Peat,1643520.0,nba_api_static,0
 Kobe Brown,Kobe Brown,1641738.0,exact,0
+Kobe Bryant,Kobe Bryant,977.0,exact,0
 Kobe Bufkin,Kobe Bufkin,1641723.0,exact,0
+Kobe Johnson,Kobe Johnson,1642937.0,nba_api_static,0
 Kobe Sanders,Kobe Sanders,1642920.0,exact,0
 Kobi Simmons,Kobi Simmons,1628424.0,exact,0
 Koby Brea,Koby Brea,1642886.0,exact,0
@@ -1001,6 +1106,7 @@ Kris Humphries,Kris Humphries,2743.0,exact,0
 Kris Murray,Kris Murray,1631200.0,exact,0
 Kristaps Porzingis,Kristaps Porziņģis,204001.0,normalized,0
 Ky Bowman,Ky Bowman,1629065.0,exact,0
+Kylan Boswell,Kylan Boswell,1643573.0,nba_api_static,0
 Kyle Alexander,Kyle Alexander,1629734.0,exact,0
 Kyle Anderson,Kyle Anderson,203937.0,exact,0
 Kyle Collinsworth,Kyle Collinsworth,1627858.0,exact,0
@@ -1024,6 +1130,7 @@ Lamar Patterson,Lamar Patterson,203934.0,exact,0
 Lamar Stevens,Lamar Stevens,1630205.0,exact,0
 Lance Stephenson,Lance Stephenson,202362.0,exact,0
 Lance Thomas,Lance Thomas,202498.0,exact,0
+Landry Fields,Landry Fields,202361.0,exact,0
 Landry Shamet,Landry Shamet,1629013.0,exact,0
 Langston Galloway,Langston Galloway,204038.0,exact,0
 Larry Drew II,Larry Drew II,203580.0,exact,0
@@ -1050,9 +1157,11 @@ Louis Amundson / Lou Amundson,Lou Amundson,200811.0,slash_variant,0
 Louis King,Louis King,1629663.0,exact,0
 Louis Williams / Lou Williams,Lou Williams,101150.0,slash_variant,0
 Luc Richard Mbah a Moute / Luc Mbah a Moute,Luc Mbah a Moute,201601.0,slash_variant,0
+Luca Vildoza,Luca Vildoza,1630492.0,nba_api_static,0
 Lucas Nogueira,Lucas Nogueira,203512.0,exact,0
 Lucas Williamson,Lucas Williamson,1631351.0,exact,0
 Luguentz Dort,Luguentz Dort,1629652.0,exact,0
+Luigi Datome / Gigi Datome,Gigi Datome,203540.0,slash_variant,0
 Luis Montero,Luis Montero,1626242.0,exact,0
 Luis Scola,Luis Scola,2449.0,exact,0
 Luka Doncic,Luka Dončić,1629029.0,normalized,0
@@ -1081,10 +1190,12 @@ Malcolm Miller,Malcolm Miller,1626259.0,exact,0
 Malcolm Thomas (b. 1988-11-08),Malcolm Thomas,202952.0,paren_stripped,0
 Malevy Leons,Malevy Leons,1642502.0,exact,0
 Malik Beasley,Malik Beasley,1627736.0,exact,0
+Malik Dia,Malik Dia,1643738.0,nba_api_static,0
 Malik Fitts,Malik Fitts,1630238.0,exact,0
 Malik Monk,Malik Monk,1628370.0,exact,0
 Malik Newman,Malik Newman,1629005.0,exact,0
 Malik Williams,Malik Williams,1642013.0,exact,0
+Maliq Brown,Maliq Brown,1643576.0,nba_api_static,0
 Mamadi Diakite,Mamadi Diakite,1629603.0,exact,0
 Mangok Mathiang,Mangok Mathiang,1628493.0,exact,0
 Manny Harris,Manny Harris,202412.0,exact,0
@@ -1105,10 +1216,13 @@ Marcus Paige,Marcus Paige,1627779.0,exact,0
 Marcus Sasser,Marcus Sasser,1631204.0,exact,0
 Marcus Smart,Marcus Smart,203935.0,exact,0
 Marcus Thornton,Marcus Thornton,201977.0,exact,0
+Marcus Thornton (T),Marcus Thornton,201977.0,paren_stripped,0
 Marcus Thornton (Terrell),Marcus Thornton,201977.0,paren_stripped,0
+Marcus Thornton (a),Marcus Thornton,201977.0,paren_stripped,0
 Marial Shayok,Marial Shayok,1629621.0,exact,0
 Mario Chalmers,Mario Chalmers,201596.0,exact,0
 Mario Hezonja,Mario Hezonja,1626209.0,exact,0
+Mark Armstrong,Mark Armstrong,1642378.0,nba_api_static,0
 Mark Sears,Mark Sears,1641813.0,exact,0
 Mark Williams,Mark Williams,1631109.0,exact,0
 Markel Brown,Markel Brown,203900.0,exact,0
@@ -1143,12 +1257,14 @@ Maurice Harkless / Moe Harkless,Maurice Harkless,203090.0,slash_variant,0
 Maurice Ndour / Maurice N'dour,Maurice Ndour,1626254.0,slash_variant,0
 Maurice Williams / Mo Williams,Mo Williams,2590.0,slash_variant,0
 Max Christie,Max Christie,1631108.0,exact,0
+Max Fiedler,Max Fiedler,1642499.0,nba_api_static,0
 Max Shulga,Max Shulga,1642917.0,exact,0
 Max Strus,Max Strus,1629622.0,exact,0
 Maxime Raynaud,Maxime Raynaud,1642875.0,exact,0
 Maximilian Kleber / Maxi Kleber,Maxi Kleber,1628467.0,slash_variant,0
 Maxwell Lewis,Maxwell Lewis,1641721.0,exact,0
 McKinley Wright IV,McKinley Wright IV,1630593.0,exact,0
+Meleek Thomas,Meleek Thomas,1643509.0,nba_api_static,0
 Melvin Ely,Melvin Ely,2408.0,exact,0
 Melvin Frazier Jr.,Melvin Frazier Jr.,1628982.0,exact,0
 Metta World Peace / Ron Artest,Metta World Peace,1897.0,slash_variant,0
@@ -1156,6 +1272,7 @@ Meyers Leonard,Meyers Leonard,203086.0,exact,0
 Mfiondu Kabengele,Mfiondu Kabengele,1629662.0,exact,0
 Micah Peavy,Micah Peavy,1642877.0,exact,0
 Micah Potter,Micah Potter,1630695.0,exact,0
+Michael Ajayi,Michael Ajayi,1642369.0,nba_api_static,0
 Michael Beasley,Michael Beasley,201563.0,exact,0
 Michael Carter-Williams,Michael Carter-Williams,203487.0,exact,0
 Michael Foster Jr.,Michael Foster Jr.,1630701.0,exact,0
@@ -1166,6 +1283,7 @@ Michael Porter Jr.,Michael Porter Jr.,1629008.0,exact,0
 Mikal Bridges,Mikal Bridges,1628969.0,exact,0
 Mike Conley Jr.,Mike Conley,201144.0,normalized,0
 Mike Dunleavy Jr.,Mike Dunleavy,2399.0,normalized,0
+Mike Harris,Mike Harris,200839.0,exact,0
 Mike Miller,Mike Miller,2034.0,exact,0
 Mike Muscala,Mike Muscala,203488.0,exact,0
 Mike Scott (b. 1993-08-10),Mike Scott,203118.0,paren_stripped,0
@@ -1175,7 +1293,9 @@ Miles Kelly,Miles Kelly,1642939.0,exact,0
 Miles McBride,Miles McBride,1630540.0,exact,0
 Miles Norris,Miles Norris,1641936.0,exact,0
 Miles Plumlee,Miles Plumlee,203101.0,exact,0
+Miller Kopp,Miller Kopp,1642046.0,nba_api_static,0
 Milos Teodosic / Milos Tedosic,Milos Teodosic,1628462.0,slash_variant,0
+Milos Uzan,Milos Uzan,1642870.0,nba_api_static,0
 Milton Doyle,Milton Doyle,1628495.0,exact,0
 Mindaugas Kuzminskas,Mindaugas Kuzminskas,1627851.0,exact,0
 Miroslav Raduljica,Miroslav Raduljica,203545.0,exact,0
@@ -1192,6 +1312,7 @@ Montrezl Harrell,Montrezl Harrell,1626149.0,exact,0
 Moritz Wagner / Moe Wagner,Moritz Wagner,1629021.0,slash_variant,0
 Moses Brown,Moses Brown,1629650.0,exact,0
 Moses Moody,Moses Moody,1630541.0,exact,0
+Moses Wood,Moses Wood,1642473.0,nba_api_static,0
 Moses Wright,Moses Wright,1630589.0,exact,0
 Mouhamadou Gueye,Mouhamadou Gueye,1631338.0,exact,0
 Mouhamed Gueye (a),Mouhamed Gueye,1631243.0,paren_stripped,0
@@ -1207,7 +1328,10 @@ N'Faly Dante,N'Faly Dante,1642368.0,exact,0
 Nae'Qwan Tomlin,Nae'Qwan Tomlin,1641772.0,exact,0
 Nah'Shon Hyland / Bones Hyland,Bones Hyland,1630538.0,slash_variant,0
 Naji Marshall,Naji Marshall,1630230.0,exact,0
+Nando De Colo,Nando De Colo,201986.0,exact,0
 Nassir Little,Nassir Little,1629642.0,exact,0
+Nate Ament,Nate Ament,1643417.0,nba_api_static,0
+Nate Bittle,Nate Bittle,1642927.0,nba_api_static,0
 Nate Darling,Nate Darling,1630268.0,exact,0
 Nate Hinton,Nate Hinton,1630207.0,exact,0
 Nate Robinson,Nate Robinson,101126.0,exact,0
@@ -1219,10 +1343,13 @@ Nazareth Mitrou-Long / Naz Mitrou-Long / Naz Long,Naz Mitrou-Long,1628513.0,slas
 Nazr Mohammed,Nazr Mohammed,1737.0,exact,0
 Neemias Queta,Neemias Queta,1629674.0,exact,0
 Nemanja Bjelica,Nemanja Bjelica,202357.0,exact,0
+Nemanja Nedovic,Nemanja Nedovic,203517.0,exact,0
 Nene / Nene Hilario / Maybyner Hilario,Nene,2403.0,slash_variant,0
 Nerlens Noel,Nerlens Noel,203457.0,exact,0
+Nick Calathes,Nick Calathes,201979.0,exact,0
 Nick Collison,Nick Collison,2555.0,exact,0
 Nick Johnson,Nick Johnson,203910.0,exact,0
+Nick Martinelli,Nick Martinelli,1643568.0,nba_api_static,0
 Nick Richards,Nick Richards,1630208.0,exact,0
 Nick Smith Jr.,Nick Smith Jr.,1641733.0,exact,0
 Nick Young,Nick Young,201156.0,exact,0
@@ -1239,6 +1366,7 @@ Nik Stauskas,Nik Stauskas,203917.0,exact,0
 Nikola Jokic,Nikola Jokić,203999.0,normalized,0
 Nikola Jovic,Nikola Jović,1631107.0,normalized,0
 Nikola Mirotic,Nikola Mirotic,202703.0,exact,0
+Nikola Pekovic,Nikola Pekovic,201593.0,exact,0
 Nikola Topic,Nikola Topić,1642260.0,normalized,0
 Nikola Vucevic,Nikola Vučević,202696.0,normalized,0
 Nique Clifford,Nique Clifford,1642363.0,exact,0
@@ -1251,8 +1379,10 @@ Norchad Omier,Norchad Omier,1641807.0,exact,0
 Norman Powell,Norman Powell,1626181.0,exact,0
 Norris Cole (Gene),Norris Cole,202708.0,paren_stripped,0
 Norvel Pelle,Norvel Pelle,203658.0,exact,0
+O.J. Mayo,O.J. Mayo,201564.0,exact,0
 Obi Toppin,Obi Toppin,1630167.0,exact,0
 Ochai Agbaji,Ochai Agbaji,1630534.0,exact,0
+Ognjen Kuzmic / Ognen Kuzmic,Ognjen Kuzmic,203136.0,slash_variant,0
 Ogugua Anunoby / O.G. Anunoby,OG Anunoby,1628384.0,normalized_variant,0
 Okaro White,Okaro White,1627855.0,exact,0
 Olivier Sarr,Olivier Sarr,1630846.0,exact,0
@@ -1269,6 +1399,7 @@ Orlando Robinson,Orlando Robinson,1631115.0,exact,0
 Osasere Ighodaro / Oso Ighodaro,Oso Ighodaro,1642345.0,slash_variant,0
 Oscar Tshiebwe,Oscar Tshiebwe,1631131.0,exact,0
 Oshae Brissett,Oshae Brissett,1629052.0,exact,0
+Otega Oweh,Otega Oweh,1642923.0,nba_api_static,0
 Othyus Jeffers,Othyus Jeffers,201785.0,exact,0
 Otto Porter Jr.,Otto Porter Jr.,203490.0,exact,0
 Ousmane Dieng,Ousmane Dieng,1631172.0,exact,0
@@ -1302,6 +1433,7 @@ Paul Zipser,Paul Zipser,1627835.0,exact,0
 Payton Pritchard,Payton Pritchard,1630202.0,exact,0
 Payton Sandfort,Payton Sandfort,1642362.0,exact,0
 Pelle Larsson,Pelle Larsson,1641796.0,exact,0
+Pero Antic,Pero Antic,203544.0,exact,0
 Perry Jones III,Perry Jones III,203103.0,exact,0
 Pete Nance,Pete Nance,1631250.0,exact,0
 Petr Cornelie,Petr Cornelie,1627822.0,exact,0
@@ -1311,6 +1443,7 @@ Phil Pressey,Phil Pressey,203515.0,exact,0
 Phillip Wheeler,Phillip Wheeler,1630762.0,exact,0
 Pierre Jackson,Pierre Jackson,203510.0,exact,0
 Precious Achiuwa,Precious Achiuwa,1630173.0,exact,0
+Quadir Copeland,Quadir Copeland,1643595.0,nba_api_static,0
 Quentin Grimes,Quentin Grimes,1629656.0,exact,0
 Quenton Jackson,Quenton Jackson,1631245.0,exact,0
 Quincy Acy,Quincy Acy,203112.0,exact,0
@@ -1321,8 +1454,10 @@ Quinn Cook,Quinn Cook,1626188.0,exact,0
 Quinndary Weatherspoon,Quinndary Weatherspoon,1629683.0,exact,0
 Quinten Post,Quinten Post,1642366.0,exact,0
 R.J. Barrett,RJ Barrett,1629628.0,normalized,0
+R.J. Davis,R.J. Davis,1642930.0,nba_api_static,0
 R.J. Hampton,R.J. Hampton,1630181.0,exact,0
 R.J. Hunter,RJ Hunter,1626154.0,normalized,0
+Rafael Castro,Rafael Castro,1643572.0,nba_api_static,0
 RaiQuan Gray,RaiQuan Gray,1630564.0,exact,0
 Rajon Rondo,Rajon Rondo,200765.0,exact,0
 Rakeem Christmas,Rakeem Christmas,1626176.0,exact,0
@@ -1334,6 +1469,7 @@ Rasheer Fleming,Rasheer Fleming,1642853.0,exact,0
 Rasual Butler,Rasual Butler,2446.0,exact,0
 Raulzinho Neto / Raul Neto,Raul Neto,203526.0,slash_variant,0
 Rawle Alkins,Rawle Alkins,1628959.0,exact,0
+Ray Allen,Ray Allen,951.0,exact,0
 Ray McCallum Jr.,Ray McCallum,203492.0,normalized,0
 RayJ Dennis,RayJ Dennis,1642484.0,exact,0
 Rayan Rupert,Rayan Rupert,1641712.0,exact,0
@@ -1344,10 +1480,12 @@ Rechon Black / Leaky Black,Leaky Black,1641778.0,slash_variant,0
 Reece Beekman,Reece Beekman,1641736.0,exact,0
 Reed Sheppard,Reed Sheppard,1642263.0,exact,0
 Reggie Bullock,Reggie Bullock Jr.,203493.0,normalized,0
+Reggie Evans,Reggie Evans,2501.0,exact,0
 Reggie Hearn,Reggie Hearn,203687.0,exact,0
 Reggie Jackson (Shon),Reggie Jackson,202704.0,paren_stripped,0
 Reggie Perry,Reggie Perry,1629617.0,exact,0
 Reggie Williams (Leon),Reggie Williams,202130.0,paren_stripped,0
+Rejean Ellis / Boogie Ellis,Boogie Ellis,1642407.0,nba_api_static,0
 Richard Jefferson,Richard Jefferson,2210.0,exact,0
 Richaun Holmes,Richaun Holmes,1626158.0,exact,0
 Ricky Council IV,Ricky Council IV,1641741.0,exact,0
@@ -1369,6 +1507,7 @@ Rodney Hood,Rodney Hood,203918.0,exact,0
 Rodney McGruder,Rodney McGruder,203585.0,exact,0
 Rodney Purvis,Rodney Purvis,1628681.0,exact,0
 Rodney Stuckey,Rodney Stuckey,201155.0,exact,0
+Roger Mason Jr.,Roger Mason Jr.,2427.0,exact,0
 Romeo Langford,Romeo Langford,1629641.0,exact,0
 Ron Baker,Ron Baker,1627758.0,exact,0
 Ron Harper Jr.,Ron Harper Jr.,1631199.0,exact,0
@@ -1376,6 +1515,7 @@ Ron Holland II,Ronald Holland II,1641842.0,manual_alias,0
 Rondae Hollis-Jefferson,Rondae Hollis-Jefferson,1626178.0,exact,0
 Ronnie Brewer,Ronnie Brewer,200758.0,exact,0
 Ronnie Price,Ronnie Price,101179.0,exact,0
+Ronny Turiaf,Ronny Turiaf,101142.0,exact,0
 Roy Hibbert,Roy Hibbert,201579.0,exact,0
 Royal Ivey,Royal Ivey,2767.0,exact,0
 Royce O'Neale,Royce O'Neale,1626220.0,exact,0
@@ -1389,7 +1529,9 @@ Russell Westbrook,Russell Westbrook,201566.0,exact,0
 Ryan Anderson,Ryan Anderson,201583.0,exact,0
 Ryan Arcidiacono,Ryan Arcidiacono,1627853.0,exact,0
 Ryan Broekhoff,Ryan Broekhoff,1629151.0,exact,0
+Ryan Conwell,Ryan Conwell,1643553.0,nba_api_static,0
 Ryan Dunn,Ryan Dunn,1642346.0,exact,0
+Ryan Gomes,Ryan Gomes,101155.0,exact,0
 Ryan Hollins,Ryan Hollins,200797.0,exact,0
 Ryan Kalkbrenner,Ryan Kalkbrenner,1641750.0,exact,0
 Ryan Kelly,Ryan Kelly,203527.0,exact,0
@@ -1397,6 +1539,7 @@ Ryan Nembhard,Ryan Nembhard,1642948.0,exact,0
 Ryan Rollins,Ryan Rollins,1631157.0,exact,0
 Saben Lee,Saben Lee,1630240.0,exact,0
 Saddiq Bey,Saddiq Bey,1630180.0,exact,0
+Saint Thomas,Saint Thomas,1643148.0,nba_api_static,0
 Salah Mejri,Salah Mejri,1626257.0,exact,0
 Sam Dekker,Sam Dekker,1626155.0,exact,0
 Sam Hauser,Sam Hauser,1630573.0,exact,0
@@ -1419,6 +1562,8 @@ Sekou Doumbouya,Sekou Doumbouya,1629635.0,exact,0
 Semaj Christon,Semaj Christon,203902.0,exact,0
 Semi Ojeleye,Semi Ojeleye,1628400.0,exact,0
 Serge Ibaka,Serge Ibaka,201586.0,exact,0
+Sergey Karasev,Sergey Karasev,203508.0,exact,0
+Sergio De Larrea,Sergio de Larrea,1643547.0,nba_api_static,0
 Sergio Rodriguez,Sergio Rodriguez,200771.0,exact,0
 Seth Curry,Seth Curry,203552.0,exact,0
 Seth Lundy,Seth Lundy,1641754.0,exact,0
@@ -1428,6 +1573,7 @@ Shaedon Sharpe,Shaedon Sharpe,1631101.0,exact,0
 Shai Gilgeous-Alexander,Shai Gilgeous-Alexander,1628983.0,exact,0
 Shake Milton,Shake Milton,1629003.0,exact,0
 Shamorie Ponds,Shamorie Ponds,1629044.0,exact,0
+Shane Battier,Shane Battier,2203.0,exact,0
 Shane Edwards,Shane Edwards,202197.0,exact,0
 Shane Larkin,Shane Larkin,203499.0,exact,0
 Shannon Brown,Shannon Brown,200769.0,exact,0
@@ -1459,6 +1605,7 @@ Stanley Johnson,Stanley Johnson,1626169.0,exact,0
 Stanley Umude,Stanley Umude,1630649.0,exact,0
 Stanton Kidd,Stanton Kidd,1629742.0,exact,0
 Stephen Curry,Stephen Curry,201939.0,exact,0
+Stephen Jackson,Stephen Jackson,1536.0,exact,0
 Stephen Zimmerman Jr.,Stephen Zimmerman,1627757.0,normalized,0
 Stephon Castle,Stephon Castle,1642264.0,exact,0
 Sterling Brown,Sterling Brown,1628425.0,exact,0
@@ -1476,10 +1623,15 @@ Taelon Peter,Taelon Peter,1643007.0,exact,0
 Tahjere McCall,Tahjere McCall,1628769.0,exact,0
 Taj Gibson,Taj Gibson,201959.0,exact,0
 Talen Horton-Tucker,Talen Horton-Tucker,1629659.0,exact,0
+Tamar Bates,Tamar Bates,1642926.0,nba_api_static,0
+Taran Armstrong,Taran Armstrong,1642379.0,nba_api_static,0
 Tari Eason,Tari Eason,1631106.0,exact,0
+Tarik Biberovic,Tarik Biberovic,1641844.0,nba_api_static,0
 Tarik Black,Tarik Black,204028.0,exact,0
+Tarik Phillip,Tarik Phillip,1629341.0,nba_api_static,0
 Tariq Owens,Tariq Owens,1629745.0,exact,0
 Taurean Prince,Taurean Prince,1627752.0,exact,0
+Taylor Funk,Taylor Funk,1641917.0,nba_api_static,0
 Taylor Hendricks,Taylor Hendricks,1641707.0,exact,0
 Tayshaun Prince,Tayshaun Prince,2419.0,exact,0
 Taze Moore,Taze Moore,1631386.0,exact,0
@@ -1499,6 +1651,7 @@ Theo Maledon,Theo Maledon,1630177.0,exact,0
 Theo Pinson,Theo Pinson,1629033.0,exact,0
 Thomas Bryant,Thomas Bryant,1628418.0,exact,0
 Thomas Robinson,Thomas Robinson,203080.0,exact,0
+Thomas Sorber,Thomas Sorber,1642850.0,nba_api_static,0
 Thomas Welsh,Thomas Welsh,1629118.0,exact,0
 Thon Maker,Thon Maker,1627748.0,exact,0
 Tiago Splitter,Tiago Splitter,201168.0,exact,0
@@ -1511,6 +1664,8 @@ Tim Quarterman,Tim Quarterman,1627817.0,exact,0
 Timmy Allen,Timmy Allen,1641851.0,exact,0
 Timofey Mozgov,Timofey Mozgov,202389.0,exact,0
 Timothe Luwawu-Cabarrot,Timothe Luwawu-Cabarrot,1627789.0,exact,0
+Tobe Awaka,Tobe Awaka,1643591.0,nba_api_static,0
+Tobi Lawal,Tobi Lawal,1643588.0,nba_api_static,0
 Tobias Harris,Tobias Harris,202699.0,exact,0
 Toby Okani,Toby Okani,1643253.0,exact,0
 Tolu Smith,Tolu Smith,1642449.0,exact,0
@@ -1520,14 +1675,17 @@ Tony Allen,Tony Allen,2754.0,exact,0
 Tony Bradley,Tony Bradley,1628396.0,exact,0
 Tony Snell,Tony Snell,203503.0,exact,0
 Tony Wroten Jr.,Tony Wroten,203100.0,normalized,0
+Tornike Shengelia,Tornike Shengelia,203129.0,exact,0
 Torrey Craig,Torrey Craig,1628470.0,exact,0
 Tosan Evbuomwan,Tosan Evbuomwan,1641787.0,exact,0
 Toumani Camara,Toumani Camara,1641739.0,exact,0
 Toure' Murry / Toure Murry,Toure' Murry,203315.0,slash_variant,0
 Trae Young,Trae Young,1629027.0,exact,0
+Travis Outlaw,Travis Outlaw,2566.0,exact,0
 Travis Wear,Travis Wear,204037.0,exact,0
 Trayce Jackson-Davis,Trayce Jackson-Davis,1631218.0,exact,0
 Trayvon Palmer,Trayvon Palmer,1629309.0,exact,0
+Tre Donaldson,Tre Donaldson,1643621.0,nba_api_static,0
 Tre Johnson,Tre Johnson,1642848.0,exact,0
 Tre Jones,Tre Jones,1630200.0,exact,0
 Tre Mann,Tre Mann,1630544.0,exact,0
@@ -1537,6 +1695,8 @@ Trent Forrest,Trent Forrest,1630235.0,exact,0
 Trentyn Flowers,Trentyn Flowers,1642280.0,exact,0
 Trevelin Queen,Trevelin Queen,1630243.0,exact,0
 Treveon Graham,Treveon Graham,1626203.0,exact,0
+Trevon Bluiett,Trevon Bluiett,1629129.0,nba_api_static,0
+Trevon Brazile,Trevon Brazile,1642350.0,nba_api_static,0
 Trevon Duval,Trevon Duval,1628979.0,exact,0
 Trevon Scott / Tre Scott,Trevon Scott,1630286.0,slash_variant,0
 Trevor Ariza,Trevor Ariza,2772.0,exact,0
@@ -1558,11 +1718,13 @@ Troy Brown Jr.,Troy Brown Jr.,1628972.0,exact,0
 Troy Caupain,Troy Caupain,1628505.0,exact,0
 Troy Daniels,Troy Daniels,203584.0,exact,0
 Troy Williams,Troy Williams,1627786.0,exact,0
+Tucker DeVries,Tucker DeVries,1643620.0,nba_api_static,0
 Ty Jerome,Ty Jerome,1629660.0,exact,0
 Ty Lawson,Ty Lawson,201951.0,exact,0
 Ty-Shon Alexander,Ty-Shon Alexander,1630234.0,exact,0
 TyTy Washington Jr.,TyTy Washington Jr.,1631102.0,exact,0
 Tyler Bey,Tyler Bey,1630189.0,exact,0
+Tyler Bilodeau,Tyler Bilodeau,1643548.0,nba_api_static,0
 Tyler Burton,Tyler Burton,1631174.0,exact,0
 Tyler Cavanaugh,Tyler Cavanaugh,1628463.0,exact,0
 Tyler Cook,Tyler Cook,1629076.0,exact,0
@@ -1575,10 +1737,12 @@ Tyler Herro,Tyler Herro,1629639.0,exact,0
 Tyler Johnson,Tyler Johnson,204020.0,exact,0
 Tyler Kolek,Tyler Kolek,1642278.0,exact,0
 Tyler Lydon,Tyler Lydon,1628399.0,exact,0
+Tyler Nickel,Tyler Nickel,1643589.0,nba_api_static,0
 Tyler Smith,Tyler Smith,1641890.0,exact,0
 Tyler Ulis,Tyler Ulis,1627755.0,exact,0
 Tyler Zeller,Tyler Zeller,203092.0,exact,0
 Tyreke Evans,Tyreke Evans,201936.0,exact,0
+Tyreke Key,Tyreke Key,1642615.0,nba_api_static,0
 Tyrell Terry,Tyrell Terry,1630179.0,exact,0
 Tyrese Haliburton,Tyrese Haliburton,1630169.0,exact,0
 Tyrese Martin,Tyrese Martin,1631213.0,exact,0
@@ -1586,18 +1750,23 @@ Tyrese Maxey,Tyrese Maxey,1630178.0,exact,0
 Tyrese Proctor,Tyrese Proctor,1642878.0,exact,0
 Tyrone Wallace,Tyrone Wallace,1627820.0,exact,0
 Tyrus Thomas,Tyrus Thomas,200748.0,exact,0
+Tyshawn Taylor,Tyshawn Taylor,203116.0,exact,0
 Tyson Chandler,Tyson Chandler,2199.0,exact,0
+Tyson Degenhart,Tyson Degenhart,1643091.0,nba_api_static,0
 Tyson Etienne,Tyson Etienne,1630623.0,exact,0
 Tyus Jones,Tyus Jones,1626145.0,exact,0
 Udoka Azubuike,Udoka Azubuike,1628962.0,exact,0
 Udonis Haslem,Udonis Haslem,2617.0,exact,0
+Ugonna Onyenso,Ugonna Onyenso,1642391.0,nba_api_static,0
 Ulrich Chomche,Ulrich Chomche,1642279.0,exact,0
 Usman Garuba,Usman Garuba,1630586.0,exact,0
 Valdez Edgecombe / V.J. Edgecombe,VJ Edgecombe,1642845.0,normalized_variant,0
 Vander Blue,Vander Blue,203505.0,exact,0
 Vasilije Micic / Vasa Micic,Vasilije Micic,203995.0,slash_variant,0
 Vernon Carey Jr.,Vernon Carey Jr.,1630176.0,exact,0
+Viacheslav Kravtsov / Sasha Kravtsov,Viacheslav Kravtsov,203139.0,slash_variant,0
 Vic Law,Vic Law,1629724.0,exact,0
+Victor Claver,Victor Claver,201964.0,exact,0
 Victor Oladipo,Victor Oladipo,203506.0,exact,0
 Victor Wembanyama,Victor Wembanyama,1641705.0,exact,0
 Vince Carter,Vince Carter,1713.0,exact,0
@@ -1606,6 +1775,7 @@ Vincent Edwards / Vince Edwards,Vincent Edwards,1629053.0,slash_variant,0
 Vincent Hunter / Vince Hunter,Vincent Hunter,1626205.0,slash_variant,0
 Vincent Poirier,Vincent Poirier,1629738.0,exact,0
 Vit Krejci,Vít Krejčí,1630249.0,normalized,0
+Vitor Faverani,Vitor Faverani,203543.0,exact,0
 Vladislav Goldin,Vladislav Goldin,1642884.0,exact,0
 Vlatko Cancar,Vlatko Cancar,1628427.0,exact,0
 Wade Baldwin IV,Wade Baldwin IV,1627735.0,exact,0
@@ -1619,6 +1789,7 @@ Wendell Carter Jr.,Wendell Carter Jr.,1628976.0,exact,0
 Wendell Moore Jr.,Wendell Moore Jr.,1631111.0,exact,0
 Wenyen Gabriel,Wenyen Gabriel,1629117.0,exact,0
 Wesley Iwundu / Wes Iwundu,Wes Iwundu,1628411.0,slash_variant,0
+Wesley Johnson,Wesley Johnson,202325.0,exact,0
 Wesley Johnson / Wes Johnson,Wesley Johnson,202325.0,slash_variant,0
 Wesley Matthews / Wes Matthews Jr.,Wesley Matthews,202083.0,slash_variant,0
 Will Barton,Will Barton,203115.0,exact,0
@@ -1626,9 +1797,11 @@ Will Bynum,Will Bynum,101198.0,exact,0
 Will Cherry,Will Cherry,203805.0,exact,0
 Will Magnay,Will Magnay,1630266.0,exact,0
 Will Richard (a),Will Richard,1642954.0,paren_stripped,0
+Will Richardson,Will Richardson,1642019.0,nba_api_static,0
 Will Riley,Will Riley,1642860.0,exact,0
 William Howard,William Howard,1629739.0,exact,0
 Willie Cauley-Stein,Willie Cauley-Stein,1626161.0,exact,0
+Willie Green,Willie Green,2584.0,exact,0
 Willie Reed,Willie Reed,203186.0,exact,0
 Wilson Chandler,Wilson Chandler,201163.0,exact,0
 Xavier Cooks,Xavier Cooks,1641645.0,exact,0
@@ -1642,6 +1815,7 @@ Xavier Tillman,Xavier Tillman,1630214.0,exact,0
 Yang Hansen / Hansen Yang,Yang Hansen,1642905.0,slash_variant,0
 Yanic Konan Niederhauser,Yanic Konan Niederhäuser,1642949.0,normalized,0
 Yante Maten,Yante Maten,1628999.0,exact,0
+Yaxel Lendeborg,Yaxel Lendeborg,1642865.0,nba_api_static,0
 Yogi Ferrell,Yogi Ferrell,1627812.0,exact,0
 Yuki Kawamura,Yuki Kawamura,1642530.0,exact,0
 Yuri Collins,Yuri Collins,1641879.0,exact,0
@@ -1655,6 +1829,7 @@ Zach LaVine,Zach LaVine,203897.0,exact,0
 Zach Lofton,Zach Lofton,1629155.0,exact,0
 Zach Norvell Jr.,Zach Norvell Jr.,1629668.0,exact,0
 Zach Randolph,Zach Randolph,2216.0,exact,0
+Zack Austin,Zack Austin,1643113.0,nba_api_static,0
 Zaur Pachulia / Zaza Pachulia,Zaza Pachulia,2585.0,slash_variant,0
 Zavier Simpson,Zavier Simpson,1630285.0,exact,0
 Zeke Nnaji,Zeke Nnaji,1630192.0,exact,0
@@ -1663,5 +1838,6 @@ Zhou Qi / Qi Zhou,Zhou Qi,1627753.0,slash_variant,0
 Ziaire Williams,Ziaire Williams,1630533.0,exact,0
 Zion Williamson,Zion Williamson,1629627.0,exact,0
 Zoran Dragic,Zoran Dragic,204054.0,exact,0
+Zuby Ejiofor,Zuby Ejiofor,1643544.0,nba_api_static,0
 Zylan Cheatham,Zylan Cheatham,1629597.0,exact,0
 Zyon Pullin,Zyon Pullin,1642389.0,exact,0
