@@ -282,6 +282,36 @@ def _movement_player_column(movements: pd.DataFrame) -> pd.Series:
     return name.mask(staff & ~labeled, "")
 
 
+TRADES_CSV = "psx_trades_v2_2014_present.csv"
+TRADES_PLAYERS_CSV = "trades_players.csv"
+# Trade assets that are not players on a roster: picks, cash, exceptions, swaps, draft rights.
+NON_PLAYER_ASSET_RE = re.compile(r"pick|cash|exception|rights to|swap|\$|draft|consideration|option|waiv", re.IGNORECASE)
+
+
+def _split_assets(cell: str) -> list[str]:
+    """Split a trade's asset list on ';' but not inside parentheses (pick protections contain ';')."""
+    return [x.strip() for x in re.split(r";(?![^()]*\))", str(cell)) if x.strip()]
+
+
+def trade_player_rows(trades: pd.DataFrame) -> pd.DataFrame:
+    """One row per player named in a trade side: date, team, counterparty, side (acquired / relinquished), player_string."""
+    rows = []
+    for side, col in (("acquired", "acquired_assets"), ("relinquished", "relinquished_assets")):
+        part = trades[["date", "team", "counterparty"]].assign(side=side, player_string=trades[col].fillna("").map(_split_assets))
+        part = part.explode("player_string").dropna(subset=["player_string"])
+        rows.append(part[~part.player_string.str.contains(NON_PLAYER_ASSET_RE)])
+    return pd.concat(rows, ignore_index=True)
+
+
+def resolve_trade_players(players: pd.DataFrame, matched: pd.DataFrame) -> pd.DataFrame:
+    lookup = matched.drop_duplicates("player_string").set_index("player_string")
+    out = players.copy()
+    out["player_id"] = pd.to_numeric(out["player_string"].map(lookup["player_id"]), errors="coerce").astype("Int64")
+    out["matched_name"] = out["player_string"].map(lookup["matched_name"])
+    out["match_method"] = out["player_string"].map(lookup["method"])
+    return out
+
+
 def movement_player_strings(movements: pd.DataFrame) -> list[str]:
     col = _movement_player_column(movements)
     return sorted(col[col != ""].unique())
@@ -316,7 +346,10 @@ def main():
 
     movements = pd.read_csv(MOVEMENTS_CSV, keep_default_na=False) if os.path.exists(MOVEMENTS_CSV) else None
     movement_names = movement_player_strings(movements) if movements is not None else []
-    player_strings = sorted(set(contracts.player.dropna().unique()) | set(movement_names))
+    trades = pd.read_csv(TRADES_CSV, keep_default_na=False) if os.path.exists(TRADES_CSV) else None
+    trade_players = trade_player_rows(trades) if trades is not None else None
+    trade_names = set(trade_players.player_string) if trade_players is not None else set()
+    player_strings = sorted(set(contracts.player.dropna().unique()) | set(movement_names) | trade_names)
     nba_api_df = pd.read_csv("nba_api_players.csv") if os.path.exists("nba_api_players.csv") else None
     matched, unmatched = build_crosswalk(player_strings, modern, index_master, nba_api_df)
 
@@ -330,6 +363,10 @@ def main():
         print(f"Wrote {MOVEMENTS_RESOLVED_CSV}: {len(resolved)} rows, {int(is_player.sum())} with a player name, "
               f"{int((resolved.player_id.notna()).sum())} resolved to a player_id "
               f"({resolved[resolved.move_type != ''].player_id.notna().mean():.1%} of waiver-type rows)")
+    if trade_players is not None:
+        resolved_trades = resolve_trade_players(trade_players, matched)
+        resolved_trades.to_csv(TRADES_PLAYERS_CSV, index=False)
+        print(f"Wrote {TRADES_PLAYERS_CSV}: {len(resolved_trades)} player-sides, {resolved_trades.player_id.notna().mean():.1%} with a player_id")
     print(f"Total unique player strings: {len(player_strings)}")
     print(f"Matched: {len(matched)} ({len(matched) / len(player_strings):.1%})")
     print(f"Unmatched: {len(unmatched)} ({len(unmatched) / len(player_strings):.1%})")

@@ -348,6 +348,7 @@ Cui Yongxi,Cui Yongxi,1642385.0,index_master,0
 Curtis Jones,Curtis Jones,1642938.0,exact,0
 D'Angelo Russell,D'Angelo Russell,1626156.0,exact,0
 D'Moi Hodge,D'Moi Hodge,1641793.0,exact,0
+D.J. Augustin,D.J. Augustin,201571.0,exact,0
 D.J. Augustine,D.J. Augustin,201571.0,manual_alias,0
 D.J. Carton,D.J. Carton,1630618.0,exact,0
 D.J. Stephens,DJ Stephens,203474.0,normalized,0
@@ -421,6 +422,7 @@ Day'Ron Sharpe,Day'Ron Sharpe,1630549.0,exact,0
 De'Aaron Fox,De'Aaron Fox,1628368.0,exact,0
 De'Andre Hunter,De'Andre Hunter,1629631.0,exact,0
 De'Anthony Melton,De'Anthony Melton,1629001.0,exact,0
+DeAndre Ayton,Deandre Ayton,1629028.0,normalized,0
 DeAndre Jordan,DeAndre Jordan,201599.0,exact,0
 DeAndre Liggins,DeAndre Liggins,202732.0,exact,0
 DeAndre' Bembry,DeAndre' Bembry,1627761.0,exact,0
@@ -1148,11 +1150,13 @@ Lester Quinones,Lester Quiñones,1631311.0,normalized,0
 Liam McNeeley,Liam McNeeley,1642862.0,exact,0
 Liam Robbins,Liam Robbins,1641857.0,exact,0
 Lindell Wigginton,Lindell Wigginton,1629623.0,exact,0
+Lindy Waters,Lindy Waters III,1630322.0,normalized,0
 Lindy Waters III,Lindy Waters III,1630322.0,exact,0
 London Perrantes,London Perrantes,1628506.0,exact,0
 Lonnie Walker IV,Lonnie Walker IV,1629022.0,exact,0
 Lonzo Ball,Lonzo Ball,1628366.0,exact,0
 Lorenzo Brown,Lorenzo Brown,203485.0,exact,0
+Lou Amundson,Lou Amundson,200811.0,exact,0
 Louis Amundson / Lou Amundson,Lou Amundson,200811.0,slash_variant,0
 Louis King,Louis King,1629663.0,exact,0
 Louis Williams / Lou Williams,Lou Williams,101150.0,slash_variant,0
@@ -1309,6 +1313,7 @@ Mohamed Diawara,Mohamed Diawara,1642885.0,exact,0
 Monta Ellis,Monta Ellis,101145.0,exact,0
 Monte Morris,Monte Morris,1628420.0,exact,0
 Montrezl Harrell,Montrezl Harrell,1626149.0,exact,0
+Moritz Wagner,Moritz Wagner,1629021.0,exact,0
 Moritz Wagner / Moe Wagner,Moritz Wagner,1629021.0,slash_variant,0
 Moses Brown,Moses Brown,1629650.0,exact,0
 Moses Moody,Moses Moody,1630541.0,exact,0
@@ -1482,6 +1487,7 @@ Reed Sheppard,Reed Sheppard,1642263.0,exact,0
 Reggie Bullock,Reggie Bullock Jr.,203493.0,normalized,0
 Reggie Evans,Reggie Evans,2501.0,exact,0
 Reggie Hearn,Reggie Hearn,203687.0,exact,0
+Reggie Jackson,Reggie Jackson,202704.0,exact,0
 Reggie Jackson (Shon),Reggie Jackson,202704.0,paren_stripped,0
 Reggie Perry,Reggie Perry,1629617.0,exact,0
 Reggie Williams (Leon),Reggie Williams,202130.0,paren_stripped,0
@@ -1791,6 +1797,7 @@ Wenyen Gabriel,Wenyen Gabriel,1629117.0,exact,0
 Wesley Iwundu / Wes Iwundu,Wes Iwundu,1628411.0,slash_variant,0
 Wesley Johnson,Wesley Johnson,202325.0,exact,0
 Wesley Johnson / Wes Johnson,Wesley Johnson,202325.0,slash_variant,0
+Wesley Matthews,Wesley Matthews,202083.0,exact,0
 Wesley Matthews / Wes Matthews Jr.,Wesley Matthews,202083.0,slash_variant,0
 Will Barton,Will Barton,203115.0,exact,0
 Will Bynum,Will Bynum,101198.0,exact,0

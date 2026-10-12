@@ -53,3 +53,15 @@ def test_nba_api_tier_matches_recent_players_but_not_namesakes_fathers_or_old_ca
     matched, unmatched = X.build_crosswalk(names, modern, None, api)
     assert list(matched.player_string) == ["Armando Bacot"] and matched.method.iloc[0] == "nba_api_static"
     assert set(unmatched.player_string) == set(names[1:])
+
+
+def test_trade_assets_split_outside_parentheses_and_keep_only_players():
+    trades = pd.DataFrame([{
+        "date": "2024-02-08", "team": "Heat", "counterparty": "Pacers",
+        "acquired_assets": "Jon Doe; 2026 first round pick (protected top 4; else second round) (?-?); cash; rights to Overseas Guy; $1.1M cash",
+        "relinquished_assets": "Mo Williams",
+    }])
+    rows = X.trade_player_rows(trades)
+    assert sorted(zip(rows.side, rows.player_string)) == [("acquired", "Jon Doe"), ("relinquished", "Mo Williams")]
+    out = X.resolve_trade_players(rows, MATCHED)
+    assert sorted(out.player_id.astype(float)) == [1.0, 2.0]
