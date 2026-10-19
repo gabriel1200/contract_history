@@ -29,6 +29,7 @@ from __future__ import annotations
 
 import asyncio
 import argparse
+import logging
 import os
 import re
 import sys
@@ -45,6 +46,7 @@ START_DATE = date.fromisoformat("2014-01-01")
 END_DATE = date.today()
 
 UNFLARE_URL = "http://localhost:5002/scrape"
+EMPTY_RESULTS_TEXT = "there were no matching transactions found."
 
 TEAM_NICKNAMES = [
     "Hawks", "Celtics", "Nets", "Hornets", "Bulls", "Cavaliers", "Mavericks",
@@ -269,7 +271,8 @@ def rows_from_dataframe(df: pd.DataFrame) -> tuple[list[ContractRow], list[Trade
 
 
 async def scrape_team(
-    team: str, handler: UnflareRequestHandler, max_pages: int = 300
+    team: str, handler: UnflareRequestHandler, max_pages: int = 300,
+    start_date: date = START_DATE, end_date: date = END_DATE,
 ) -> tuple[list[ContractRow], list[TradeRow], list[dict]]:
     all_contract_rows: list[ContractRow] = []
     all_trade_rows: list[TradeRow] = []
@@ -279,18 +282,22 @@ async def scrape_team(
         search = pst.Search(
             league=pst.League.NBA,
             transaction_types=(pst.TransactionType.Movement,),
-            start_date=START_DATE,
-            end_date=END_DATE,
+            start_date=start_date,
+            end_date=end_date,
             team=team,
             starting_row=starting_row,
             request_handler=handler,
         )
         df = await search.get_dataframe()
 
+        if getattr(handler, "last_page_empty", False):
+            print(f"  {team}: no matching transactions in requested dates", file=sys.stderr)
+            break
+
         if df.attrs.get("errors"):
             print(f"  {team} page {page_num}: ERROR {df.attrs['errors']}",
                   file=sys.stderr)
-            break
+            raise RuntimeError(f"{team} page {page_num}: {df.attrs['errors']}")
 
         contract_rows, trade_rows, movement_rows = rows_from_dataframe(df)
         all_contract_rows.extend(contract_rows)
@@ -305,8 +312,19 @@ async def scrape_team(
         if len(df) == 0 or (page_num + 1) >= total_pages:
             break
         starting_row += 25
+    else:
+        raise RuntimeError(f"{team}: reached max_pages={max_pages} before the last page")
 
     return all_contract_rows, all_trade_rows, all_movement_rows
+
+
+class EmptyAwareUnflareHandler(UnflareRequestHandler):
+    """Remember when PST explicitly reports an empty search result."""
+
+    async def get(self, url: str, headers: dict) -> Optional[str]:
+        html = await super().get(url, headers)
+        self.last_page_empty = bool(html and EMPTY_RESULTS_TEXT in html.lower())
+        return html
 
 
 class BrowserHandler:
@@ -317,10 +335,14 @@ class BrowserHandler:
         self.page, self.delay = page, delay
 
     async def get(self, url: str, headers: dict) -> Optional[str]:
+        self.last_page_empty = False
         await asyncio.sleep(self.delay)
         await self.page.goto(url, wait_until="domcontentloaded")
         for i in range(150):  # up to 5 minutes, so a challenge can be solved by hand
             html = await self.page.content()
+            if EMPTY_RESULTS_TEXT in html.lower():
+                self.last_page_empty = True
+                return html
             if "Notes" in html and "Relinquished" in html:
                 return html
             if i == 0:
@@ -329,7 +351,9 @@ class BrowserHandler:
         raise TimeoutError(f"results table never appeared for {url}")
 
 
-async def main(teams: list[str], browser: bool = False, delay: float = 1.0):
+async def main(teams: list[str], browser: bool = False, delay: float = 1.0,
+               start_date: date = START_DATE, end_date: date = END_DATE,
+               refresh_range: bool = False):
     if browser:
         from playwright.async_api import async_playwright
         async with async_playwright() as p:
@@ -341,12 +365,12 @@ async def main(teams: list[str], browser: bool = False, delay: float = 1.0):
             )
             page = ctx.pages[0] if ctx.pages else await ctx.new_page()
             try:
-                await _run(teams, BrowserHandler(page, delay))
+                await _run(teams, BrowserHandler(page, delay), start_date, end_date, refresh_range)
             finally:
                 await ctx.close()
     else:
         config = UnflareConfig(url=UNFLARE_URL, timeout=60000)
-        await _run(teams, UnflareRequestHandler(config))
+        await _run(teams, EmptyAwareUnflareHandler(config), start_date, end_date, refresh_range)
 
 
 # Waiver-related labels for the movements file (first match wins). Validated on real notes: "waived",
@@ -378,7 +402,23 @@ def add_move_labels(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-async def _run(teams: list[str], handler):
+def merge_scraped_rows(path: str, rows: pd.DataFrame, teams: list[str],
+                       start_date: date, end_date: date, refresh_range: bool,
+                       dedupe_columns: list[str]) -> pd.DataFrame:
+    """Replace only the scraped teams and dates; keep all other saved rows."""
+    if os.path.exists(path) and (refresh_range or set(teams) != set(TEAM_NICKNAMES)):
+        existing = pd.read_csv(path)
+        keep = ~existing["team"].isin(teams)
+        if refresh_range:
+            keep |= ~existing["date"].between(start_date.isoformat(), end_date.isoformat())
+        rows = pd.concat([existing.loc[keep], rows], ignore_index=True)
+    if not rows.empty:
+        rows = rows.drop_duplicates(subset=dedupe_columns, keep="last")
+    return rows
+
+
+async def _run(teams: list[str], handler, start_date: date = START_DATE,
+               end_date: date = END_DATE, refresh_range: bool = False):
 
     all_contract_rows: list[ContractRow] = []
     all_trade_rows: list[TradeRow] = []
@@ -386,12 +426,15 @@ async def _run(teams: list[str], handler):
     for team in teams:
         print(f"Scraping {team}...", file=sys.stderr)
         try:
-            contract_rows, trade_rows, movement_rows = await scrape_team(team, handler)
+            contract_rows, trade_rows, movement_rows = await scrape_team(
+                team, handler, start_date=start_date, end_date=end_date
+            )
             all_contract_rows.extend(contract_rows)
             all_trade_rows.extend(trade_rows)
             all_movement_rows.extend(movement_rows)
         except Exception as e:
             print(f"  ERROR on {team}: {e!r}", file=sys.stderr)
+            raise RuntimeError(f"Scrape failed for {team}; existing CSVs were not changed") from e
 
     contracts_path = "psx_contracts_v2_2014_present.csv"
     if all_contract_rows:
@@ -399,18 +442,15 @@ async def _run(teams: list[str], handler):
         out_df["parse_warnings"] = out_df["parse_warnings"].apply(
             lambda ws: "; ".join(ws)
         )
-        # A targeted refresh must preserve every other team's previously
-        # scraped transactions. Replace only the requested team slice, then
-        # retain the same natural-key deduplication used downstream.
-        if set(teams) != set(TEAM_NICKNAMES) and os.path.exists(contracts_path):
-            existing = pd.read_csv(contracts_path)
-            existing = existing.loc[~existing["team"].isin(teams)]
-            out_df = pd.concat([existing, out_df], ignore_index=True)
-            out_df = out_df.drop_duplicates(
-                subset=["date", "team", "player", "raw_notes"], keep="last"
-            )
+    else:
+        out_df = pd.DataFrame()
+    if not out_df.empty or (refresh_range and os.path.exists(contracts_path)):
+        out_df = merge_scraped_rows(
+            contracts_path, out_df, teams, start_date, end_date, refresh_range,
+            ["date", "team", "player", "raw_notes"],
+        )
         out_df.to_csv(contracts_path, index=False)
-    print(f"Wrote {len(all_contract_rows)} rows to {contracts_path}", file=sys.stderr)
+    print(f"Scraped {len(all_contract_rows)} contract rows for {contracts_path}", file=sys.stderr)
 
     # Trades get their own file since the schema doesn't overlap with
     # contracts (multi-asset acquired/relinquished lists vs. single-player
@@ -429,32 +469,35 @@ async def _run(teams: list[str], handler):
         trade_df["relinquished_assets"] = trade_df["relinquished_assets"].apply(
             lambda a: "; ".join(a)
         )
-        if set(teams) != set(TEAM_NICKNAMES) and os.path.exists(trades_path):
-            existing_trades = pd.read_csv(trades_path)
-            existing_trades = existing_trades.loc[~existing_trades["team"].isin(teams)]
-            trade_df = pd.concat([existing_trades, trade_df], ignore_index=True)
-            trade_df = trade_df.drop_duplicates(
-                subset=["date", "team", "raw_notes"], keep="last"
-            )
+    else:
+        trade_df = pd.DataFrame()
+    if not trade_df.empty or (refresh_range and os.path.exists(trades_path)):
+        trade_df = merge_scraped_rows(
+            trades_path, trade_df, teams, start_date, end_date, refresh_range,
+            ["date", "team", "raw_notes"],
+        )
         trade_df.to_csv(trades_path, index=False)
-    print(f"Wrote {len(all_trade_rows)} rows to {trades_path}", file=sys.stderr)
+    print(f"Scraped {len(all_trade_rows)} trade rows for {trades_path}", file=sys.stderr)
 
     # Everything that is neither a contract nor a trade: waivers, releases, activations, assignments. Same
     # per-team replacement rule as the other two files, so a one-team refresh keeps the rest.
     movements_path = "psx_movements_v2_2014_present.csv"
     if all_movement_rows:
         movement_df = pd.DataFrame(all_movement_rows)
-        if set(teams) != set(TEAM_NICKNAMES) and os.path.exists(movements_path):
-            existing_moves = pd.read_csv(movements_path)
-            existing_moves = existing_moves.loc[~existing_moves["team"].isin(teams)]
-            movement_df = pd.concat([existing_moves, movement_df], ignore_index=True)
-        movement_df = movement_df.drop_duplicates(subset=["date", "team", "acquired", "relinquished", "notes"], keep="last")
+    else:
+        movement_df = pd.DataFrame()
+    if not movement_df.empty or (refresh_range and os.path.exists(movements_path)):
+        movement_df = merge_scraped_rows(
+            movements_path, movement_df, teams, start_date, end_date, refresh_range,
+            ["date", "team", "acquired", "relinquished", "notes"],
+        )
         movement_df = add_move_labels(movement_df)
         movement_df.to_csv(movements_path, index=False)
-    print(f"Wrote {len(all_movement_rows)} rows to {movements_path}", file=sys.stderr)
+    print(f"Scraped {len(all_movement_rows)} movement rows for {movements_path}", file=sys.stderr)
 
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.WARNING, format="%(levelname)s: %(message)s")
     parser = argparse.ArgumentParser(description="Scrape NBA transaction history.")
     parser.add_argument(
         "--team", choices=TEAM_NICKNAMES, action="append",
@@ -463,5 +506,14 @@ if __name__ == "__main__":
     parser.add_argument("--browser", action="store_true",
                         help="Fetch through a visible installed Chrome (Playwright) instead of Unflare.")
     parser.add_argument("--delay", type=float, default=1.0, help="Seconds to pause before each page (browser mode).")
+    parser.add_argument("--since", type=date.fromisoformat, metavar="YYYY-MM-DD",
+                        help="Refresh this date through today while preserving older rows.")
+    parser.add_argument("--through", type=date.fromisoformat, metavar="YYYY-MM-DD",
+                        help="Last date to scrape (inclusive; defaults to today).")
     args = parser.parse_args()
-    asyncio.run(main(args.team or TEAM_NICKNAMES, browser=args.browser, delay=args.delay))
+    start_date, end_date = args.since or START_DATE, args.through or date.today()
+    if start_date > end_date:
+        parser.error("--since must be on or before --through")
+    asyncio.run(main(args.team or TEAM_NICKNAMES, browser=args.browser, delay=args.delay,
+                     start_date=start_date, end_date=end_date,
+                     refresh_range=args.since is not None or args.through is not None))

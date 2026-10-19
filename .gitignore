@@ -1,3 +1,4 @@
 # compiled Python
 __pycache__/
 *.pyc
+chrome_profile/

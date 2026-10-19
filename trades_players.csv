@@ -167,10 +167,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-07-10,Hornets,"Bulls, Nets, Timberwolves",acquired,Mouhamadou Gueye,1631338,Mouhamadou Gueye,exact
 2026-07-13,Hornets,Suns,acquired,Grayson Allen,1628960,Grayson Allen,exact
 2026-07-13,Hornets,Suns,acquired,Royce O'Neale,1626220,Royce O'Neale,exact
-2026-08-20,Hornets,"Cavaliers, Clippers, Nuggets, Wizards",acquired,Dennis Schröder,203471,Dennis Schröder,exact
-2026-09-22,Hornets,Hawks,acquired,Buddy Hield,1627741,Buddy Hield,exact
-2026-09-22,Hornets,Hawks,acquired,Ryan Nembhard,1642948,Ryan Nembhard,exact
-2026-09-27,Hornets,Bulls,acquired,Rob Dillingham,1642265,Rob Dillingham,exact
 2014-01-06,Bulls,Cavaliers,acquired,Andrew Bynum,101115,Andrew Bynum,exact
 2014-01-21,Bulls,Nets,acquired,Tornike Shengelia,203129,Tornike Shengelia,exact
 2014-06-26,Bulls,Nuggets,acquired,Anthony Randolph,201576,Anthony Randolph,exact
@@ -226,7 +222,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-02-05,Bulls,Celtics,acquired,Anfernee Simons,1629014,Anfernee Simons,exact
 2026-06-24,Bulls,Pacers,acquired,Kam Jones,1642880,Kam Jones,exact
 2026-07-10,Bulls,"Hornets, Nets, Timberwolves",acquired,Nicolas Claxton / Nic Claxton,1629651,Nic Claxton,slash_variant
-2026-09-27,Bulls,Hornets,acquired,Buddy Hield,1627741,Buddy Hield,exact
 2014-01-06,Cavaliers,Bulls,acquired,Luol Deng,2736,Luol Deng,exact
 2014-02-20,Cavaliers,76ers,acquired,Spencer Hawes,201150,Spencer Hawes,exact
 2014-07-12,Cavaliers,Hornets,acquired,Brendan Haywood,2217,Brendan Haywood,exact
@@ -276,8 +271,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-02-01,Cavaliers,,acquired,Keon Ellis,1631165,Keon Ellis,exact
 2026-02-01,Cavaliers,,acquired,Emanuel Miller,1641801,Emanuel Miller,exact
 2026-02-04,Cavaliers,Clippers,acquired,James Harden,201935,James Harden,exact
-2026-08-20,Cavaliers,"Clippers, Hornets, Nuggets, Wizards",acquired,Peyton Watson,1631212,Peyton Watson,exact
-2026-08-20,Cavaliers,"Clippers, Hornets, Nuggets, Wizards",acquired,Cam Whitmore,1641715,Cam Whitmore,exact
 2014-06-25,Mavericks,Knicks,acquired,Tyson Chandler,2199,Tyson Chandler,exact
 2014-06-25,Mavericks,Knicks,acquired,Raymond Felton,101109,Raymond Felton,exact
 2014-07-14,Mavericks,Bulls,acquired,Greg Smith (b. 1991-01-08),202962,Greg Smith,paren_stripped
@@ -360,7 +353,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2023-02-09,Nuggets,"Clippers, Lakers, Magic",acquired,Thomas Bryant,1628418,Thomas Bryant,exact
 2025-07-08,Nuggets,Nets,acquired,Cameron Johnson,1629661,Cameron Johnson,exact
 2025-07-13,Nuggets,Kings,acquired,Jonas Valanciunas,202685,Jonas Valanciunas,exact
-2026-08-20,Nuggets,"Cavaliers, Clippers, Hornets, Wizards",acquired,Julian Reese,1642882,Julian Reese,exact
 2014-10-17,Pistons,Celtics,acquired,Joel Anthony,201202,Joel Anthony,exact
 2014-12-24,Pistons,Suns,acquired,Anthony Tolliver,201229,Anthony Tolliver,exact
 2015-02-19,Pistons,Celtics,acquired,Tayshaun Prince,2419,Tayshaun Prince,exact
@@ -613,9 +605,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-02-05,Clippers,Pacers,acquired,Bennedict Mathurin,1631097,Bennedict Mathurin,exact
 2026-02-05,Clippers,Pacers,acquired,Isaiah Jackson,1630543,Isaiah Jackson,exact
 2026-07-28,Clippers,76ers,acquired,Johni Broome,1641780,Johni Broome,exact
-2026-08-20,Clippers,"Cavaliers, Hornets, Nuggets, Wizards",acquired,Max Strus,1629622,Max Strus,exact
-2026-09-14,Clippers,Raptors,acquired,Brandon Ingram,1627742,Brandon Ingram,exact
-2026-09-14,Clippers,Raptors,acquired,Gradey Dick,1641711,Gradey Dick,exact
 2014-02-19,Lakers,Warriors,acquired,Kent Bazemore,203145,Kent Bazemore,exact
 2014-02-19,Lakers,Warriors,acquired,MarShon Brooks,202705,MarShon Brooks,exact
 2014-07-13,Lakers,Rockets,acquired,Jeremy Lin,202391,Jeremy Lin,exact
@@ -715,8 +704,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-07-08,Grizzlies,"Bucks, Clippers, Mavericks, Pistons, Wizards",acquired,A.J. Johnson,1642358,AJ Johnson,normalized
 2026-07-08,Grizzlies,"Bucks, Clippers, Mavericks, Pistons, Wizards",acquired,D'Angelo Russell,1626156,D'Angelo Russell,exact
 2026-07-08,Grizzlies,"Bucks, Clippers, Mavericks, Pistons, Wizards",acquired,Isaiah Stewart,1630191,Isaiah Stewart,exact
-2026-09-08,Grizzlies,Pelicans,acquired,Jordan Hawkins,1641722,Jordan Hawkins,exact
-2026-09-08,Grizzlies,Pelicans,acquired,Micah Peavy,1642877,Micah Peavy,exact
 2014-01-15,Heat,"Celtics, Warriors",acquired,Toney Douglas,201962,Toney Douglas,exact
 2015-02-19,Heat,"Pelicans, Suns",acquired,Goran Dragic,201609,Goran Dragic,exact
 2015-02-19,Heat,"Pelicans, Suns",acquired,Zoran Dragic,204054,Zoran Dragic,exact
@@ -829,8 +816,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-02-05,Timberwolves,Bulls,acquired,Julian Phillips,1641763,Julian Phillips,exact
 2026-07-10,Timberwolves,"Bulls, Hornets, Nets",acquired,LaMelo Ball,1630163,LaMelo Ball,exact
 2026-07-10,Timberwolves,"Bulls, Hornets, Nets",acquired,Josh Green,1630182,Josh Green,exact
-2026-08-29,Timberwolves,Jazz,acquired,Cody Williams,1642262,Cody Williams,exact
-2026-08-29,Timberwolves,Jazz,acquired,John Konchar,1629723,John Konchar,exact
 2014-01-21,Pelicans,Nets,acquired,Tyshawn Taylor,203116,Tyshawn Taylor,exact
 2014-07-11,Pelicans,Cavaliers,acquired,Alonzo Gee,202087,Alonzo Gee,exact
 2014-07-13,Pelicans,Hornets,acquired,Scotty Hopson,203816,Scotty Hopson,exact
@@ -873,8 +858,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2025-07-06,Pelicans,"Rockets, Wizards",acquired,Jordan Poole,1629673,Jordan Poole,exact
 2025-07-06,Pelicans,"Rockets, Wizards",acquired,Saddiq Bey,1630180,Saddiq Bey,exact
 2026-02-05,Pelicans,Knicks,acquired,Dalen Terry,1631207,Dalen Terry,exact
-2026-09-08,Pelicans,Grizzlies,acquired,A.J. Johnson,1642358,AJ Johnson,normalized
-2026-09-08,Pelicans,Grizzlies,acquired,Taj Gibson,201959,Taj Gibson,exact
 2014-06-25,Knicks,Mavericks,acquired,Jose Calderon,101181,Jose Calderon,exact
 2014-06-25,Knicks,Mavericks,acquired,Shane Larkin,203499,Shane Larkin,exact
 2014-06-25,Knicks,Mavericks,acquired,Wayne Ellington,201961,Wayne Ellington,exact
@@ -1298,7 +1281,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2025-02-06,Raptors,Pelicans,acquired,Brandon Ingram,1627742,Brandon Ingram,exact
 2026-02-05,Raptors,Warriors,acquired,Trayce Jackson-Davis,1631218,Trayce Jackson-Davis,exact
 2026-02-05,Raptors,"Clippers, Nets",acquired,Chris Paul,101108,Chris Paul,exact
-2026-09-14,Raptors,Clippers,acquired,Kawhi Leonard,202695,Kawhi Leonard,exact
 2014-07-10,Jazz,Raptors,acquired,Steve Novak,200779,Steve Novak,exact
 2014-07-22,Jazz,Cavaliers,acquired,Carrick Felix,203467,Carrick Felix,exact
 2015-02-19,Jazz,"Pistons, Thunder",acquired,Grant Jerrett,203511,Grant Jerrett,exact
@@ -1351,7 +1333,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-02-03,Jazz,Grizzlies,acquired,Jock Landale,1629111,Jock Landale,exact
 2026-02-05,Jazz,Celtics,acquired,Chris Boucher,1628449,Chris Boucher,exact
 2026-02-05,Jazz,"Cavaliers, Hawks",acquired,Lonzo Ball,1628366,Lonzo Ball,exact
-2026-08-29,Jazz,Timberwolves,acquired,Josh Green,1630182,Josh Green,exact
 2014-02-20,Wizards,"76ers, Nuggets",acquired,Andre Miller,1889,Andre Miller,exact
 2014-07-14,Wizards,"Pelicans, Rockets",acquired,Melvin Ely,2408,Melvin Ely,exact
 2014-07-16,Wizards,Mavericks,acquired,DeJuan Blair,201971,DeJuan Blair,exact
@@ -1424,7 +1405,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-02-05,Wizards,"Hornets, Mavericks",acquired,D'Angelo Russell,1626156,D'Angelo Russell,exact
 2026-02-05,Wizards,"Hornets, Mavericks",acquired,Dante Exum,203957,Dante Exum,exact
 2026-07-07,Wizards,Lakers,acquired,DeAndre Ayton,1629028,Deandre Ayton,normalized
-2026-08-20,Wizards,"Cavaliers, Clippers, Hornets, Nuggets",acquired,Tre Mann,1630544,Tre Mann,exact
 2014-02-20,Hawks,Clippers,acquired,Antawn Jamison,1712,Antawn Jamison,exact
 2014-06-30,Hawks,Raptors,acquired,John Salmons,2422,John Salmons,exact
 2014-07-15,Hawks,Thunder,acquired,Thabo Sefolosha,200757,Thabo Sefolosha,exact
@@ -1503,6 +1483,26 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-07-19,Hawks,"Mavericks, Thunder",acquired,Luguentz Dort,1629652,Luguentz Dort,exact
 2026-07-19,Hawks,"Mavericks, Thunder",acquired,Ryan Nembhard,1642948,Ryan Nembhard,exact
 2026-09-22,Hawks,Hornets,acquired,Dorian Finney-Smith,1627827,Dorian Finney-Smith,exact
+2026-08-20,Hornets,"Cavaliers, Clippers, Nuggets, Wizards",acquired,Dennis Schröder,203471,Dennis Schröder,exact
+2026-09-22,Hornets,Hawks,acquired,Buddy Hield,1627741,Buddy Hield,exact
+2026-09-22,Hornets,Hawks,acquired,Ryan Nembhard,1642948,Ryan Nembhard,exact
+2026-09-27,Hornets,Bulls,acquired,Rob Dillingham,1642265,Rob Dillingham,exact
+2026-09-27,Bulls,Hornets,acquired,Buddy Hield,1627741,Buddy Hield,exact
+2026-08-20,Cavaliers,"Clippers, Hornets, Nuggets, Wizards",acquired,Peyton Watson,1631212,Peyton Watson,exact
+2026-08-20,Cavaliers,"Clippers, Hornets, Nuggets, Wizards",acquired,Cam Whitmore,1641715,Cam Whitmore,exact
+2026-08-20,Nuggets,"Cavaliers, Clippers, Hornets, Wizards",acquired,Julian Reese,1642882,Julian Reese,exact
+2026-08-20,Clippers,"Cavaliers, Hornets, Nuggets, Wizards",acquired,Max Strus,1629622,Max Strus,exact
+2026-09-14,Clippers,Raptors,acquired,Brandon Ingram,1627742,Brandon Ingram,exact
+2026-09-14,Clippers,Raptors,acquired,Gradey Dick,1641711,Gradey Dick,exact
+2026-09-08,Grizzlies,Pelicans,acquired,Jordan Hawkins,1641722,Jordan Hawkins,exact
+2026-09-08,Grizzlies,Pelicans,acquired,Micah Peavy,1642877,Micah Peavy,exact
+2026-08-29,Timberwolves,Jazz,acquired,Cody Williams,1642262,Cody Williams,exact
+2026-08-29,Timberwolves,Jazz,acquired,John Konchar,1629723,John Konchar,exact
+2026-09-08,Pelicans,Grizzlies,acquired,A.J. Johnson,1642358,AJ Johnson,normalized
+2026-09-08,Pelicans,Grizzlies,acquired,Taj Gibson,201959,Taj Gibson,exact
+2026-09-14,Raptors,Clippers,acquired,Kawhi Leonard,202695,Kawhi Leonard,exact
+2026-08-29,Jazz,Timberwolves,acquired,Josh Green,1630182,Josh Green,exact
+2026-08-20,Wizards,"Cavaliers, Clippers, Hornets, Nuggets",acquired,Tre Mann,1630544,Tre Mann,exact
 2014-01-07,Celtics,"Grizzlies, Thunder",relinquished,Courtney Lee,201584,Courtney Lee,exact
 2014-01-15,Celtics,"Heat, Warriors",relinquished,Jordan Crawford,202348,Jordan Crawford,exact
 2014-01-15,Celtics,"Heat, Warriors",relinquished,MarShon Brooks,202705,MarShon Brooks,exact
@@ -1669,9 +1669,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-07-10,Hornets,"Bulls, Nets, Timberwolves",relinquished,LaMelo Ball,1630163,LaMelo Ball,exact
 2026-07-10,Hornets,"Bulls, Nets, Timberwolves",relinquished,Josh Green,1630182,Josh Green,exact
 2026-07-13,Hornets,Suns,relinquished,Miles Bridges,1628970,Miles Bridges,exact
-2026-08-20,Hornets,"Cavaliers, Clippers, Nuggets, Wizards",relinquished,Tre Mann,1630544,Tre Mann,exact
-2026-09-22,Hornets,Hawks,relinquished,Dorian Finney-Smith,1627827,Dorian Finney-Smith,exact
-2026-09-27,Hornets,Bulls,relinquished,Buddy Hield,1627741,Buddy Hield,exact
 2014-01-06,Bulls,Cavaliers,relinquished,Luol Deng,2736,Luol Deng,exact
 2014-01-21,Bulls,Nets,relinquished,Marquis Teague,203104,Marquis Teague,exact
 2014-07-14,Bulls,Mavericks,relinquished,Greg Smith (b. 1991-01-08),202962,Greg Smith,paren_stripped
@@ -1718,7 +1715,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-02-05,Bulls,"Bucks, Suns",relinquished,Ousmane Dieng,1631172,Ousmane Dieng,exact
 2026-02-05,Bulls,Celtics,relinquished,Nikola Vucevic,202696,Nikola Vučević,normalized
 2026-07-10,Bulls,"Hornets, Nets, Timberwolves",relinquished,Mouhamadou Gueye,1631338,Mouhamadou Gueye,exact
-2026-09-27,Bulls,Hornets,relinquished,Rob Dillingham,1642265,Rob Dillingham,exact
 2014-01-06,Cavaliers,Bulls,relinquished,Andrew Bynum,101115,Andrew Bynum,exact
 2014-02-20,Cavaliers,76ers,relinquished,Earl Clark,201947,Earl Clark,exact
 2014-02-20,Cavaliers,76ers,relinquished,Henry Sims,203156,Henry Sims,exact
@@ -1787,8 +1783,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-02-01,Cavaliers,,relinquished,De'Andre Hunter,1629631,De'Andre Hunter,exact
 2026-02-04,Cavaliers,Clippers,relinquished,Darius Garland,1629636,Darius Garland,exact
 2026-02-05,Cavaliers,"Hawks, Jazz",relinquished,Lonzo Ball,1628366,Lonzo Ball,exact
-2026-08-20,Cavaliers,"Clippers, Hornets, Nuggets, Wizards",relinquished,Dennis Schröder,203471,Dennis Schröder,exact
-2026-08-20,Cavaliers,"Clippers, Hornets, Nuggets, Wizards",relinquished,Max Strus,1629622,Max Strus,exact
 2014-06-25,Mavericks,Knicks,relinquished,Jose Calderon,101181,Jose Calderon,exact
 2014-06-25,Mavericks,Knicks,relinquished,Shane Larkin,203499,Shane Larkin,exact
 2014-06-25,Mavericks,Knicks,relinquished,Wayne Ellington,201961,Wayne Ellington,exact
@@ -1880,7 +1874,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2025-07-08,Nuggets,Nets,relinquished,Michael Porter Jr.,1629008,Michael Porter Jr.,exact
 2025-07-13,Nuggets,Kings,relinquished,Dario Saric,203967,Dario Saric,exact
 2026-02-05,Nuggets,Nets,relinquished,Hunter Tyson,1641816,Hunter Tyson,exact
-2026-08-20,Nuggets,"Cavaliers, Clippers, Hornets, Wizards",relinquished,Peyton Watson,1631212,Peyton Watson,exact
 2014-10-17,Pistons,Celtics,relinquished,Will Bynum,101198,Will Bynum,exact
 2014-12-24,Pistons,Suns,relinquished,Tony Mitchell (LaShae),,,
 2015-02-19,Pistons,Celtics,relinquished,Luigi Datome / Gigi Datome,203540,Gigi Datome,slash_variant
@@ -2135,7 +2128,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-02-05,Clippers,"Nets, Raptors",relinquished,Chris Paul,101108,Chris Paul,exact
 2026-06-24,Clippers,Hawks,relinquished,Henri Veesaar,1643539,Henri Veesaar,nba_api_static
 2026-07-08,Clippers,"Bucks, Grizzlies, Mavericks, Pistons, Wizards",relinquished,John Collins (Martin),1628381,John Collins,paren_stripped
-2026-09-14,Clippers,Raptors,relinquished,Kawhi Leonard,202695,Kawhi Leonard,exact
 2014-02-19,Lakers,Warriors,relinquished,Steve Blake,2581,Steve Blake,exact
 2017-02-23,Lakers,Rockets,relinquished,Louis Williams / Lou Williams,101150,Lou Williams,slash_variant
 2017-06-22,Lakers,Nets,relinquished,D'Angelo Russell,1626156,D'Angelo Russell,exact
@@ -2228,8 +2220,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-02-05,Grizzlies,76ers,relinquished,Justinian Jessup,,,
 2026-06-29,Grizzlies,Blazers,relinquished,Ja Morant,1629630,Ja Morant,exact
 2026-07-08,Grizzlies,"Bucks, Clippers, Mavericks, Pistons, Wizards",relinquished,Santi Aldama,1630583,Santi Aldama,exact
-2026-09-08,Grizzlies,Pelicans,relinquished,A.J. Johnson,1642358,AJ Johnson,normalized
-2026-09-08,Grizzlies,Pelicans,relinquished,Taj Gibson,201959,Taj Gibson,exact
 2014-01-15,Heat,"Celtics, Warriors",relinquished,Joel Anthony,201202,Joel Anthony,exact
 2014-02-20,Heat,Kings,relinquished,Roger Mason Jr.,2427,Roger Mason Jr.,exact
 2015-02-19,Heat,"Pelicans, Suns",relinquished,Danny Granger,101122,Danny Granger,exact
@@ -2367,7 +2357,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-02-05,Timberwolves,Bulls,relinquished,Leonard Miller,1631159,Leonard Miller,exact
 2026-07-10,Timberwolves,"Bulls, Hornets, Nets",relinquished,Julius Randle,203944,Julius Randle,exact
 2026-07-10,Timberwolves,"Bulls, Hornets, Nets",relinquished,Naz Reid,1629675,Naz Reid,exact
-2026-08-29,Timberwolves,Jazz,relinquished,Josh Green,1630182,Josh Green,exact
 2014-07-14,Pelicans,"Rockets, Wizards",relinquished,Alonzo Gee,202087,Alonzo Gee,exact
 2014-07-14,Pelicans,"Rockets, Wizards",relinquished,Scotty Hopson,203816,Scotty Hopson,exact
 2015-01-12,Pelicans,"Celtics, Grizzlies",relinquished,Austin Rivers,203085,Austin Rivers,exact
@@ -2418,8 +2407,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2025-07-06,Pelicans,"Rockets, Wizards",relinquished,C.J. McCollum,203468,CJ McCollum,normalized
 2025-07-06,Pelicans,"Rockets, Wizards",relinquished,Kelly Olynyk,203482,Kelly Olynyk,exact
 2026-02-05,Pelicans,Knicks,relinquished,Jose Alvarado,1630631,Jose Alvarado,exact
-2026-09-08,Pelicans,Grizzlies,relinquished,Jordan Hawkins,1641722,Jordan Hawkins,exact
-2026-09-08,Pelicans,Grizzlies,relinquished,Micah Peavy,1642877,Micah Peavy,exact
 2014-06-25,Knicks,Mavericks,relinquished,Tyson Chandler,2199,Tyson Chandler,exact
 2014-06-25,Knicks,Mavericks,relinquished,Raymond Felton,101109,Raymond Felton,exact
 2014-08-06,Knicks,Kings,relinquished,Wayne Ellington,201961,Wayne Ellington,exact
@@ -2825,8 +2812,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2025-02-06,Raptors,Pelicans,relinquished,Bruce Brown,1628971,Bruce Brown,exact
 2025-02-06,Raptors,Pelicans,relinquished,Kelly Olynyk,203482,Kelly Olynyk,exact
 2026-02-05,Raptors,"Clippers, Nets",relinquished,Ochai Agbaji,1630534,Ochai Agbaji,exact
-2026-09-14,Raptors,Clippers,relinquished,Brandon Ingram,1627742,Brandon Ingram,exact
-2026-09-14,Raptors,Clippers,relinquished,Gradey Dick,1641711,Gradey Dick,exact
 2014-07-10,Jazz,Raptors,relinquished,Diante Garrett,203197,Diante Garrett,exact
 2014-07-22,Jazz,Cavaliers,relinquished,John Lucas III,101249,John Lucas III,exact
 2014-07-22,Jazz,Cavaliers,relinquished,Malcolm Thomas (b. 1988-11-08),202952,Malcolm Thomas,paren_stripped
@@ -2879,8 +2864,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-02-05,Jazz,Celtics,relinquished,John Tonje,1642910,John Tonje,exact
 2026-02-05,Jazz,"Cavaliers, Hawks",relinquished,Jock Landale,1629111,Jock Landale,exact
 2026-07-08,Jazz,Lakers,relinquished,Walker Kessler,1631117,Walker Kessler,exact
-2026-08-29,Jazz,Timberwolves,relinquished,Cody Williams,1642262,Cody Williams,exact
-2026-08-29,Jazz,Timberwolves,relinquished,John Konchar,1629723,John Konchar,exact
 2014-02-20,Wizards,"76ers, Nuggets",relinquished,Jan Vesely,202686,Jan Vesely,exact
 2014-02-20,Wizards,"76ers, Nuggets",relinquished,Eric Maynor,201953,Eric Maynor,exact
 2014-07-14,Wizards,"Pelicans, Rockets",relinquished,Trevor Ariza,2772,Trevor Ariza,exact
@@ -2943,8 +2926,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-02-05,Wizards,"Hornets, Mavericks",relinquished,Malaki Branham,1631103,Malaki Branham,exact
 2026-07-07,Wizards,Lakers,relinquished,Jaden Hardy,1630702,Jaden Hardy,exact
 2026-07-08,Wizards,"Bucks, Clippers, Grizzlies, Mavericks, Pistons",relinquished,D'Angelo Russell,1626156,D'Angelo Russell,exact
-2026-08-20,Wizards,"Cavaliers, Clippers, Hornets, Nuggets",relinquished,Cam Whitmore,1641715,Cam Whitmore,exact
-2026-08-20,Wizards,"Cavaliers, Clippers, Hornets, Nuggets",relinquished,Julian Reese,1642882,Julian Reese,exact
 2014-06-30,Hawks,Raptors,relinquished,Louis Williams / Lou Williams,101150,Lou Williams,slash_variant
 2015-02-10,Hawks,Timberwolves,relinquished,Adreian Payne,203940,Adreian Payne,exact
 2016-02-18,Hawks,"Bulls, Jazz",relinquished,Justin Holiday,203200,Justin Holiday,exact
@@ -3003,3 +2984,22 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-07-19,Hawks,"Mavericks, Thunder",relinquished,Zaccharie Risacher,1642258,Zaccharie Risacher,exact
 2026-09-22,Hawks,Hornets,relinquished,Buddy Hield,1627741,Buddy Hield,exact
 2026-09-22,Hawks,Hornets,relinquished,Ryan Nembhard,1642948,Ryan Nembhard,exact
+2026-08-20,Hornets,"Cavaliers, Clippers, Nuggets, Wizards",relinquished,Tre Mann,1630544,Tre Mann,exact
+2026-09-22,Hornets,Hawks,relinquished,Dorian Finney-Smith,1627827,Dorian Finney-Smith,exact
+2026-09-27,Hornets,Bulls,relinquished,Buddy Hield,1627741,Buddy Hield,exact
+2026-09-27,Bulls,Hornets,relinquished,Rob Dillingham,1642265,Rob Dillingham,exact
+2026-08-20,Cavaliers,"Clippers, Hornets, Nuggets, Wizards",relinquished,Dennis Schröder,203471,Dennis Schröder,exact
+2026-08-20,Cavaliers,"Clippers, Hornets, Nuggets, Wizards",relinquished,Max Strus,1629622,Max Strus,exact
+2026-08-20,Nuggets,"Cavaliers, Clippers, Hornets, Wizards",relinquished,Peyton Watson,1631212,Peyton Watson,exact
+2026-09-14,Clippers,Raptors,relinquished,Kawhi Leonard,202695,Kawhi Leonard,exact
+2026-09-08,Grizzlies,Pelicans,relinquished,A.J. Johnson,1642358,AJ Johnson,normalized
+2026-09-08,Grizzlies,Pelicans,relinquished,Taj Gibson,201959,Taj Gibson,exact
+2026-08-29,Timberwolves,Jazz,relinquished,Josh Green,1630182,Josh Green,exact
+2026-09-08,Pelicans,Grizzlies,relinquished,Jordan Hawkins,1641722,Jordan Hawkins,exact
+2026-09-08,Pelicans,Grizzlies,relinquished,Micah Peavy,1642877,Micah Peavy,exact
+2026-09-14,Raptors,Clippers,relinquished,Brandon Ingram,1627742,Brandon Ingram,exact
+2026-09-14,Raptors,Clippers,relinquished,Gradey Dick,1641711,Gradey Dick,exact
+2026-08-29,Jazz,Timberwolves,relinquished,Cody Williams,1642262,Cody Williams,exact
+2026-08-29,Jazz,Timberwolves,relinquished,John Konchar,1629723,John Konchar,exact
+2026-08-20,Wizards,"Cavaliers, Clippers, Hornets, Nuggets",relinquished,Cam Whitmore,1641715,Cam Whitmore,exact
+2026-08-20,Wizards,"Cavaliers, Clippers, Hornets, Nuggets",relinquished,Julian Reese,1642882,Julian Reese,exact

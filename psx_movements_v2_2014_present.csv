@@ -326,8 +326,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Celtics,,Nikola Vucevic,player became an unrestricted free agent,,
 2026-06-30,Celtics,,Ron Harper Jr.,player became an unrestricted free agent,,
 2026-07-09,Celtics,,Dalano Banton,waived,waived,relinquished
-2026-09-11,Celtics,,Hank Morgan,waived,waived,relinquished
-2026-09-14,Celtics,,Caleb Grill,waived,waived,relinquished
 2014-06-20,Nets,,Andray Blatche,"player declined to exercise contract option for 2014-15, making him an unrestricted free agent",,
 2014-06-23,Nets,Andrei Kirilenko,,player exercised contract option for 2014-15,,
 2014-06-24,Nets,,Alan Anderson,"player declined to exercise contract option for 2014-15, making him an unrestricted free agent",,
@@ -771,11 +769,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-07-10,Nets,,Ziaire Williams,team renounced free agent exception rights,,
 2026-07-31,Nets,,E.J. Liddell,team renounced free agent exception rights,,
 2026-07-31,Nets,,Tyson Etienne,team renounced free agent exception rights,,
-2026-09-15,Nets,,Dwight Murray Jr.,waived,waived,relinquished
-2026-09-15,Nets,,Isaiah Wong,waived,waived,relinquished
-2026-09-21,Nets,,Aaron Scott,waived,waived,relinquished
-2026-09-21,Nets,,D.J. Rodman,waived,waived,relinquished
-2026-09-27,Nets,,Nick Pringle,waived,waived,relinquished
 2014-05-19,Hornets,Al Jefferson,,Charlotte Bobcats renamed Hornets,,
 2014-05-19,Hornets,Anthony Tolliver,,Charlotte Bobcats renamed Hornets,,
 2014-05-19,Hornets,Bismack Biyombo,,Charlotte Bobcats renamed Hornets,,
@@ -1138,15 +1131,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Hornets,,Xavier Tillman,player became an unrestricted free agent,,
 2026-07-06,Hornets,,Tosan Evbuomwan,waived,waived,relinquished
 2026-07-30,Hornets,,Mouhamadou Gueye,waived,waived,relinquished
-2026-09-01,Hornets,,Josiah Allick,waived,waived,relinquished
-2026-09-02,Hornets,,Trey Townsend,waived,waived,relinquished
-2026-09-03,Hornets,,Kyle Mangas,waived,waived,relinquished
-2026-09-07,Hornets,,Kobe Stewart,waived,waived,relinquished
-2026-09-20,Hornets,,Bez Mbeng,waived,waived,relinquished
-2026-09-22,Hornets,,D.J. Armstrong Jr.,waived,waived,relinquished
-2026-09-22,Hornets,,Tre Carroll,waived,waived,relinquished
-2026-09-26,Hornets,,Ryan Nembhard,waived,waived,relinquished
-2026-09-28,Hornets,,Rob Dillingham,waived,waived,relinquished
 2014-01-07,Bulls,,Andrew Bynum,waived,waived,relinquished
 2014-01-30,Bulls,,Cartier Martin,player became a free agent,,
 2014-02-01,Bulls,,Mike James (Lamont),player became a free agent,,
@@ -1530,10 +1514,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-07-10,Bulls,,Nick Richards,team renounced free agent exception rights,,
 2026-07-10,Bulls,,Talen Horton-Tucker,team renounced free agent exception rights,,
 2026-07-10,Bulls,,Yuki Kawamura,team renounced free agent exception rights,,
-2026-09-25,Bulls,,Houston Mallette,waived,waived,relinquished
-2026-10-01,Bulls,,Marquel Sutton,waived,waived,relinquished
-2026-10-01,Bulls,,Peter Suder,waived,waived,relinquished
-2026-10-05,Bulls,,Isaiah Stevens,waived,waived,relinquished
 2014-02-06,Cavaliers,,Chris Grant,fired as GM,,
 2014-02-06,Cavaliers,David Griffin,,promoted to acting general manager,,
 2014-03-12,Cavaliers,,Arinze Onuaku,waived,waived,relinquished
@@ -1885,8 +1865,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Cavaliers,,Olivier Sarr,player became an unrestricted free agent,,
 2026-06-30,Cavaliers,,Thomas Bryant,player became an unrestricted free agent,,
 2026-07-08,Cavaliers,,Donovan Mitchell,player declined contract option for 2027-28,,
-2026-08-28,Cavaliers,,Cam Whitmore,waived (via stretch provision),waived,relinquished
-2026-09-17,Cavaliers,,Sean McNeil,waived,waived,relinquished
 2014-06-10,Mavericks,Jae Crowder,,team exercised contract option for 2014-15,,
 2014-07-01,Mavericks,,Bernard James,player became an unrestricted free agent,,
 2014-07-01,Mavericks,,Devin Harris,player became an unrestricted free agent,,
@@ -2219,7 +2197,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-07-03,Mavericks,Joe Boylan,,hired as assistant coach (date approximate),,
 2026-07-04,Mavericks,Garrett Temple,,hired as assistant coach,,
 2026-07-20,Mavericks,,Tyler Smith,waived,waived,relinquished
-2026-08-21,Mavericks,,Klay Thompson,waived (team bought out contract),buyout,relinquished
 2014-02-20,Nuggets,Jan Vesely,Andre Miller • 2016 second round pick (#39-David Michineau),"3-team treade with 76ers, Wizards",,
 2014-06-23,Nuggets,Darrell Arthur,,player exercised contract option for 2014-15,,
 2014-06-23,Nuggets,Nate Robinson,,player exercised contract option for 2014-15,,
@@ -2515,11 +2492,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Nuggets,,Tim Hardaway Jr.,player became an unrestricted free agent,,
 2026-06-30,Nuggets,,Tyus Jones,player became an unrestricted free agent,,
 2026-07-08,Nuggets,,Jonas Valanciunas,waived,waived,relinquished
-2026-08-28,Nuggets,,Julian Reese,waived,waived,relinquished
-2026-09-22,Nuggets,,Keonte Jones,waived,waived,relinquished
-2026-09-22,Nuggets,,Reese Dixon-Waters,waived,waived,relinquished
-2026-09-23,Nuggets,,Kevin Miller / Boopie Miller,waived,waived,relinquished
-2026-09-30,Nuggets,,K.J. Simpson,waived,waived,relinquished
 2014-02-09,Pistons,,Maurice Cheeks,fired as head coach,,
 2014-02-09,Pistons,John Loyer,,promoted to interim head coach,,
 2014-05-28,Pistons,Jonas Jerebko,,player exercised contract option for 2014-15,,
@@ -2921,12 +2893,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Pistons,,Kevin Huerter,player became an unrestricted free agent,,
 2026-06-30,Pistons,,Tobias Harris,player became an unrestricted free agent,,
 2026-06-30,Pistons,,Wendell Moore Jr.,player became an unrestricted free agent,,
-2026-09-15,Pistons,,Basheer Jihad,waived,waived,relinquished
-2026-09-15,Pistons,,Dawson Garcia,waived,waived,relinquished
-2026-09-22,Pistons,,Drake Allen,waived,waived,relinquished
-2026-09-24,Pistons,,Jordan Riley,waived,waived,relinquished
-2026-09-25,Pistons,,Romeo Weems,waived,waived,relinquished
-2026-09-27,Pistons,,Gary Harris,waived,waived,relinquished
 2014-03-04,Warriors,,Hilton Armstrong,waived,waived,relinquished
 2014-04-05,Warriors,,Darren Erman,fired as assistant coach,,
 2014-05-06,Warriors,,Brian Scalabrine,fired as assistant coach,,
@@ -3259,13 +3225,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Warriors,,Seth Curry,player became an unrestricted free agent,,
 2026-07-08,Warriors,,Quinten Post,lost restricted free agent (Warriors declined to match Grizzlies offer sheet),,
 2026-07-12,Warriors,Frank Vogel,,hired as associate head coach,,
-2026-09-16,Warriors,,Chance McMillian,waived,waived,relinquished
-2026-09-16,Warriors,,Deivon Smith,waived,waived,relinquished
-2026-09-18,Warriors,Nicholas Boyd / Nick Boyd,,,,
-2026-09-18,Warriors,,Jacksen Moni,waived,waived,relinquished
-2026-09-19,Warriors,,Elias Ralph,waived,waived,relinquished
-2026-09-21,Warriors,,Obi Agbim,waived,waived,relinquished
-2026-09-27,Warriors,,Nicholas Boyd / Nick Boyd,waived,waived,relinquished
 2014-02-21,Rockets,,Ronnie Brewer,waived,waived,relinquished
 2014-04-10,Rockets,,Greg Smith (b. 1991-01-08),waived,waived,relinquished
 2014-04-13,Rockets,,Dexter Pittman,waived,waived,relinquished
@@ -3660,8 +3619,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Rockets,,Jeff Green,player became an unrestricted free agent,,
 2026-06-30,Rockets,,Josh Okogie,player became an unrestricted free agent,,
 2026-08-05,Rockets,,J.D. Davison,waived,waived,relinquished
-2026-08-26,Rockets,,Tristen Newton,waived,waived,relinquished
-2026-10-01,Rockets,,Rafael Castro,waived,waived,relinquished
 2014-02-20,Pacers,,Orlando Johnson,waived,waived,relinquished
 2014-06-26,Pacers,Louis Labeyrie,,2014 NBA draft second round pick (#57 overall),,
 2014-06-30,Pacers,,Evan Turner,"team declined to tender qualifying offer, making player an unrestricted free agent",,
@@ -4000,12 +3957,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-07-08,Pacers,,Micah Potter,waived,waived,relinquished
 2026-07-20,Pacers,,Taelon Peter,waived,waived,relinquished
 2026-08-13,Pacers,,Ethan Thompson,waived,waived,relinquished
-2026-09-15,Pacers,,Keion Brooks Jr.,waived,waived,relinquished
-2026-09-15,Pacers,,M.J. Iraldi,waived,waived,relinquished
-2026-09-15,Pacers,,Wade Taylor IV,waived,waived,relinquished
-2026-09-15,Pacers,,Cameron Hildreth,waived,waived,relinquished
-2026-09-21,Pacers,,Jalen Warley,waived,waived,relinquished
-2026-09-21,Pacers,,Kowacie Reeves Jr.,waived,waived,relinquished
 2014-01-05,Clippers,,Maalik Wayns,waived,waived,relinquished
 2014-01-07,Clippers,,Stephen Jackson,waived,waived,relinquished
 2014-01-16,Clippers,,Maalik Wayns,waived,waived,relinquished
@@ -4319,12 +4270,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Clippers,,Norchad Omier,player became an unrestricted free agent,,
 2026-06-30,Clippers,,TyTy Washington Jr.,player became an unrestricted free agent,,
 2026-08-06,Clippers,,Sean Pedulla,waived,waived,relinquished
-2026-08-29,Clippers,,Bennedict Mathurin,"team rescinded qualifying offer, making player an unrestricted free agent",,
-2026-09-24,Clippers,,Johni Broome,waived,waived,relinquished
-2026-09-25,Clippers,,Jamarion Sharp,waived,waived,relinquished
-2026-09-26,Clippers,,Hunter Sallis,waived,waived,relinquished
-2026-09-26,Clippers,,Jason Preston,waived,waived,relinquished
-2026-10-06,Clippers,,Fletcher Loyer,waived,waived,relinquished
 2014-01-07,Lakers,,Shawne Williams,waived,waived,relinquished
 2014-02-05,Lakers,,Manny Harris,waived / player became a free agent,waived,relinquished
 2014-02-16,Lakers,,Shawne Williams,waived / player became a free agent,waived,relinquished
@@ -4746,9 +4691,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-07-07,Lakers,,Wayne Ellington,team renounced free agent exception rights,,
 2026-07-21,Lakers,,Peter Suder,waived,waived,relinquished
 2026-08-12,Lakers,Josh Kushner • Bob Iger,Mark Walter,transfer of ownership (date approximate),,
-2026-09-18,Lakers,,Anton Watson,waived,waived,relinquished
-2026-09-27,Lakers,,Chase Ross,waived,waived,relinquished
-2026-09-27,Lakers,,Meechie Johnson,waived,waived,relinquished
 2014-01-05,Grizzlies,,Seth Curry,waived,waived,relinquished
 2014-02-13,Grizzlies,,Darius Morris,player became a free agent,,
 2014-02-26,Grizzlies,Beno Udrih,,claimed off waivers (from Knicks),claimed,acquired
@@ -5141,13 +5083,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Grizzlies,,Rayan Rupert,player became an unrestricted free agent,,
 2026-07-03,Grizzlies,,Brandon Clarke,released,released,relinquished
 2026-07-25,Grizzlies,,Kentavious Caldwell-Pope,waived (team bought out contract),buyout,relinquished
-2026-09-25,Grizzlies,,D'Angelo Russell,waived,waived,relinquished
-2026-09-26,Grizzlies,,Brendan Hausen,waived,waived,relinquished
-2026-09-26,Grizzlies,,Eric Dixon,waived,waived,relinquished
-2026-09-26,Grizzlies,,Kira Lewis Jr.,waived,waived,relinquished
-2026-09-26,Grizzlies,,Yuri Collins,waived,waived,relinquished
-2026-09-28,Grizzlies,,Lawson Lovering,waived,waived,relinquished
-2026-10-02,Grizzlies,,Jordan Hawkins,waived,waived,relinquished
 2014-03-14,Heat,,DeAndre Liggins,waived,waived,relinquished
 2014-06-17,Heat,,Shane Battier,retired,,
 2014-06-24,Heat,,LeBron James,"player declined to exercise contract option for 2014-15, making him an unrestricted free agent",,
@@ -5475,7 +5410,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Heat,,Norman Powell,player became an unrestricted free agent,,
 2026-06-30,Heat,,Simone Fontecchio,player became an unrestricted free agent,,
 2026-06-30,Heat,,Trevor Keels,player became an unrestricted free agent,,
-2026-09-22,Heat,Bez Mbeng,,claimed off waivers (from Hornets),claimed,acquired
 2014-02-27,Bucks,,Caron Butler,waived (reached contract buyout agreement),buyout,relinquished
 2014-03-14,Bucks,,Tony Mitchell (b. 1989-08-07),waived,waived,relinquished
 2014-03-24,Bucks,,Chris Wright (b. 1988-09-30),player became a free agent,,
@@ -5843,7 +5777,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Bucks,,Taurean Prince,player became an unrestricted free agent,,
 2026-06-30,Bucks,,Thanasis Antetokounmpo,player became an unrestricted free agent,,
 2026-07-03,Bucks,,Pete Nance,waived,waived,relinquished
-2026-10-05,Bucks,,John Butler Jr.,waived,waived,relinquished
 2014-04-03,Timberwolves,,A.J. Price,waived,waived,relinquished
 2014-04-21,Timberwolves,,Rick Adelman,retired as head coach,,
 2014-06-05,Timberwolves,Phil Saunders / Flip Saunders,,hired as head coach (in addition to president of basketball operations),,
@@ -6181,12 +6114,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Timberwolves,,Kyle Anderson,player became an unrestricted free agent,,
 2026-06-30,Timberwolves,,Mike Conley Jr.,player became an unrestricted free agent,,
 2026-06-30,Timberwolves,,Nah'Shon Hyland / Bones Hyland,player became an unrestricted free agent,,
-2026-08-29,Timberwolves,,John Konchar,waived,waived,relinquished
-2026-09-18,Timberwolves,,Jules Bernard,waived,waived,relinquished
-2026-09-19,Timberwolves,,Stephen Thompson / Stevie Thompson (Jr.),waived,waived,relinquished
-2026-09-22,Timberwolves,,Jalen Crutcher,waived,waived,relinquished
-2026-09-24,Timberwolves,,Nate Santos,waived,waived,relinquished
-2026-09-24,Timberwolves,,Payton Sandfort,waived,waived,relinquished
 2014-01-23,Pelicans,,Tyshawn Taylor,waived,waived,relinquished
 2014-04-14,Pelicans,,Greg Stiemsma,waived,waived,relinquished
 2014-06-20,Pelicans,,Anthony Morrow,"team declined contract option for 2014-15, making player an unrestricted free agent",,
@@ -6571,15 +6498,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Pelicans,,Josh Oduro,player became an unrestricted free agent,,
 2026-06-30,Pelicans,,Kevon Looney,player became an unrestricted free agent,,
 2026-06-30,Pelicans,,Trey Alexander,player became an unrestricted free agent,,
-2026-08-18,Pelicans,,Hunter Dickinson,waived,waived,relinquished
-2026-09-08,Pelicans,,Taj Gibson,waived,waived,relinquished
-2026-09-14,Pelicans,,Christian Shumate,waived,waived,relinquished
-2026-09-15,Pelicans,,Johnny O'Neil,waived,waived,relinquished
-2026-09-16,Pelicans,,Aziz Bandaogo,waived,waived,relinquished
-2026-09-19,Pelicans,,Markquis Nowell,waived,waived,relinquished
-2026-09-21,Pelicans,,Dominique Daniels Jr.,waived,waived,relinquished
-2026-09-22,Pelicans,,Solomon Washington,waived,waived,relinquished
-2026-10-09,Pelicans,,Christian Koloko,waived,waived,relinquished
 2014-02-24,Knicks,,Beno Udrih,waived,waived,relinquished
 2014-02-24,Knicks,,Metta World Peace / Ron Artest,waived (reached contract buyout agreement),buyout,relinquished
 2014-03-18,Knicks,Steve Mills,,reassigned as general manager,,
@@ -7000,18 +6918,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Knicks,,Landry Shamet,player became an unrestricted free agent,,
 2026-06-30,Knicks,,Mitchell Robinson,player became an unrestricted free agent,,
 2026-06-30,Knicks,,Trey Jemison III,player became an unrestricted free agent,,
-2026-09-15,Knicks,,Igor Milicic Jr.,waived,waived,relinquished
-2026-09-15,Knicks,,Toby Okani,waived,waived,relinquished
-2026-09-15,Knicks,,Jaden Akins,waived,waived,relinquished
-2026-09-15,Knicks,,Mitchell Mascari / Mitch Mascari,waived,waived,relinquished
-2026-09-15,Knicks,,Nick Jourdain,waived,waived,relinquished
-2026-09-15,Knicks,,Paul Zilinskas,waived,waived,relinquished
-2026-09-16,Knicks,,Liam Robbins,waived,waived,relinquished
-2026-09-26,Knicks,,Jaden Akins,waived,waived,relinquished
-2026-09-27,Knicks,,Bryson Warren,waived,waived,relinquished
-2026-09-30,Knicks,,John Konchar,waived,waived,relinquished
-2026-09-30,Knicks,,N'Faly Dante,waived,waived,relinquished
-2026-09-30,Knicks,,Toby Okani,waived,waived,relinquished
 2014-01-26,Thunder,,Royal Ivey,waived,waived,relinquished
 2014-03-16,Thunder,,Reggie Williams (Leon),waived,waived,relinquished
 2014-03-26,Thunder,,Mustafa Shakur,player became a free agent,,
@@ -7399,7 +7305,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Thunder,,Isaiah Hartenstein,player became an unrestricted free agent,,
 2026-06-30,Thunder,,Kenrich Williams,player became an unrestricted free agent,,
 2026-07-02,Thunder,,Payton Sandfort,waived,waived,relinquished
-2026-10-07,Thunder,,Robert McCray V,waived,waived,relinquished
 2014-01-03,Magic,,Hidayet Turkoglu / Hedo Turkoglu,waived,waived,relinquished
 2014-01-04,Magic,,Solomon Jones,waived,waived,relinquished
 2014-02-21,Magic,,Glen Davis,waived (reached contract buyout agreement),buyout,relinquished
@@ -7800,12 +7705,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Magic,,Jett Howard,player became an unrestricted free agent,,
 2026-06-30,Magic,,Jevon Carter,player became an unrestricted free agent,,
 2026-06-30,Magic,,Moritz Wagner / Moe Wagner,player became an unrestricted free agent,,
-2026-09-23,Magic,,Ace Baldwin,waived,waived,relinquished
-2026-09-23,Magic,,Au'Diese Toney,waived,waived,relinquished
-2026-09-23,Magic,,Jarron Cumberland,waived,waived,relinquished
-2026-09-23,Magic,,Ricky Council IV,waived,waived,relinquished
-2026-10-05,Magic,,Mike Sharavjamts,waived,waived,relinquished
-2026-10-06,Magic,,Johnell Davis,waived,waived,relinquished
 2014-01-07,76ers,,Daniel Orton,waived,waived,relinquished
 2014-02-03,76ers,,Dewayne Dedmon,waived,waived,relinquished
 2014-02-20,76ers,,Earl Clark,waived,waived,relinquished
@@ -8634,11 +8533,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Suns,,Isaiah Livers,player became an unrestricted free agent,,
 2026-06-30,Suns,,Jordan Goodwin,player became an unrestricted free agent,,
 2026-08-12,Suns,,Haywood Highsmith,waived,waived,relinquished
-2026-09-17,Suns,,Jordan Schakel,waived,waived,relinquished
-2026-09-18,Suns,,David Stockton,waived,waived,relinquished
-2026-09-24,Suns,,Corey Camper,waived,waived,relinquished
-2026-09-24,Suns,,John Camden,waived,waived,relinquished
-2026-09-24,Suns,,Sam Hoiberg,waived,waived,relinquished
 2014-06-24,Blazers,,Maurice Williams / Mo Williams,"player declined to exercise contract option for 2014-15, making him an unrestricted free agent",,
 2014-07-01,Blazers,,Earl Watson,player became an unrestricted free agent,,
 2014-07-01,Blazers,Joe Cronin,,promoted to director of player personnel (date approximate),,
@@ -8882,13 +8776,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Blazers,,Caleb Love,player became an unrestricted free agent,,
 2026-06-30,Blazers,,Matisse Thybulle,player became an unrestricted free agent,,
 2026-07-10,Blazers,Micah Potter,,claimed off waivers (from Pacers),claimed,acquired
-2026-09-23,Blazers,,Mark Armstrong,waived,waived,relinquished
-2026-09-23,Blazers,,Samson Johnson,waived,waived,relinquished
-2026-09-24,Blazers,,Barry Dunning,waived,waived,relinquished
-2026-09-24,Blazers,,Keylan Boone,waived,waived,relinquished
-2026-09-24,Blazers,,Mark Sears,waived,waived,relinquished
-2026-09-30,Blazers,,Hyunjung Lee / Lee Hyun-jung,waived,waived,relinquished
-2026-10-08,Blazers,,Jaylen Martin,waived,waived,relinquished
 2014-01-06,Kings,,Hamady Ndiaye / Hamady N'Diaye,waived,waived,relinquished
 2014-02-22,Kings,,Roger Mason Jr.,waived,waived,relinquished
 2014-02-26,Kings,,Jimmer Fredette,waived (reached contract buyout agreement),buyout,relinquished
@@ -9297,11 +9184,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Kings,,Russell Westbrook,player became an unrestricted free agent,,
 2026-07-06,Kings,,DeMar DeRozan,waived,waived,relinquished
 2026-07-27,Kings,,Isaiah Stevens,waived,waived,relinquished
-2026-09-25,Kings,,Gabe Levin,waived,waived,relinquished
-2026-09-25,Kings,,Tyrone Marshall Jr.,waived,waived,relinquished
-2026-10-04,Kings,,Sean East II,waived,waived,relinquished
-2026-10-04,Kings,,Viktor Lakhin,waived,waived,relinquished
-2026-10-08,Kings,,Trhae Mitchell,waived,waived,relinquished
 2014-01-23,Spurs,,Malcolm Thomas (b. 1988-11-08),waived,waived,relinquished
 2014-02-01,Spurs,,Othyus Jeffers,waived,waived,relinquished
 2014-02-22,Spurs,,Shannon Brown,waived / player became a free agent,waived,relinquished
@@ -9701,8 +9583,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Spurs,,Mason Plumlee,player became an unrestricted free agent,,
 2026-07-14,Spurs,,Harrison Ingram,"team rescinded qualifying offer, making player an unrestricted free agent",,
 2026-07-22,Spurs,,Emanuel Miller,waived,waived,relinquished
-2026-09-23,Spurs,,Jayden Nunn,waived,waived,relinquished
-2026-09-24,Spurs,,Miles Barnstable,waived,waived,relinquished
 2014-06-26,Raptors,Bruno Caboclo,,2014 NBA draft first round pick (#20 overall),,
 2014-06-26,Raptors,DeAndre Daniels,,2014 NBA draft second round pick (#37 overall),,
 2014-06-26,Raptors,Xavier Thames,,2014 NBA draft second round pick (#59 overall),,
@@ -10045,8 +9925,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Raptors,,Jonathan Mogbo,player became an unrestricted free agent,,
 2026-06-30,Raptors,,Sandro Mamukelashvili,player became an unrestricted free agent,,
 2026-07-07,Raptors,,Kyle Lowry,retired,,
-2026-09-24,Raptors,,A.J. Hoggard,waived,waived,relinquished
-2026-10-05,Raptors,,Andre Jackson Jr.,waived,waived,relinquished
 2014-01-07,Jazz,,Mike Harris,waived,waived,relinquished
 2014-01-25,Jazz,Malcolm Thomas (b. 1988-11-08),,claimed off waivers (from Spurs),claimed,acquired
 2014-04-05,Jazz,Erik Murphy,,claimed off waivers (from Bulls),claimed,acquired
@@ -10401,11 +10279,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Jazz,,Jusuf Nurkic,player became an unrestricted free agent,,
 2026-06-30,Jazz,,Kevin Love,player became an unrestricted free agent,,
 2026-06-30,Jazz,,Oscar Tshiebwe,player became an unrestricted free agent,,
-2026-09-02,Jazz,,Matthew Murrell,waived,waived,relinquished
-2026-09-24,Jazz,,Ibrahima Diallo,waived,waived,relinquished
-2026-09-24,Jazz,,Justin Harmon,waived,waived,relinquished
-2026-10-01,Jazz,,Jaelen House,waived,waived,relinquished
-2026-10-06,Jazz,,Terrell Brown Jr.,waived,waived,relinquished
 2014-06-26,Wizards,Jordan Clarkson,,2014 NBA draft second round pick (#46 overall),,
 2014-06-27,Wizards,Andre Miller,,team exercised contract option for 2014-15,,
 2014-06-28,Wizards,,Trevor Booker,"team declined to tender qualifying offer, making player an unrestricted free agent",,
@@ -10764,9 +10637,6 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-06-30,Wizards,,Sharife Cooper,player became an unrestricted free agent,,
 2026-06-30,Wizards,,Trae Young,player became an unrestricted free agent,,
 2026-07-01,Wizards,,Rechon Black / Leaky Black,waived,waived,relinquished
-2026-09-27,Wizards,,KeShawn Murphy,waived,waived,relinquished
-2026-10-02,Wizards,,Steve Settle III,waived,waived,relinquished
-2026-10-05,Wizards,,Jazian Gortman,waived,waived,relinquished
 2014-01-07,Hawks,,Cartier Martin,waived,waived,relinquished
 2014-02-01,Hawks,,James Nunnally,player became a free agent,,
 2014-02-18,Hawks,,Cartier Martin,waived,waived,relinquished
@@ -11209,3 +11079,158 @@ date,team,acquired,relinquished,notes,move_type,direction
 2026-09-18,Hawks,,Will Baker,waived,waived,relinquished
 2026-09-24,Hawks,,Jalen Johnson,waived,waived,relinquished
 2026-09-24,Hawks,,Keon Johnson,waived,waived,relinquished
+2026-10-13,Hawks,,Isaac McKneely,waived,waived,relinquished
+2026-09-11,Celtics,,Hank Morgan,waived,waived,relinquished
+2026-09-14,Celtics,,Caleb Grill,waived,waived,relinquished
+2026-09-15,Nets,,Dwight Murray Jr.,waived,waived,relinquished
+2026-09-15,Nets,,Isaiah Wong,waived,waived,relinquished
+2026-09-21,Nets,,Aaron Scott,waived,waived,relinquished
+2026-09-21,Nets,,D.J. Rodman,waived,waived,relinquished
+2026-09-27,Nets,,Nick Pringle,waived,waived,relinquished
+2026-10-11,Nets,,Dain Dainja,waived,waived,relinquished
+2026-10-11,Nets,,Dion Brown (b),waived,waived,relinquished
+2026-09-01,Hornets,,Josiah Allick,waived,waived,relinquished
+2026-09-02,Hornets,,Trey Townsend,waived,waived,relinquished
+2026-09-03,Hornets,,Kyle Mangas,waived,waived,relinquished
+2026-09-07,Hornets,,Kobe Stewart,waived,waived,relinquished
+2026-09-20,Hornets,,Bez Mbeng,waived,waived,relinquished
+2026-09-22,Hornets,,D.J. Armstrong Jr.,waived,waived,relinquished
+2026-09-22,Hornets,,Tre Carroll,waived,waived,relinquished
+2026-09-26,Hornets,,Ryan Nembhard,waived,waived,relinquished
+2026-09-28,Hornets,,Rob Dillingham,waived,waived,relinquished
+2026-09-25,Bulls,,Houston Mallette,waived,waived,relinquished
+2026-10-01,Bulls,,Marquel Sutton,waived,waived,relinquished
+2026-10-01,Bulls,,Peter Suder,waived,waived,relinquished
+2026-10-05,Bulls,,Isaiah Stevens,waived,waived,relinquished
+2026-08-28,Cavaliers,,Cam Whitmore,waived (via stretch provision),waived,relinquished
+2026-09-17,Cavaliers,,Sean McNeil,waived,waived,relinquished
+2026-10-09,Cavaliers,,Curtis Jones,waived,waived,relinquished
+2026-10-09,Cavaliers,,Kadary Richmond,waived,waived,relinquished
+2026-08-21,Mavericks,,Klay Thompson,waived (team bought out contract),buyout,relinquished
+2026-10-12,Mavericks,,Christopher Mantis,waived,waived,relinquished
+2026-10-12,Mavericks,,Darin Green Jr.,waived,waived,relinquished
+2026-10-13,Mavericks,,Matt Cross,waived,waived,relinquished
+2026-08-28,Nuggets,,Julian Reese,waived,waived,relinquished
+2026-09-22,Nuggets,,Keonte Jones,waived,waived,relinquished
+2026-09-22,Nuggets,,Reese Dixon-Waters,waived,waived,relinquished
+2026-09-23,Nuggets,,Kevin Miller / Boopie Miller,waived,waived,relinquished
+2026-09-30,Nuggets,,K.J. Simpson,waived,waived,relinquished
+2026-10-12,Nuggets,,Lonnie Walker IV,waived,waived,relinquished
+2026-10-13,Nuggets,,Pedro Bradshaw,waived,waived,relinquished
+2026-09-15,Pistons,,Basheer Jihad,waived,waived,relinquished
+2026-09-15,Pistons,,Dawson Garcia,waived,waived,relinquished
+2026-09-22,Pistons,,Drake Allen,waived,waived,relinquished
+2026-09-24,Pistons,,Jordan Riley,waived,waived,relinquished
+2026-09-25,Pistons,,Romeo Weems,waived,waived,relinquished
+2026-09-27,Pistons,,Gary Harris,waived,waived,relinquished
+2026-09-16,Warriors,,Chance McMillian,waived,waived,relinquished
+2026-09-16,Warriors,,Deivon Smith,waived,waived,relinquished
+2026-09-18,Warriors,Nicholas Boyd / Nick Boyd,,,,
+2026-09-18,Warriors,,Jacksen Moni,waived,waived,relinquished
+2026-09-19,Warriors,,Elias Ralph,waived,waived,relinquished
+2026-09-21,Warriors,,Obi Agbim,waived,waived,relinquished
+2026-09-27,Warriors,,Nicholas Boyd / Nick Boyd,waived,waived,relinquished
+2026-10-11,Warriors,,Miles Kelly,waived,waived,relinquished
+2026-08-26,Rockets,,Tristen Newton,waived,waived,relinquished
+2026-10-01,Rockets,,Rafael Castro,waived,waived,relinquished
+2026-09-15,Pacers,,Keion Brooks Jr.,waived,waived,relinquished
+2026-09-15,Pacers,,M.J. Iraldi,waived,waived,relinquished
+2026-09-15,Pacers,,Wade Taylor IV,waived,waived,relinquished
+2026-09-15,Pacers,,Cameron Hildreth,waived,waived,relinquished
+2026-09-21,Pacers,,Jalen Warley,waived,waived,relinquished
+2026-09-21,Pacers,,Kowacie Reeves Jr.,waived,waived,relinquished
+2026-08-29,Clippers,,Bennedict Mathurin,"team rescinded qualifying offer, making player an unrestricted free agent",,
+2026-09-23,Clippers,Trent Redden,,proimoted to interim president of basketball operations,,
+2026-09-24,Clippers,,Johni Broome,waived,waived,relinquished
+2026-09-25,Clippers,,Jamarion Sharp,waived,waived,relinquished
+2026-09-26,Clippers,,Hunter Sallis,waived,waived,relinquished
+2026-09-26,Clippers,,Jason Preston,waived,waived,relinquished
+2026-10-06,Clippers,,Fletcher Loyer,waived,waived,relinquished
+2026-10-12,Clippers,,Yuki Kawamura,waived,waived,relinquished
+2026-10-14,Clippers,,Cameron Christie / Cam Christie,waived,waived,relinquished
+2026-09-18,Lakers,,Anton Watson,waived,waived,relinquished
+2026-09-27,Lakers,,Chase Ross,waived,waived,relinquished
+2026-09-27,Lakers,,Meechie Johnson,waived,waived,relinquished
+2026-10-09,Lakers,,William Kyle,waived,waived,relinquished
+2026-10-13,Lakers,,Cole Swider,waived,waived,relinquished
+2026-09-25,Grizzlies,,D'Angelo Russell,waived,waived,relinquished
+2026-09-26,Grizzlies,,Brendan Hausen,waived,waived,relinquished
+2026-09-26,Grizzlies,,Eric Dixon,waived,waived,relinquished
+2026-09-26,Grizzlies,,Kira Lewis Jr.,waived,waived,relinquished
+2026-09-26,Grizzlies,,Yuri Collins,waived,waived,relinquished
+2026-09-28,Grizzlies,,Lawson Lovering,waived,waived,relinquished
+2026-10-02,Grizzlies,,Jordan Hawkins,waived,waived,relinquished
+2026-09-22,Heat,Bez Mbeng,,claimed off waivers (from Hornets),claimed,acquired
+2026-10-09,Heat,,Dennis Smith Jr.,waived,waived,relinquished
+2026-10-09,Heat,,J'Vonne Hadley,waived,waived,relinquished
+2026-10-09,Heat,,Lester Quinones,waived,waived,relinquished
+2026-10-05,Bucks,,John Butler Jr.,waived,waived,relinquished
+2026-08-29,Timberwolves,,John Konchar,waived,waived,relinquished
+2026-09-18,Timberwolves,,Jules Bernard,waived,waived,relinquished
+2026-09-19,Timberwolves,,Stephen Thompson / Stevie Thompson (Jr.),waived,waived,relinquished
+2026-09-22,Timberwolves,,Jalen Crutcher,waived,waived,relinquished
+2026-09-24,Timberwolves,,Nate Santos,waived,waived,relinquished
+2026-09-24,Timberwolves,,Payton Sandfort,waived,waived,relinquished
+2026-08-18,Pelicans,,Hunter Dickinson,waived,waived,relinquished
+2026-09-08,Pelicans,,Taj Gibson,waived,waived,relinquished
+2026-09-14,Pelicans,,Christian Shumate,waived,waived,relinquished
+2026-09-15,Pelicans,,Johnny O'Neil,waived,waived,relinquished
+2026-09-16,Pelicans,,Aziz Bandaogo,waived,waived,relinquished
+2026-09-19,Pelicans,,Markquis Nowell,waived,waived,relinquished
+2026-09-21,Pelicans,,Dominique Daniels Jr.,waived,waived,relinquished
+2026-09-22,Pelicans,,Solomon Washington,waived,waived,relinquished
+2026-10-09,Pelicans,,Christian Koloko,waived,waived,relinquished
+2026-10-12,Pelicans,,Caleb Houstan,waived,waived,relinquished
+2026-09-15,Knicks,,Igor Milicic Jr.,waived,waived,relinquished
+2026-09-15,Knicks,,Toby Okani,waived,waived,relinquished
+2026-09-15,Knicks,,Jaden Akins,waived,waived,relinquished
+2026-09-15,Knicks,,Mitchell Mascari / Mitch Mascari,waived,waived,relinquished
+2026-09-15,Knicks,,Nick Jourdain,waived,waived,relinquished
+2026-09-15,Knicks,,Paul Zilinskas,waived,waived,relinquished
+2026-09-16,Knicks,,Liam Robbins,waived,waived,relinquished
+2026-09-26,Knicks,,Jaden Akins,waived,waived,relinquished
+2026-09-27,Knicks,,Bryson Warren,waived,waived,relinquished
+2026-09-30,Knicks,,John Konchar,waived,waived,relinquished
+2026-09-30,Knicks,,N'Faly Dante,waived,waived,relinquished
+2026-09-30,Knicks,,Toby Okani,waived,waived,relinquished
+2026-10-06,Thunder,,Robert McCray V,waived,waived,relinquished
+2026-09-23,Magic,,Ace Baldwin,waived,waived,relinquished
+2026-09-23,Magic,,Au'Diese Toney,waived,waived,relinquished
+2026-09-23,Magic,,Jarron Cumberland,waived,waived,relinquished
+2026-09-23,Magic,,Ricky Council IV,waived,waived,relinquished
+2026-10-05,Magic,,Mike Sharavjamts,waived,waived,relinquished
+2026-10-06,Magic,,Johnell Davis,waived,waived,relinquished
+2026-09-17,Suns,,Jordan Schakel,waived,waived,relinquished
+2026-09-18,Suns,,David Stockton,waived,waived,relinquished
+2026-09-24,Suns,,Corey Camper,waived,waived,relinquished
+2026-09-24,Suns,,John Camden,waived,waived,relinquished
+2026-09-24,Suns,,Sam Hoiberg,waived,waived,relinquished
+2026-09-23,Blazers,,Mark Armstrong,waived,waived,relinquished
+2026-09-23,Blazers,,Samson Johnson,waived,waived,relinquished
+2026-09-24,Blazers,,Barry Dunning,waived,waived,relinquished
+2026-09-24,Blazers,,Keylan Boone,waived,waived,relinquished
+2026-09-24,Blazers,,Mark Sears,waived,waived,relinquished
+2026-09-30,Blazers,,Hyunjung Lee / Lee Hyun-jung,waived,waived,relinquished
+2026-10-06,Blazers,,Jaylen Martin,waived,waived,relinquished
+2026-09-25,Kings,,Gabe Levin,waived,waived,relinquished
+2026-09-25,Kings,,Tyrone Marshall Jr.,waived,waived,relinquished
+2026-10-04,Kings,,Sean East II,waived,waived,relinquished
+2026-10-04,Kings,,Viktor Lakhin,waived,waived,relinquished
+2026-10-07,Kings,,Trhae Mitchell,waived,waived,relinquished
+2026-10-12,Kings,,Aaron Nkrumah,waived,waived,relinquished
+2026-10-12,Kings,,Damari Monsanto,waived,waived,relinquished
+2026-09-23,Spurs,,Jayden Nunn,waived,waived,relinquished
+2026-09-24,Spurs,,Miles Barnstable,waived,waived,relinquished
+2026-10-13,Spurs,,R.J. Davis,waived,waived,relinquished
+2026-09-24,Raptors,,A.J. Hoggard,waived,waived,relinquished
+2026-10-05,Raptors,,Andre Jackson Jr.,waived,waived,relinquished
+2026-10-12,Raptors,,Chucky Hepburn,waived,waived,relinquished
+2026-09-02,Jazz,,Matthew Murrell,waived,waived,relinquished
+2026-09-24,Jazz,,Ibrahima Diallo,waived,waived,relinquished
+2026-09-24,Jazz,,Justin Harmon,waived,waived,relinquished
+2026-10-01,Jazz,,Jaelen House,waived,waived,relinquished
+2026-10-06,Jazz,,Terrell Brown Jr.,waived,waived,relinquished
+2026-09-27,Wizards,,KeShawn Murphy,waived,waived,relinquished
+2026-10-02,Wizards,,Steve Settle III,waived,waived,relinquished
+2026-10-05,Wizards,,Jazian Gortman,waived,waived,relinquished
+2026-10-10,Wizards,,Skal Labissiere,waived,waived,relinquished

@@ -73,6 +73,24 @@ Run order: `psx_contracts_v2.py` (needs Unflare running locally on
 two pull `modern.csv` live from GitHub, so no local copy is needed for
 those.
 
+To refresh recent PST transactions, run from this directory:
+
+```bash
+../web_app/venv/bin/python refresh_recent.py
+```
+
+`refresh_recent.py` starts Unflare in a detached Docker container when needed,
+scrapes the previous two calendar months through today, rebuilds the crosswalk
+and derived files, and uses `refresh_contract_data.py`'s checked build and snapshot sync to
+copy the outputs to `web_app/data/contracts`. If Unflare fails to fetch the
+results, it prints the container logs and retries in visible Chrome (solve the
+Cloudflare challenge there if prompted). `--browser` uses Chrome directly and
+does not start Docker. The script stops Unflare when it started the container
+itself. Use `--months N`, `--days N`, or `--through YYYY-MM-DD` to change the window;
+`--modern PATH` uses a local modern.csv. The scraper replaces the requested
+date slice in all three raw CSVs, preserves older rows, and stops without
+writing if any team's scrape fails.
+
 **Design decision (explicit, from working through this together):** we
 deliberately do NOT try to reconstruct whether an option was actually
 exercised/declined, or precisely link contract extensions to the true
