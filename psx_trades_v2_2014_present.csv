@@ -1568,8 +1568,6 @@ date,team,counterparty,acquired_assets,relinquished_assets,num_acquired,num_reli
 2026-09-22,Hawks,Hornets,Dorian Finney-Smith,Buddy Hield; Ryan Nembhard; cash considerations,1,3,trade with Hornets
 2026-08-20,Hornets,"Cavaliers, Clippers, Nuggets, Wizards",Dennis Schröder; cash considerations (from Cavaliers),Tre Mann,2,1,"5-team trade with Cavaliers, Clippers, Nuggets, Wizards"
 2026-09-22,Hornets,Hawks,Buddy Hield; Ryan Nembhard; cash considerations,Dorian Finney-Smith,3,1,trade with Hawks
-2026-09-27,Hornets,Bulls,Rob Dillingham,Buddy Hield,1,1,trade with Bulls
-2026-09-27,Bulls,Hornets,Buddy Hield; cash,Rob Dillingham,2,1,trade with Hornets
 2026-08-20,Cavaliers,"Clippers, Hornets, Nuggets, Wizards",Peyton Watson; Cam Whitmore; rights to Ismael Kamagate,Dennis Schröder; Max Strus; 2031 first round pick (?-?); 2032 second round pick (Kings pick) (?-?); cash considerations,3,5,"5-team trade with Clippers, Hornets, Nuggets, Wizards"
 2026-08-20,Nuggets,"Cavaliers, Clippers, Hornets, Wizards",Julian Reese; 2031 first round pick (from Cavaliers) (?-?); 2032 second round pick (from Cavaliers) (Kings pick) (?-?),Peyton Watson,3,1,"5-team trade with Cavaliers, Clippers, Hornets, Wizards"
 2026-08-20,Clippers,"Cavaliers, Hornets, Nuggets, Wizards",Max Strus,rights to Ismael Kamagate; 2027 second round pick (?-?)**,1,2,"5-team trade with Cavaliers, Hornets, Nuggets, Wizards"
@@ -1580,3 +1578,5 @@ date,team,counterparty,acquired_assets,relinquished_assets,num_acquired,num_reli
 2026-09-14,Raptors,Clippers,Kawhi Leonard; Clippers option to swap 2027 first round picks with Raptors (?-?),Brandon Ingram; Gradey Dick; Clippers option to swap 2027 first round picks with Raptors (?-?); 2030 second round pick (?-?); 2031 first round pick (?-?); 2033 first round pick (?-?); 2033 second round pick (?-?),2,7,trade with Clippers
 2026-08-29,Jazz,Timberwolves,Josh Green; cash considerations,Cody Williams; John Konchar,2,2,trade with Timberwolves
 2026-08-20,Wizards,"Cavaliers, Clippers, Hornets, Nuggets",Tre Mann; 2027 second round pick (from Clippers) (?-?)**; cash considerations (from Cavaliers),Cam Whitmore; Julian Reese,3,2,"5-team trade with Cavaliers, Clippers, Hornets, Nuggets"
+2026-09-27,Hornets,Bulls,Rob Dillingham,Buddy Hield,1,1,trade with Bulls
+2026-09-27,Bulls,Hornets,Buddy Hield; cash,Rob Dillingham,2,1,trade with Hornets

@@ -1486,8 +1486,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-08-20,Hornets,"Cavaliers, Clippers, Nuggets, Wizards",acquired,Dennis Schröder,203471,Dennis Schröder,exact
 2026-09-22,Hornets,Hawks,acquired,Buddy Hield,1627741,Buddy Hield,exact
 2026-09-22,Hornets,Hawks,acquired,Ryan Nembhard,1642948,Ryan Nembhard,exact
-2026-09-27,Hornets,Bulls,acquired,Rob Dillingham,1642265,Rob Dillingham,exact
-2026-09-27,Bulls,Hornets,acquired,Buddy Hield,1627741,Buddy Hield,exact
 2026-08-20,Cavaliers,"Clippers, Hornets, Nuggets, Wizards",acquired,Peyton Watson,1631212,Peyton Watson,exact
 2026-08-20,Cavaliers,"Clippers, Hornets, Nuggets, Wizards",acquired,Cam Whitmore,1641715,Cam Whitmore,exact
 2026-08-20,Nuggets,"Cavaliers, Clippers, Hornets, Wizards",acquired,Julian Reese,1642882,Julian Reese,exact
@@ -1503,6 +1501,8 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-09-14,Raptors,Clippers,acquired,Kawhi Leonard,202695,Kawhi Leonard,exact
 2026-08-29,Jazz,Timberwolves,acquired,Josh Green,1630182,Josh Green,exact
 2026-08-20,Wizards,"Cavaliers, Clippers, Hornets, Nuggets",acquired,Tre Mann,1630544,Tre Mann,exact
+2026-09-27,Hornets,Bulls,acquired,Rob Dillingham,1642265,Rob Dillingham,exact
+2026-09-27,Bulls,Hornets,acquired,Buddy Hield,1627741,Buddy Hield,exact
 2014-01-07,Celtics,"Grizzlies, Thunder",relinquished,Courtney Lee,201584,Courtney Lee,exact
 2014-01-15,Celtics,"Heat, Warriors",relinquished,Jordan Crawford,202348,Jordan Crawford,exact
 2014-01-15,Celtics,"Heat, Warriors",relinquished,MarShon Brooks,202705,MarShon Brooks,exact
@@ -2986,8 +2986,6 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-09-22,Hawks,Hornets,relinquished,Ryan Nembhard,1642948,Ryan Nembhard,exact
 2026-08-20,Hornets,"Cavaliers, Clippers, Nuggets, Wizards",relinquished,Tre Mann,1630544,Tre Mann,exact
 2026-09-22,Hornets,Hawks,relinquished,Dorian Finney-Smith,1627827,Dorian Finney-Smith,exact
-2026-09-27,Hornets,Bulls,relinquished,Buddy Hield,1627741,Buddy Hield,exact
-2026-09-27,Bulls,Hornets,relinquished,Rob Dillingham,1642265,Rob Dillingham,exact
 2026-08-20,Cavaliers,"Clippers, Hornets, Nuggets, Wizards",relinquished,Dennis Schröder,203471,Dennis Schröder,exact
 2026-08-20,Cavaliers,"Clippers, Hornets, Nuggets, Wizards",relinquished,Max Strus,1629622,Max Strus,exact
 2026-08-20,Nuggets,"Cavaliers, Clippers, Hornets, Wizards",relinquished,Peyton Watson,1631212,Peyton Watson,exact
@@ -3003,3 +3001,5 @@ date,team,counterparty,side,player_string,player_id,matched_name,match_method
 2026-08-29,Jazz,Timberwolves,relinquished,John Konchar,1629723,John Konchar,exact
 2026-08-20,Wizards,"Cavaliers, Clippers, Hornets, Nuggets",relinquished,Cam Whitmore,1641715,Cam Whitmore,exact
 2026-08-20,Wizards,"Cavaliers, Clippers, Hornets, Nuggets",relinquished,Julian Reese,1642882,Julian Reese,exact
+2026-09-27,Hornets,Bulls,relinquished,Buddy Hield,1627741,Buddy Hield,exact
+2026-09-27,Bulls,Hornets,relinquished,Rob Dillingham,1642265,Rob Dillingham,exact
