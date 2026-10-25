@@ -1122,8 +1122,8 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2026-02-06,Hornets,,K.J. Simpson,waived,waived,relinquished,K.J. Simpson,1642354,KJ Simpson,normalized
 2026-02-09,Hornets,,Malaki Branham,waived,waived,relinquished,Malaki Branham,1631103,Malaki Branham,exact
 2026-06-01,Hornets,Moussa Diabate,,team fully guaranteed contract through 2026-27,,,Moussa Diabate,1631217,Moussa Diabaté,normalized
-2026-06-23,Hornets,Hannes Steinbach,,2026 NBA draft first round pick (#14 overall),,,Hannes Steinbach,1643419,Hannes Steinbach,nba_api_static
-2026-06-23,Hornets,Christian Anderson,,2026 NBA draft first round pick (#18 overall),,,Christian Anderson,1643515,Christian Anderson,nba_api_static
+2026-06-23,Hornets,Hannes Steinbach,,2026 NBA draft first round pick (#14 overall),,,Hannes Steinbach,1643419,Hannes Steinbach,exact
+2026-06-23,Hornets,Christian Anderson,,2026 NBA draft first round pick (#18 overall),,,Christian Anderson,1643515,Christian Anderson,exact
 2026-06-29,Hornets,,Antonio Reeves,team declined to tender qualifying offer,,,Antonio Reeves,1641810,Antonio Reeves,exact
 2026-06-29,Hornets,Pat Connaughton,,team exercised contract option through 2026-27,,,Pat Connaughton,1626192,Pat Connaughton,exact
 2026-06-30,Hornets,,Antonio Reeves,player became an unrestricted free agent,,,Antonio Reeves,1641810,Antonio Reeves,exact
@@ -2186,7 +2186,7 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2026-06-22,Mavericks,Dusty May,,hired as head coach,,,,,,
 2026-06-23,Mavericks,Morez Johnson Jr.,,2026 NBA draft first round pick (#9 overall),,,Morez Johnson Jr.,1643516,Morez Johnson Jr.,exact
 2026-06-23,Mavericks,Koa Peat,,2026 NBA draft first round pick (#30 overall),,,Koa Peat,1643520,Koa Peat,exact
-2026-06-24,Mavericks,Tobi Lawal,,2026 NBA draft second round pick (#48 overall),,,Tobi Lawal,1643588,Tobi Lawal,nba_api_static
+2026-06-24,Mavericks,Tobi Lawal,,2026 NBA draft second round pick (#48 overall),,,Tobi Lawal,1643588,Tobi Lawal,exact
 2026-06-29,Mavericks,Moussa Cisse,,"team tendered qualifying offer, making player a restricted free agent",,,Moussa Cisse,1630619,Moussa Cisse,exact
 2026-06-29,Mavericks,Ryan Nembhard,,team exercised contract option through 2026-27,,,Ryan Nembhard,1642948,Ryan Nembhard,exact
 2026-06-30,Mavericks,,Brandon Williams (b. 1975-02-27),player became an unrestricted free agent,,,Brandon Williams (b. 1975-02-27),1630314,Brandon Williams,paren_stripped
@@ -5396,7 +5396,7 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2025-10-17,Heat,,Ethan Thompson,waived,waived,relinquished,Ethan Thompson,1630679,Ethan Thompson,exact
 2025-10-17,Heat,,Precious Achiuwa,waived,waived,relinquished,Precious Achiuwa,1630173,Precious Achiuwa,exact
 2026-04-10,Heat,,Terry Rozier,waived,waived,relinquished,Terry Rozier,1626179,Terry Rozier,exact
-2026-06-23,Heat,Nate Ament,,2026 NBA draft first round pick (#13 overall),,,Nate Ament,1643417,Nate Ament,nba_api_static
+2026-06-23,Heat,Nate Ament,,2026 NBA draft first round pick (#13 overall),,,Nate Ament,1643417,Nate Ament,exact
 2026-06-24,Heat,Pelle Larsson,,team exercised contract option through 2026-27,,,Pelle Larsson,1641796,Pelle Larsson,exact
 2026-06-24,Heat,Otega Oweh,,2026 NBA draft second round pick (#41 overall),,,Otega Oweh,1642923,Otega Oweh,nba_api_static
 2026-06-26,Heat,,Jahmir Young,team declined contract option for 2026-27,,,Jahmir Young,1642443,Jahmir Young,exact
@@ -7698,7 +7698,7 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2025-10-31,Magic,Jett Howard,,team exercised contract option through 2026-27,,,Jett Howard,1641724,Jett Howard,exact
 2026-02-17,Magic,,Orlando Robinson,waived,waived,relinquished,Orlando Robinson,1631115,Orlando Robinson,exact
 2026-05-04,Magic,,Jamahl Mosley,fired as head coach,,,,,,
-2026-06-24,Magic,Felix Okpara,,2026 NBA draft second round pick (#46 overall),,,Felix Okpara,1643590,Felix Okpara,nba_api_static
+2026-06-24,Magic,Felix Okpara,,2026 NBA draft second round pick (#46 overall),,,Felix Okpara,1643590,Felix Okpara,exact
 2026-06-27,Magic,,Jonathan Isaac,waived,waived,relinquished,Jonathan Isaac,1628371,Jonathan Isaac,exact
 2026-06-29,Magic,Colin Castleton,,"team tendered qualifying offer, making player a restricted free agent",,,Colin Castleton,1630658,Colin Castleton,exact
 2026-06-29,Magic,Jamal Cain,,team exercised contract option through 2026-27,,,Jamal Cain,1631288,Jamal Cain,exact
@@ -8155,7 +8155,7 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2026-02-15,76ers,,Patrick Baldwin Jr.,player became a free agent,,,Patrick Baldwin Jr.,1631116,Patrick Baldwin Jr.,exact
 2026-04-10,76ers,,Cameron Payne,waived,waived,relinquished,Cameron Payne,1626166,Cameron Payne,exact
 2026-05-13,76ers,,Daryl Morey,fired as president of basketball operations,,,,,,
-2026-06-23,76ers,Labaron Philon Jr.,,2026 NBA draft first round pick (#22 overall),,,Labaron Philon Jr.,,,
+2026-06-23,76ers,Labaron Philon Jr.,,2026 NBA draft first round pick (#22 overall),,,Labaron Philon Jr.,1642889,Labaron Philon Jr.,exact
 2026-06-29,76ers,,MarJon Beauchamp,team declined to tender qualifying offer,,,MarJon Beauchamp,1630699,MarJon Beauchamp,exact
 2026-06-29,76ers,,Trendon Watford,team declined contract option for 2026-27,,,Trendon Watford,1630570,Trendon Watford,exact
 2026-06-29,76ers,,Tyrese Martin,team declined to tender qualifying offer,,,Tyrese Martin,1631213,Tyrese Martin,exact
@@ -11059,7 +11059,7 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2026-02-18,Hawks,,Nikola Djurisic,waived,waived,relinquished,Nikola Djurisic,,,
 2026-04-04,Hawks,,Caleb Houstan,waived,waived,relinquished,Caleb Houstan,1631216,Caleb Houstan,exact
 2026-06-23,Hawks,Kingston Flemings,,2026 NBA draft first round pick (#8 overall),,,Kingston Flemings,1643412,Kingston Flemings,exact
-2026-06-23,Hawks,Zuby Ejiofor,,2026 NBA draft first round pick (#23 overall),,,Zuby Ejiofor,1643544,Zuby Ejiofor,nba_api_static
+2026-06-23,Hawks,Zuby Ejiofor,,2026 NBA draft first round pick (#23 overall),,,Zuby Ejiofor,1643544,Zuby Ejiofor,exact
 2026-06-24,Hawks,Narcisse Ngoy,,2026 NBA draft second round pick (#57 overall),,,Narcisse Ngoy,,,
 2026-06-25,Hawks,Mouhamed Gueye (a),,team exercised contract option through 2026-27,,,Mouhamed Gueye (a),1631243,Mouhamed Gueye,paren_stripped
 2026-06-29,Hawks,,Christian Koloko,team declined to tender qualifying offer,,,Christian Koloko,1631132,Christian Koloko,exact
@@ -11137,8 +11137,31 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2026-09-17,Suns,,Jordan Schakel,waived,waived,relinquished,Jordan Schakel,1630648,Jordan Schakel,exact
 2026-09-18,Suns,,David Stockton,waived,waived,relinquished,David Stockton,204065,David Stockton,exact
 2026-09-02,Jazz,,Matthew Murrell,waived,waived,relinquished,Matthew Murrell,,,
+2026-09-23,Nuggets,,Kevin Miller / Boopie Miller,waived,waived,relinquished,Kevin Miller / Boopie Miller,,,
+2026-09-23,Clippers,Trent Redden,,proimoted to interim president of basketball operations,,,,,,
+2026-09-23,Magic,,Ace Baldwin,waived,waived,relinquished,Ace Baldwin,,,
+2026-09-23,Magic,,Au'Diese Toney,waived,waived,relinquished,Au'Diese Toney,,,
+2026-09-23,Magic,,Jarron Cumberland,waived,waived,relinquished,Jarron Cumberland,1629600,Jarron Cumberland,exact
+2026-09-23,Magic,,Ricky Council IV,waived,waived,relinquished,Ricky Council IV,1641741,Ricky Council IV,exact
+2026-09-23,Blazers,,Mark Armstrong,waived,waived,relinquished,Mark Armstrong,1642378,Mark Armstrong,nba_api_static
+2026-09-23,Blazers,,Samson Johnson,waived,waived,relinquished,Samson Johnson,,,
+2026-09-23,Spurs,,Jayden Nunn,waived,waived,relinquished,Jayden Nunn,,,
 2026-09-24,Hawks,,Jalen Johnson,waived,waived,relinquished,Jalen Johnson,1630552,Jalen Johnson,exact
 2026-09-24,Hawks,,Keon Johnson,waived,waived,relinquished,Keon Johnson,1630553,Keon Johnson,exact
+2026-09-24,Pistons,,Jordan Riley,waived,waived,relinquished,Jordan Riley,,,
+2026-09-24,Clippers,,Johni Broome,waived,waived,relinquished,Johni Broome,1641780,Johni Broome,exact
+2026-09-24,Timberwolves,,Nate Santos,waived,waived,relinquished,Nate Santos,,,
+2026-09-24,Timberwolves,,Payton Sandfort,waived,waived,relinquished,Payton Sandfort,1642362,Payton Sandfort,exact
+2026-09-24,Suns,,Corey Camper,waived,waived,relinquished,Corey Camper,,,
+2026-09-24,Suns,,John Camden,waived,waived,relinquished,John Camden,,,
+2026-09-24,Suns,,Sam Hoiberg,waived,waived,relinquished,Sam Hoiberg,,,
+2026-09-24,Blazers,,Barry Dunning,waived,waived,relinquished,Barry Dunning,,,
+2026-09-24,Blazers,,Keylan Boone,waived,waived,relinquished,Keylan Boone,,,
+2026-09-24,Blazers,,Mark Sears,waived,waived,relinquished,Mark Sears,1641813,Mark Sears,exact
+2026-09-24,Spurs,,Miles Barnstable,waived,waived,relinquished,Miles Barnstable,,,
+2026-09-24,Raptors,,A.J. Hoggard,waived,waived,relinquished,A.J. Hoggard,,,
+2026-09-24,Jazz,,Ibrahima Diallo,waived,waived,relinquished,Ibrahima Diallo,,,
+2026-09-24,Jazz,,Justin Harmon,waived,waived,relinquished,Justin Harmon,,,
 2026-10-13,Hawks,,Isaac McKneely,waived,waived,relinquished,Isaac McKneely,1643724,Isaac McKneely,nba_api_static
 2026-10-15,Hawks,,Giorgi Bezhanishvili,waived,waived,relinquished,Giorgi Bezhanishvili,,,
 2026-10-17,Hawks,,Cameron Corhen,waived,waived,relinquished,Cameron Corhen,1643723,Cameron Corhen,nba_api_static
@@ -11183,7 +11206,6 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2026-10-17,Mavericks,,Seth Lundy,waived,waived,relinquished,Seth Lundy,1641754,Seth Lundy,exact
 2026-10-17,Mavericks,Cooper Flagg,,team exercised contract option,,,Cooper Flagg,1642843,Cooper Flagg,exact
 2026-10-19,Mavericks,,Dwight Powell,waived,waived,relinquished,Dwight Powell,203939,Dwight Powell,exact
-2026-09-23,Nuggets,,Kevin Miller / Boopie Miller,waived,waived,relinquished,Kevin Miller / Boopie Miller,,,
 2026-09-30,Nuggets,,K.J. Simpson,waived,waived,relinquished,K.J. Simpson,1642354,KJ Simpson,normalized
 2026-10-12,Nuggets,,Lonnie Walker IV,waived,waived,relinquished,Lonnie Walker IV,1629022,Lonnie Walker IV,exact
 2026-10-13,Nuggets,,Pedro Bradshaw,waived,waived,relinquished,Pedro Bradshaw,,,
@@ -11191,7 +11213,6 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2026-10-17,Nuggets,,Coleman Hawkins,waived,waived,relinquished,Coleman Hawkins,1641746,Coleman Hawkins,nba_api_static
 2026-10-17,Nuggets,,Dane Goodwin,waived,waived,relinquished,Dane Goodwin,1641863,Dane Goodwin,nba_api_static
 2026-10-17,Nuggets,,Emanuel Miller,waived,waived,relinquished,Emanuel Miller,1641801,Emanuel Miller,exact
-2026-09-24,Pistons,,Jordan Riley,waived,waived,relinquished,Jordan Riley,,,
 2026-09-25,Pistons,,Romeo Weems,waived,waived,relinquished,Romeo Weems,,,
 2026-09-27,Pistons,,Gary Harris,waived,waived,relinquished,Gary Harris,203914,Gary Harris,exact
 2026-10-17,Pistons,,Brice Williams,waived,waived,relinquished,Brice Williams,1642924,Brice Williams,nba_api_static
@@ -11202,14 +11223,13 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2026-10-17,Warriors,,Dalen Terry,waived,waived,relinquished,Dalen Terry,1631207,Dalen Terry,exact
 2026-10-17,Warriors,,Tyler Burton,waived,waived,relinquished,Tyler Burton,1631174,Tyler Burton,exact
 2026-10-01,Rockets,,Rafael Castro,waived,waived,relinquished,Rafael Castro,1643572,Rafael Castro,nba_api_static
+2026-10-17,Rockets,,Bryce Harris,waived,waived,relinquished,Bryce Harris,,,
 2026-10-17,Rockets,,Caleb McConnell,waived,waived,relinquished,Caleb McConnell,,,
 2026-10-17,Rockets,,Cameron Matthews,waived,waived,relinquished,Cameron Matthews,,,
 2026-10-19,Rockets,,Sean Pedulla,waived,waived,relinquished,Sean Pedulla,1642951,Sean Pedulla,exact
 2026-10-17,Pacers,,James Johnson,waived,waived,relinquished,James Johnson,201949,James Johnson,exact
 2026-10-17,Pacers,,Keba Keita,waived,waived,relinquished,Keba Keita,1643627,Keba Keita,nba_api_static
 2026-10-17,Pacers,,Rienk Mast,waived,waived,relinquished,Rienk Mast,1643792,Rienk Mast,nba_api_static
-2026-09-23,Clippers,Trent Redden,,proimoted to interim president of basketball operations,,,,,,
-2026-09-24,Clippers,,Johni Broome,waived,waived,relinquished,Johni Broome,1641780,Johni Broome,exact
 2026-09-25,Clippers,,Jamarion Sharp,waived,waived,relinquished,Jamarion Sharp,1642481,Jamarion Sharp,nba_api_static
 2026-09-26,Clippers,,Hunter Sallis,waived,waived,relinquished,Hunter Sallis,1642282,Hunter Sallis,exact
 2026-09-26,Clippers,,Jason Preston,waived,waived,relinquished,Jason Preston,1630554,Jason Preston,exact
@@ -11253,8 +11273,6 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2026-10-17,Bucks,,Pete Nance,waived,waived,relinquished,Pete Nance,1631250,Pete Nance,exact
 2026-10-17,Bucks,,Marcus Garrett,waived,waived,relinquished,Marcus Garrett,1630585,Marcus Garrett,exact
 2026-10-19,Bucks,,Kevin Porter Jr.,waived,waived,relinquished,Kevin Porter Jr.,1629645,Kevin Porter Jr.,exact
-2026-09-24,Timberwolves,,Nate Santos,waived,waived,relinquished,Nate Santos,,,
-2026-09-24,Timberwolves,,Payton Sandfort,waived,waived,relinquished,Payton Sandfort,1642362,Payton Sandfort,exact
 2026-10-17,Timberwolves,,Antonio Reeves,waived,waived,relinquished,Antonio Reeves,1641810,Antonio Reeves,exact
 2026-10-17,Timberwolves,,Drew Timme,waived,waived,relinquished,Drew Timme,1631166,Drew Timme,exact
 2026-10-17,Timberwolves,,Enrique Freeman,waived,waived,relinquished,Enrique Freeman,1642402,Enrique Freeman,exact
@@ -11275,6 +11293,7 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2026-10-15,Knicks,,Drew Eubanks,waived,waived,relinquished,Drew Eubanks,1629234,Drew Eubanks,exact
 2026-10-17,Knicks,,Bruce Brown,waived,waived,relinquished,Bruce Brown,1628971,Bruce Brown,exact
 2026-10-17,Knicks,,Dink Pate,waived,waived,relinquished,Dink Pate,,,
+2026-10-23,Knicks,,Kevin McCullar Jr.,waived,waived,relinquished,Kevin McCullar Jr.,1641755,Kevin McCullar Jr.,exact
 2026-10-06,Thunder,,Robert McCray V,waived,waived,relinquished,Robert McCray V,,,
 2026-10-16,Thunder,,Andrew Holifield,waived,waived,relinquished,Andrew Holifield,1643808,Andrew Holifield,nba_api_static
 2026-10-16,Thunder,,Anthony Pritchard,waived,waived,relinquished,Anthony Pritchard,1643208,Anthony Pritchard,nba_api_static
@@ -11282,11 +11301,9 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2026-10-17,Thunder,,Christoph Tilly,waived,waived,relinquished,Christoph Tilly,1643754,Christoph Tilly,nba_api_static
 2026-10-17,Thunder,,Dariq Whitehead,waived,waived,relinquished,Dariq Whitehead,1641727,Dariq Whitehead,exact
 2026-10-17,Thunder,,Lamar Wilkerson,waived,waived,relinquished,Lamar Wilkerson,,,
+2026-10-17,Thunder,,Nate Johnson (b),waived,waived,relinquished,Nate Johnson (b),,,
 2026-10-17,Thunder,,Buddy Boeheim,waived,waived,relinquished,Buddy Boeheim,1631205,Buddy Boeheim,exact
-2026-09-23,Magic,,Ace Baldwin,waived,waived,relinquished,Ace Baldwin,,,
-2026-09-23,Magic,,Au'Diese Toney,waived,waived,relinquished,Au'Diese Toney,,,
-2026-09-23,Magic,,Jarron Cumberland,waived,waived,relinquished,Jarron Cumberland,1629600,Jarron Cumberland,exact
-2026-09-23,Magic,,Ricky Council IV,waived,waived,relinquished,Ricky Council IV,1641741,Ricky Council IV,exact
+2026-10-23,Thunder,,Otega Oweh,waived,waived,relinquished,Otega Oweh,1642923,Otega Oweh,nba_api_static
 2026-10-05,Magic,,Mike Sharavjamts,waived,waived,relinquished,Mike Sharavjamts,,,
 2026-10-06,Magic,,Johnell Davis,waived,waived,relinquished,Johnell Davis,,,
 2026-10-16,Magic,,J.D. Davison,waived,waived,relinquished,J.D. Davison,1631120,JD Davison,normalized
@@ -11298,21 +11315,15 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2026-10-15,76ers,,Saint Thomas,waived,waived,relinquished,Saint Thomas,1643148,Saint Thomas,nba_api_static
 2026-10-16,76ers,,Dillon Jones,waived,waived,relinquished,Dillon Jones,1641794,Dillon Jones,exact
 2026-10-16,76ers,,Jameer Nelson Jr.,waived,waived,relinquished,Jameer Nelson Jr.,2749,Jameer Nelson,normalized
+2026-10-16,76ers,,Cris Carroll,waived,waived,relinquished,Cris Carroll,,,
+2026-10-16,76ers,,Taye Fields,waived,waived,relinquished,Taye Fields,,,
 2026-10-19,76ers,Valdez Edgecombe / V.J. Edgecombe,,team exercised contract option through 2027-28,,,Valdez Edgecombe / V.J. Edgecombe,1642845,VJ Edgecombe,normalized_variant
-2026-09-24,Suns,,Corey Camper,waived,waived,relinquished,Corey Camper,,,
-2026-09-24,Suns,,John Camden,waived,waived,relinquished,John Camden,,,
-2026-09-24,Suns,,Sam Hoiberg,waived,waived,relinquished,Sam Hoiberg,,,
 2026-10-17,Suns,,Haywood Highsmith,waived,waived,relinquished,Haywood Highsmith,1629312,Haywood Highsmith,exact
 2026-10-17,Suns,,Kennedy Chandler,waived,waived,relinquished,Kennedy Chandler,1631113,Kennedy Chandler,exact
 2026-10-17,Suns,,Phillip Wheeler,waived,waived,relinquished,Phillip Wheeler,1630762,Phillip Wheeler,exact
 2026-10-19,Suns,,C.J. Huntley,waived,waived,relinquished,C.J. Huntley,1643047,CJ Huntley,normalized
 2026-10-19,Suns,,Koby Brea,waived,waived,relinquished,Koby Brea,1642886,Koby Brea,exact
 2026-10-19,Suns,Drew Timme,,claimed off waivers (from Timberwolves),claimed,acquired,Drew Timme,1631166,Drew Timme,exact
-2026-09-23,Blazers,,Mark Armstrong,waived,waived,relinquished,Mark Armstrong,1642378,Mark Armstrong,nba_api_static
-2026-09-23,Blazers,,Samson Johnson,waived,waived,relinquished,Samson Johnson,,,
-2026-09-24,Blazers,,Barry Dunning,waived,waived,relinquished,Barry Dunning,,,
-2026-09-24,Blazers,,Keylan Boone,waived,waived,relinquished,Keylan Boone,,,
-2026-09-24,Blazers,,Mark Sears,waived,waived,relinquished,Mark Sears,1641813,Mark Sears,exact
 2026-09-30,Blazers,,Hyunjung Lee / Lee Hyun-jung,waived,waived,relinquished,Hyunjung Lee / Lee Hyun-jung,,,
 2026-10-06,Blazers,,Jaylen Martin,waived,waived,relinquished,Jaylen Martin,1641798,Jaylen Martin,exact
 2026-10-16,Blazers,,Caleb Houstan,waived,waived,relinquished,Caleb Houstan,1631216,Caleb Houstan,exact
@@ -11329,8 +11340,6 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2026-10-16,Kings,,Tristen Newton,waived,waived,relinquished,Tristen Newton,1641803,Tristen Newton,exact
 2026-10-16,Kings,,Viktor Lakhin,waived,waived,relinquished,Viktor Lakhin,,,
 2026-10-19,Kings,,Adam Flagler,waived,waived,relinquished,Adam Flagler,1641745,Adam Flagler,exact
-2026-09-23,Spurs,,Jayden Nunn,waived,waived,relinquished,Jayden Nunn,,,
-2026-09-24,Spurs,,Miles Barnstable,waived,waived,relinquished,Miles Barnstable,,,
 2026-10-13,Spurs,,R.J. Davis,waived,waived,relinquished,R.J. Davis,1642930,R.J. Davis,nba_api_static
 2026-10-14,Spurs,,Malik Williams,waived,waived,relinquished,Malik Williams,1642013,Malik Williams,exact
 2026-10-14,Spurs,,Taelon Peter,waived,waived,relinquished,Taelon Peter,1643007,Taelon Peter,exact
@@ -11340,7 +11349,6 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2026-10-17,Spurs,Carter Bryant,,team exercised contract option,,,Carter Bryant,1642868,Carter Bryant,exact
 2026-10-17,Spurs,Dylan Harper,,team exercised contract option,,,Dylan Harper,1642844,Dylan Harper,exact
 2026-10-17,Spurs,Stephon Castle,,team exercised contract option,,,Stephon Castle,1642264,Stephon Castle,exact
-2026-09-24,Raptors,,A.J. Hoggard,waived,waived,relinquished,A.J. Hoggard,,,
 2026-10-05,Raptors,,Andre Jackson Jr.,waived,waived,relinquished,Andre Jackson Jr.,1641748,Andre Jackson Jr.,exact
 2026-10-12,Raptors,,Chucky Hepburn,waived,waived,relinquished,Chucky Hepburn,1642935,Chucky Hepburn,exact
 2026-10-14,Raptors,,Trey Jemison III,waived,waived,relinquished,Trey Jemison III,1641998,Trey Jemison III,exact
@@ -11349,8 +11357,6 @@ date,team,acquired,relinquished,notes,move_type,direction,player_string,player_i
 2026-10-17,Raptors,,Nimari Burnett,waived,waived,relinquished,Nimari Burnett,1643718,Nimari Burnett,nba_api_static
 2026-10-17,Raptors,,Tyreke Key,waived,waived,relinquished,Tyreke Key,1642615,Tyreke Key,nba_api_static
 2026-10-17,Raptors,,Tyson Degenhart,waived,waived,relinquished,Tyson Degenhart,1643091,Tyson Degenhart,nba_api_static
-2026-09-24,Jazz,,Ibrahima Diallo,waived,waived,relinquished,Ibrahima Diallo,,,
-2026-09-24,Jazz,,Justin Harmon,waived,waived,relinquished,Justin Harmon,,,
 2026-10-01,Jazz,,Jaelen House,waived,waived,relinquished,Jaelen House,,,
 2026-10-06,Jazz,,Terrell Brown Jr.,waived,waived,relinquished,Terrell Brown Jr.,,,
 2026-10-13,Jazz,,Mohamed Wague,waived,waived,relinquished,Mohamed Wague,1643753,Mohamed Wague,nba_api_static
