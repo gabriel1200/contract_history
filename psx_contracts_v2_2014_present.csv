@@ -7860,6 +7860,30 @@ date,team,player,raw_notes,is_extension,is_resigning,is_qualifying_offer,is_non_
 2026-09-24,Raptors,A.J. Hoggard,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,False,True,,,,,,,years/value pattern not matched
 2026-09-24,Raptors,Nimari Burnett,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-24,Raptors,Tyreke Key,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Bulls,Brandon Boston Jr. / B.J. Boston Jr.,signed unrestricted free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Bulls,Drew Peterson,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Bulls,Marquel Sutton,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Bulls,Orlando Robinson,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Mavericks,Dwight Powell,re-signed unrestricted free agent to a 1-year contract,False,True,False,False,False,False,False,True,,,,,,,years/value pattern not matched
+2026-09-25,Nuggets,Coleman Hawkins,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Nuggets,Dane Goodwin,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Nuggets,Emanuel Miller,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Pistons,Romeo Weems,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Warriors,Stephen Curry,re-signed to a 2-year $116M contract extension,True,True,False,False,False,False,False,True,2.0,,116.0,58.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
+2026-09-25,Grizzlies,Brendan Hausen,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Heat,Ian Schieffelin,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Timberwolves,Kenyon Martin Jr. / K.J. Martin,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Timberwolves,Norchad Omier,signed unrestricted free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Thunder,Andrew Holifield,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Thunder,Robert McCray V,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Thunder,Zhaire Smith,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Suns,Kennedy Chandler,signed unrestricted free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Suns,Phillip Wheeler,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Kings,Gabe Levin,signed free agent (date approximate),False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Kings,Tyrone Marshall Jr.,signed free agent (date approximate),False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Spurs,R.J. Davis,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
+2026-09-25,Jazz,Jaelen House,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,False,True,,,,,,,years/value pattern not matched
+2026-09-25,Jazz,Jonas Aidoo,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-28,Hawks,Cameron Corhen,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-28,Hawks,Kobe Johnson,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-14,Hawks,Giorgi Bezhanishvili,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
@@ -7871,17 +7895,12 @@ date,team,player,raw_notes,is_extension,is_resigning,is_qualifying_offer,is_non_
 2026-09-28,Hornets,Wyatt Fricks,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-15,Hornets,DaJuan Gordon,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-19,Hornets,Brandon Miller,re-signed to a 5-year $209M contract extension,True,True,False,False,False,False,False,True,5.0,,209.0,41.8,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
-2026-09-25,Bulls,Brandon Boston Jr. / B.J. Boston Jr.,signed unrestricted free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
-2026-09-25,Bulls,Drew Peterson,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
-2026-09-25,Bulls,Marquel Sutton,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
-2026-09-25,Bulls,Orlando Robinson,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-30,Bulls,Jalen Bridges,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-01,Bulls,Isaiah Stevens,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-05,Bulls,Jordan Hawkins,signed free agent to a two way contract,False,False,False,False,False,False,False,True,,,,,,,years/value pattern not matched
 2026-10-11,Cavaliers,Jaxson Robinson / Jax Robinson,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-11,Cavaliers,Noam Yaacov,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-17,Cavaliers,Tre'Von Spillers,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,False,True,,,,,,,years/value pattern not matched
-2026-09-25,Mavericks,Dwight Powell,re-signed unrestricted free agent to a 1-year contract,False,True,False,False,False,False,False,True,,,,,,,years/value pattern not matched
 2026-09-26,Mavericks,Seth Lundy,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-12,Mavericks,Darin Green Jr.,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-12,Mavericks,Matt Cross,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,False,True,,,,,,,years/value pattern not matched
@@ -7889,17 +7908,12 @@ date,team,player,raw_notes,is_extension,is_resigning,is_qualifying_offer,is_non_
 2026-10-14,Mavericks,Jorge Diaz Graham / Jorge Diaz-Graham,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-15,Mavericks,Guillermo Diaz Graham,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-21,Mavericks,Walter Clayton Jr.,signed free agent to a two way contract,False,False,False,False,False,False,False,True,,,,,,,years/value pattern not matched
-2026-09-25,Nuggets,Coleman Hawkins,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
-2026-09-25,Nuggets,Dane Goodwin,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
-2026-09-25,Nuggets,Emanuel Miller,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-30,Nuggets,Ryan Nembhard,signed free agent to a two way contract,False,False,False,False,False,False,False,True,,,,,,,years/value pattern not matched
 2026-10-13,Nuggets,Pedro Bradshaw,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-14,Nuggets,Steven Crowl,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
-2026-09-25,Pistons,Romeo Weems,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-28,Pistons,Brice Williams,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-02,Pistons,Jalen Duren,re-signed restricted free agent to a 5-year contract,False,True,False,False,False,False,False,True,,,,,,,years/value pattern not matched
 2026-10-02,Pistons,John Ukomadu,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
-2026-09-25,Warriors,Stephen Curry,re-signed to a 2-year $116M contract extension,True,True,False,False,False,False,False,True,2.0,,116.0,58.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
 2026-09-27,Warriors,Miles Kelly,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-05,Warriors,Tyler Burton,signed unrestricted free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-10,Warriors,Brandin Podziemski,re-signed to a 5-year $110M contract extension,True,True,False,False,False,False,False,True,5.0,,110.0,22.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
@@ -7922,13 +7936,11 @@ date,team,player,raw_notes,is_extension,is_resigning,is_qualifying_offer,is_non_
 2026-10-09,Lakers,Rafael Castro,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-14,Lakers,Aniwaniwa Tait-Jones,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,False,True,,,,,,,years/value pattern not matched
 2026-10-14,Lakers,Jahmir Young,signed unrestricted free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
-2026-09-25,Grizzlies,Brendan Hausen,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-26,Grizzlies,Eric Dixon,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-26,Grizzlies,Kira Lewis Jr.,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-26,Grizzlies,Lawson Lovering,re-signed unrestricted free agent,False,True,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-26,Grizzlies,Yuri Collins,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-28,Grizzlies,Carson Cooper,signed free agent to a two way contract,False,False,False,False,False,False,False,True,,,,,,,years/value pattern not matched
-2026-09-25,Heat,Ian Schieffelin,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-27,Heat,Dennis Smith Jr.,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-28,Heat,Lester Quinones,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-09,Heat,Kylor Kelley,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
@@ -7937,8 +7949,6 @@ date,team,player,raw_notes,is_extension,is_resigning,is_qualifying_offer,is_non_
 2026-10-06,Bucks,Johni Broome,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-17,Bucks,Marcus Garrett,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-19,Bucks,Pete Nance,signed free agent to a two way contract,False,False,False,False,False,False,False,True,,,,,,,years/value pattern not matched
-2026-09-25,Timberwolves,Kenyon Martin Jr. / K.J. Martin,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
-2026-09-25,Timberwolves,Norchad Omier,signed unrestricted free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-27,Timberwolves,Drew Timme,signed unrestricted free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-28,Timberwolves,Antonio Reeves,signed unrestricted free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-19,Timberwolves,Jaden McDaniels,re-signed to a 1-year $40M contract extension,True,True,False,False,False,False,False,True,1.0,,40.0,40.0,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
@@ -7952,9 +7962,6 @@ date,team,player,raw_notes,is_extension,is_resigning,is_qualifying_offer,is_non_
 2026-09-30,Knicks,Tony Bradley,signed unrestricted free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-17,Knicks,Dink Pate,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-23,Knicks,Dalton Knecht,signed free agent to a two way contract,False,False,False,False,False,False,False,True,,,,,,,years/value pattern not matched
-2026-09-25,Thunder,Andrew Holifield,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
-2026-09-25,Thunder,Robert McCray V,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
-2026-09-25,Thunder,Zhaire Smith,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-06,Thunder,Anthony Pritchard,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-16,Thunder,Dariq Whitehead,signed unrestricted free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-16,Thunder,Lamar Wilkerson,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,False,True,,,,,,,years/value pattern not matched
@@ -7966,16 +7973,12 @@ date,team,player,raw_notes,is_extension,is_resigning,is_qualifying_offer,is_non_
 2026-10-16,76ers,Cris Carroll,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,False,True,,,,,,,years/value pattern not matched
 2026-10-16,76ers,Tacko Fall,re-signed to a two way contract,False,True,False,False,False,False,False,True,,,,,,,years/value pattern not matched
 2026-10-16,76ers,Taye Fields,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,False,True,,,,,,,years/value pattern not matched
-2026-09-25,Suns,Kennedy Chandler,signed unrestricted free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
-2026-09-25,Suns,Phillip Wheeler,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-19,Suns,Duop Reath,re-signed to a two way contract,False,True,False,False,False,False,False,True,,,,,,,years/value pattern not matched
 2026-10-19,Suns,Osasere Ighodaro / Oso Ighodaro,re-signed to a 3-year $29M contract extension,True,True,False,False,False,False,False,True,3.0,,29.0,9.667,,,aav_musd is naive (total/years); does not reflect actual year-by-year raises. Cross-reference Spotrac for real schedule.
 2026-10-19,Suns,Drew Timme,re-signed to a two way contract,False,True,False,False,False,False,False,True,,,,,,,years/value pattern not matched
 2026-09-29,Blazers,Hyunjung Lee / Lee Hyun-jung,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,False,True,,,,,,,years/value pattern not matched
 2026-09-30,Blazers,Jaylen Martin,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-15,Blazers,Caleb Houstan,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
-2026-09-25,Kings,Gabe Levin,signed free agent (date approximate),False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
-2026-09-25,Kings,Tyrone Marshall Jr.,signed free agent (date approximate),False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-26,Kings,Tristen Newton,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-29,Kings,Sean East II,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-09-29,Kings,Viktor Lakhin,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
@@ -7986,7 +7989,6 @@ date,team,player,raw_notes,is_extension,is_resigning,is_qualifying_offer,is_non_
 2026-10-15,Kings,David Muoka,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-15,Kings,Rechon Black / Leaky Black,signed free agent to a two way contract,False,False,False,False,False,False,False,True,,,,,,,years/value pattern not matched
 2026-10-23,Kings,Sean Pedulla,signed free agent to a two way contract,False,False,False,False,False,False,False,True,,,,,,,years/value pattern not matched
-2026-09-25,Spurs,R.J. Davis,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-14,Spurs,Terry Taylor,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-15,Spurs,Kendall Brown,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-01,Raptors,Jamal Shead,re-signed to a 3-year contract extension,True,True,False,False,False,False,False,True,,,,,,,years/value pattern not matched
@@ -7994,8 +7996,6 @@ date,team,player,raw_notes,is_extension,is_resigning,is_qualifying_offer,is_non_
 2026-10-12,Raptors,Jamarion Sharp,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-16,Raptors,Jalen Celestine,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-17,Raptors,Nate Bittle,re-signed to a two way contract,False,True,False,False,False,False,False,True,,,,,,,years/value pattern not matched
-2026-09-25,Jazz,Jaelen House,signed free agent to an Exhibit 10 contract,False,False,False,False,True,False,False,True,,,,,,,years/value pattern not matched
-2026-09-25,Jazz,Jonas Aidoo,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-05,Jazz,Taylor Funk,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-08,Jazz,Mohamed Wague,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched
 2026-10-14,Jazz,Chance Moore,signed free agent,False,False,False,False,False,False,False,False,,,,,,,years/value pattern not matched

@@ -547,11 +547,11 @@ c0e4176f743e,Tyrese Martin,1631213.0,Nets,BKN,1610612751,0.0,0.0,First season,No
 7aaa5a9b90ab,Drew Timme,1631166.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,1,2025,False,,,False,0.113055,24.0,PF,Undrafted,0.113055,realized,False,,False,,,,False
 7aaa5a9b90ab,Drew Timme,1631166.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,2,2026,True,team,,False,,25.0,PF,Undrafted,,unknown,False,,False,,,,True
 4007780b41a9,Ben Saraf,1642879.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,1,2026,False,,3.7,False,2.88456,20.0,SG,2025,2.88456,realized,False,,False,,,,False
-4007780b41a9,Ben Saraf,1642879.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,2,2027,False,,3.7,False,,,,,3.02856,spotrac_schedule,False,,False,,,,False
+4007780b41a9,Ben Saraf,1642879.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,2,2027,False,,3.7,False,,20.0,SG,2025,3.02856,spotrac_schedule,False,,False,,,,False
 4007780b41a9,Ben Saraf,1642879.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,3,2028,False,,3.7,False,,,,,3.17292,spotrac_schedule,False,T,False,,,,False
 4007780b41a9,Ben Saraf,1642879.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,4,2029,True,team,3.7,False,,,,,5.720776,spotrac_schedule,False,,False,,,,False
 9bd7d7de21ec,Danny Wolf,1642874.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,1,2026,False,,3.35,False,2.80128,22.0,PF,2025,2.80128,realized,False,,False,,,,False
-9bd7d7de21ec,Danny Wolf,1642874.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,2,2027,False,,3.35,False,,,,,2.94144,spotrac_schedule,False,,False,,,,False
+9bd7d7de21ec,Danny Wolf,1642874.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,2,2027,False,,3.35,False,,22.0,PF,2025,2.94144,spotrac_schedule,False,,False,,,,False
 9bd7d7de21ec,Danny Wolf,1642874.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,3,2028,False,,3.35,False,,,,,3.08184,spotrac_schedule,False,T,False,,,,False
 9bd7d7de21ec,Danny Wolf,1642874.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,4,2029,True,team,3.35,False,,,,,5.55964,spotrac_schedule,False,T,False,,,,False
 3c55e363ae9c,Egor Demin,1642856.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,1,2026,False,,1.725,False,6.8892,20.0,PG,2025,6.8892,realized,False,,False,,,,False
@@ -565,7 +565,7 @@ c0e4176f743e,Tyrese Martin,1631213.0,Nets,BKN,1610612751,0.0,0.0,First season,No
 4b8bfb2c0227,Day'Ron Sharpe,1630549.0,Nets,BKN,1610612751,4.0,3.0,4–6 prior seasons,2–3-season run,1,2026,False,,6.0,False,6.25,24.0,C,2021,6.25,realized,False,,False,,,,False
 4b8bfb2c0227,Day'Ron Sharpe,1630549.0,Nets,BKN,1610612751,4.0,3.0,4–6 prior seasons,2–3-season run,2,2027,False,,6.0,False,,24.0,C,2021,6.0,estimated_flat,False,,True,,,,False
 21df9dfd9282,Drake Powell,1642962.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,1,2026,False,,4.175,False,3.37224,20.0,SG,2025,3.37224,realized,False,,False,,,,False
-21df9dfd9282,Drake Powell,1642962.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,2,2027,False,,4.175,False,,,,,3.5406,spotrac_schedule,False,,False,,,,False
+21df9dfd9282,Drake Powell,1642962.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,2,2027,False,,4.175,False,,21.0,SG,2025,3.5406,spotrac_schedule,False,,False,,,,False
 21df9dfd9282,Drake Powell,1642962.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,3,2028,False,,4.175,False,,,,,3.70932,spotrac_schedule,False,T,False,,,,False
 21df9dfd9282,Drake Powell,1642962.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,4,2029,True,team,4.175,False,,,,,6.101832,spotrac_schedule,False,T,False,,,,False
 1585a5c25db5,Day'Ron Sharpe,1630549.0,Nets,BKN,1610612751,4.0,3.0,4–6 prior seasons,2–3-season run,1,2026,False,,6.25,False,6.25,24.0,C,2021,6.25,realized,False,,False,,,,False
@@ -590,7 +590,7 @@ ec4d1593404b,Josh Minott,1631169.0,Nets,BKN,1610612751,1.0,1.0,1 prior season,1-
 ec4d1593404b,Josh Minott,1631169.0,Nets,BKN,1610612751,1.0,1.0,1 prior season,1-season run,2,2028,True,team,4.5,False,,,,,4.5,spotrac_schedule,False,T,False,,,,False
 79e0ca427476,Keon Ellis,1631165.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,1,2027,False,,9.0,False,,26.0,SG,Undrafted,9.0,spotrac_schedule,False,,False,,,,False
 79e0ca427476,Keon Ellis,1631165.0,Nets,BKN,1610612751,0.0,0.0,First season,No immediately prior season,2,2028,True,mutual,9.0,False,,,,,9.0,spotrac_schedule,False,,False,,,,False
-180187857d3c,Joshua Jefferson,1643538.0,Nets,BKN,1610612751,,,Unknown tenure,Unknown tenure,1,2027,False,,3.8,False,,,,,2.96952,spotrac_schedule,False,,False,,,,False
+180187857d3c,Joshua Jefferson,1643538.0,Nets,BKN,1610612751,,,Unknown tenure,Unknown tenure,1,2027,False,,3.8,False,,22.0,PF,2026,2.96952,spotrac_schedule,False,,False,,,,False
 180187857d3c,Joshua Jefferson,1643538.0,Nets,BKN,1610612751,,,Unknown tenure,Unknown tenure,2,2028,False,,3.8,False,,,,,3.11856,spotrac_schedule,False,,False,,,,False
 180187857d3c,Joshua Jefferson,1643538.0,Nets,BKN,1610612751,,,Unknown tenure,Unknown tenure,3,2029,False,,3.8,False,,,,,3.26688,spotrac_schedule,False,T,False,,,,False
 180187857d3c,Joshua Jefferson,1643538.0,Nets,BKN,1610612751,,,Unknown tenure,Unknown tenure,4,2030,True,team,3.8,False,,,,,5.896718,spotrac_schedule,False,T,False,,,,False
@@ -2233,7 +2233,7 @@ d3a40c1b5cb1,Feron Hunt,1630624.0,Pistons,DET,1610612765,0.0,0.0,First season,No
 55f90caeb1db,Daniss Jenkins,1642450.0,Pistons,DET,1610612765,1.0,1.0,1 prior season,1-season run,2,2027,True,team,3.9,False,,25.0,PG,Undrafted,4.0,spotrac_schedule,False,,False,,,,False
 11ae496e5743,Tolu Smith,1642449.0,Pistons,DET,1610612765,1.0,1.0,1 prior season,1-season run,1,2026,False,,1.25,False,,25.0,PF,Undrafted,0.070638,spotrac_payroll,False,,False,same_team,DET,,False
 11ae496e5743,Tolu Smith,1642449.0,Pistons,DET,1610612765,1.0,1.0,1 prior season,1-season run,2,2027,False,,1.25,False,,26.0,PF,Undrafted,2.41109,spotrac_schedule,False,NG,False,,,,False
-24500caa86a0,Ebuka Okorie,1643536.0,Pistons,DET,1610612765,,,Unknown tenure,Unknown tenure,1,2027,False,,5.425,False,,,,,4.48128,spotrac_schedule,False,,False,,,,False
+24500caa86a0,Ebuka Okorie,1643536.0,Pistons,DET,1610612765,,,Unknown tenure,Unknown tenure,1,2027,False,,5.425,False,,19.0,PG,2026,4.48128,spotrac_schedule,False,,False,,,,False
 24500caa86a0,Ebuka Okorie,1643536.0,Pistons,DET,1610612765,,,Unknown tenure,Unknown tenure,2,2028,False,,5.425,False,,,,,4.70544,spotrac_schedule,False,,False,,,,False
 24500caa86a0,Ebuka Okorie,1643536.0,Pistons,DET,1610612765,,,Unknown tenure,Unknown tenure,3,2029,False,,5.425,False,,,,,4.92936,spotrac_schedule,False,T,False,,,,False
 24500caa86a0,Ebuka Okorie,1643536.0,Pistons,DET,1610612765,,,Unknown tenure,Unknown tenure,4,2030,True,team,5.425,False,,,,,7.571497,spotrac_schedule,False,T,False,,,,False
@@ -5400,7 +5400,7 @@ ba2769465285,Ogugua Anunoby / O.G. Anunoby,1628384.0,Knicks,NYK,1610612752,0.0,0
 11eda8961a84,Pacome Dadiet,1642359.0,Knicks,NYK,1610612752,0.0,0.0,First season,No immediately prior season,4,2028,True,team,3.25,False,,,,,5.373608,spotrac_schedule,False,T,False,,,,False
 7ac17e234cc5,Tyler Kolek,1642278.0,Knicks,NYK,1610612752,0.0,0.0,First season,No immediately prior season,1,2025,False,,2.275,False,2.087519,24.0,PG,2024,2.087519,realized,False,,False,,,,False
 7ac17e234cc5,Tyler Kolek,1642278.0,Knicks,NYK,1610612752,0.0,0.0,First season,No immediately prior season,2,2026,False,,2.275,False,2.191897,25.0,PG,2024,2.191897,realized,False,,False,,,,False
-7ac17e234cc5,Tyler Kolek,1642278.0,Knicks,NYK,1610612752,0.0,0.0,First season,No immediately prior season,3,2027,False,,2.275,False,,,,,2.296271,spotrac_schedule,False,,False,,,,False
+7ac17e234cc5,Tyler Kolek,1642278.0,Knicks,NYK,1610612752,0.0,0.0,First season,No immediately prior season,3,2027,False,,2.275,False,,25.0,PG,2024,2.296271,spotrac_schedule,False,,False,,,,False
 7ac17e234cc5,Tyler Kolek,1642278.0,Knicks,NYK,1610612752,0.0,0.0,First season,No immediately prior season,4,2028,False,,2.275,False,,,,,2.486995,spotrac_schedule,False,T,False,,,,False
 e021c24be6ea,Ogugua Anunoby / O.G. Anunoby,1628384.0,Knicks,NYK,1610612752,1.0,1.0,1 prior season,1-season run,1,2025,False,,42.5,False,36.637932,27.0,PF,2017,42.5,contract_terms,True,,False,,,,False
 e021c24be6ea,Ogugua Anunoby / O.G. Anunoby,1628384.0,Knicks,NYK,1610612752,1.0,1.0,1 prior season,1-season run,2,2026,False,,42.5,False,39.568966,28.0,PF,2017,42.5,contract_terms,True,,False,,,,False
@@ -5946,7 +5946,7 @@ d333de7dc4ef,Jay Scrubb,1630206.0,Magic,ORL,1610612753,0.0,0.0,First season,No i
 da6ede6a5219,Anthony Black,1641710.0,Magic,ORL,1610612753,0.0,0.0,First season,No immediately prior season,1,2024,False,,8.225,False,7.24548,20.0,PG,2023,7.24548,realized,False,,False,,,,False
 da6ede6a5219,Anthony Black,1641710.0,Magic,ORL,1610612753,0.0,0.0,First season,No immediately prior season,2,2025,False,,8.225,False,7.60776,21.0,PG,2023,7.60776,realized,False,,False,,,,False
 da6ede6a5219,Anthony Black,1641710.0,Magic,ORL,1610612753,0.0,0.0,First season,No immediately prior season,3,2026,False,,8.225,False,7.97028,22.0,PG,2023,7.97028,realized,False,,False,,,,False
-da6ede6a5219,Anthony Black,1641710.0,Magic,ORL,1610612753,0.0,0.0,First season,No immediately prior season,4,2027,True,team,8.225,False,,,,,10.106316,spotrac_schedule,False,,False,,,,False
+da6ede6a5219,Anthony Black,1641710.0,Magic,ORL,1610612753,0.0,0.0,First season,No immediately prior season,4,2027,True,team,8.225,False,,22.0,PG,2023,10.106316,spotrac_schedule,False,,False,,,,False
 ff77f84812a1,Jett Howard,1641724.0,Magic,ORL,1610612753,0.0,0.0,First season,No immediately prior season,1,2024,False,,5.8,False,5.0268,20.0,SF,2023,5.0268,realized,False,,False,,,,False
 ff77f84812a1,Jett Howard,1641724.0,Magic,ORL,1610612753,0.0,0.0,First season,No immediately prior season,2,2025,False,,5.8,False,5.27832,21.0,SF,2023,5.27832,realized,False,,False,,,,False
 ff77f84812a1,Jett Howard,1641724.0,Magic,ORL,1610612753,0.0,0.0,First season,No immediately prior season,3,2026,False,,5.8,False,5.52972,22.0,SF,2023,5.52972,realized,False,,False,,,,False
@@ -7966,7 +7966,7 @@ b8f1684959b3,Keyonte George,1641718.0,Jazz,UTA,1610612762,0.0,0.0,First season,N
 385df4564fbf,Taylor Hendricks,1641707.0,Jazz,UTA,1610612762,0.0,0.0,First season,No immediately prior season,1,2024,False,,6.35,False,5.56992,20.0,PF,2023,5.56992,realized,False,,False,,,,False
 385df4564fbf,Taylor Hendricks,1641707.0,Jazz,UTA,1610612762,0.0,0.0,First season,No immediately prior season,2,2025,False,,6.35,False,5.84868,21.0,PF,2023,5.84868,realized,False,,False,,,,False
 385df4564fbf,Taylor Hendricks,1641707.0,Jazz,UTA,1610612762,0.0,0.0,First season,No immediately prior season,3,2026,False,,6.35,False,6.12708,22.0,PF,2023,6.12708,realized,False,,False,,,,False
-385df4564fbf,Taylor Hendricks,1641707.0,Jazz,UTA,1610612762,0.0,0.0,First season,No immediately prior season,4,2027,True,team,6.35,False,,,,,7.8059,spotrac_schedule,False,,False,,,,False
+385df4564fbf,Taylor Hendricks,1641707.0,Jazz,UTA,1610612762,0.0,0.0,First season,No immediately prior season,4,2027,True,team,6.35,False,,22.0,PF,2023,7.8059,spotrac_schedule,False,,False,,,,False
 4558ff01afc8,Jordan Clarkson,203903.0,Jazz,UTA,1610612762,4.0,3.0,4–6 prior seasons,2–3-season run,1,2024,False,,14.2,False,23.487629,32.0,SG,2014,14.2,contract_terms,True,,False,,,,False
 4558ff01afc8,Jordan Clarkson,203903.0,Jazz,UTA,1610612762,4.0,3.0,4–6 prior seasons,2–3-season run,2,2025,False,,14.2,False,14.092577,33.0,SG,2014,14.2,contract_terms,True,,False,,,,False
 d253bf62f7bf,Omer Yurtseven,1630209.0,Jazz,UTA,1610612762,0.0,0.0,First season,No immediately prior season,1,2024,False,,2.75,False,2.8,26.0,C,Undrafted,2.8,realized,False,,False,,,,False
@@ -8605,7 +8605,7 @@ a981f60a1986,Bennedict Mathurin,1631097.0,Pelicans,NOP,1610612740,0.0,0.0,First 
 ee769033e56c,Saddiq Bey,1630180.0,Pelicans,NOP,1610612740,1.0,1.0,1 prior season,1-season run,1,2027,False,,18.5,False,,27.0,SF,2020,6.55708,spotrac_schedule,False,,False,,,,False
 ee769033e56c,Saddiq Bey,1630180.0,Pelicans,NOP,1610612740,1.0,1.0,1 prior season,1-season run,2,2028,False,,18.5,False,,,,,20.108695,spotrac_schedule,False,,False,,,,False
 ee769033e56c,Saddiq Bey,1630180.0,Pelicans,NOP,1610612740,1.0,1.0,1 prior season,1-season run,3,2029,False,,18.5,False,,,,,18.5,spotrac_schedule,False,,False,,,,False
-044e1eb3bd06,Jaden Akins,1643022.0,Knicks,NYK,1610612752,,,Unknown tenure,Unknown tenure,1,2027,False,,,False,,,,,,unknown,False,,False,,,,False
+044e1eb3bd06,Jaden Akins,1643022.0,Knicks,NYK,1610612752,,,Unknown tenure,Unknown tenure,1,2027,False,,,False,,23.0,SG,Undrafted,,unknown,False,,False,,,,False
 1c4533e78fc4,Liam Robbins,1641857.0,Knicks,NYK,1610612752,0.0,0.0,First season,No immediately prior season,1,2027,False,,,False,,,,,,unknown,False,,False,,,,False
 f5acebc70b4e,Toby Okani,1643253.0,Knicks,NYK,1610612752,0.0,0.0,First season,No immediately prior season,1,2027,False,,,False,,,,,,unknown,False,,False,,,,False
 4b318530844a,Drew Eubanks,1629234.0,Knicks,NYK,1610612752,0.0,0.0,First season,No immediately prior season,1,2027,False,,,False,,,,,,unknown,False,,False,,,,False
@@ -8624,6 +8624,9 @@ d72d7587051b,Kawhi Leonard,202695.0,Raptors,TOR,1610612761,1.0,0.0,1 prior seaso
 75327b42266c,Keyonte George,1641718.0,Jazz,UTA,1610612762,3.0,2.0,2–3 prior seasons,2–3-season run,3,2029,False,,,False,,,,,29.851852,spotrac_schedule,False,,False,,,,False
 75327b42266c,Keyonte George,1641718.0,Jazz,UTA,1610612762,3.0,2.0,2–3 prior seasons,2–3-season run,4,2030,False,,,False,,,,,31.0,spotrac_schedule,False,,False,,,,False
 75327b42266c,Keyonte George,1641718.0,Jazz,UTA,1610612762,3.0,2.0,2–3 prior seasons,2–3-season run,5,2031,False,,,False,,,,,32.148148,spotrac_schedule,False,,False,,,,False
+4960e8ee7a8d,Dwight Powell,203939.0,Mavericks,DAL,1610612742,12.0,11.0,7+ prior seasons,7+ season run,1,2027,False,,,False,,,,,,unknown,False,,False,,,,False
+778cc25ef757,Stephen Curry,201939.0,Warriors,GSW,1610612744,17.0,16.0,7+ prior seasons,7+ season run,1,2027,False,,58.0,False,,38.0,PG,2009,62.587158,spotrac_schedule,False,,False,,,,False
+778cc25ef757,Stephen Curry,201939.0,Warriors,GSW,1610612744,17.0,16.0,7+ prior seasons,7+ season run,2,2028,False,,58.0,False,,,,,55.7,spotrac_schedule,False,,False,,,,False
 1cb87c0f9ce8,Payton Pritchard,1630202.0,Celtics,BOS,1610612738,6.0,5.0,4–6 prior seasons,4–6-season run,1,2027,False,,,False,,28.0,PG,2020,7.767857,spotrac_schedule,False,,False,,,,False
 1cb87c0f9ce8,Payton Pritchard,1630202.0,Celtics,BOS,1610612738,6.0,5.0,4–6 prior seasons,4–6-season run,2,2028,False,,,False,,,,,8.303571,spotrac_schedule,False,,False,,,,False
 f2d35727fc61,Brandon Miller,1641706.0,Hornets,CHA,1610612766,3.0,2.0,2–3 prior seasons,2–3-season run,1,2027,False,,41.8,False,,23.0,SF,2023,15.104626,spotrac_schedule,False,,False,,,,False
@@ -8631,14 +8634,11 @@ f2d35727fc61,Brandon Miller,1641706.0,Hornets,CHA,1610612766,3.0,2.0,2–3 prior
 f2d35727fc61,Brandon Miller,1641706.0,Hornets,CHA,1610612766,3.0,2.0,2–3 prior seasons,2–3-season run,3,2029,False,,41.8,False,,,,,38.917241,spotrac_schedule,False,,False,,,,False
 f2d35727fc61,Brandon Miller,1641706.0,Hornets,CHA,1610612766,3.0,2.0,2–3 prior seasons,2–3-season run,4,2030,False,,41.8,False,,,,,41.8,spotrac_schedule,False,,False,,,,False
 f2d35727fc61,Brandon Miller,1641706.0,Hornets,CHA,1610612766,3.0,2.0,2–3 prior seasons,2–3-season run,5,2031,False,,41.8,False,,,,,44.682759,spotrac_schedule,False,,False,,,,False
-4960e8ee7a8d,Dwight Powell,203939.0,Mavericks,DAL,1610612742,12.0,11.0,7+ prior seasons,7+ season run,1,2027,False,,,False,,,,,,unknown,False,,False,,,,False
 67572c976b91,Jalen Duren,1631105.0,Pistons,DET,1610612765,4.0,3.0,4–6 prior seasons,2–3-season run,1,2027,False,,,False,,22.0,C,2022,40.160643,spotrac_schedule,False,,False,,,,False
 67572c976b91,Jalen Duren,1631105.0,Pistons,DET,1610612765,4.0,3.0,4–6 prior seasons,2–3-season run,2,2028,False,,,False,,,,,36.947792,spotrac_schedule,False,,False,,,,False
 67572c976b91,Jalen Duren,1631105.0,Pistons,DET,1610612765,4.0,3.0,4–6 prior seasons,2–3-season run,3,2029,False,,,False,,,,,38.955824,spotrac_schedule,False,,False,,,,False
 67572c976b91,Jalen Duren,1631105.0,Pistons,DET,1610612765,4.0,3.0,4–6 prior seasons,2–3-season run,4,2030,False,,,False,,,,,40.963856,spotrac_schedule,False,,False,,,,False
 67572c976b91,Jalen Duren,1631105.0,Pistons,DET,1610612765,4.0,3.0,4–6 prior seasons,2–3-season run,5,2031,False,,,False,,,,,42.971885,spotrac_schedule,False,,False,,,,False
-778cc25ef757,Stephen Curry,201939.0,Warriors,GSW,1610612744,17.0,16.0,7+ prior seasons,7+ season run,1,2027,False,,58.0,False,,38.0,PG,2009,62.587158,spotrac_schedule,False,,False,,,,False
-778cc25ef757,Stephen Curry,201939.0,Warriors,GSW,1610612744,17.0,16.0,7+ prior seasons,7+ season run,2,2028,False,,58.0,False,,,,,55.7,spotrac_schedule,False,,False,,,,False
 dfafb7bea55e,Brandin Podziemski,1641764.0,Warriors,GSW,1610612744,3.0,2.0,2–3 prior seasons,2–3-season run,1,2027,False,,22.0,False,,23.0,SG,2023,5.679459,spotrac_schedule,False,,False,,,,False
 dfafb7bea55e,Brandin Podziemski,1641764.0,Warriors,GSW,1610612744,3.0,2.0,2–3 prior seasons,2–3-season run,2,2028,False,,22.0,False,,,,,18.965518,spotrac_schedule,False,,False,,,,False
 dfafb7bea55e,Brandin Podziemski,1641764.0,Warriors,GSW,1610612744,3.0,2.0,2–3 prior seasons,2–3-season run,3,2029,False,,22.0,False,,,,,20.482759,spotrac_schedule,False,,False,,,,False
